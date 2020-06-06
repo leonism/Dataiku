@@ -1,0 +1,152 @@
+{
+    "per_feature": {
+        "city": {
+            "stats": {}
+        }, 
+        "country": {
+            "stats": {
+                "mostFrequentValue": "United States", 
+                "leastFrequentValue": "France"
+            }, 
+            "category_possible_counts": [
+                642, 
+                25, 
+                18, 
+                4, 
+                2, 
+                2, 
+                2, 
+                2, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1
+            ], 
+            "category_possible_values": [
+                "United States", 
+                "Canada", 
+                "United Kingdom", 
+                "Australia", 
+                "CA", 
+                "Deutschland", 
+                "M\u00e9xico", 
+                "Philippines", 
+                "Espa\u00f1a", 
+                "Monaco", 
+                "\u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u0639\u0631\u0627\u0642", 
+                "\u039a\u03cd\u03c0\u03c1\u03bf\u03c2 - K\u0131br\u0131s", 
+                "Koninkrijk der Nederlanden", 
+                "Polska", 
+                "T\u00fcrkiye", 
+                "\u0395\u03bb\u03bb\u03ac\u03b4\u03b1", 
+                "\u0421\u0440\u0431\u0438\u0458\u0430", 
+                "\u0423\u043a\u0440\u0430\u0457\u043d\u0430", 
+                "\u65e5\u672c", 
+                "Norway", 
+                "Argentina", 
+                "Danmark"
+            ]
+        }, 
+        "longitude": {
+            "stats": {
+                "std": 36.46593836578232, 
+                "p99": 42.50705685999986, 
+                "min": -161.7558333, 
+                "max": 153.137711, 
+                "average": -89.07613590126404, 
+                "median": -88.87097225
+            }, 
+            "missing_impute_with_value": -89.07613590126404
+        }, 
+        "datetime": {
+            "stats": {
+                "std": 324019470.26303315, 
+                "p99": 3604080960.0, 
+                "min": 513043200.0, 
+                "max": 3607027200.0, 
+                "average": 3317851617.977528, 
+                "median": 3396470400.0
+            }, 
+            "missing_impute_with_value": 3317851617.977528
+        }, 
+        "shape": {
+            "stats": {
+                "mostFrequentValue": "Light", 
+                "leastFrequentValue": "Diamond"
+            }, 
+            "category_possible_counts": [
+                152, 
+                72, 
+                66, 
+                60, 
+                52, 
+                52, 
+                51, 
+                48, 
+                27, 
+                22, 
+                20, 
+                15, 
+                14, 
+                14, 
+                12, 
+                9, 
+                7, 
+                6, 
+                5, 
+                4
+            ], 
+            "category_possible_values": [
+                "Light", 
+                "Circle", 
+                "Triangle", 
+                "Fireball", 
+                "Disk", 
+                "Unknown", 
+                "Other", 
+                "Sphere", 
+                "Oval", 
+                "Changing", 
+                "Formation", 
+                "Flash", 
+                "Cigar", 
+                "Chevron", 
+                "Cylinder", 
+                "Rectangle", 
+                "Cross", 
+                "Egg", 
+                "Teardrop", 
+                "Cone"
+            ]
+        }, 
+        "latitude": {
+            "stats": {
+                "std": 8.779921888995695, 
+                "p99": 54.78416699999999, 
+                "min": -37.813938, 
+                "max": 61.3213889, 
+                "average": 38.421443950842686, 
+                "median": 39.5297222
+            }, 
+            "missing_impute_with_value": 38.421443950842686
+        }
+    }, 
+    "feature_order": [
+        "city", 
+        "country", 
+        "longitude", 
+        "datetime", 
+        "shape", 
+        "latitude"
+    ]
+}

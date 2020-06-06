@@ -1,0 +1,11 @@
+{
+  "description": "",
+  "name": "Random forest",
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.0
+}

@@ -1,0 +1,3015 @@
+[2020/04/25-22:05:09.325] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/25-22:05:09.326] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.prediction]  - ** Start train session s6
+[2020/04/25-22:05:09.328] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/25-22:05:09.333] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.splits] T-XYVclnCd - [ct: 8] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=UFO_train_complete,sel=(method=head-s,records=100000),r=0.8,s=1337 i=4b07fbc540b342e6788c4fdd3282e73d-0
+[2020/04/25-22:05:09.340] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.data] T-XYVclnCd - [ct: 15] Need to compute sampleId before checking memory cache
+[2020/04/25-22:05:09.341] [FT-TrainWorkThread-JctHIdLx-1763] [DEBUG] [dip.shaker.runner] T-XYVclnCd - [ct: 16] Script settings sampleMax=104857600 processedMax=-1
+[2020/04/25-22:05:09.343] [FT-TrainWorkThread-JctHIdLx-1763] [DEBUG] [dip.shaker.runner] T-XYVclnCd - [ct: 18] Processing with sampleMax=104857600 processedMax=524288000
+[2020/04/25-22:05:09.346] [FT-TrainWorkThread-JctHIdLx-1763] [DEBUG] [dip.shaker.runner] T-XYVclnCd - [ct: 21] Computed required sample id : 3cf401566fdd3b8db4928d5e1fc8fea3-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce
+[2020/04/25-22:05:09.349] [FT-TrainWorkThread-JctHIdLx-1763] [DEBUG] [dku.shaker.cache] T-XYVclnCd - Shaker MemoryCache get on UFO.UFO_train_complete key=ds=8be7e0b78cd722c61ba72bb4d6861d44--scr=b1d6c96bca7dedecbb004d1b6a82d103--samp=3cf401566fdd3b8db4928d5e1fc8fea3-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce: hit
+[2020/04/25-22:05:09.351] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 26] Column datetime meaning=Date fail=0
+[2020/04/25-22:05:09.354] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 29] Column city meaning=Text fail=0
+[2020/04/25-22:05:09.357] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 32] Column country meaning=Text fail=0
+[2020/04/25-22:05:09.359] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 34] Column shape meaning=Text fail=0
+[2020/04/25-22:05:09.362] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 37] Column latitude meaning=Latitude fail=0
+[2020/04/25-22:05:09.364] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 39] Column longitude meaning=Longitude fail=0
+[2020/04/25-22:05:09.367] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 42] Column GeoPoints meaning=GeoPoint fail=0
+[2020/04/25-22:05:09.370] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 45] Column Countries_iso meaning=CountryMeaning fail=0
+[2020/04/25-22:05:09.375] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.schema] T-XYVclnCd - [ct: 50] Column Countries_enName meaning=CountryMeaning fail=43
+[2020/04/25-22:05:09.391] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.geo] T-XYVclnCd - Geocoder: Set required folder /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/plugins/installed/geoadmin/resource
+[2020/04/25-22:05:09.393] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.geo] T-XYVclnCd - Geocoder: Set required folder /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/plugins/installed/geoadmin/resource
+[2020/04/25-22:05:09.397] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.geo] T-XYVclnCd - Geocoder: Set required folder /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/plugins/installed/geoadmin/resource
+[2020/04/25-22:05:09.399] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.shaker.geo] T-XYVclnCd - Geocoder: Set required folder /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/plugins/installed/geoadmin/resource
+[2020/04/25-22:05:09.404] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.datasets.file] T-XYVclnCd - [ct: 79] Building Filesystem handler config: {"connection":"filesystem_managed","path":"UFO/UFO_train_complete","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/04/25-22:05:09.406] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.datasets.ftplike] T-XYVclnCd - Enumerating Filesystem dataset prefix=
+[2020/04/25-22:05:09.413] [FT-TrainWorkThread-JctHIdLx-1763] [DEBUG] [dku.fs.local] T-XYVclnCd - [ct: 88] Enumerating local filesystem prefix=/
+[2020/04/25-22:05:09.415] [FT-TrainWorkThread-JctHIdLx-1763] [DEBUG] [dku.fs.local] T-XYVclnCd - [ct: 90] Enumeration done nb_paths=1 size=971412
+[2020/04/25-22:05:09.420] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.input.push] T-XYVclnCd - USTP: push selection.method=HEAD_SEQUENTIAL records=100000 ratio=0.1 col=null
+[2020/04/25-22:05:09.423] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.format] T-XYVclnCd - [ct: 98] Extractor run: limit={"maxBytes":-1,"maxRecords":100000,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2020/04/25-22:05:09.426] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku] T-XYVclnCd - getCompression filename=**out-s0.csv.gz**
+[2020/04/25-22:05:09.428] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku] T-XYVclnCd - getCompression filename=**out-s0.csv.gz**
+[2020/04/25-22:05:09.430] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.format] T-XYVclnCd - [ct: 105] Start compressed [GZIP] stream: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/managed_datasets/UFO/UFO_train_complete/out-s0.csv.gz / totalRecsBefore=0
+[2020/04/25-22:05:09.431] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku] T-XYVclnCd - getCompression filename=**out-s0.csv.gz**
+[2020/04/25-22:05:09.435] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku] T-XYVclnCd - getCompression filename=**out-s0.csv.gz**
+[2020/04/25-22:05:18.623] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.format] T-XYVclnCd - [ct: 9298] after stream totalComp=971412 totalUncomp=6624017 totalRec=83787
+[2020/04/25-22:05:18.625] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.format] T-XYVclnCd - [ct: 9300] Extractor run done, totalCompressed=971412 totalRecords=83787
+[2020/04/25-22:05:18.631] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.splits] T-XYVclnCd - [ct: 9306] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=UFO_train_complete,sel=(method=head-s,records=100000),r=0.8,s=1337, instance id: 4b07fbc540b342e6788c4fdd3282e73d-0
+[2020/04/25-22:05:18.635] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.splits] T-XYVclnCd - [ct: 9310] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=UFO_train_complete,sel=(method=head-s,records=100000),r=0.8,s=1337 i=4b07fbc540b342e6788c4fdd3282e73d-0
+[2020/04/25-22:05:18.639] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.splits] T-XYVclnCd - [ct: 9314] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=UFO_train_complete,sel=(method=head-s,records=100000),r=0.8,s=1337 i=4b07fbc540b342e6788c4fdd3282e73d-0
+[2020/04/25-22:05:18.641] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.ml.python] T-XYVclnCd - Joining processing thread ...
+[2020/04/25-22:05:18.648] [MRT-1764] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp1 in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/UFO/IWzV4H15/XYVclnCd/sessions/s6/pp1
+[2020/04/25-22:05:18.653] [MRT-1764] [INFO] [dku.block.link]  - Started a socket on port 53251
+[2020/04/25-22:05:18.656] [MRT-1764] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/UFO/IWzV4H15/XYVclnCd/sessions/s6/pp1/train.log
+[2020/04/25-22:05:18.658] [MRT-1764] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2020/04/25-22:05:18.661] [MRT-1764] [WARN] [dku.code.projectLibs]  - External libraries file not found: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/UFO/lib/external-libraries.json
+[2020/04/25-22:05:18.662] [MRT-1764] [INFO] [dku.code.projectLibs]  - EXTERNAL LIBS FROM UFO is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/04/25-22:05:18.665] [MRT-1764] [INFO] [dku.code.projectLibs]  - chunkFolder is /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/UFO/lib/R
+[2020/04/25-22:05:18.666] [MRT-1764] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2020/04/25-22:05:18.666] [MRT-1764] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-UFO-XBw2UjL on behalf of admin id=analysis-ml-UFO-XBw2UjL_h74I6HFVu09Y
+[2020/04/25-22:05:18.667] [MRT-1764] [INFO] [dku.security.process]  - Starting process (regular)
+[2020/04/25-22:05:18.696] [MRT-1764] [INFO] [dku.security.process]  - Process started with pid=4700
+[2020/04/25-22:05:18.699] [MRT-1764] [INFO] [dku.processes.cgroups]  - Will use cgroups []
+[2020/04/25-22:05:18.701] [MRT-1764] [INFO] [dku.processes.cgroups]  - Applying rules to used cgroups: []
+Installing debugging signal handler
+[2020-04-25 22:05:24,145] [4700/MainThread] [INFO] [root] Connecting to parent at port 53251
+[2020/04/25-22:05:24.245] [MRT-1764] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2020-04-25 22:05:24,263] [4700/MainThread] [INFO] [root] Connected to parent at port 53251
+[2020/04/25-22:05:24.264] [MRT-1764] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+[2020-04-25 22:05:28,588] [4700/MainThread] [INFO] [root] Running analysis command: train_prediction_models_nosave
+[2020-04-25 22:05:28,592] [4700/MainThread] [INFO] [dataiku.doctor.commands] PPS is {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [{u'mappedValue': 0, u'sourceValue': u'Light', u'sampleFreq': 1999}, {u'mappedValue': 1, u'sourceValue': u'Circle', u'sampleFreq': 1022}, {u'mappedValue': 2, u'sourceValue': u'Triangle', u'sampleFreq': 919}, {u'mappedValue': 3, u'sourceValue': u'Fireball', u'sampleFreq': 848}, {u'mappedValue': 4, u'sourceValue': u'Other', u'sampleFreq': 748}, {u'mappedValue': 5, u'sourceValue': u'Disk', u'sampleFreq': 731}, {u'mappedValue': 6, u'sourceValue': u'Unknown', u'sampleFreq': 709}, {u'mappedValue': 7, u'sourceValue': u'Sphere', u'sampleFreq': 645}, {u'mappedValue': 8, u'sourceValue': u'Oval', u'sampleFreq': 535}, {u'mappedValue': 9, u'sourceValue': u'Formation', u'sampleFreq': 280}, {u'mappedValue': 10, u'sourceValue': u'Changing', u'sampleFreq': 262}, {u'mappedValue': 11, u'sourceValue': u'Cigar', u'sampleFreq': 248}, {u'mappedValue': 12, u'sourceValue': u'Cylinder', u'sampleFreq': 179}, {u'mappedValue': 13, u'sourceValue': u'Flash', u'sampleFreq': 161}, {u'mappedValue': 14, u'sourceValue': u'Rectangle', u'sampleFreq': 160}, {u'mappedValue': 15, u'sourceValue': u'Diamond', u'sampleFreq': 156}, {u'mappedValue': 16, u'sourceValue': u'Chevron', u'sampleFreq': 120}, {u'mappedValue': 17, u'sourceValue': u'Egg', u'sampleFreq': 106}, {u'mappedValue': 18, u'sourceValue': u'Teardrop', u'sampleFreq': 95}, {u'mappedValue': 19, u'sourceValue': u'Cone', u'sampleFreq': 47}, {u'mappedValue': 20, u'sourceValue': u'Cross', u'sampleFreq': 29}, {u'mappedValue': 21, u'sourceValue': u'Delta', u'sampleFreq': 1}], u'per_feature': {u'city': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Countries_iso': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'CountryMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'country': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'longitude': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Longitude', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'datetime': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Date', u'autoModifiedByDSS': False}, u'missing_handling': u'DROP_ROW', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Countries_enName': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'CountryMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'shape': {u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'dummy_drop': u'NONE', u'min_samples': 10, u'type': u'CATEGORY', u'max_cat_safety': 200}, u'GeoPoints': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'GeoPoint', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'latitude': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Latitude', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-25 22:05:28,592] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading train set
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for datetime: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for city: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for country: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for shape: <type 'numpy.object_'> (schema_type=string feature_type=CATEGORY feature_role=TARGET)
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for latitude: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for longitude: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-25 22:05:28,594] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for GeoPoints: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-25 22:05:28,595] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Countries_iso: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-25 22:05:28,595] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Countries_enName: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-25 22:05:28,595] [4700/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'latitude': <type 'numpy.float64'>, u'city': 'str', u'shape': <type 'numpy.object_'>, u'longitude': <type 'numpy.float64'>, u'country': 'str'}
+[2020-04-25 22:05:30,121] [4700/MainThread] [INFO] [root] Loaded table
+[2020-04-25 22:05:30,140] [4700/MainThread] [INFO] [dataiku.doctor.utils] Normalizing date to numeric : 0       1994-05-15
+1       2002-04-14
+2       1998-06-01
+3       2012-03-28
+4       2007-10-13
+5       1998-12-27
+6       2001-11-17
+7       2002-08-21
+8       1978-06-01
+9       2005-09-21
+10      2009-03-12
+11      2010-01-15
+12      2010-12-21
+13      2014-03-23
+14      2001-05-14
+15      2005-08-27
+16      1996-07-21
+17      1978-12-15
+18      2001-08-05
+19      2011-01-28
+20      1999-04-11
+21      2004-09-14
+22      2004-09-10
+23      2005-06-07
+24      2009-07-17
+25      2003-06-19
+26      2005-06-01
+27      2008-02-06
+28      2008-06-02
+29      2008-02-18
+           ...    
+66888   2013-10-31
+66889   2013-11-08
+66890   2013-12-10
+66891   1949-07-01
+66892   2013-12-31
+66893   2013-12-31
+66894   2005-02-26
+66895   2003-06-25
+66896   1999-02-12
+66897   2000-11-27
+66898   2007-11-02
+66899   1987-07-15
+66900   2004-09-03
+66901   2009-08-09
+66902   2001-09-23
+66903   2003-10-23
+66904   1992-03-15
+66905   2004-10-12
+66906   2002-10-18
+66907   2009-01-02
+66908   2000-11-21
+66909   1995-11-25
+66910   1999-02-12
+66911   2012-06-20
+66912   2007-08-13
+66913   2007-08-13
+66914   2008-06-13
+66915   2009-12-01
+66916   2013-11-20
+66917   2002-01-02
+Name: datetime, Length: 66918, dtype: datetime64[ns]
+[2020-04-25 22:05:30,173] [4700/MainThread] [INFO] [dataiku.doctor.utils] Normalized date : 0        2.977949e+09
+1        3.227731e+09
+2        3.105648e+09
+3        3.541882e+09
+4        3.401222e+09
+5        3.123706e+09
+6        3.214944e+09
+7        3.238877e+09
+8        2.474496e+09
+9        3.336250e+09
+10       3.445805e+09
+11       3.472502e+09
+12       3.501878e+09
+13       3.604522e+09
+14       3.198787e+09
+15       3.334090e+09
+16       3.046896e+09
+17       2.491517e+09
+18       3.205958e+09
+19       3.505162e+09
+20       3.132778e+09
+21       3.304109e+09
+22       3.303763e+09
+23       3.327091e+09
+24       3.456778e+09
+25       3.264970e+09
+26       3.326573e+09
+27       3.411245e+09
+28       3.421354e+09
+29       3.412282e+09
+             ...     
+66888    3.592166e+09
+66889    3.592858e+09
+66890    3.595622e+09
+66891    1.561939e+09
+66892    3.597437e+09
+66893    3.597437e+09
+66894    3.318365e+09
+66895    3.265488e+09
+66896    3.127766e+09
+66897    3.184272e+09
+66898    3.402950e+09
+66899    2.762294e+09
+66900    3.303158e+09
+66901    3.458765e+09
+66902    3.210192e+09
+66903    3.275856e+09
+66904    2.909606e+09
+66905    3.306528e+09
+66906    3.243888e+09
+66907    3.439843e+09
+66908    3.183754e+09
+66909    3.026246e+09
+66910    3.127766e+09
+66911    3.549139e+09
+66912    3.395952e+09
+66913    3.395952e+09
+66914    3.422304e+09
+66915    3.468614e+09
+66916    3.593894e+09
+66917    3.218918e+09
+Name: datetime, Length: 66918, dtype: float64
+[2020-04-25 22:05:30,174] [4700/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-25 22:05:30,174] [4700/MainThread] [INFO] [dataiku.doctor.commands] Loaded train df: shape=(66918,9)
+[2020-04-25 22:05:30,175] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : datetime (float64)
+[2020-04-25 22:05:30,175] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : city (object)
+[2020-04-25 22:05:30,175] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : country (object)
+[2020-04-25 22:05:30,176] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : shape (object)
+[2020-04-25 22:05:30,176] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : latitude (float64)
+[2020-04-25 22:05:30,176] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : longitude (float64)
+[2020-04-25 22:05:30,176] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : GeoPoints (object)
+[2020-04-25 22:05:30,177] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : Countries_iso (object)
+[2020-04-25 22:05:30,178] [4700/MainThread] [INFO] [dataiku.doctor.commands] Train col : Countries_enName (object)
+[2020-04-25 22:05:30,178] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading train set
+[2020-04-25 22:05:30,178] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading test set
+[2020-04-25 22:05:30,179] [4700/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-25 22:05:30,179] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for datetime: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020-04-25 22:05:30,180] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for city: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-25 22:05:30,180] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for country: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-25 22:05:30,180] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for shape: <type 'numpy.object_'> (schema_type=string feature_type=CATEGORY feature_role=TARGET)
+[2020-04-25 22:05:30,180] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for latitude: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-25 22:05:30,180] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for longitude: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-25 22:05:30,183] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for GeoPoints: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-25 22:05:30,183] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Countries_iso: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-25 22:05:30,183] [4700/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Countries_enName: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-25 22:05:30,183] [4700/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'latitude': <type 'numpy.float64'>, u'city': 'str', u'shape': <type 'numpy.object_'>, u'longitude': <type 'numpy.float64'>, u'country': 'str'}
+[2020-04-25 22:05:30,603] [4700/MainThread] [INFO] [root] Loaded table
+[2020-04-25 22:05:30,659] [4700/MainThread] [INFO] [dataiku.doctor.utils] Normalizing date to numeric : 0       2002-07-03
+1       2008-10-23
+2       2009-03-11
+3       1994-06-01
+4       2006-07-13
+5       1998-11-08
+6       2013-05-06
+7       2012-07-29
+8       2001-08-25
+9       1973-03-01
+10      2008-01-03
+11      2012-09-22
+12      1977-06-01
+13      2006-01-21
+14      2000-11-15
+15      1975-06-15
+16      2004-06-19
+17      2003-02-06
+18      2004-12-04
+19      2003-05-02
+20      2010-07-11
+21      2012-04-20
+22      1975-03-06
+23      1993-02-20
+24      2003-05-23
+25      2002-03-15
+26      2004-07-09
+27      2002-06-15
+28      2005-01-19
+29      2005-12-30
+           ...    
+16839   1997-10-11
+16840   2004-03-14
+16841   2010-04-17
+16842   2012-12-23
+16843   2003-10-21
+16844   1975-06-15
+16845   1999-02-10
+16846   2000-12-15
+16847   2013-12-09
+16848   1998-01-08
+16849   1999-03-04
+16850   2004-03-11
+16851   2008-07-03
+16852   2008-12-29
+16853   2009-02-20
+16854   2009-03-31
+16855   1998-12-15
+16856   1969-11-01
+16857   2011-12-24
+16858   2012-11-22
+16859   2012-12-25
+16860   2013-09-24
+16861   2013-10-04
+16862   1957-07-02
+16863   1986-06-20
+16864   1978-08-15
+16865   1996-02-26
+16866   1992-12-01
+16867   2004-12-14
+16868   2006-04-07
+Name: datetime, Length: 16869, dtype: datetime64[ns]
+[2020-04-25 22:05:30,669] [4700/MainThread] [INFO] [dataiku.doctor.utils] Normalized date : 0        3.234643e+09
+1        3.433709e+09
+2        3.445718e+09
+3        2.979418e+09
+4        3.361738e+09
+5        3.119472e+09
+6        3.576787e+09
+7        3.552509e+09
+8        3.207686e+09
+9        2.308781e+09
+10       3.408307e+09
+11       3.557261e+09
+12       2.442960e+09
+13       3.346790e+09
+14       3.183235e+09
+15       2.381011e+09
+16       3.296592e+09
+17       3.253478e+09
+18       3.311107e+09
+19       3.260822e+09
+20       3.487795e+09
+21       3.543869e+09
+22       2.372285e+09
+23       2.939155e+09
+24       3.262637e+09
+25       3.225139e+09
+26       3.298320e+09
+27       3.233088e+09
+28       3.315082e+09
+29       3.344890e+09
+             ...     
+16839    3.085517e+09
+16840    3.288211e+09
+16841    3.480451e+09
+16842    3.565210e+09
+16843    3.275683e+09
+16844    2.381011e+09
+16845    3.127594e+09
+16846    3.185827e+09
+16847    3.595536e+09
+16848    3.093206e+09
+16849    3.129494e+09
+16850    3.287952e+09
+16851    3.424032e+09
+16852    3.439498e+09
+16853    3.444077e+09
+16854    3.447446e+09
+16855    3.122669e+09
+16856    2.203718e+09
+16857    3.533674e+09
+16858    3.562531e+09
+16859    3.565382e+09
+16860    3.588970e+09
+16861    3.589834e+09
+16862    1.814486e+09
+16863    2.728598e+09
+16864    2.480976e+09
+16865    3.034282e+09
+16866    2.932157e+09
+16867    3.311971e+09
+16868    3.353357e+09
+Name: datetime, Length: 16869, dtype: float64
+[2020-04-25 22:05:30,676] [4700/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-25 22:05:30,676] [4700/MainThread] [INFO] [dataiku.doctor.commands] Loaded test df: shape=(16869,9)
+[2020-04-25 22:05:30,676] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading test set
+[2020-04-25 22:05:30,676] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2020-04-25 22:05:30,677] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at city... (type=CATEGORY)
+[2020-04-25 22:05:30,806] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Countries_iso... (type=CATEGORY)
+[2020-04-25 22:05:30,806] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at country... (type=CATEGORY)
+[2020-04-25 22:05:30,840] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at longitude... (type=NUMERIC)
+[2020-04-25 22:05:30,840] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-25 22:05:30,856] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at datetime... (type=NUMERIC)
+[2020-04-25 22:05:30,856] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-25 22:05:30,863] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Countries_enName... (type=CATEGORY)
+[2020-04-25 22:05:30,864] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at shape... (type=CATEGORY)
+[2020-04-25 22:05:30,864] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at GeoPoints... (type=CATEGORY)
+[2020-04-25 22:05:30,864] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at latitude... (type=NUMERIC)
+[2020-04-25 22:05:30,864] [4700/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-25 22:05:30,870] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2020-04-25 22:05:30,872] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] generating interactions
+[2020-04-25 22:05:30,872] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [{u'mappedValue': 0, u'sourceValue': u'Light', u'sampleFreq': 1999}, {u'mappedValue': 1, u'sourceValue': u'Circle', u'sampleFreq': 1022}, {u'mappedValue': 2, u'sourceValue': u'Triangle', u'sampleFreq': 919}, {u'mappedValue': 3, u'sourceValue': u'Fireball', u'sampleFreq': 848}, {u'mappedValue': 4, u'sourceValue': u'Other', u'sampleFreq': 748}, {u'mappedValue': 5, u'sourceValue': u'Disk', u'sampleFreq': 731}, {u'mappedValue': 6, u'sourceValue': u'Unknown', u'sampleFreq': 709}, {u'mappedValue': 7, u'sourceValue': u'Sphere', u'sampleFreq': 645}, {u'mappedValue': 8, u'sourceValue': u'Oval', u'sampleFreq': 535}, {u'mappedValue': 9, u'sourceValue': u'Formation', u'sampleFreq': 280}, {u'mappedValue': 10, u'sourceValue': u'Changing', u'sampleFreq': 262}, {u'mappedValue': 11, u'sourceValue': u'Cigar', u'sampleFreq': 248}, {u'mappedValue': 12, u'sourceValue': u'Cylinder', u'sampleFreq': 179}, {u'mappedValue': 13, u'sourceValue': u'Flash', u'sampleFreq': 161}, {u'mappedValue': 14, u'sourceValue': u'Rectangle', u'sampleFreq': 160}, {u'mappedValue': 15, u'sourceValue': u'Diamond', u'sampleFreq': 156}, {u'mappedValue': 16, u'sourceValue': u'Chevron', u'sampleFreq': 120}, {u'mappedValue': 17, u'sourceValue': u'Egg', u'sampleFreq': 106}, {u'mappedValue': 18, u'sourceValue': u'Teardrop', u'sampleFreq': 95}, {u'mappedValue': 19, u'sourceValue': u'Cone', u'sampleFreq': 47}, {u'mappedValue': 20, u'sourceValue': u'Cross', u'sampleFreq': 29}, {u'mappedValue': 21, u'sourceValue': u'Delta', u'sampleFreq': 1}], u'per_feature': {u'city': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Countries_iso': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'CountryMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'country': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'longitude': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Longitude', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'datetime': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Date', u'autoModifiedByDSS': False}, u'missing_handling': u'DROP_ROW', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Countries_enName': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'CountryMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'shape': {u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'dummy_drop': u'NONE', u'min_samples': 10, u'type': u'CATEGORY', u'max_cat_safety': 200}, u'GeoPoints': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'GeoPoint', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'latitude': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Latitude', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-25 22:05:30,872] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] No feature selection to perform
+[2020-04-25 22:05:30,873] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing train set
+[2020-04-25 22:05:30,874] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 66918
+[2020-04-25 22:05:30,874] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RemapValueToOutput
+[2020-04-25 22:05:30,948] [4700/MainThread] [WARNING] [dku.ml.preprocessing] Found 8 nulls in target
+[2020-04-25 22:05:30,948] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:SingleColumnDropNARows (datetime)
+[2020-04-25 22:05:30,950] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-25 22:05:30,951] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-25 22:05:31,000] [4700/MainThread] [INFO] [dku.ml.preprocessing] After SCDNA input_df=(66918, 9)
+[2020-04-25 22:05:31,001] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-25 22:05:31,001] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'latitude': 38.10069114738501, u'longitude': -86.56166475224047, u'datetime': None}
+[2020-04-25 22:05:31,005] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (longitude)
+[2020-04-25 22:05:31,007] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale longitude (avg=-86.5616647522 std=39.8560847067 shift=-86.5616647522 inv_scale=0.0250902718458)
+[2020-04-25 22:05:31,054] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled longitude (avg=-2.21294369037e-14 std=1.0) nulls=0
+[2020-04-25 22:05:31,054] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (datetime)
+[2020-04-25 22:05:31,055] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale datetime (avg=3297233561.12 std=328269542.251 shift=3297233561.12 inv_scale=3.04627713294e-09)
+[2020-04-25 22:05:31,060] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled datetime (avg=-6.0330155913e-16 std=1.0) nulls=0
+[2020-04-25 22:05:31,060] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (latitude)
+[2020-04-25 22:05:31,061] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale latitude (avg=38.1006911474 std=10.4982179898 shift=38.1006911474 inv_scale=0.0952542613398)
+[2020-04-25 22:05:31,066] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled latitude (avg=2.10572267156e-14 std=1.0) nulls=0
+[2020-04-25 22:05:31,066] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-25 22:05:31,066] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (city)
+[2020-04-25 22:05:31,178] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(66918, 103) nnz=66918
+[2020-04-25 22:05:31,180] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (country)
+[2020-04-25 22:05:31,321] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(66918, 103) nnz=66918
+[2020-04-25 22:05:31,325] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-25 22:05:31,325] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-25 22:05:31,325] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-25 22:05:31,325] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-25 22:05:31,325] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-25 22:05:31,325] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-25 22:05:31,325] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RealignTarget
+[2020-04-25 22:05:31,326] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (66918,)
+[2020-04-25 22:05:31,340] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (66918,)
+[2020-04-25 22:05:31,340] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-25 22:05:31,342] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 8 rows because no target
+[2020-04-25 22:05:31,342] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (66918, 209) target before = (66918,)
+[2020-04-25 22:05:31,359] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: [16280 29831 38702 38761 45887 52025 55175 57680]
+[2020-04-25 22:05:31,483] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(66910, 9)
+[2020-04-25 22:05:31,488] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (66910, 209) target after = (66910,)
+[2020-04-25 22:05:31,488] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-25 22:05:31,488] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-25 22:05:31,488] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (66910, 9) 
+[2020-04-25 22:05:31,488] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(66910, 209) 
+[2020-04-25 22:05:31,488] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-25 22:05:31,488] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((66910,))
+[2020-04-25 22:05:31,489] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-25 22:05:31,490] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 66910
+[2020-04-25 22:05:31,490] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-25 22:05:31,490] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-25 22:05:31,490] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (66910, 9) 
+[2020-04-25 22:05:31,490] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-25 22:05:31,490] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-25 22:05:31,491] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((66910, 9))
+[2020-04-25 22:05:31,491] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((66910, 209))
+[2020-04-25 22:05:31,491] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((66910,))
+[2020-04-25 22:05:31,512] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing train set
+[2020-04-25 22:05:31,512] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing test set
+[2020-04-25 22:05:31,514] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 16869
+[2020-04-25 22:05:31,514] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RemapValueToOutput
+[2020-04-25 22:05:31,535] [4700/MainThread] [WARNING] [dku.ml.preprocessing] Found 1 nulls in target
+[2020-04-25 22:05:31,536] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:SingleColumnDropNARows (datetime)
+[2020-04-25 22:05:31,537] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-25 22:05:31,538] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-25 22:05:31,550] [4700/MainThread] [INFO] [dku.ml.preprocessing] After SCDNA input_df=(16869, 9)
+[2020-04-25 22:05:31,550] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-25 22:05:31,550] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'latitude': 38.10069114738501, u'longitude': -86.56166475224047, u'datetime': None}
+[2020-04-25 22:05:31,552] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (longitude)
+[2020-04-25 22:05:31,553] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale longitude (avg=-86.3068999918 std=39.7701739176 shift=-86.5616647522 inv_scale=0.0250902718458)
+[2020-04-25 22:05:31,565] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled longitude (avg=0.00639211709732 std=0.997844474946) nulls=0
+[2020-04-25 22:05:31,565] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (datetime)
+[2020-04-25 22:05:31,567] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale datetime (avg=3296450525.06 std=328963266.408 shift=3297233561.12 inv_scale=3.04627713294e-09)
+[2020-04-25 22:05:31,577] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled datetime (avg=-0.00238534485838 std=1.00211327604) nulls=0
+[2020-04-25 22:05:31,577] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (latitude)
+[2020-04-25 22:05:31,578] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale latitude (avg=38.1405425172 std=10.3178115449 shift=38.1006911474 inv_scale=0.0952542613398)
+[2020-04-25 22:05:31,584] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled latitude (avg=0.00379601279404 std=0.982815517356) nulls=0
+[2020-04-25 22:05:31,584] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-25 22:05:31,584] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (city)
+[2020-04-25 22:05:31,624] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(16869, 103) nnz=16869
+[2020-04-25 22:05:31,624] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (country)
+[2020-04-25 22:05:31,649] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(16869, 103) nnz=16869
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RealignTarget
+[2020-04-25 22:05:31,650] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (16869,)
+[2020-04-25 22:05:31,658] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (16869,)
+[2020-04-25 22:05:31,658] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-25 22:05:31,659] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 1 rows because no target
+[2020-04-25 22:05:31,659] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (16869, 209) target before = (16869,)
+[2020-04-25 22:05:31,674] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: [8713]
+[2020-04-25 22:05:31,695] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(16868, 9)
+[2020-04-25 22:05:31,695] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (16868, 209) target after = (16868,)
+[2020-04-25 22:05:31,695] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (16868, 9) 
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(16868, 209) 
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((16868,))
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-25 22:05:31,696] [4700/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 16868
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-25 22:05:31,696] [4700/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-25 22:05:31,697] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (16868, 9) 
+[2020-04-25 22:05:31,697] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-25 22:05:31,697] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-25 22:05:31,697] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((16868, 9))
+[2020-04-25 22:05:31,697] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((16868, 209))
+[2020-04-25 22:05:31,697] [4700/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((16868,))
+[2020-04-25 22:05:31,697] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing test set
+[2020-04-25 22:05:31,698] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Grid searching
+[2020-04-25 22:05:31,708] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(66910,209) tn=13984190 nnz=334550 fill_ratio=0.02
+[2020-04-25 22:05:31,708] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-25 22:05:33,243] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common] Create CLF from params: {u'computeLearningCurves': False, u'algorithm': u'RANDOM_FOREST_CLASSIFICATION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 2, u'metrics': {u'customEvaluationMetricNeedsProba': False, u'evaluationMetric': u'ROC_AUC', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'customEvaluationMetricGIB': True}, u'forcedClassifierThreshold': 0.0, u'rf_classifier_grid': {u'n_jobs': 4, u'max_tree_depth': {u'gridMode': u'EXPLICIT', u'values': [6, 13], u'nValues': 0}, u'selection_mode': u'auto', u'enabled': True, u'min_samples_leaf': {u'gridMode': u'EXPLICIT', u'values': [1], u'nValues': 0}, u'n_estimators': {u'gridMode': u'EXPLICIT', u'values': [100], u'nValues': 0}, u'max_feature_prop': 0.3, u'max_features': {u'gridMode': u'EXPLICIT', u'values': [5], u'nValues': 0}}, u'max_ensemble_nodes_serialized': 6000, u'pluginAlgoCustomGridSearch': False, u'skipExpensiveReports': False} for algorithm RANDOM_FOREST_CLASSIFICATION
+[2020-04-25 22:05:33,243] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common] Using stratified K-Fold CV with k=3
+[2020-04-25 22:05:33,243] [4700/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.TreesHyperparametersSpace object at 0x1109797d0>
+[2020-04-25 22:05:33,375] [4700/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fitting 3 folds for each of 2 candidates, totalling 6 fits
+[Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020-04-25 22:05:33,516] [4700/GS-123145383763968] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 
+[2020-04-25 22:05:33,527] [4700/GS-123145387970560] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 
+[2020-04-25 22:05:33,533] [4700/GS-123145392177152] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 
+[2020-04-25 22:05:34,237] [4700/GS-123145396383744] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 
+[2020-04-25 22:06:26,229] [4700/GS-123145396383744] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 (ft=21.0s st=30.9s sc=0.570468979116)
+[2020-04-25 22:06:26,257] [4700/GS-123145396383744] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 
+[2020-04-25 22:06:30,975] [4700/GS-123145387970560] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 (ft=34.6s st=22.8s sc=0.575806596571)
+[2020-04-25 22:06:31,119] [4700/GS-123145387970560] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 
+[2020-04-25 22:06:37,265] [4700/GS-123145392177152] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 (ft=34.7s st=29.0s sc=0.56616004553)
+[2020-04-25 22:06:39,048] [4700/GS-123145383763968] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 (ft=36.6s st=28.9s sc=0.575629442109)
+[2020-04-25 22:06:56,112] [4700/GS-123145396383744] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 (ft=10.2s st=19.6s sc=0.568943457787)
+[2020-04-25 22:06:59,909] [4700/GS-123145387970560] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 (ft=11.0s st=17.7s sc=0.566668394483)
+[Parallel(n_jobs=4)]: Done   6 out of   6 | elapsed:  1.4min finished
+[2020-04-25 22:07:00,427] [4700/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search ended, got 6 scores out of 6
+[2020-04-25 22:07:00,432] [4700/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search done, best_parameters being : {'max_features': u'auto', 'n_estimators': 100, 'min_samples_split': 3, 'max_depth': 13, 'min_samples_leaf': 1}
+[2020-04-25 22:07:00,440] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Grid searching
+[2020-04-25 22:07:00,441] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2020-04-25 22:07:00,445] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common] Fitting model:
+[2020-04-25 22:07:00,446] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common]   Model is: RandomForestClassifier(bootstrap=True,
+            class_weight={0: 0.2163901555577116, 1: 0.46172212484646064, 2: 0.46018514697588686, 3: 0.5955284191039038, 4: 0.627991665571678, 5: 0.6547607397984148, 6: 0.6169094597086483, 7: 0.6791790166064395, 8: 0.9369573741107937, 9: 1.4636013649488144, 10: 1.8017557087462301, 11: 1.741903571800479, 12: 2.83...6822, 18: 4.873980186480186, 19: 10.451421430802874, 20: 14.015500628403855, 21: 380.17045454545456},
+            criterion='gini', max_depth=13, max_features=u'auto',
+            max_leaf_nodes=None, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=1,
+            min_samples_split=3, min_weight_fraction_leaf=0.0,
+            n_estimators=100, n_jobs=4, oob_score=False, random_state=1337,
+            verbose=0, warm_start=False)
+[2020-04-25 22:07:00,447] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X class: <type 'numpy.ndarray'>
+[2020-04-25 22:07:00,447] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X shape: (66910, 209)
+[2020-04-25 22:07:00,447] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_y shape: (66910,)
+[2020-04-25 22:07:22,390] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] Obtained RF CLF params: {'warm_start': False, 'oob_score': False, 'n_jobs': 4, 'min_impurity_decrease': 0.0, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 100, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': 1337, 'min_impurity_split': None, 'max_features': u'auto', 'max_depth': 13, 'class_weight': {0: 0.2163901555577116, 1: 0.46172212484646064, 2: 0.46018514697588686, 3: 0.5955284191039038, 4: 0.627991665571678, 5: 0.6547607397984148, 6: 0.6169094597086483, 7: 0.6791790166064395, 8: 0.9369573741107937, 9: 1.4636013649488144, 10: 1.8017557087462301, 11: 1.741903571800479, 12: 2.8344488689316276, 13: 2.672551525802844, 14: 2.8584244702665753, 15: 3.0202220817910987, 16: 3.7363189635916907, 17: 4.594204888766822, 18: 4.873980186480186, 19: 10.451421430802874, 20: 14.015500628403855, 21: 380.17045454545456}} 
+[2020-04-25 22:07:22,407] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] Output params are {'resolved': {'rf': {'max_tree_depth': 13, 'selection_mode': u'auto', 'min_samples_leaf': 1, 'estimators': 100}, 'skipExpensiveReports': False, 'algorithm': u'RANDOM_FOREST_CLASSIFICATION'}, 'other': {'rf_min_samples_split': 3}}
+[2020-04-25 22:07:22,433] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2020-04-25 22:07:22,435] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2020-04-25 22:07:22,447] [4700/MainThread] [INFO] [dataiku.doctor.prediction_entrypoints] PICKLING RandomForestClassifier(bootstrap=True,
+            class_weight={0: 0.2163901555577116, 1: 0.46172212484646064, 2: 0.46018514697588686, 3: 0.5955284191039038, 4: 0.627991665571678, 5: 0.6547607397984148, 6: 0.6169094597086483, 7: 0.6791790166064395, 8: 0.9369573741107937, 9: 1.4636013649488144, 10: 1.8017557087462301, 11: 1.741903571800479, 12: 2.83...6822, 18: 4.873980186480186, 19: 10.451421430802874, 20: 14.015500628403855, 21: 380.17045454545456},
+            criterion='gini', max_depth=13, max_features=u'auto',
+            max_leaf_nodes=None, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=1,
+            min_samples_split=3, min_weight_fraction_leaf=0.0,
+            n_estimators=100, n_jobs=4, oob_score=False, random_state=1337,
+            verbose=0, warm_start=False)
+[2020-04-25 22:07:24,418] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2020-04-25 22:07:24,419] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2020-04-25 22:07:24,436] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Intrinsic scoring
+[2020-04-25 22:07:24,701] [4700/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Computing feature importance
+[2020-04-25 22:07:24,706] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Extracting rescalers
+[2020-04-25 22:07:24,707] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Creating random forest trees summary
+[2020-04-25 22:07:27,078] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(16868,209) tn=3525412 nnz=84340 fill_ratio=0.02
+[2020-04-25 22:07:27,078] [4700/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-25 22:07:27,917] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Creating prediction probabilities on validation set for RandomForestClassifier(bootstrap=True,
+            class_weight={0: 0.2163901555577116, 1: 0.46172212484646064, 2: 0.46018514697588686, 3: 0.5955284191039038, 4: 0.627991665571678, 5: 0.6547607397984148, 6: 0.6169094597086483, 7: 0.6791790166064395, 8: 0.9369573741107937, 9: 1.4636013649488144, 10: 1.8017557087462301, 11: 1.741903571800479, 12: 2.83...6822, 18: 4.873980186480186, 19: 10.451421430802874, 20: 14.015500628403855, 21: 380.17045454545456},
+            criterion='gini', max_depth=13, max_features=u'auto',
+            max_leaf_nodes=None, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=1,
+            min_samples_split=3, min_weight_fraction_leaf=0.0,
+            n_estimators=100, n_jobs=4, oob_score=False, random_state=1337,
+            verbose=0, warm_start=False)
+[2020-04-25 22:07:28,666] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Calculated confusion matrix
+[2020-04-25 22:07:28,800] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:28,814] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.04805493 0.05366126 0.05904532 ... 0.03461129 0.05715244 0.05715244]
+[2020-04-25 22:07:28,828] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.       0.       0.       ... 0.999851 0.999851 1.      ] [0.00000000e+00 2.90275762e-04 5.80551524e-04 ... 9.99709724e-01
+ 1.00000000e+00 1.00000000e+00]
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python/dataiku/doctor/utils/calibration.py:34: RuntimeWarning: invalid value encountered in divide
+  freq_pos = y_true[i_start:i_end].sum() / weight
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python/dataiku/doctor/utils/calibration.py:35: RuntimeWarning: invalid value encountered in double_scalars
+  avg_pred = y_prob[i_start:i_end].sum() / weight
+[2020-04-25 22:07:28,905] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:28,906] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.0357573  0.03253506 0.03273032 ... 0.03951022 0.05926583 0.05926583]
+[2020-04-25 22:07:28,926] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 1.31501085e-04 6.57505424e-04 ... 9.99408245e-01
+ 9.99671247e-01 1.00000000e+00] [0.00000000e+00 6.02772755e-04 6.02772755e-04 ... 1.00000000e+00
+ 1.00000000e+00 1.00000000e+00]
+[2020-04-25 22:07:28,954] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:28,955] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.02963813 0.02870406 0.02864916 ... 0.06277231 0.04244595 0.04244595]
+[2020-04-25 22:07:28,974] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.60632886e-05 7.92759464e-04 ... 9.98480544e-01
+ 9.98480544e-01 1.00000000e+00] [0.        0.        0.        ... 0.9994223 1.        1.       ]
+[2020-04-25 22:07:29,013] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,014] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.0387779  0.06069544 0.0957122  ... 0.03281234 0.04298417 0.04298417]
+[2020-04-25 22:07:29,025] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.44288383e-05 1.93286515e-04 ... 9.99097996e-01
+ 9.99097996e-01 1.00000000e+00] [0.         0.         0.         ... 0.99925761 1.         1.        ]
+[2020-04-25 22:07:29,096] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,097] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.05215193 0.03444118 0.03435519 ... 0.04892055 0.04745714 0.04745714]
+[2020-04-25 22:07:29,129] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.40368852e-05 6.40368852e-05 ... 9.99615779e-01
+ 9.99679816e-01 1.00000000e+00] [0.00000000e+00 0.00000000e+00 7.98722045e-04 ... 9.99201278e-01
+ 1.00000000e+00 1.00000000e+00]
+[2020-04-25 22:07:29,176] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,176] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.03743816 0.03944814 0.03927987 ... 0.08221194 0.05346462 0.05346462]
+[2020-04-25 22:07:29,192] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 0.00000000e+00 1.90791147e-04 ... 9.99618418e-01
+ 9.99745612e-01 1.00000000e+00] [0.00000000e+00 8.74125874e-04 8.74125874e-04 ... 1.00000000e+00
+ 1.00000000e+00 1.00000000e+00]
+[2020-04-25 22:07:29,240] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,241] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.15650567 0.09694082 0.05692306 ... 0.04297792 0.04461157 0.04461157]
+[2020-04-25 22:07:29,260] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 1.28032776e-04 1.92049165e-04 ... 9.99615902e-01
+ 9.99871967e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:29,323] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,324] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.02971625 0.02767261 0.02781868 ... 0.04396811 0.04231734 0.04231734]
+[2020-04-25 22:07:29,338] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.35001270e-05 2.54000508e-04 ... 9.99237998e-01
+ 9.99237998e-01 1.00000000e+00] [0.         0.         0.         ... 0.99910714 1.         1.        ]
+[2020-04-25 22:07:29,413] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,415] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.03313558 0.03326004 0.03325752 ... 0.04698907 0.04560413 0.04560413]
+[2020-04-25 22:07:29,434] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 0.00000000e+00 3.72856078e-04 ... 9.99254288e-01
+ 9.99440716e-01 1.00000000e+00] [0.         0.00128866 0.00128866 ... 1.         1.         1.        ]
+[2020-04-25 22:07:29,460] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,460] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.02942542 0.02897984 0.02904896 ... 0.0338313  0.04473583 0.04473583]
+[2020-04-25 22:07:29,471] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.11209584e-05 1.83362875e-04 ... 9.99388790e-01
+ 9.99388790e-01 1.00000000e+00] [0.         0.         0.         ... 0.99802761 1.         1.        ]
+[2020-04-25 22:07:29,532] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,539] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.03174608 0.03221913 0.03214656 ... 0.02800611 0.04312435 0.04312435]
+[2020-04-25 22:07:29,552] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 0.00000000e+00 1.21514065e-04 ... 9.99453187e-01
+ 9.99453187e-01 1.00000000e+00] [0.         0.00244499 0.00244499 ... 0.99755501 1.         1.        ]
+[2020-04-25 22:07:29,595] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,595] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.02937043 0.02884244 0.02865435 ... 0.0615315  0.04516208 0.04516208]
+[2020-04-25 22:07:29,607] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.08679774e-05 1.82603932e-04 ... 9.99452188e-01
+ 9.99756528e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:29,640] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,641] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.04656595 0.12428121 0.12425627 ... 0.0404314  0.04396898 0.04396898]
+[2020-04-25 22:07:29,656] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.02918124e-05 3.61750874e-04 ... 9.99517666e-01
+ 9.99879416e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:29,713] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,714] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.02900019 0.03007539 0.03016637 ... 0.0818758  0.06430477 0.06430477]
+[2020-04-25 22:07:29,739] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 1.20758363e-04 4.22654269e-04 ... 9.98430141e-01
+ 9.98550900e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:29,776] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,777] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.09136966 0.03961106 0.03965794 ... 0.05397938 0.04179083 0.04179083]
+[2020-04-25 22:07:29,797] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.04010631e-05 3.62406378e-04 ... 9.99395989e-01
+ 9.99818797e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:29,847] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,848] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.03037975 0.02978611 0.02974132 ... 0.04186743 0.05064638 0.05064638]
+[2020-04-25 22:07:29,872] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 6.02591142e-05 4.21813799e-04 ... 9.99276891e-01
+ 9.99517927e-01 1.00000000e+00] [0.       0.       0.       ... 0.996337 1.       1.      ]
+[2020-04-25 22:07:29,911] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,912] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.05309833 0.05182155 0.05160892 ... 0.03075376 0.03601215 0.03601215]
+[2020-04-25 22:07:29,938] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 5.98945855e-05 1.79683757e-04 ... 9.99820316e-01
+ 9.99820316e-01 1.00000000e+00] [0.         0.         0.         ... 0.99418605 1.         1.        ]
+[2020-04-25 22:07:29,975] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:29,976] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.07882456 0.11231973 0.11204079 ... 0.05388043 0.04368314 0.04368314]
+[2020-04-25 22:07:30,019] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 5.98444045e-05 2.39377618e-04 ... 9.99042490e-01
+ 9.99281867e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:30,062] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:30,064] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.03450877 0.03098999 0.03096171 ... 0.03347247 0.05111961 0.05111961]
+[2020-04-25 22:07:30,083] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 5.99232982e-05 6.59156280e-04 ... 9.98801534e-01
+ 9.98921381e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:30,109] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:30,109] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.03640586 0.0357018  0.03570119 ... 0.03091099 0.04722663 0.04722663]
+[2020-04-25 22:07:30,122] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 5.95167242e-05 1.19033448e-04 ... 9.99523866e-01
+ 9.99642900e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:30,165] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:30,166] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.04110762 0.04099161 0.04122278 ... 0.02379562 0.0432935  0.0432935 ]
+[2020-04-25 22:07:30,178] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 5.94353640e-05 8.91530461e-04 ... 9.99346211e-01
+ 9.99465082e-01 1.00000000e+00] [0. 0. 0. ... 1. 1. 1.]
+[2020-04-25 22:07:30,208] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, valid_y=0         5
+1        13
+2        10
+3         7
+4        14
+5         8
+6         0
+7         1
+8         0
+9         1
+10        2
+11        6
+12        1
+13        0
+14        2
+15        5
+16        4
+17       18
+18        0
+19        0
+20        1
+21        5
+22       15
+23        5
+24        5
+25       18
+26        6
+27        5
+28        0
+29        5
+         ..
+16839     7
+16840     4
+16841     0
+16842     3
+16843     2
+16844     0
+16845     7
+16846     7
+16847    13
+16848     8
+16849     7
+16850     0
+16851     6
+16852     6
+16853     0
+16854     0
+16855     9
+16856     9
+16857     7
+16858     0
+16859     8
+16860     1
+16861     3
+16862    11
+16863     8
+16864     8
+16865     0
+16866     0
+16867     1
+16868     1
+Name: shape, Length: 16868, dtype: int64
+[2020-04-25 22:07:30,211] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Make ROC, probas=[0.00702153 0.00702153 0.00702153 ... 0.05089003 0.00962855 0.00962855]
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/metrics/ranking.py:656: UndefinedMetricWarning: No positive samples in y_true, true positive value should be meaningless
+  UndefinedMetricWarning)
+[2020-04-25 22:07:30,293] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AUC [0.00000000e+00 5.92838511e-05 5.92838511e-04 6.52122362e-04
+ 7.70690064e-04 8.29973915e-04 1.00782547e-03 1.42281243e-03
+ 1.65994783e-03 1.77851553e-03 2.13421864e-03 2.37135404e-03
+ 2.60848945e-03 2.78634100e-03 2.84562485e-03 3.02347641e-03
+ 3.08276026e-03 3.26061181e-03 3.37917951e-03 3.55703106e-03
+ 3.67559877e-03 3.73488262e-03 3.85345032e-03 4.03130187e-03
+ 4.09058572e-03 4.20915343e-03 4.26843728e-03 4.44628883e-03
+ 4.56485653e-03 4.74270809e-03 4.80199194e-03 4.97984349e-03
+ 5.21697889e-03 5.27626275e-03 5.45411430e-03 5.57268200e-03
+ 5.80981741e-03 6.04695281e-03 6.16552051e-03 6.22480436e-03
+ 6.34337207e-03 6.40265592e-03 6.52122362e-03 6.58050747e-03
+ 6.87692673e-03 7.05477828e-03 7.23262983e-03 7.64761679e-03
+ 7.76618449e-03 7.88475219e-03 8.00331990e-03 8.06260375e-03
+ 8.29973915e-03 8.59615841e-03 8.77400996e-03 8.89257766e-03
+ 8.95186151e-03 9.07042922e-03 9.36684847e-03 1.00782547e-02
+ 1.04932416e-02 1.08489447e-02 1.10267963e-02 1.13824994e-02
+ 1.15603510e-02 1.17382025e-02 1.18567702e-02 1.20346218e-02
+ 1.22124733e-02 1.24496087e-02 1.25088926e-02 1.26867441e-02
+ 1.31017311e-02 1.35760019e-02 1.36352857e-02 1.37538535e-02
+ 1.46431112e-02 1.47023951e-02 1.48802466e-02 1.54730851e-02
+ 1.55916528e-02 1.57102205e-02 1.60659236e-02 1.61844913e-02
+ 1.63623429e-02 1.67773299e-02 1.70144653e-02 1.71330330e-02
+ 1.74294522e-02 1.76073038e-02 1.76665876e-02 1.77851553e-02
+ 1.80222907e-02 1.82001423e-02 1.82594261e-02 1.86151292e-02
+ 1.87929808e-02 1.88522646e-02 1.91486839e-02 1.94451032e-02
+ 1.96822386e-02 1.97415224e-02 2.00379417e-02 2.02157932e-02
+ 2.03343609e-02 2.05714963e-02 2.06307802e-02 2.07493479e-02
+ 2.09864833e-02 2.11050510e-02 2.15793218e-02 2.17571733e-02
+ 2.18757410e-02 2.22314442e-02 2.22907280e-02 2.25278634e-02
+ 2.26464311e-02 2.31207019e-02 2.32392696e-02 2.35949727e-02
+ 2.37728243e-02 2.39506758e-02 2.41878112e-02 2.44842305e-02
+ 2.48399336e-02 2.48992175e-02 2.51363529e-02 2.51956367e-02
+ 2.54327721e-02 2.57884752e-02 2.59070429e-02 2.62627460e-02
+ 2.66777330e-02 2.67963007e-02 2.71520038e-02 2.72705715e-02
+ 2.75077069e-02 2.76262746e-02 2.79226939e-02 2.79819777e-02
+ 2.81005454e-02 2.83376808e-02 2.91676547e-02 2.92269386e-02
+ 2.97012094e-02 3.00569125e-02 3.01754802e-02 3.03533318e-02
+ 3.05904672e-02 3.06497510e-02 3.14204411e-02 3.15390088e-02
+ 3.17761442e-02 3.19539957e-02 3.20725634e-02 3.21911311e-02
+ 3.25468342e-02 3.26654019e-02 3.36139436e-02 3.36732274e-02
+ 3.40882144e-02 3.43253498e-02 3.43846336e-02 3.46217690e-02
+ 3.46810529e-02 3.49181883e-02 3.49774721e-02 3.50960398e-02
+ 3.60445815e-02 3.64002846e-02 3.75859616e-02 3.80009485e-02
+ 3.81195162e-02 3.82380839e-02 3.83566516e-02 3.97794641e-02
+ 3.98387479e-02 4.00758833e-02 4.20322504e-02 4.37514821e-02
+ 4.44628883e-02 4.45221722e-02 4.49964430e-02 4.50557268e-02
+ 4.52928622e-02 4.57078492e-02 4.57671330e-02 4.58857007e-02
+ 4.65378231e-02 4.66563908e-02 4.67749585e-02 4.69528101e-02
+ 4.86720417e-02 4.87906094e-02 4.95020157e-02 4.96205834e-02
+ 5.44225753e-02 5.47189945e-02 5.47782784e-02 5.62603747e-02
+ 5.70903486e-02 5.86910126e-02 5.88095803e-02 6.21887598e-02
+ 6.23073275e-02 6.40858430e-02 6.68721840e-02 6.81764287e-02
+ 6.82949964e-02 6.84135641e-02 7.09627697e-02 7.28598530e-02
+ 7.29191368e-02 7.30377045e-02 7.33934076e-02 7.34526915e-02
+ 7.36898269e-02 7.38676784e-02 7.39862461e-02 7.46383685e-02
+ 7.49940716e-02 7.54683424e-02 7.56461940e-02 7.62390325e-02
+ 7.63576002e-02 7.74247095e-02 7.78396965e-02 7.80175480e-02
+ 7.81361157e-02 8.07446052e-02 8.08631729e-02 8.10410244e-02
+ 8.12781598e-02 8.15745791e-02 8.51908940e-02 8.52501779e-02
+ 8.54280294e-02 8.57244487e-02 8.58430164e-02 8.59615841e-02
+ 8.60208679e-02 8.61987195e-02 8.69101257e-02 8.70879772e-02
+ 8.72065449e-02 8.72658288e-02 8.73843965e-02 8.74436803e-02
+ 8.75622480e-02 8.78586673e-02 9.14156984e-02 9.15935499e-02
+ 9.23642400e-02 9.25420915e-02 9.32534977e-02 9.36092009e-02
+ 9.37870524e-02 9.38463363e-02 9.39649040e-02 9.42613232e-02
+ 9.43206071e-02 9.97154375e-02 9.99525729e-02 1.00071141e-01
+ 1.00901115e-01 1.01138250e-01 1.01256818e-01 1.01493953e-01
+ 1.01612521e-01 1.01731088e-01 1.01790372e-01 1.01968224e-01
+ 1.02027508e-01 1.02205359e-01 1.02264643e-01 1.02442495e-01
+ 1.02501779e-01 1.02679630e-01 1.03272469e-01 1.03391036e-01
+ 1.03450320e-01 1.03568888e-01 1.03865307e-01 1.03983875e-01
+ 1.04161726e-01 1.04280294e-01 1.04635997e-01 1.04754565e-01
+ 1.04932416e-01 1.05228836e-01 1.05347403e-01 1.05762390e-01
+ 1.05821674e-01 1.05940242e-01 1.05999526e-01 1.06533080e-01
+ 1.06770216e-01 1.06948067e-01 1.07540906e-01 1.07659474e-01
+ 1.07718757e-01 1.07896609e-01 1.08015177e-01 1.08133744e-01
+ 1.08311596e-01 1.08489447e-01 1.08785867e-01 1.08904434e-01
+ 1.09260138e-01 1.10090111e-01 1.10149395e-01 1.10267963e-01
+ 1.10386531e-01 1.11690775e-01 1.11809343e-01 1.11927911e-01
+ 1.12046479e-01 1.12224330e-01 1.12461465e-01 1.12580033e-01
+ 1.12698601e-01 1.13054304e-01 1.13113588e-01 1.13291439e-01
+ 1.13410007e-01 1.13469291e-01 1.13647143e-01 1.13884278e-01
+ 1.13943562e-01 1.14062129e-01 1.14299265e-01 1.14358549e-01
+ 1.14951387e-01 1.15069955e-01 1.15129239e-01 1.15247806e-01
+ 1.15307090e-01 1.15484942e-01 1.16196348e-01 1.16374200e-01
+ 1.17085606e-01 1.17322741e-01 1.17441309e-01 1.17974864e-01
+ 1.18211999e-01 1.18449134e-01 1.18567702e-01 1.18804838e-01
+ 1.19041973e-01 1.19101257e-01 1.19219825e-01 1.19397676e-01
+ 1.20168366e-01 1.20405502e-01 1.20583353e-01 1.20939056e-01
+ 1.21531895e-01 1.21591179e-01 1.21828314e-01 1.22065449e-01
+ 1.22361869e-01 1.22539720e-01 1.22599004e-01 1.23606829e-01
+ 1.24792507e-01 1.24911074e-01 1.25088926e-01 1.25266777e-01
+ 1.25563197e-01 1.25681764e-01 1.25918900e-01 1.26511738e-01
+ 1.26630306e-01 1.26748874e-01 1.26808157e-01 1.26986009e-01
+ 1.30365189e-01 1.33388665e-01 1.33447949e-01 1.42696230e-01
+ 1.42933365e-01 1.44652597e-01 1.44830448e-01 1.44889732e-01
+ 1.45008300e-01 1.45067584e-01 1.45186151e-01 1.47201802e-01
+ 1.52715200e-01 1.52833768e-01 1.55916528e-01 1.63327010e-01
+ 1.63564145e-01 1.63623429e-01 1.63741997e-01 1.67180460e-01
+ 1.75480199e-01 1.76665876e-01 1.77258715e-01 1.77317999e-01
+ 1.77436566e-01 1.81764287e-01 1.87455537e-01 1.95755276e-01
+ 2.02454351e-01 2.02691487e-01 2.04114299e-01 2.04292151e-01
+ 2.05003557e-01 2.07730614e-01 2.07967750e-01 2.19824520e-01
+ 2.20239507e-01 2.24211525e-01 2.24804363e-01 2.34586199e-01
+ 2.54031302e-01 2.54268437e-01 2.59011145e-01 2.73298553e-01
+ 2.78811952e-01 2.79226939e-01 2.79701209e-01 2.89838748e-01
+ 2.91320844e-01 2.91676547e-01 2.92565805e-01 2.92684373e-01
+ 2.92862224e-01 2.93158644e-01 2.93217927e-01 3.09817406e-01
+ 3.10765947e-01 3.13433721e-01 3.20962770e-01 3.21733460e-01
+ 3.23808395e-01 3.24994072e-01 3.29025373e-01 3.30033199e-01
+ 3.53924591e-01 3.74436803e-01 3.76393171e-01 3.92162675e-01
+ 3.92281243e-01 3.92696230e-01 3.92874081e-01 3.98743182e-01
+ 3.98980318e-01 4.54707138e-01 4.55655679e-01 4.56367086e-01
+ 4.58382737e-01 4.58442020e-01 4.60813374e-01 4.62414038e-01
+ 4.62532606e-01 4.62710458e-01 4.62769742e-01 4.64014702e-01
+ 4.64666825e-01 4.65141096e-01 4.65259663e-01 4.89506758e-01
+ 4.89566042e-01 4.90573868e-01 4.90692435e-01 4.91996680e-01
+ 4.92055964e-01 5.09188997e-01 5.10433958e-01 5.10493242e-01
+ 5.10789661e-01 5.10848945e-01 5.11204648e-01 5.11263932e-01
+ 5.13872421e-01 5.13931705e-01 5.14050273e-01 5.14346692e-01
+ 5.14465260e-01 5.14643111e-01 5.14761679e-01 5.15413801e-01
+ 5.15473085e-01 5.16895898e-01 5.17192317e-01 5.21223619e-01
+ 5.21401470e-01 5.21520038e-01 5.28930519e-01 5.29286222e-01
+ 5.29938345e-01 5.29997629e-01 5.30116196e-01 5.30353332e-01
+ 5.30471899e-01 5.41202276e-01 5.43870050e-01 5.43988618e-01
+ 5.44462888e-01 5.45529998e-01 5.46656391e-01 5.46774959e-01
+ 5.47782784e-01 5.51814086e-01 5.52703344e-01 5.52881195e-01
+ 5.55548968e-01 5.56793929e-01 5.56853213e-01 5.57623903e-01
+ 5.57801755e-01 5.57920323e-01 5.57979606e-01 5.58098174e-01
+ 5.58157458e-01 5.58394593e-01 5.58750296e-01 5.58987432e-01
+ 5.66220062e-01 5.66872184e-01 5.67050036e-01 6.10979369e-01
+ 6.11097937e-01 6.11157221e-01 6.11927911e-01 6.14121413e-01
+ 6.14714252e-01 6.14773536e-01 6.14892103e-01 6.15603510e-01
+ 6.15662793e-01 6.16967038e-01 6.43407636e-01 6.46016125e-01
+ 6.46075409e-01 6.46727531e-01 6.47557505e-01 6.48506047e-01
+ 6.48565331e-01 6.49513872e-01 6.49573156e-01 6.50580982e-01
+ 6.50699549e-01 6.50995969e-01 6.51114536e-01 6.51233104e-01
+ 6.51410956e-01 6.51885226e-01 6.52003794e-01 6.52418781e-01
+ 6.53663742e-01 6.53723026e-01 6.53960161e-01 6.54849419e-01
+ 6.55382974e-01 6.55975812e-01 6.56153664e-01 6.99312307e-01
+ 6.99371591e-01 6.99905146e-01 7.00142281e-01 7.00201565e-01
+ 7.00320133e-01 7.01268674e-01 7.01446526e-01 7.01565094e-01
+ 7.01624378e-01 7.01861513e-01 7.02039364e-01 7.02335784e-01
+ 7.02454351e-01 7.07730614e-01 7.11821200e-01 7.11880484e-01
+ 7.12176903e-01 7.12532606e-01 7.13125445e-01 7.13184728e-01
+ 7.13599715e-01 7.18105288e-01 7.18342424e-01 7.19113114e-01
+ 7.26345743e-01 7.26582879e-01 7.26642163e-01 7.27827840e-01
+ 7.27887124e-01 7.28776381e-01 7.29606355e-01 7.43715912e-01
+ 7.43775196e-01 7.48932891e-01 7.50000000e-01 8.32582405e-01
+ 8.32760256e-01 8.34005217e-01 8.34775907e-01 8.38036519e-01
+ 8.38273654e-01 8.38392222e-01 8.38688641e-01 8.39815034e-01
+ 8.40052170e-01 8.41059995e-01 8.43075646e-01 8.44142756e-01
+ 8.44557742e-01 8.46099123e-01 8.46336258e-01 8.46929097e-01
+ 8.48529760e-01 8.52976049e-01 8.55643823e-01 8.56058810e-01
+ 8.56118093e-01 8.56770216e-01 8.56888783e-01 8.56948067e-01
+ 8.62639317e-01 8.67441309e-01 8.69041973e-01 8.72836139e-01
+ 8.74614655e-01 8.75266777e-01 8.75503913e-01 8.75563197e-01
+ 8.75859616e-01 8.76096751e-01 8.77163861e-01 8.77282428e-01
+ 8.77341712e-01 8.79298079e-01 8.80720892e-01 8.80839459e-01
+ 8.83803652e-01 8.84040787e-01 8.85463600e-01 8.93407636e-01
+ 8.97379654e-01 9.18069718e-01 9.28681527e-01 9.37099834e-01
+ 9.37574105e-01 9.37751956e-01 9.39352620e-01 9.40004743e-01
+ 9.40123310e-01 9.41546123e-01 9.41664691e-01 9.46881669e-01
+ 9.50082997e-01 9.50379417e-01 9.50497984e-01 9.51090823e-01
+ 9.51150107e-01 9.51624378e-01 9.51683661e-01 9.52098648e-01
+ 9.55655679e-01 9.55774247e-01 9.56544937e-01 9.56722789e-01
+ 9.56782073e-01 9.59331278e-01 9.61228361e-01 9.61287645e-01
+ 9.61406213e-01 9.61465497e-01 9.62769742e-01 9.63303296e-01
+ 9.64903960e-01 9.65259663e-01 9.65911786e-01 9.66267489e-01
+ 9.67571733e-01 9.68935262e-01 9.69646668e-01 9.71543751e-01
+ 9.71958738e-01 9.72195874e-01 9.72670145e-01 9.74745079e-01
+ 9.76879298e-01 9.78657814e-01 9.83934076e-01 9.84289779e-01
+ 9.84467631e-01 9.84526915e-01 9.87194688e-01 9.87313256e-01
+ 9.90158881e-01 9.94901589e-01 9.95731563e-01 9.98932891e-01
+ 1.00000000e+00] [nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan nan
+ nan nan nan nan nan nan nan nan nan nan nan nan nan]
+[2020-04-25 22:07:30,313] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Light (id 0)
+[2020-04-25 22:07:30,313] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,313] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,313] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,314] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,315] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.07318505 0.05118466 0.06858659 ... 0.06231017 0.02795794 0.03461129]
+[2020-04-25 22:07:30,315] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (3445,)
+[2020-04-25 22:07:30,431] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Circle (id 1)
+[2020-04-25 22:07:30,431] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,431] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,432] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,432] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,434] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.04721387 0.03161699 0.03148248 ... 0.05460732 0.05926583 0.05926583]
+[2020-04-25 22:07:30,434] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (1659,)
+[2020-04-25 22:07:30,471] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Triangle (id 2)
+[2020-04-25 22:07:30,472] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,472] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,472] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,473] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,474] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.09946498 0.04296    0.03937913 ... 0.04100222 0.04669208 0.03203484]
+[2020-04-25 22:07:30,474] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (1731,)
+[2020-04-25 22:07:30,547] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Fireball (id 3)
+[2020-04-25 22:07:30,547] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,548] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,548] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,548] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,550] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.03476328 0.03945374 0.04529411 ... 0.06599963 0.06650082 0.06016824]
+[2020-04-25 22:07:30,550] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (1347,)
+[2020-04-25 22:07:30,627] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Other (id 4)
+[2020-04-25 22:07:30,627] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,627] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,628] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,628] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,629] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.04821732 0.04588732 0.04616624 ... 0.07017238 0.04241562 0.04745183]
+[2020-04-25 22:07:30,629] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (1252,)
+[2020-04-25 22:07:30,688] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Disk (id 5)
+[2020-04-25 22:07:30,688] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,688] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,688] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,688] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,689] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.03743816 0.07369183 0.04041773 ... 0.04450857 0.15326911 0.07214646]
+[2020-04-25 22:07:30,690] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (1144,)
+[2020-04-25 22:07:30,772] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Unknown (id 6)
+[2020-04-25 22:07:30,772] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,772] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,772] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,772] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,778] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.03564096 0.0500522  0.03827973 ... 0.04253555 0.05464212 0.05464212]
+[2020-04-25 22:07:30,778] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (1247,)
+[2020-04-25 22:07:30,824] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Sphere (id 7)
+[2020-04-25 22:07:30,824] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,825] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,825] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,825] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,826] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.02803378 0.03793458 0.03093274 ... 0.04981911 0.04897162 0.05588612]
+[2020-04-25 22:07:30,827] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (1120,)
+[2020-04-25 22:07:30,872] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Oval (id 8)
+[2020-04-25 22:07:30,872] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,872] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,873] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,873] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:30,911] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.03372001 0.04893156 0.04481308 0.04467563 0.04795964 0.07725433
+ 0.04706123 0.0593465  0.03941563 0.06076748 0.07740404 0.05903621
+ 0.0620509  0.04369559 0.04053862 0.05903384 0.04471439 0.04726087
+ 0.05486005 0.04405086 0.04963814 0.04939133 0.05327928 0.04725623
+ 0.04738389 0.04910393 0.04797115 0.04688132 0.0479664  0.04745777
+ 0.05068588 0.04898399 0.04775432 0.05935813 0.04959816 0.05691062
+ 0.06103952 0.04382518 0.04743317 0.04899889 0.05882747 0.04694428
+ 0.0472373  0.04880992 0.05164027 0.04656769 0.04656715 0.04763109
+ 0.04722874 0.047094   0.04929151 0.04620889 0.04712818 0.0472669
+ 0.04871244 0.04983891 0.0536334  0.04582285 0.04790351 0.04599871
+ 0.05512324 0.05232461 0.05556933 0.04638679 0.04706316 0.04657856
+ 0.03948887 0.04547746 0.04565391 0.04639897 0.04639897 0.05192038
+ 0.04585715 0.04819098 0.04710132 0.05230865 0.04648472 0.04698918
+ 0.04634578 0.04832913 0.04492907 0.04546315 0.04418481 0.04356362
+ 0.04661302 0.04553803 0.04161013 0.04618556 0.04596569 0.04279297
+ 0.04577331 0.04778679 0.0458305  0.04944441 0.05038822 0.0462004
+ 0.04634786 0.04611004 0.04563793 0.04623378 0.04382705 0.05087788
+ 0.04439951 0.04439951 0.03810712 0.04239103 0.04307233 0.04590199
+ 0.04603993 0.04576757 0.0466391  0.04581914 0.04661302 0.04529695
+ 0.04696153 0.04501102 0.04595436 0.05556025 0.04591201 0.04667496
+ 0.04592778 0.04646838 0.04591492 0.0466391  0.04660658 0.04687809
+ 0.04588968 0.04595436 0.04283453 0.04581462 0.0459734  0.0526776
+ 0.04600932 0.04581838 0.0459734  0.0468808  0.04661984 0.04565018
+ 0.04420635 0.04420635 0.04654717 0.04461911 0.04467236 0.04662237
+ 0.04602652 0.04590564 0.05747724 0.04330843 0.04259398 0.0462803
+ 0.04589307 0.04592559 0.04590564 0.04607352 0.04487599 0.05249755
+ 0.04431356 0.05114872 0.04577573 0.04588787 0.04588787 0.04682225
+ 0.04750412 0.04074321 0.04236447 0.04619024 0.0551636  0.04614584
+ 0.04593652 0.04633343 0.04586959 0.04657096 0.04636749 0.0460887
+ 0.0463678  0.04367519 0.04636242 0.04259391 0.04102006 0.04128291
+ 0.04776387 0.04266069 0.04324146 0.04670157 0.04512407 0.04621609
+ 0.04662459 0.04589858 0.04126408 0.04600783 0.04621609 0.0463021
+ 0.04603245 0.04285925 0.04010256 0.04650518 0.03946709 0.046325
+ 0.04114129 0.04674549 0.08291188 0.04764465 0.04586179 0.04606496
+ 0.04584115 0.04600783 0.05047724 0.0465168  0.04667793 0.04575531
+ 0.04542828 0.0457988  0.05244024 0.04643166 0.04678346 0.04562578
+ 0.04657745 0.04638732 0.0459767  0.04602683 0.04605711 0.0364488
+ 0.04343457 0.04626067 0.04653011 0.04172328 0.04591337 0.04159548
+ 0.13390651 0.06695817 0.04582034 0.04568314 0.0494704  0.04664406
+ 0.04943046 0.04655828 0.04556584 0.0457005  0.04629381 0.04289643
+ 0.04648427 0.04572573 0.04656009 0.04587008 0.04575988 0.04583044
+ 0.04593127 0.04593127 0.04714499 0.04592882 0.04545916 0.04656967
+ 0.04883457 0.04551865 0.04576809 0.04540239 0.04827151 0.04694635
+ 0.0556442  0.05883317 0.04670471 0.04916965 0.04608089 0.0454385
+ 0.04656865 0.04595636 0.04598665 0.05010416 0.0455239  0.04690768
+ 0.04666431 0.04440522 0.03853077 0.04604698 0.04665199 0.05614796
+ 0.04760177 0.04590319 0.04616617 0.04666346 0.04366334 0.04239343
+ 0.04736265 0.049897   0.04637853 0.0428566  0.04315216 0.04645611
+ 0.04622071 0.04752424 0.04621367 0.04852101 0.04539578 0.04584422
+ 0.04595636 0.0462889  0.0391354  0.04590545 0.04652543 0.04636004
+ 0.04547972 0.0524419  0.05350547 0.04609392 0.04603656 0.047936
+ 0.04582319 0.04593534 0.04530852 0.04390464 0.04544575 0.05645261
+ 0.04556445 0.04624012 0.04568826 0.04624012 0.04162245 0.04603656
+ 0.04674052 0.04956024 0.04636372 0.04561577 0.04669989 0.04674117
+ 0.04635516 0.04642666 0.04402004 0.05364523 0.05526898 0.04742831
+ 0.03349847 0.03378154 0.03372352 0.10078039 0.04461074 0.0457728
+ 0.04612335 0.04569493 0.04453904 0.04757114 0.03553728 0.04518989
+ 0.04539018 0.04537176 0.04673673 0.05333969 0.05800016 0.04655446
+ 0.04620391 0.04546816 0.04558031 0.04538271 0.04658823 0.04490388
+ 0.04518134 0.04610979 0.04689873 0.04419067 0.04606373 0.04468616
+ 0.05013979 0.04543803 0.04645335 0.05487484 0.04790705 0.0468533
+ 0.046096   0.04647106 0.04661561 0.04468995 0.04517571 0.04528519
+ 0.04964602 0.04665177 0.04662103 0.04550942 0.04550942 0.04650353
+ 0.04602024 0.04514742 0.04707112 0.04546786 0.04375495 0.04062891
+ 0.04741125 0.04633596 0.04633596 0.04733076 0.04722055 0.04610209
+ 0.04737759 0.04673235 0.04669467 0.07384617 0.04733261 0.07262643
+ 0.04759744 0.04636301 0.06192857 0.05026079 0.04723426 0.04616606
+ 0.0454092  0.04732947 0.04647501 0.04637859 0.04886098 0.04746701
+ 0.04696541 0.04582862 0.04674883 0.04696621 0.04785027 0.04782719
+ 0.04699396 0.04648608 0.0462074  0.04704734 0.04708464 0.05096197
+ 0.04583016 0.04740602 0.06465216 0.04783593 0.04781862 0.0462996
+ 0.04738207 0.04782719 0.04683665 0.04705591 0.0507781  0.04781862
+ 0.04567326 0.04625776 0.04825818 0.04798217 0.04809659 0.0593414
+ 0.04934892 0.04816076 0.04906157 0.05862175 0.04849061 0.04849061
+ 0.03919954 0.05556308 0.04685547 0.04685547 0.04757954 0.06098054
+ 0.04834886 0.04714701 0.04822916 0.0451057  0.04737368 0.04628715
+ 0.04499283 0.04654975 0.04665136 0.04634288 0.04556111 0.04822415
+ 0.0470512  0.04898311 0.04444268 0.04821522 0.04821522 0.05654468
+ 0.05077341 0.04644012 0.05866805 0.0448193  0.04743859 0.04766761
+ 0.04782801 0.04770125 0.05233634 0.04681687 0.04822994 0.05217056
+ 0.04719646 0.0471104  0.04660285 0.04681687 0.04793496 0.04739976
+ 0.04766761 0.04774115 0.06200909 0.05102107 0.04758751 0.04699298
+ 0.0562942  0.04595709 0.04743686 0.04827543 0.04697062 0.05624491
+ 0.04650555 0.04804004 0.04616167 0.04715134 0.05583643 0.04632684
+ 0.04796651 0.04676233 0.04697062 0.05079804 0.05257736 0.0587257
+ 0.04198948 0.04570702 0.04623817 0.04801264 0.04733006 0.04588785
+ 0.04666625 0.04606819 0.04548814 0.0456549  0.04635858 0.04637272
+ 0.04822942 0.04594099 0.04688832 0.04548814 0.04733709 0.04660512
+ 0.04580792 0.04657772 0.04795372 0.08284929 0.04569683 0.06433154
+ 0.05809766 0.05260032 0.04961198 0.04871398 0.04871398 0.04767977
+ 0.05005939 0.04578259 0.05408246 0.04400516 0.04706386 0.04658673
+ 0.04757606 0.04759082 0.04574458 0.05162988 0.04650037 0.04602913
+ 0.04687166 0.05173009 0.04666301 0.04666301 0.04746369 0.04491172
+ 0.04806799 0.0459255  0.04683055 0.05212641 0.04621978 0.04795372
+ 0.04738039 0.0474588  0.0480182  0.06664891 0.04753575 0.04438038
+ 0.05086268 0.04811802 0.04785872 0.05960209 0.04785872 0.04883998
+ 0.04785872 0.04761912 0.06479211 0.04819844 0.05560285 0.04723187
+ 0.04508201 0.04747879 0.04660802 0.0466409  0.04671882 0.04515495
+ 0.04702053 0.0480393  0.0481069  0.04673045 0.053415   0.0596457
+ 0.04712602 0.04737997 0.03436197 0.04670433 0.05454675 0.04663416
+ 0.04837407 0.04684334 0.04684724 0.04724887 0.04671799 0.04931922
+ 0.04623572 0.04573903 0.0460481  0.04584491 0.04419049 0.04511636
+ 0.04774557 0.04846999 0.04719906 0.04961812 0.04773889 0.0600035
+ 0.04371542 0.04490382 0.0549391  0.04743794 0.04693325 0.05387722
+ 0.04901852 0.04645303 0.04532356 0.03754051 0.04775907 0.04637143
+ 0.04598046 0.04598046 0.04653098 0.05779476 0.04737286 0.04619142
+ 0.04648154 0.04775907 0.04736347 0.04608848 0.05313611 0.05708914
+ 0.04553147 0.04640473 0.03782218 0.05677444 0.04545181 0.046811
+ 0.04782092 0.04510776 0.04773992 0.05219298 0.04545181 0.0463882
+ 0.04513194 0.04556395 0.0468311  0.04898302 0.04601656 0.05368536
+ 0.04552495 0.04532283 0.05010902 0.04585567 0.04645457 0.03992905
+ 0.04836262 0.04912527 0.04362753 0.04362753 0.04571634 0.05141442
+ 0.04147425 0.04181393 0.04550374 0.04661248 0.05089124 0.04652216
+ 0.04170032 0.04537366 0.04606163 0.04556915 0.04581484 0.05164667
+ 0.04487116 0.04583425 0.04940567 0.04714563 0.04615249 0.04679943
+ 0.04158241 0.03957991 0.04421251 0.05098902 0.04561724 0.04531918
+ 0.04561051 0.04457431 0.0453183  0.04552922 0.04527425 0.04559714
+ 0.03968587 0.06903121 0.03942834 0.04730379 0.04513105 0.04513105
+ 0.04383616 0.04629572 0.04356906 0.04353274 0.04634244 0.04824898
+ 0.04868994 0.04604283 0.04570469 0.0459036  0.03981351 0.04652723
+ 0.04440839 0.04412442 0.0447572  0.04652429 0.04735341 0.04088886
+ 0.04612483 0.04587497 0.04498212 0.04501095 0.05951033 0.04332702
+ 0.04531016 0.04801703 0.04951043 0.05397174 0.03525313 0.04387028
+ 0.04250212 0.03803212 0.04559661 0.05371987 0.04642858 0.04744482
+ 0.06109061 0.04937395 0.05227612 0.03443859 0.035034   0.05075001
+ 0.1550154  0.06301991 0.05057479 0.04558798 0.05516161 0.04952714
+ 0.05596394 0.04365288 0.0457381  0.04208765 0.04519401 0.04628758
+ 0.04160176 0.02691353 0.02886013 0.05102107 0.05391297 0.04072559
+ 0.06495559 0.04538508 0.04823602 0.04806319 0.05580194 0.05011229
+ 0.05414758 0.04602868]
+[2020-04-25 22:07:30,918] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (776,)
+[2020-04-25 22:07:30,995] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Formation (id 9)
+[2020-04-25 22:07:30,996] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:30,997] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:30,998] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:30,999] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,025] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.05417661 0.04653305 0.03654217 0.02376238 0.03772163 0.05401475
+ 0.04619262 0.04481765 0.03661005 0.04285524 0.04590543 0.05313792
+ 0.05299943 0.04769079 0.04624755 0.04822048 0.05089365 0.05052614
+ 0.05065046 0.04510706 0.03236364 0.04984611 0.04589007 0.04618834
+ 0.04627937 0.04503653 0.04588089 0.04582966 0.04531225 0.04635604
+ 0.04535787 0.04951407 0.03012366 0.04951994 0.05012315 0.04937712
+ 0.04597243 0.04611828 0.04601087 0.04642242 0.05074241 0.04999879
+ 0.04897191 0.04965165 0.04757599 0.04612153 0.0466702  0.0496944
+ 0.05198472 0.03249842 0.05207206 0.03907418 0.04678617 0.04568576
+ 0.04568576 0.0323122  0.04847509 0.04624767 0.04613326 0.04714274
+ 0.03610824 0.03610824 0.04223212 0.04630737 0.04721086 0.04743626
+ 0.05141312 0.04640113 0.04848703 0.07864111 0.04495881 0.04872308
+ 0.04708298 0.04723278 0.04645581 0.05086684 0.05115876 0.03767439
+ 0.04729782 0.04843232 0.05079898 0.0481727  0.05063122 0.04246697
+ 0.05119751 0.05179808 0.05158132 0.04709424 0.05151633 0.05158605
+ 0.05183589 0.05188768 0.05219199 0.05219199 0.05226112 0.05252414
+ 0.05091827 0.05001763 0.05046931 0.03481759 0.04885487 0.05147542
+ 0.04603842 0.06363864 0.04637698 0.04785462 0.04775757 0.04799584
+ 0.03710513 0.04770006 0.05095571 0.04786086 0.04763544 0.05118583
+ 0.04621444 0.05099653 0.04862638 0.04724901 0.04772752 0.04394363
+ 0.04606188 0.03220939 0.0467803  0.04895114 0.04795348 0.04782192
+ 0.04556726 0.04054756 0.04745704 0.05329382 0.0390131  0.04770878
+ 0.0467806  0.05025691 0.04779273 0.0468172  0.0480859  0.04772752
+ 0.05064574 0.03738308 0.04772752 0.0485585  0.05016679 0.05508335
+ 0.04377998 0.04759725 0.04888608 0.04724645 0.04599402 0.0483918
+ 0.03619123 0.0508484  0.05087337 0.0499602  0.05418852 0.04445162
+ 0.04671439 0.04993687 0.04299308 0.0455654  0.12549278 0.04283365
+ 0.04816126 0.04221433 0.04221433 0.04296823 0.04585016 0.04479789
+ 0.05071186 0.04675105 0.04757872 0.05078037 0.04778751 0.02923509
+ 0.05382892 0.03488106 0.04784544 0.04686563 0.04781734 0.05071186
+ 0.05153358 0.0455607  0.05007751 0.04942209 0.05044532 0.04763186
+ 0.04758007 0.05137012 0.05165204 0.04763186 0.04757872 0.05080376
+ 0.04993457 0.04996811 0.04699465 0.04989042 0.04930713 0.04930713
+ 0.04923741 0.05035591 0.05035591 0.05105904 0.03789347 0.05010583
+ 0.05038551 0.05041725 0.04743276 0.04668274 0.04685294 0.0505434
+ 0.050855   0.05070303 0.05555035 0.04733327 0.02909961 0.1040018
+ 0.04559928 0.0459935  0.04719469 0.04728147 0.05147677 0.04999186
+ 0.02798891 0.05130524 0.04804405 0.04754151 0.04840733 0.05132071
+ 0.04682418 0.04595513 0.04680133 0.04646821 0.05116916 0.04767827
+ 0.05083358 0.04659485 0.03934988 0.04585772 0.04946382 0.04943367
+ 0.04600779 0.04990655 0.07427818 0.04837016 0.05082933 0.02926814
+ 0.0464017  0.04546889 0.05170536 0.04730064 0.04639011 0.04679755
+ 0.05063689 0.04614808 0.04805128 0.04830168 0.04964297 0.05206154
+ 0.04843069 0.05141266 0.04931591 0.05246856 0.05246856 0.04668593
+ 0.04830991 0.04378972 0.05238    0.05028199 0.04762742 0.05514205
+ 0.05149786 0.04743236 0.05233738 0.0471508  0.03491051 0.04680193
+ 0.04680193 0.05193346 0.04663177 0.04680193 0.04765873 0.04829046
+ 0.04905514 0.04643746 0.04698798 0.04769207 0.04790109 0.04763803
+ 0.04772383 0.03211133 0.05326815 0.05123046 0.04728917 0.04722387
+ 0.04823866 0.04940246 0.05022533 0.05226848 0.05090335 0.04843061
+ 0.04907298 0.04909867 0.05024858 0.04755227 0.04794247 0.05146869
+ 0.05381696 0.0482436  0.04668482 0.07066276 0.04638899 0.04535691
+ 0.04664888 0.04843061 0.04585602 0.04992443 0.05084059 0.04212698
+ 0.03414196 0.04631002 0.05099795 0.04669625 0.03936739 0.04682879
+ 0.04862209 0.05214914 0.05130523 0.05119169 0.04810583 0.05056452
+ 0.04582105 0.04903874 0.04610544 0.04865197 0.05118077 0.04711959
+ 0.04932283 0.04885067 0.0527945  0.05133738 0.04590827 0.07553035
+ 0.05598346 0.04909625 0.04617779 0.04952143 0.04910245 0.04889326
+ 0.0459758  0.05221457 0.04877517 0.04545614 0.04784263 0.04820339
+ 0.04881466 0.03528715 0.04572326 0.05398674 0.0529073  0.0476053
+ 0.04906704 0.03376984 0.04821263 0.04459356 0.04731043 0.0458869
+ 0.04749042 0.0479198  0.04288009 0.03308667 0.05019811 0.04888748
+ 0.05053516 0.0474836  0.05039775 0.04728172 0.04907876 0.04909308
+ 0.04783538 0.05123477 0.05165442 0.05107768 0.05363048 0.04859861
+ 0.0486888  0.04872726 0.0477213  0.17796613 0.04610468 0.04747567
+ 0.04736523 0.0466597  0.0404605  0.03499503 0.048668   0.04775993
+ 0.05763642 0.03226678 0.04639848 0.04616262 0.04828466 0.05045846
+ 0.04983756 0.04521192 0.05363152 0.05052166 0.0489086  0.05235979
+ 0.0488785  0.04887599 0.04892733 0.05048675 0.0527806  0.04713123
+ 0.04789085 0.04903968 0.05046122 0.04815843 0.04657205 0.04634964
+ 0.05389553 0.05037127 0.04985984 0.04836253 0.05402919 0.05185191
+ 0.0459221  0.04884633 0.04759602 0.03562524 0.04961715 0.0537179
+ 0.05270215 0.04893434 0.05596427 0.06309638 0.0497575  0.0513695
+ 0.04778226 0.04979154 0.05443403 0.05359899 0.04774111 0.04835248
+ 0.05021067 0.04920517 0.04919089 0.05048956 0.04684267 0.04508572
+ 0.04510834 0.04842755 0.04961649 0.04832505 0.04698931 0.0474835
+ 0.04850991 0.0488737  0.04964759 0.05067439 0.04839137 0.04726625
+ 0.04710053 0.05002062 0.03672068 0.04614478 0.05069353 0.0490331
+ 0.07176729 0.05023442 0.04754272 0.05027827 0.05341263 0.05340484
+ 0.05930613 0.07958649 0.06323555 0.04934714 0.04736508 0.04950553
+ 0.05547589 0.04310737 0.04547589 0.04907652 0.04741868 0.04439587
+ 0.04901614 0.03099008 0.04545227 0.06344432 0.05046913 0.04134361
+ 0.04669096 0.07474981 0.0548209  0.04896262 0.04404917 0.04176095
+ 0.04787596 0.04570514 0.0434663  0.0427401  0.04303845 0.04346621
+ 0.04711645 0.04259413 0.02137697]
+[2020-04-25 22:07:31,026] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (507,)
+[2020-04-25 22:07:31,077] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Changing (id 10)
+[2020-04-25 22:07:31,077] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,077] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,078] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,078] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,094] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.03214656 0.03570228 0.02433776 0.03389506 0.04149308 0.04873245
+ 0.06125783 0.06125783 0.03838907 0.03227707 0.06558713 0.06558713
+ 0.04505641 0.04243216 0.04381288 0.03322911 0.04853361 0.04844245
+ 0.04663951 0.04884045 0.04820858 0.04903428 0.04883432 0.04897125
+ 0.04975788 0.04462804 0.04679985 0.04926294 0.05027426 0.05041791
+ 0.0484815  0.05035488 0.04105255 0.05051885 0.04536147 0.04977422
+ 0.03208789 0.04803042 0.04709981 0.04583849 0.05006752 0.05345153
+ 0.04720918 0.04578589 0.05132688 0.05019713 0.04654524 0.03734588
+ 0.05165998 0.03132189 0.03967149 0.03977427 0.04645524 0.04566969
+ 0.05188935 0.05021112 0.05063748 0.04856036 0.05010767 0.05210591
+ 0.04862268 0.0453463  0.04822036 0.05174974 0.05512061 0.07576238
+ 0.05491681 0.05491681 0.05138511 0.05123615 0.0516033  0.05177745
+ 0.03948151 0.05110323 0.05098052 0.05223423 0.05022225 0.05806379
+ 0.04681659 0.04855212 0.05200915 0.04987849 0.05139054 0.0515153
+ 0.05139054 0.05216377 0.05077561 0.05170783 0.05043234 0.05170698
+ 0.05043572 0.0514587  0.04393256 0.03957897 0.05427716 0.05216377
+ 0.05214955 0.04906019 0.0566727  0.056177   0.05244039 0.04586508
+ 0.0534154  0.05288378 0.05172365 0.05337389 0.05108088 0.05022494
+ 0.05110323 0.05257542 0.05052978 0.04870322 0.05318226 0.05330702
+ 0.0529895  0.04604999 0.05178438 0.04587151 0.05301972 0.06139383
+ 0.05061499 0.05273103 0.05018561 0.05007837 0.05542539 0.03763893
+ 0.05069542 0.05245729 0.04600325 0.05007837 0.05227463 0.05111513
+ 0.05239938 0.05228926 0.05228926 0.05089288 0.05038828 0.0486633
+ 0.04570349 0.05116332 0.02811523 0.04526217 0.050026   0.04991644
+ 0.05415076 0.04905966 0.04893448 0.05193484 0.04308058 0.05281141
+ 0.04983506 0.05099021 0.05592223 0.05074273 0.0507159  0.04592872
+ 0.05184538 0.04984622 0.05042311 0.02660326 0.05184798 0.05081114
+ 0.04679009 0.05633775 0.04728339 0.04395325 0.03479296 0.04959636
+ 0.03361027 0.04539826 0.04978516 0.05136005 0.05038506 0.05257844
+ 0.03378542 0.04866086 0.05131404 0.04771648 0.05045711 0.04586689
+ 0.05260648 0.04532852 0.06050905 0.05756481 0.05548991 0.05013921
+ 0.05318885 0.05331361 0.05016592 0.06182652 0.05260368 0.04738341
+ 0.05251851 0.04604355 0.0297193  0.05103758 0.05193418 0.03061829
+ 0.04907186 0.03256957 0.04358175 0.04923854 0.06849507 0.07805673
+ 0.05044156 0.04554489 0.04422892 0.05249414 0.04918185 0.15323321
+ 0.03784184 0.19534997 0.09835929 0.05053773 0.04764806 0.04732143
+ 0.05062526 0.04906162 0.03659401 0.05123201 0.0504219  0.04850303
+ 0.04514348 0.04465646 0.04635746 0.05043247 0.05044614 0.04566615
+ 0.05038312 0.04838907 0.04391736 0.04488504 0.04726548 0.05011562
+ 0.04482381 0.04988806 0.02865688 0.0502643  0.05466106 0.04775465
+ 0.04755159 0.04745652 0.02920439 0.05903104 0.05140487 0.04928521
+ 0.0471401  0.03406301 0.04268632 0.04377332 0.0429978  0.05059429
+ 0.04787923 0.04998353 0.04417621 0.03024531 0.04836883 0.0264027
+ 0.04760982 0.04872357 0.05129412 0.04861244 0.04526863 0.04667954
+ 0.04707563 0.10988417 0.08758166 0.0485526  0.04677434 0.046974
+ 0.05204999 0.05406697 0.05586633 0.04563252 0.03677463 0.0470185
+ 0.04823762 0.04768061 0.04723478 0.05075529 0.04664725 0.04431111
+ 0.05109876 0.04670164 0.04709938 0.04780112 0.04660198 0.0444021
+ 0.04771231 0.03402589 0.04627721 0.04721456 0.04906371 0.04622031
+ 0.04637139 0.02714872 0.04476635 0.04577576 0.04681236 0.04637139
+ 0.04866608 0.04680957 0.05600231 0.0494705  0.04606206 0.04547379
+ 0.05127381 0.07816583 0.05601365 0.04909073 0.04639664 0.04651234
+ 0.04537289 0.04682501 0.04616826 0.04850206 0.04857211 0.04631855
+ 0.04613416 0.02618225 0.04908433 0.04768153 0.04369342 0.04548358
+ 0.06436963 0.04319619 0.04328992 0.04573918 0.05145075 0.04761362
+ 0.04690609 0.04734239 0.04512788 0.08241921 0.04140393 0.04165878
+ 0.02432707 0.02699468 0.04709602 0.07859829 0.04758629 0.04837768
+ 0.0456557  0.04313661 0.04840641 0.04617109 0.04863606 0.04042247
+ 0.04969791 0.04667684 0.04965841 0.04546233 0.04919945 0.05159519
+ 0.04600306 0.05086774 0.04961956 0.0285542  0.05132685 0.04871963
+ 0.05006348 0.05186079 0.0450927  0.04840641 0.04561914 0.04805518
+ 0.04935317 0.04614105 0.05109466 0.04679398 0.04194516 0.0310928
+ 0.04852705 0.04575442 0.0480015  0.06665932 0.0479783  0.05192236
+ 0.04840858 0.03907471 0.05421471 0.05099643 0.04787154 0.05098135
+ 0.05384204 0.04383357 0.01960035 0.04553106 0.10008123 0.04562072
+ 0.04424446 0.0412396  0.03341013 0.04316336 0.04777816 0.04998462
+ 0.0614956  0.04923587 0.07519222 0.03021094 0.04745574 0.04219903
+ 0.04350438 0.04103887 0.04147224 0.03628526 0.04020786 0.04213648
+ 0.02973852]
+[2020-04-25 22:07:31,094] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (409,)
+[2020-04-25 22:07:31,158] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Cigar (id 11)
+[2020-04-25 22:07:31,159] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,160] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,161] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,161] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,177] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.04437167 0.06156229 0.04737534 0.04928137 0.03886759 0.03922927
+ 0.09684596 0.04694283 0.06004628 0.04691531 0.05755418 0.04119766
+ 0.04667503 0.04085241 0.04793584 0.04347541 0.04925615 0.04049935
+ 0.04722341 0.07417029 0.04648836 0.0465402  0.04537082 0.04049095
+ 0.04824649 0.04823024 0.04870476 0.04807685 0.04657892 0.04699227
+ 0.06687662 0.04614818 0.04479284 0.04575228 0.03818819 0.04450513
+ 0.03203025 0.04073182 0.04111809 0.04293662 0.04798888 0.03993974
+ 0.04659127 0.04524586 0.04478617 0.04001515 0.0532017  0.04560567
+ 0.07039812 0.04205699 0.06191635 0.0477609  0.04632191 0.04787828
+ 0.04316163 0.06543636 0.03847348 0.04429266 0.04630179 0.04774485
+ 0.04477239 0.04610374 0.04787828 0.04441276 0.04446461 0.04552314
+ 0.04614983 0.04613161 0.04836024 0.06536103 0.04360241 0.03790104
+ 0.06645755 0.04289402 0.04132135 0.03788601 0.04400358 0.04779045
+ 0.03988429 0.04261109 0.03520915 0.04263097 0.04413848 0.05181538
+ 0.04709968 0.04721463 0.04934903 0.07748175 0.0437873  0.07442971
+ 0.06819638 0.07881813 0.04345624 0.0410587  0.04223869 0.04750706
+ 0.04380267 0.04345818 0.04397906 0.04508432 0.04759172 0.04345818
+ 0.06980138 0.04748884 0.0438134  0.04428026 0.04793414 0.04748884
+ 0.03813139 0.0380879  0.06333336 0.04638938 0.05292051 0.04445574
+ 0.05293511 0.03823651 0.04823795 0.03791093 0.04831459 0.05589948
+ 0.04807515 0.0480914  0.04354399 0.04101444 0.07590491 0.06287158
+ 0.06256133 0.04829959 0.04101444 0.04475829 0.04847829 0.04975368
+ 0.08505081 0.07547795 0.04094174 0.04444659 0.04444659 0.04470299
+ 0.05617127 0.04811746 0.04781131 0.04119341 0.04109574 0.04811746
+ 0.04809809 0.07802385 0.04145093 0.04453538 0.07513664 0.04479406
+ 0.06831994 0.06509251 0.04106986 0.04456592 0.06185753 0.08318964
+ 0.08422362 0.04079002 0.04545069 0.06774778 0.05747644 0.04368309
+ 0.0479853  0.06547199 0.04546438 0.04543079 0.04374702 0.04280295
+ 0.04473286 0.05277323 0.04775211 0.04204285 0.07590491 0.07482238
+ 0.04385686 0.04893562 0.04383928 0.04390201 0.17844238 0.06140116
+ 0.03681881 0.05047725 0.07309827 0.04758788 0.04799548 0.04234656
+ 0.04632611 0.0464955  0.04573597 0.0474699  0.04036649 0.06145899
+ 0.04426967 0.0470743  0.05320189 0.04742705 0.03837689 0.06510506
+ 0.04688318 0.04731439 0.04250878 0.04530938 0.04440974 0.07273607
+ 0.04707527 0.04956065 0.07222205 0.04428863 0.07252472 0.06839352
+ 0.04766892 0.07182465 0.0448737  0.04050375 0.04732845 0.04784181
+ 0.06837208 0.0456758  0.04259866 0.06050929 0.04494462 0.0476953
+ 0.04806525 0.06290707 0.04663114 0.0600653  0.04350493 0.03871032
+ 0.04670387 0.04390722 0.03968297 0.04494843 0.06936634 0.04842313
+ 0.04847929 0.03950805 0.04846005 0.04769378 0.0611049  0.04346396
+ 0.03824447 0.04761736 0.04027345 0.07720374 0.04439528 0.04801496
+ 0.04687409 0.06133035 0.05877802 0.04763424 0.04721469 0.04819612
+ 0.04427721 0.06902042 0.07423885 0.04197671 0.04116595 0.04833679
+ 0.07266113 0.04718182 0.07468918 0.09500559 0.0535615  0.05691148
+ 0.04014453 0.07492293 0.04775041 0.04797062 0.07221952 0.0621351
+ 0.06312394 0.04049688 0.04442584 0.07895095 0.0470517  0.04797502
+ 0.08007982 0.05865565 0.04504198 0.04763811 0.04289454 0.04638271
+ 0.04427374 0.04602431 0.04716736 0.04462954 0.03960099 0.03940889
+ 0.04116858 0.04191549 0.03965791 0.04037555 0.04779193 0.06700351
+ 0.04282758 0.04060412 0.04721026 0.04670672 0.04478026 0.04495509
+ 0.04750666 0.04122675 0.07360238 0.04849579 0.06692802 0.0487347
+ 0.04731733 0.0412508  0.04750629 0.0386939  0.03930838 0.07174345
+ 0.04633545 0.07056355 0.04643241 0.08085829 0.07276872 0.04924703
+ 0.04447259 0.04215236 0.04191877 0.04744566 0.04746005 0.078171
+ 0.07490319 0.0716379  0.04523637 0.04833278 0.04563498 0.0407785
+ 0.048738   0.04336757 0.04703435 0.04570667 0.04134525 0.04763771
+ 0.04073215 0.04778306 0.0364087  0.04598087 0.04544543 0.04790986
+ 0.04918911 0.04671056 0.04359312 0.04848274 0.03932244 0.06199773
+ 0.09082122 0.04441333 0.0628843  0.03959064 0.04470384 0.0717438
+ 0.04524034 0.0427762  0.04904756 0.03732621 0.11470602 0.06224268
+ 0.0426845  0.04820807 0.04847244 0.04557394 0.04530883 0.05408775
+ 0.0482166  0.04875271 0.05178403 0.04023087 0.04595192 0.04832769
+ 0.04849638 0.03798882 0.03978846 0.04634092 0.04797247 0.04120726
+ 0.04306185 0.0458876  0.04059027 0.04576184 0.03420165 0.0503776
+ 0.06994457 0.06834436 0.0438521  0.03786266 0.04840851 0.04418027
+ 0.07202445 0.04465173 0.05643731 0.03463269 0.03986297 0.0331196
+ 0.0422861  0.0411633  0.04208262 0.03847149 0.04427065 0.06660462
+ 0.08484359 0.05563164 0.06975779 0.04026862 0.04414029 0.03871196
+ 0.0440802  0.05572026 0.0277767  0.02890698 0.02241211 0.02241211
+ 0.04719351 0.05748852 0.10045273 0.04213975 0.04628238 0.05094558
+ 0.0490549  0.08116126 0.07019104 0.08468392 0.0496768  0.05291598
+ 0.04120981 0.06248739 0.05949134 0.0791214  0.04121058 0.04992479
+ 0.04048884 0.0406415  0.04128843 0.06497678 0.04550569 0.03690174
+ 0.07609635]
+[2020-04-25 22:07:31,177] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (439,)
+[2020-04-25 22:07:31,236] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Cylinder (id 12)
+[2020-04-25 22:07:31,236] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,237] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,237] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,238] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,246] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.05555616 0.03561707 0.14414887 0.04434367 0.07855308 0.0315228
+ 0.03878439 0.04349215 0.05624907 0.05091736 0.05595181 0.04817481
+ 0.04686966 0.04902012 0.04789351 0.04494284 0.04757713 0.04898215
+ 0.07228718 0.05221876 0.06422078 0.04570369 0.04736256 0.0474922
+ 0.04663146 0.04883862 0.04821785 0.04703732 0.03948523 0.04712003
+ 0.04537295 0.04795008 0.04658336 0.04708988 0.04795008 0.04857398
+ 0.055168   0.0474061  0.0477714  0.04780852 0.08683092 0.05050724
+ 0.04692428 0.04792585 0.03957533 0.04574189 0.04614471 0.04659461
+ 0.04705571 0.047072   0.04598263 0.04164003 0.04648997 0.03602811
+ 0.04749876 0.04711235 0.04613398 0.04739496 0.04736305 0.0509043
+ 0.04757725 0.04594617 0.04312864 0.04736286 0.04792784 0.04601356
+ 0.04695927 0.04809092 0.04734092 0.04669246 0.04397325 0.04629675
+ 0.0478001  0.04059681 0.04602866 0.04823839 0.04622252 0.04712084
+ 0.04817792 0.04557099 0.0478001  0.04693552 0.04767679 0.04793732
+ 0.04584869 0.04453382 0.05707682 0.04887316 0.04970869 0.04765919
+ 0.04791919 0.02999589 0.02997095 0.02997095 0.04610786 0.04850478
+ 0.04612944 0.04638171 0.04940747 0.04879542 0.04779521 0.04780185
+ 0.0761878  0.04840588 0.04824608 0.03983449 0.04421531 0.04787197
+ 0.0475885  0.04750849 0.04763179 0.0476234  0.04840395 0.04619244
+ 0.04685844 0.04900058 0.04840395 0.04594167 0.04681429 0.0493469
+ 0.04755838 0.0421877  0.04842682 0.04764236 0.04725528 0.04641812
+ 0.03848704 0.0486298  0.04648712 0.04774817 0.04570659 0.04761847
+ 0.04813134 0.04708925 0.06278035 0.06573506 0.04395094 0.05242826
+ 0.05242826 0.04216962 0.04721983 0.04831125 0.04913481 0.05087078
+ 0.13789622 0.04732904 0.04752729 0.04735183 0.04656875 0.04778261
+ 0.04650363 0.04869779 0.0464237  0.04891592 0.04521678 0.04049937
+ 0.04631193 0.04691693 0.05189291 0.04596372 0.04830754 0.0467631
+ 0.04656691 0.04661984 0.0465779  0.04634871 0.04538525 0.04380869
+ 0.04697143 0.04237942 0.04674535 0.04547326 0.04622914 0.04676092
+ 0.0445883  0.04674021 0.04609443 0.03256277 0.04600829 0.07871815
+ 0.04641173 0.04579244 0.04982377 0.05046761 0.04546813 0.04477144
+ 0.0463673  0.04466675 0.04553943 0.04636901 0.04502597 0.04608395
+ 0.0445505  0.04568236 0.04590026 0.04506593 0.04584574 0.04578499
+ 0.04554258 0.04569902 0.0443838  0.04535136 0.04550517 0.04515688
+ 0.04854655 0.04597825 0.0447577  0.04472792 0.04582104 0.04677507
+ 0.0447577  0.04533115 0.04570594 0.04545583 0.04599648 0.0463067
+ 0.044887   0.0454646  0.04475854 0.0453753  0.04372427 0.0450588
+ 0.04536213 0.04608352 0.04599333 0.03922376 0.0455417  0.04261742
+ 0.04733896 0.04669505 0.04936605 0.04797847 0.0439845  0.04527881
+ 0.04099763 0.04519275 0.10203921 0.04425399 0.05189278 0.0450086
+ 0.04230757 0.04477069 0.04499632 0.04482705 0.04532596 0.0451935
+ 0.04344189 0.04561647 0.02926361 0.04466656 0.04461338 0.04420276
+ 0.04543215 0.04299795 0.04058902 0.05536592 0.04435879 0.04670358
+ 0.04453408 0.04342749 0.04753499 0.04483016 0.045042   0.04813578
+ 0.04966266 0.04115313 0.0430285  0.04535612 0.04217167 0.04613491
+ 0.04005543 0.04100421 0.04761281 0.04544195 0.05946334 0.05911477
+ 0.0473254  0.02279163 0.03302811 0.04789679 0.04092045 0.0457262 ]
+[2020-04-25 22:07:31,247] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (282,)
+[2020-04-25 22:07:31,299] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Flash (id 13)
+[2020-04-25 22:07:31,300] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,300] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,300] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,300] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,308] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.03007539 0.02854298 0.04330773 0.04538983 0.04398138 0.04549923
+ 0.05550822 0.05603661 0.04578847 0.04711307 0.04778111 0.04875096
+ 0.04758633 0.0484206  0.04805481 0.04765216 0.04770726 0.04770005
+ 0.04793825 0.0480899  0.04895221 0.04768777 0.05093996 0.04816937
+ 0.05113462 0.04971259 0.05004291 0.05828442 0.05016353 0.12844932
+ 0.04499597 0.02448883 0.04895048 0.04765166 0.04994341 0.04904638
+ 0.04946937 0.0495503  0.05418509 0.04867305 0.07801867 0.05112805
+ 0.05067155 0.02683085 0.04589663 0.03579438 0.04938201 0.04927275
+ 0.05174775 0.04864817 0.0494572  0.04959843 0.04965502 0.03659146
+ 0.05052162 0.04950619 0.04908173 0.04737521 0.04895614 0.04713634
+ 0.04693972 0.04844458 0.04875298 0.04875298 0.03969728 0.05378379
+ 0.04905391 0.04924395 0.04972571 0.05378379 0.04934327 0.05127778
+ 0.04977627 0.0503909  0.04762702 0.04481688 0.04929061 0.04911067
+ 0.04853888 0.05017318 0.04912299 0.04892746 0.05142621 0.04925601
+ 0.0491208  0.04894261 0.05016278 0.04750851 0.03270282 0.04819653
+ 0.04875709 0.05262592 0.02621944 0.04906163 0.03762702 0.05105826
+ 0.02662277 0.0394234  0.04829391 0.04804128 0.0260026  0.04659227
+ 0.03884157 0.02740988 0.04377398 0.04369661 0.0414863  0.05298147
+ 0.0490936  0.05266076 0.04607179 0.04448164 0.04904943 0.03154542
+ 0.04594004 0.02793356 0.02377325 0.04926121 0.04993573 0.04632318
+ 0.05322468 0.05592125 0.05231791 0.04869463 0.04921044 0.04923327
+ 0.04923283 0.04906566 0.04906522 0.05286031 0.04722627 0.04725877
+ 0.05329219 0.05209629 0.04842941 0.05091031 0.05124076 0.0432314
+ 0.0432314  0.04990879 0.04469291 0.04837849 0.03320548 0.05184456
+ 0.04899913 0.04825138 0.04837861 0.0503154  0.04917532 0.04772589
+ 0.04788061 0.04950196 0.04796825 0.04608845 0.0486183  0.0498199
+ 0.04893185 0.04769772 0.05081735 0.04979796 0.04981415 0.04848961
+ 0.04782267 0.05087084 0.05241664 0.0505618  0.05223772 0.05125764
+ 0.02385323 0.04823423 0.04881714 0.04937009 0.05077412 0.04444633
+ 0.0469285  0.05005013 0.04869904 0.04927517 0.04892069 0.05021565
+ 0.04967319 0.04931587 0.04907435 0.04870885 0.04966995 0.05009656
+ 0.05123711 0.05032672 0.04777014 0.04456818 0.04996353 0.05129515
+ 0.04998856 0.05098985 0.05065109 0.05077446 0.05054823 0.04846991
+ 0.05021659 0.0500512  0.04983709 0.05022585 0.05036957 0.05055242
+ 0.05153434 0.04780095 0.05032823 0.04765029 0.05054771 0.04983867
+ 0.05102339 0.05091934 0.04945685 0.0505918  0.05133444 0.05135139
+ 0.04986694 0.02640398 0.04956656 0.05041974 0.04841033 0.02649239
+ 0.03961822 0.04928949 0.05005662 0.04869711 0.04785256 0.05060759
+ 0.050157   0.04876935 0.05024031 0.05035166 0.04938265 0.05049179
+ 0.04865659 0.02100928 0.05065249 0.05009123 0.05060297 0.05534069
+ 0.05844148 0.04947768 0.04733502 0.05046581 0.05130878 0.0506275
+ 0.04721939 0.04193401 0.05320602 0.05179647 0.05418907 0.04741197
+ 0.02987221 0.0510625  0.05060505 0.02463263 0.04829787 0.04609919
+ 0.05243121 0.05562551 0.05055052 0.05552156 0.0532235  0.04379229
+ 0.05109819 0.0513569  0.05113781 0.05173715 0.04113228 0.05513771
+ 0.04491715 0.05605691 0.0564591  0.05048141 0.03262039 0.05478329
+ 0.05172782 0.05148271 0.05831739 0.05522528 0.05324937 0.05258531
+ 0.05585621 0.05521971 0.05187659 0.05672084 0.05148804 0.05518899
+ 0.0750177  0.03856425 0.05631656 0.04197384 0.04838747 0.03886542
+ 0.04447462 0.03998393 0.04303395 0.04695439 0.03924079 0.05552943
+ 0.05962289 0.06143657 0.07266021 0.07134063 0.05407069 0.09526139]
+[2020-04-25 22:07:31,308] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (306,)
+[2020-04-25 22:07:31,363] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Rectangle (id 14)
+[2020-04-25 22:07:31,393] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,393] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,394] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,394] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,452] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.08696187 0.04344232 0.04744521 0.03573455 0.04406722 0.04252183
+ 0.04350757 0.04577202 0.04613632 0.0614494  0.04637268 0.0449047
+ 0.04610273 0.04550507 0.05010286 0.04637814 0.04696583 0.04218399
+ 0.0457216  0.04556676 0.04699599 0.04403992 0.04595888 0.04564077
+ 0.04630928 0.04416377 0.04287377 0.04574124 0.04366736 0.04491283
+ 0.04491283 0.05148716 0.04386962 0.05455724 0.04554155 0.10348331
+ 0.04609473 0.04558961 0.04678662 0.05541206 0.04660028 0.0474963
+ 0.04652697 0.0440264  0.04357598 0.04616264 0.05725074 0.04236838
+ 0.04590922 0.04616264 0.04759388 0.04616264 0.04435016 0.04620856
+ 0.04665875 0.04420018 0.03585463 0.04525301 0.04525301 0.05026897
+ 0.05032886 0.04410252 0.0460813  0.045813   0.04844761 0.04484855
+ 0.04581447 0.04558136 0.04685202 0.04636264 0.04738502 0.04647602
+ 0.04255438 0.04682138 0.0462878  0.04576905 0.03831062 0.05419973
+ 0.04591736 0.05077249 0.04586486 0.04576225 0.04616306 0.04551925
+ 0.04542506 0.04553719 0.03988452 0.0390184  0.04471487 0.03888155
+ 0.02830572 0.04564579 0.04590353 0.04581733 0.04577652 0.04663792
+ 0.0458987  0.04477629 0.04590553 0.04567765 0.04426427 0.04666211
+ 0.04848334 0.08653922 0.02938457 0.04689804 0.04598987 0.04598103
+ 0.04585436 0.04579859 0.05303393 0.04517436 0.04517436 0.04619489
+ 0.04675925 0.04631906 0.04073425 0.04600235 0.04596692 0.04606403
+ 0.04621052 0.04609665 0.04667692 0.04537752 0.04554377 0.04410198
+ 0.04832491 0.03943267 0.05587839 0.04606908 0.04141043 0.04636093
+ 0.04107765 0.04636093 0.04566223 0.04606494 0.04534516 0.04810321
+ 0.04308543 0.04800725 0.04578229 0.04553523 0.04584452 0.04457493
+ 0.06284666 0.04577126 0.04050279 0.0456029  0.04591358 0.05866695
+ 0.0589772  0.04609071 0.04497045 0.04660904 0.04609279 0.04633423
+ 0.04633423 0.04359948 0.04559796 0.04565786 0.04713037 0.05063034
+ 0.06223938 0.04370633 0.04705751 0.05040771 0.03953845 0.04607304
+ 0.04552118 0.04549754 0.04605799 0.06548567 0.04517586 0.05166337
+ 0.04397878 0.04617826 0.04616649 0.04463677 0.04624072 0.04688513
+ 0.04622462 0.04558319 0.12345105 0.04191346 0.04656189 0.04590005
+ 0.06545346 0.04760081 0.04078724 0.06388999 0.04535258 0.04534147
+ 0.0477407  0.06869281 0.04560913 0.04642091 0.04493268 0.04688663
+ 0.04589036 0.04597337 0.04567946 0.04552473 0.04536525 0.0470934
+ 0.04680902 0.04561576 0.05497218 0.05129589 0.06612353 0.04398245
+ 0.04448622 0.04218476 0.04635311 0.06817536 0.04627577 0.04687857
+ 0.04577628 0.04631904 0.04844231 0.04642637 0.04574857 0.04054142
+ 0.04696507 0.04663096 0.04580855 0.05604077 0.04516167 0.04644054
+ 0.04626682 0.04602714 0.04572408 0.04661594 0.04556873 0.04685947
+ 0.05961446 0.04305187 0.05155838 0.04011588 0.04672066 0.05858058
+ 0.0461063  0.04431967 0.04681951 0.0646538  0.04667225 0.0463512
+ 0.04553185 0.09767956 0.04286609 0.04598971 0.04597278 0.04547103
+ 0.04141309 0.04655021 0.0457555  0.03976647 0.04660143 0.04540699
+ 0.04578379 0.0453003  0.04533237 0.04927391 0.04682984 0.04544427
+ 0.04520586 0.0457946  0.0459351  0.04329204 0.04377804 0.04810734
+ 0.04075336 0.05817943 0.04482872 0.04665598 0.05767363 0.04535493
+ 0.07114516 0.04332473 0.04746822 0.04627678 0.04287153 0.04227483
+ 0.04105665 0.04333642 0.04302203 0.04475812 0.04009808 0.04105093
+ 0.04105093 0.0417833  0.04294244 0.04377591 0.03771159 0.04227158
+ 0.04109333 0.02468502 0.04552502 0.03184549 0.04097468 0.03997616
+ 0.03742925 0.04127691 0.0354112  0.03700208 0.02853993 0.04272603
+ 0.04261877 0.04102294 0.03390616 0.03786608 0.04178172 0.04204474]
+[2020-04-25 22:07:31,452] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (312,)
+[2020-04-25 22:07:31,509] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Diamond (id 15)
+[2020-04-25 22:07:31,509] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,509] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,510] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,510] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,518] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.02766307 0.06427817 0.04729985 0.04743255 0.05927066 0.03798306
+ 0.03521216 0.04116071 0.04163136 0.04476428 0.03014729 0.045685
+ 0.04444184 0.03074433 0.04679103 0.04489542 0.04256244 0.04349654
+ 0.04746045 0.047042   0.04365454 0.04365454 0.04586922 0.04714832
+ 0.04862122 0.04379863 0.04689149 0.04738635 0.04740298 0.03223935
+ 0.03291465 0.04493161 0.04480426 0.04440318 0.0475871  0.04672731
+ 0.06533167 0.04792508 0.04088136 0.0473863  0.04946285 0.04784029
+ 0.04689257 0.04735884 0.04699456 0.04707506 0.04666022 0.045854
+ 0.04640006 0.04640006 0.04957686 0.04714952 0.04464104 0.04558062
+ 0.04633824 0.04600087 0.04597951 0.04378867 0.045944   0.04567429
+ 0.04633622 0.04691948 0.04680025 0.10142699 0.04600842 0.05254062
+ 0.04634016 0.05236985 0.04443388 0.04580125 0.04527553 0.04510741
+ 0.04511407 0.04486671 0.04775316 0.04699425 0.04668526 0.04714031
+ 0.04504874 0.04711895 0.0468877  0.04504208 0.04348558 0.0468877
+ 0.04632343 0.03687007 0.04708373 0.04643489 0.04795599 0.04523155
+ 0.04854891 0.04800058 0.0477264  0.04658423 0.04697219 0.0485656
+ 0.04809036 0.04766453 0.04452106 0.04697407 0.04128047 0.04843806
+ 0.04563732 0.04726675 0.04758662 0.04886003 0.0320479  0.04559024
+ 0.05072805 0.0492219  0.04889816 0.04695061 0.04697549 0.04569478
+ 0.04501892 0.06523743 0.0454927  0.04701861 0.04675158 0.04557068
+ 0.04622751 0.04576318 0.0477211  0.04896077 0.03930037 0.03435067
+ 0.04672407 0.04709075 0.04804382 0.04180905 0.05807249 0.05807249
+ 0.06767522 0.04649123 0.04832518 0.04651137 0.03086228 0.04880302
+ 0.04811717 0.04657079 0.0479299  0.04933267 0.04814354 0.05036477
+ 0.04410875 0.05000888 0.03348641 0.05118123 0.04694049 0.03254478
+ 0.05026906 0.04960662 0.04391106 0.03496027 0.05053332 0.04891905
+ 0.04861501 0.04947564 0.04883684 0.04827763 0.04575975 0.05005362
+ 0.04805393 0.04674563 0.0491553  0.03145093 0.04810894 0.04429176
+ 0.04588098 0.04679776 0.03397508 0.0460041  0.03557682 0.04894044
+ 0.04883597 0.05028007 0.04857422 0.04851839 0.04914979 0.04691069
+ 0.04968662 0.03763771 0.05489322 0.04697392 0.04657497 0.05122993
+ 0.04736207 0.05008266 0.04981754 0.04981754 0.04783152 0.04807832
+ 0.05009918 0.04825605 0.0479218  0.04688232 0.04414642 0.04867438
+ 0.05035511 0.05000383 0.04914623 0.04595059 0.04888935 0.04785655
+ 0.04848026 0.04880557 0.0475658  0.04756294 0.03899225 0.04671759
+ 0.04750156 0.04684713 0.04694041 0.04542875 0.03997302 0.04991433
+ 0.05184635 0.04650176 0.04749891 0.0474305  0.04644028 0.04630086
+ 0.04925324 0.03529239 0.03506987 0.04608314 0.0462033  0.03949559
+ 0.0482461  0.05360449 0.04206677 0.04550073 0.04405969 0.04625706
+ 0.04611657 0.05542375 0.04689897 0.04369184 0.04271576 0.04647622
+ 0.045501   0.05624775 0.04994756 0.04610203 0.04780696 0.04492613
+ 0.04568896 0.04473887 0.04361322 0.04602736 0.04789651 0.03213851
+ 0.06470617 0.0462274  0.04978347 0.04676579 0.04477001 0.02080238
+ 0.04620884 0.04712262 0.04931087 0.04905116 0.05543354 0.06356274
+ 0.04913907 0.05213039 0.0552754  0.05871138 0.06511909 0.04278234
+ 0.0485091  0.04878543 0.05016992]
+[2020-04-25 22:07:31,519] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (273,)
+[2020-04-25 22:07:31,561] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Chevron (id 16)
+[2020-04-25 22:07:31,563] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,564] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,564] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,564] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,570] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.03235569 0.02741754 0.03968926 0.04490896 0.05524694 0.0387856
+ 0.04637767 0.04645768 0.04491297 0.04089098 0.06458245 0.0433532
+ 0.0597914  0.04737551 0.05032462 0.05281929 0.04534306 0.06580561
+ 0.05019249 0.05103639 0.05116108 0.05056468 0.06035821 0.06256766
+ 0.05390534 0.04690874 0.03520311 0.06743677 0.0462947  0.05023845
+ 0.05053186 0.05296719 0.05523317 0.04470231 0.04457847 0.05134478
+ 0.05091356 0.05495624 0.05134478 0.05134478 0.05092934 0.05092934
+ 0.04627878 0.04938973 0.04996858 0.05125393 0.05125393 0.04893596
+ 0.05310458 0.03873541 0.04834767 0.045606   0.04604599 0.05137826
+ 0.04900485 0.04815928 0.04647227 0.04507893 0.0491278  0.04295631
+ 0.04233361 0.0479098  0.04475362 0.04367847 0.04724798 0.04706093
+ 0.04669314 0.05059463 0.05004768 0.05029924 0.08175316 0.04776858
+ 0.05358991 0.04230613 0.04666738 0.05128473 0.05111816 0.15595367
+ 0.05507749 0.04186835 0.04900176 0.03796982 0.03777545 0.04834121
+ 0.04707423 0.04586696 0.04683564 0.05188763 0.04878299 0.05098596
+ 0.04441009 0.05008898 0.06710357 0.04769398 0.05044206 0.04184738
+ 0.04633544 0.04912388 0.04788367 0.05068786 0.04646134 0.04639457
+ 0.04755609 0.06053678 0.04574975 0.04703746 0.04521239 0.04553565
+ 0.04451211 0.03996607 0.04895768 0.04310089 0.04422862 0.04297705
+ 0.04185828 0.06472171 0.03946426 0.03942866 0.04385866 0.04475672
+ 0.04429364 0.05752916 0.04416571 0.04109577 0.04405062 0.04456101
+ 0.04693742 0.0459369  0.08392795 0.04713872 0.0465177  0.04745607
+ 0.04715028 0.07762964 0.0460344  0.04636786 0.04414757 0.04407679
+ 0.04102067 0.04518024 0.04001408 0.04408589 0.04427395 0.03656089
+ 0.04501748 0.05149796 0.05107133 0.03596232 0.04308963 0.04418983
+ 0.04841441 0.04708662 0.04617104 0.04675928 0.04351589 0.05026646
+ 0.05049182 0.04308322 0.04764113 0.0474079  0.04243556 0.04923481
+ 0.04702011 0.04712456 0.07209034 0.04331261 0.05059307 0.04858559
+ 0.08389235 0.01944169 0.04262211 0.01349925]
+[2020-04-25 22:07:31,593] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (172,)
+[2020-04-25 22:07:31,776] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Egg (id 17)
+[2020-04-25 22:07:31,776] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,777] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,777] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,779] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,786] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.092123   0.04541191 0.04974973 0.03103392 0.03062394 0.04316513
+ 0.04667387 0.04712026 0.04923106 0.04740286 0.04782422 0.04888847
+ 0.04494448 0.03883868 0.04775778 0.04117479 0.04613106 0.04642062
+ 0.04642062 0.04557685 0.04305183 0.0485143  0.04009975 0.04801062
+ 0.04645954 0.04627052 0.05152374 0.04680341 0.04290097 0.04605911
+ 0.04224977 0.04709994 0.04479045 0.04137996 0.04000891 0.04650817
+ 0.05163698 0.04879665 0.04692951 0.04690442 0.04183157 0.04141316
+ 0.04134403 0.04722253 0.04688168 0.04722253 0.04222513 0.04131863
+ 0.04664375 0.04577386 0.04184871 0.0422969  0.04765325 0.04679638
+ 0.04716026 0.06452703 0.04037226 0.03767451 0.04157002 0.03981777
+ 0.04901664 0.04003011 0.04742437 0.04742437 0.04279556 0.04777397
+ 0.04505413 0.04649678 0.04301428 0.05119012 0.04820215 0.04809093
+ 0.04796473 0.04612298 0.05005406 0.0420886  0.0394454  0.04876874
+ 0.04883895 0.04839698 0.04965972 0.0487947  0.04799109 0.0431335
+ 0.04201414 0.04776031 0.04862705 0.05051163 0.04512283 0.05195782
+ 0.04226133 0.04785545 0.05252167 0.05252167 0.05703084 0.04849388
+ 0.04345521 0.05154052 0.05003274 0.05447587 0.05398408 0.0496857
+ 0.05638584 0.05293883 0.04998178 0.0464164  0.05132617 0.0410527
+ 0.04986248 0.0500804  0.05049822 0.04973608 0.04001026 0.05153703
+ 0.04902796 0.04255353 0.04702879 0.04696309 0.03583286 0.03583286
+ 0.03689288 0.04623942 0.03494633 0.03766308 0.0437207  0.04791402
+ 0.04710933 0.04986371 0.05252943 0.04191014 0.04873183 0.04795651
+ 0.04796229 0.05004172 0.04311654 0.04755852 0.04437496 0.04510721
+ 0.0434397  0.03998811 0.03370841 0.03732509 0.04594556 0.0459403
+ 0.03722027 0.06900767 0.05638649 0.04308458 0.04578586 0.03971385
+ 0.06243855 0.04869152 0.03899372 0.04522585 0.04039868 0.04920764
+ 0.04274887 0.05273998]
+[2020-04-25 22:07:31,786] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (158,)
+[2020-04-25 22:07:31,901] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Teardrop (id 18)
+[2020-04-25 22:07:31,901] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:31,901] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:31,901] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:31,901] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:31,909] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.0378908  0.03935347 0.0452606  0.03757097 0.03706911 0.04467364
+ 0.02371696 0.04540277 0.04899669 0.03969421 0.0475188  0.04920375
+ 0.04725639 0.04393073 0.0478723  0.04680973 0.04452005 0.04795118
+ 0.04666511 0.04576923 0.04352177 0.03110089 0.04915632 0.0498441
+ 0.04723305 0.04930297 0.05304558 0.0477034  0.04794993 0.04780223
+ 0.04828234 0.04908051 0.04828234 0.04979878 0.04748005 0.04727984
+ 0.03357725 0.04816809 0.0479238  0.04710092 0.07601125 0.04825653
+ 0.04668649 0.04804358 0.04371478 0.02802518 0.04650429 0.04766714
+ 0.04329419 0.04797184 0.05262024 0.04779465 0.04828277 0.04336115
+ 0.04473012 0.046648   0.04464958 0.04799127 0.04881183 0.0443222
+ 0.04475107 0.04801829 0.04713203 0.04843911 0.04482482 0.04698098
+ 0.04801497 0.04857689 0.04432529 0.04076505 0.04798131 0.04781937
+ 0.04807775 0.03958468 0.04817905 0.04613571 0.04730518 0.0312872
+ 0.04781198 0.04798265 0.0490418  0.04476704 0.0483463  0.04624943
+ 0.04264955 0.047939   0.03361164 0.04422644 0.04739877 0.04857157
+ 0.04802685 0.05885332 0.0273961  0.05005578 0.04984396 0.04983086
+ 0.04843166 0.04866825 0.04920096 0.03720298 0.03403771 0.05037228
+ 0.05042941 0.05155062 0.04969315 0.05036161 0.04890586 0.05208019
+ 0.04905789 0.05191248 0.04782393 0.05114786 0.06066051 0.046914
+ 0.04982128 0.04945991 0.04135135 0.04845869 0.05074421 0.03447768
+ 0.04493388 0.04723748 0.04976138 0.04429473 0.05286768 0.05106442
+ 0.05144689 0.04922434 0.04320778 0.04681031 0.05285625 0.0503583
+ 0.05285625 0.04681493 0.04855536 0.02935358 0.05275937 0.03905016
+ 0.05123469 0.04282302 0.03919581 0.04660079 0.04133902 0.04948758
+ 0.04562482 0.04840245 0.04043579 0.0518983  0.03567187 0.04474571
+ 0.05175391 0.049709   0.02248958 0.04686901 0.04274811 0.0494263
+ 0.04869818 0.04204956 0.04649323 0.05064445 0.06156711 0.04740232
+ 0.04678983 0.05089543 0.04389643 0.0522132  0.07015109 0.05677342
+ 0.06542174 0.05903508 0.06496502 0.05885853 0.10696429 0.05523083
+ 0.09873101 0.06621081 0.10255208 0.04653675 0.05116252 0.03219398]
+[2020-04-25 22:07:31,909] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (180,)
+[2020-04-25 22:07:32,103] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Cone (id 19)
+[2020-04-25 22:07:32,103] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:32,103] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:32,104] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:32,104] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:32,106] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.06589811 0.05889902 0.07458333 0.16993882 0.04864298 0.0327234
+ 0.04679258 0.04365103 0.04922932 0.03999931 0.03063927 0.04027863
+ 0.04676566 0.02820743 0.04808686 0.02762084 0.04268054 0.04005817
+ 0.04029547 0.04435434 0.04209841 0.0470236  0.0427806  0.03983586
+ 0.04708044 0.05227922 0.04577049 0.04330362 0.04547603 0.0294294
+ 0.15909066 0.04239205 0.03636093 0.04062077 0.04312175 0.04238791
+ 0.04395602 0.08265535 0.04745673 0.04826109 0.04901297 0.04779371
+ 0.06667398 0.04838969 0.04418621 0.04977046 0.04451347 0.05497995
+ 0.04602637 0.04611799 0.04421681 0.04638722 0.04669529 0.04219997
+ 0.04656338 0.04082401 0.04408746 0.04106668 0.02293054 0.02123846
+ 0.02661798 0.03783137 0.05014121 0.03759963 0.04386202 0.04637541]
+[2020-04-25 22:07:32,106] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (66,)
+[2020-04-25 22:07:32,154] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Cross (id 20)
+[2020-04-25 22:07:32,154] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:32,154] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:32,154] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:32,154] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:32,156] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.04399774 0.04178386 0.05266529 0.04916951 0.02637043 0.04830172
+ 0.06758907 0.04604464 0.04499561 0.03607392 0.0511596  0.04602175
+ 0.04548487 0.05318794 0.04106296 0.03129375 0.02766997 0.04316295
+ 0.04576981 0.04806238 0.04326721 0.04866098 0.03917365 0.05004796
+ 0.06928643 0.04765224 0.0305443  0.03850421 0.04697571 0.04739619
+ 0.04352684 0.03593459 0.03179666 0.04914259 0.04987722 0.01809963
+ 0.02821108 0.0565118  0.05287822 0.04371885 0.01658568 0.03307895
+ 0.02126884]
+[2020-04-25 22:07:32,158] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (43,)
+[2020-04-25 22:07:32,266] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Delta (id 21)
+[2020-04-25 22:07:32,266] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (16868,)
+[2020-04-25 22:07:32,266] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((16868,))
+[2020-04-25 22:07:32,266] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (16868,)
+[2020-04-25 22:07:32,266] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2020-04-25 22:07:32,267] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba []
+[2020-04-25 22:07:32,267] [4700/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (0,)
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/numpy/core/fromnumeric.py:2920: RuntimeWarning: Mean of empty slice.
+  out=out, **kwargs)
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/numpy/core/_methods.py:85: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+/Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+[2020-04-25 22:07:50,070] [4700/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2020/04/25-22:07:50.236] [MRT-1764] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2020/04/25-22:07:50.244] [MRT-1764] [INFO] [dku.analysis.prediction]  - Training returned ok
+[2020/04/25-22:07:50.249] [MRT-1764] [INFO] [dku.ml.versioning]  - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/UFO/IWzV4H15/XYVclnCd/sessions/s6/pp1/m1
+[2020/04/25-22:07:50.302] [KNL-python-single-command-kernel-out-1776] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/25-22:07:50.303] [KNL-python-single-command-kernel-err-1777] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/25-22:07:50.355] [KNL-python-single-command-kernel-monitor-1775] [INFO] [dku.kernels]  - Process done with code 143
+[2020/04/25-22:07:50.368] [KNL-python-single-command-kernel-monitor-1775] [INFO] [dip.tickets]  - Destroying API ticket for analysis-ml-UFO-XBw2UjL on behalf of admin
+[2020/04/25-22:07:50.373] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.ml.python] T-XYVclnCd - Processing thread joined ...
+[2020/04/25-22:07:50.381] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.ml.python] T-XYVclnCd - Joining processing thread ...
+[2020/04/25-22:09:06.271] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.ml.python] T-XYVclnCd - Processing thread joined ...
+[2020/04/25-22:09:06.274] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.prediction] T-XYVclnCd - Train done
+[2020/04/25-22:09:06.276] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.prediction] T-XYVclnCd - Train done
+[2020/04/25-22:09:06.349] [FT-TrainWorkThread-JctHIdLx-1763] [INFO] [dku.analysis.prediction] T-XYVclnCd - Publishing mltask-train-done reflected event

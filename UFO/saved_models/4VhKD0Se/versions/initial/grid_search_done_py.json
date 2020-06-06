@@ -1,0 +1,116 @@
+[
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 6, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 95310, 
+        "test_score": 0.5951665124884367, 
+        "fit_time": 3645, 
+        "num_samples": 51, 
+        "best_iteration": null, 
+        "train_score": 0.9997377622377622, 
+        "parameter_id": 0, 
+        "time": 98955, 
+        "done_at": 1587824119986, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 6, \"min_samples_leaf\": 1}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 6, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 106128, 
+        "test_score": 0.6068660022148394, 
+        "fit_time": 3818, 
+        "num_samples": 46, 
+        "best_iteration": null, 
+        "train_score": 0.9987733111632761, 
+        "parameter_id": 0, 
+        "time": 109946, 
+        "done_at": 1587824131042, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 6, \"min_samples_leaf\": 1}@2"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 6, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 107640, 
+        "test_score": 0.6338213213213213, 
+        "fit_time": 3728, 
+        "num_samples": 43, 
+        "best_iteration": null, 
+        "train_score": 0.9988963963963964, 
+        "parameter_id": 0, 
+        "time": 111368, 
+        "done_at": 1587824132384, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 6, \"min_samples_leaf\": 1}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 12, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 108163, 
+        "test_score": 0.6272522522522522, 
+        "fit_time": 3965, 
+        "num_samples": 43, 
+        "best_iteration": null, 
+        "train_score": 0.9999774774774774, 
+        "parameter_id": 1, 
+        "time": 112128, 
+        "done_at": 1587824133460, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 12, \"min_samples_leaf\": 1}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 12, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 62688, 
+        "test_score": 0.5900786308973174, 
+        "fit_time": 2458, 
+        "num_samples": 51, 
+        "best_iteration": null, 
+        "train_score": 0.9999271561771562, 
+        "parameter_id": 1, 
+        "time": 65146, 
+        "done_at": 1587824185179, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 12, \"min_samples_leaf\": 1}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 12, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 58349, 
+        "test_score": 0.6093576965669989, 
+        "fit_time": 2071, 
+        "num_samples": 46, 
+        "best_iteration": null, 
+        "train_score": 0.9999592462180491, 
+        "parameter_id": 1, 
+        "time": 60420, 
+        "done_at": 1587824191481, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 12, \"min_samples_leaf\": 1}@2"
+    }
+]

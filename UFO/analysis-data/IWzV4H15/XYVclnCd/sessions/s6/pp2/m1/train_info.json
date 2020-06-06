@@ -1,0 +1,85 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 5,
+    "importantParams": [
+      {
+        "name": "penalty",
+        "vals": [
+          "l2"
+        ]
+      },
+      {
+        "name": "C",
+        "vals": [
+          "0.01",
+          "0.1",
+          "1.0",
+          "10.0",
+          "100.0"
+        ]
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "C",
+        "val": "0.01"
+      },
+      {
+        "name": "penalty",
+        "val": "l2"
+      }
+    ]
+  },
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 1602
+      },
+      {
+        "name": "Loading test set",
+        "time": 489
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 190
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 604
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 214
+      },
+      {
+        "name": "Grid searching",
+        "time": 203569
+      },
+      {
+        "name": "Fitting model",
+        "time": 5547
+      },
+      {
+        "name": "Saving model",
+        "time": 87
+      },
+      {
+        "name": "Scoring model",
+        "time": 5209
+      }
+    ]
+  },
+  "startTime": 1587827128592,
+  "endTime": 1587827346129,
+  "preprocessingTime": 3104,
+  "trainingTime": 214433
+}

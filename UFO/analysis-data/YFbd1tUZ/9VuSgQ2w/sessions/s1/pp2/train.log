@@ -1,0 +1,19 @@
+[2020/04/24-14:53:07.849] [FT-TrainWorkThread-WwiKYFXw-533] [INFO] [dku.analysis.ml.python] T-9VuSgQ2w - Processing thread joined ...
+[2020/04/24-14:53:07.855] [FT-TrainWorkThread-WwiKYFXw-533] [INFO] [dku.analysis.ml.python] T-9VuSgQ2w - Joining processing thread ...
+[2020/04/24-14:57:27.679] [MRT-535] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=null
+[2020/04/24-14:57:28.189] [MRT-535] [INFO] [dku.kernels]  - Getting kernel tail
+[2020/04/24-14:57:28.194] [KNL-python-single-command-kernel-monitor-540] [INFO] [dku.kernels]  - Process done with code 0
+[2020/04/24-14:57:28.195] [MRT-535] [INFO] [dku.kernels]  - Trying to enrich exception: com.dataiku.dip.io.SocketBlockLinkKernelException: Failed to train : <type 'exceptions.OSError'> : [Errno 2] No such file or directory: '/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/UFO/YFbd1tUZ/9VuSgQ2w/sessions/s1/pp2/m1/grid' from kernel com.dataiku.dip.analysis.coreservices.AnalysisMLKernel@7ac1045f process=com.dataiku.dip.security.process.RegularProcess@3fc39563 pid=3789 retcode=null
+[2020/04/24-14:57:28.197] [MRT-535] [WARN] [dku.analysis.ml.python]  - Training failed
+com.dataiku.dip.io.SocketBlockLinkKernelException: Failed to train : <type 'exceptions.OSError'> : [Errno 2] No such file or directory: '/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/UFO/YFbd1tUZ/9VuSgQ2w/sessions/s1/pp2/m1/grid'
+	at com.dataiku.dip.io.SocketBlockLinkInteraction.throwExceptionFromPython(SocketBlockLinkInteraction.java:302)
+	at com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.checkException(SocketBlockLinkInteraction.java:215)
+	at com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.get(SocketBlockLinkInteraction.java:190)
+	at com.dataiku.dip.io.SingleCommandKernelLink$1.call(SingleCommandKernelLink.java:208)
+	at com.dataiku.dip.analysis.ml.prediction.PredictionTrainAdditionalThread.process(PredictionTrainAdditionalThread.java:74)
+	at com.dataiku.dip.analysis.ml.shared.PRNSTrainThread.run(PRNSTrainThread.java:137)
+[2020/04/24-14:57:28.199] [KNL-python-single-command-kernel-monitor-540] [INFO] [dip.tickets]  - Destroying API ticket for analysis-ml-UFO-xsaxOT8 on behalf of admin
+[2020/04/24-14:57:28.202] [FT-TrainWorkThread-WwiKYFXw-533] [INFO] [dku.analysis.ml.python] T-9VuSgQ2w - Processing thread joined ...
+[2020/04/24-14:57:28.205] [FT-TrainWorkThread-WwiKYFXw-533] [INFO] [dku.analysis.prediction] T-9VuSgQ2w - Train done
+[2020/04/24-14:57:28.207] [FT-TrainWorkThread-WwiKYFXw-533] [INFO] [dku.analysis.prediction] T-9VuSgQ2w - Train done
+[2020/04/24-14:57:28.215] [FT-TrainWorkThread-WwiKYFXw-533] [INFO] [dku.analysis.prediction] T-9VuSgQ2w - Publishing mltask-train-done reflected event

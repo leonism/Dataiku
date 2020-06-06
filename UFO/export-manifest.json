@@ -1,0 +1,285 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": true,
+    "exportManagedFS": true,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": true,
+    "exportAllInputDatasets": true,
+    "exportAllDatasets": true,
+    "exportAllInputManagedFolders": true,
+    "exportGitRepository": false,
+    "exportInsightsData": true,
+    "useManualPluginsInfo": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "shareAllInputDatasets": false
+  },
+  "actualContent": {
+    "includedDatasets": [
+      {
+        "name": "UFO",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 10804934
+      },
+      {
+        "name": "UFO_city_scored",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 3360
+      },
+      {
+        "name": "UFO_country_scored",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 27747
+      },
+      {
+        "name": "UFO_filtered",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 4450058
+      },
+      {
+        "name": "UFO_geoEnhancement",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 1028852
+      },
+      {
+        "name": "UFO_incomplete_city",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 2518
+      },
+      {
+        "name": "UFO_incomplete_country",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 25739
+      },
+      {
+        "name": "UFO_incomplete_shape",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 44418
+      },
+      {
+        "name": "UFO_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 4667393
+      },
+      {
+        "name": "UFO_shape_scored",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 47421
+      },
+      {
+        "name": "UFO_test_incomplete",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 74864
+      },
+      {
+        "name": "UFO_train_complete",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 971412
+      }
+    ],
+    "includedSavedModels": [
+      {
+        "id": "4VhKD0Se",
+        "name": "Prediction (RANDOM_FOREST_CLASSIFICATION) on UFO_train_city",
+        "size": 30219928
+      },
+      {
+        "id": "DeABuQXQ",
+        "name": "Prediction (RANDOM_FOREST_CLASSIFICATION) on UFO_train_shape",
+        "size": 96960815
+      },
+      {
+        "id": "RBoqRXjM",
+        "name": "Prediction (LOGISTIC_REGRESSION) on UFO_train_country",
+        "size": 75192998
+      }
+    ],
+    "includedManagedFolders": [],
+    "allAnalysisData": true,
+    "insightsData": true
+  },
+  "originalProjectKey": "UFO",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "7.0.1",
+  "generatedWithDSSConfVersion": "7000",
+  "exportedWithPlugins": [
+    {
+      "pluginId": "geoadmin",
+      "version": "1.1.2"
+    },
+    {
+      "pluginId": "ip-range-matcher",
+      "version": "1.0.2"
+    },
+    {
+      "pluginId": "tableau-export-v2",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "time-series-forecast",
+      "version": "0.4.1"
+    },
+    {
+      "pluginId": "wms-maps-backgrounds",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "local-r-dev-setup",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "excel-sheet-importer",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "get-us-census-block",
+      "version": "0.4.0"
+    },
+    {
+      "pluginId": "anonymizer",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "text-summarization",
+      "version": "1.1.0"
+    },
+    {
+      "pluginId": "geocoder",
+      "version": "1.1.0"
+    },
+    {
+      "pluginId": "qlik-qvx",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "events-aggregator",
+      "version": "0.2.3"
+    },
+    {
+      "pluginId": "named-entity-recognition",
+      "version": "1.1.0"
+    },
+    {
+      "pluginId": "flow-charts",
+      "version": "0.1.1"
+    },
+    {
+      "pluginId": "graph-analytics",
+      "version": "0.0.2"
+    },
+    {
+      "pluginId": "customformula-soundex",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "colorbrewer-palettes",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "import-io",
+      "version": "1.0.1"
+    },
+    {
+      "pluginId": "googledrive",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "h2o",
+      "version": "0.0.5"
+    },
+    {
+      "pluginId": "forecastio",
+      "version": "0.4.0"
+    },
+    {
+      "pluginId": "tableau-hyper-export",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "osm-enrichment",
+      "version": "0.0.5"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "decision-tree-builder",
+      "version": "1.0.3"
+    },
+    {
+      "pluginId": "timeseries-preparation",
+      "version": "1.1.1"
+    },
+    {
+      "pluginId": "hierarchical-charts",
+      "version": "0.1.1"
+    },
+    {
+      "pluginId": "waterfall-chart",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "dataset-audit",
+      "version": "0.0.5"
+    },
+    {
+      "pluginId": "geozip",
+      "version": "2.0"
+    },
+    {
+      "pluginId": "census-us",
+      "version": "0.3.3"
+    },
+    {
+      "pluginId": "sentiment-analysis",
+      "version": "1.3.0"
+    },
+    {
+      "pluginId": "mapbox-maps-backgrounds",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "ml-assisted-labeling",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "movies-apis",
+      "version": "0.1.0"
+    },
+    {
+      "pluginId": "warp10",
+      "version": "1.0.1"
+    },
+    {
+      "pluginId": "numeric-base-conversion",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "sentence-embedding",
+      "version": "1.2.2"
+    }
+  ],
+  "requiredConnections": {
+    "filesystem_managed": {
+      "name": "filesystem_managed",
+      "type": "Filesystem"
+    }
+  },
+  "usedCodeEnvRefs": [],
+  "hasPartitionedDataset": false
+}

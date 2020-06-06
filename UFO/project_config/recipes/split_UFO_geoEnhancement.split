@@ -1,0 +1,254 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": -1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "datetime",
+              "col": "city",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "city",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "country",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "shape",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "latitude",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "longitude",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "datetime",
+                "type": "date"
+              },
+              {
+                "name": "city",
+                "type": "string"
+              },
+              {
+                "meaning": "CountryMeaning",
+                "name": "country",
+                "type": "string"
+              },
+              {
+                "name": "shape",
+                "type": "string"
+              },
+              {
+                "name": "latitude",
+                "type": "double"
+              },
+              {
+                "name": "longitude",
+                "type": "double"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    },
+    {
+      "filter": {
+        "uiData": {
+          "mode": "||",
+          "conditions": [
+            {
+              "input": "datetime",
+              "col": "city",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "city",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "country",
+              "col": "datetime",
+              "num": 0,
+              "operator": "is empty"
+            },
+            {
+              "input": "shape",
+              "col": "datetime",
+              "num": 0,
+              "operator": "is empty"
+            },
+            {
+              "input": "latitude",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "longitude",
+              "col": "datetime",
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "datetime",
+                "type": "date"
+              },
+              {
+                "name": "city",
+                "type": "string"
+              },
+              {
+                "meaning": "CountryMeaning",
+                "name": "country",
+                "type": "string"
+              },
+              {
+                "name": "shape",
+                "type": "string"
+              },
+              {
+                "name": "latitude",
+                "type": "double"
+              },
+              {
+                "name": "longitude",
+                "type": "double"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "enabled": true
+      },
+      "outputIndex": 1
+    }
+  ]
+}

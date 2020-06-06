@@ -1,0 +1,52 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1587800871844,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dUFO_train_complete,sel\u003d(method\u003dhead-s,records\u003d100000),r\u003d0.8,s\u003d1337",
+  "instanceId": "2ef0db3533176c6ff72da1550d237bda-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"datetime","type":"date"},
+      {"name":"city","type":"string"},
+      {"name":"country","type":"string"},
+      {"name":"shape","type":"string"},
+      {"name":"latitude","type":"double"},
+      {"name":"longitude","type":"double"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train-2ef0db3533176c6ff72da1550d237bda-0.csv.gz",
+  "testPath": "test-2ef0db3533176c6ff72da1550d237bda-0.csv.gz",
+  "trainRows": 66918,
+  "testRows": 16869,
+  "fullRows": 0
+}

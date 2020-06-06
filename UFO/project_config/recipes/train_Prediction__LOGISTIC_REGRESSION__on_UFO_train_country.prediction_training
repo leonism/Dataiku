@@ -1,0 +1,949 @@
+{
+  "envSelection": {
+    "envMode": "USE_BUILTIN_MODE"
+  },
+  "core": {
+    "taskType": "PREDICTION",
+    "executionParams": {
+      "envSelection": {
+        "envMode": "USE_BUILTIN_MODE"
+      },
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "sparkParams": {
+        "pipelineAllowMerge": true,
+        "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+        "pipelineAllowStart": true,
+        "sparkExecutionEngine": "SPARK_SUBMIT",
+        "sparkConf": {
+          "inheritConf": "default",
+          "conf": []
+        },
+        "sparkRepartitionNonHDFS": 1,
+        "sparkUseGlobalMetastore": false
+      },
+      "sparkCheckpoint": "NONE"
+    },
+    "backendType": "PY_MEMORY",
+    "target_variable": "country",
+    "weight": {
+      "weightMethod": "CLASS_WEIGHT"
+    },
+    "time": {
+      "ascending": true,
+      "enabled": false
+    },
+    "partitionedModel": {
+      "ssdSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxRecords": -1,
+        "ordering": {
+          "rules": [],
+          "enabled": false
+        },
+        "withinFirstN": -1,
+        "partitionSelectionMethod": "ALL",
+        "targetRatio": 0.02,
+        "maxReadUncompressedBytes": -1,
+        "samplingMethod": "FULL"
+      },
+      "enabled": false
+    },
+    "calibration": {
+      "calibrationMethod": "NO_CALIBRATION"
+    },
+    "prediction_type": "MULTICLASS"
+  },
+  "operationMode": "TRAIN_SPLITTED_ONLY",
+  "modeling": {
+    "computeLearningCurves": false,
+    "max_ensemble_nodes_serialized": 0,
+    "pluginAlgoCustomGridSearch": false,
+    "logit_grid": {
+      "C": {
+        "values": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "penalty": {
+        "values": {
+          "l1": {
+            "enabled": false
+          },
+          "l2": {
+            "enabled": true
+          }
+        }
+      },
+      "n_jobs": 2,
+      "multi_class": "multinomial",
+      "enabled": true
+    },
+    "metrics": {
+      "customEvaluationMetricGIB": true,
+      "costMatrixWeights": {
+        "fpGain": -0.3,
+        "tpGain": 1.0,
+        "fnGain": 0.0,
+        "tnGain": 0.0
+      },
+      "liftPoint": 0.4,
+      "evaluationMetric": "ROC_AUC",
+      "customEvaluationMetricNeedsProba": false
+    },
+    "autoOptimizeThreshold": true,
+    "forcedClassifierThreshold": 0.0,
+    "grid_search_params": {
+      "mode": "KFOLD",
+      "nJobs": 4,
+      "nFolds": 3,
+      "nIter": 0,
+      "stratified": true,
+      "strategy": "GRID",
+      "shuffleIterations": 1,
+      "randomized": true,
+      "splitRatio": 0.8,
+      "timeout": 0
+    },
+    "skipExpensiveReports": false,
+    "algorithm": "LOGISTIC_REGRESSION",
+    "gridLength": 5
+  },
+  "partSource": "ACTIVE_VERSION",
+  "generatingModelId": "A-UFO-pLi7Dtbz-HXoBNaBT-s1-pp2-m1",
+  "preprocessing": {
+    "reduce": {
+      "kept_variance": 0.0,
+      "enabled": false
+    },
+    "target_remapping": [
+      {
+        "sampleFreq": 7804,
+        "mappedValue": 0,
+        "sourceValue": "United States"
+      },
+      {
+        "sampleFreq": 680,
+        "mappedValue": 1,
+        "sourceValue": "Australia"
+      },
+      {
+        "sampleFreq": 233,
+        "mappedValue": 2,
+        "sourceValue": "भारत गणराज्य"
+      },
+      {
+        "sampleFreq": 214,
+        "mappedValue": 3,
+        "sourceValue": "México"
+      },
+      {
+        "sampleFreq": 100,
+        "mappedValue": 4,
+        "sourceValue": "South Africa"
+      },
+      {
+        "sampleFreq": 97,
+        "mappedValue": 5,
+        "sourceValue": "New Zealand/Aotearoa"
+      },
+      {
+        "sampleFreq": 82,
+        "mappedValue": 6,
+        "sourceValue": "Brasil"
+      },
+      {
+        "sampleFreq": 66,
+        "mappedValue": 7,
+        "sourceValue": "Malaysia"
+      },
+      {
+        "sampleFreq": 51,
+        "mappedValue": 8,
+        "sourceValue": "Puerto Rico"
+      },
+      {
+        "sampleFreq": 45,
+        "mappedValue": 9,
+        "sourceValue": "Philippines"
+      },
+      {
+        "sampleFreq": 31,
+        "mappedValue": 10,
+        "sourceValue": "Argentina"
+      },
+      {
+        "sampleFreq": 27,
+        "mappedValue": 11,
+        "sourceValue": "Chile"
+      },
+      {
+        "sampleFreq": 27,
+        "mappedValue": 12,
+        "sourceValue": "Singapura"
+      },
+      {
+        "sampleFreq": 27,
+        "mappedValue": 13,
+        "sourceValue": "ราชอาณาจักรไทย"
+      },
+      {
+        "sampleFreq": 26,
+        "mappedValue": 14,
+        "sourceValue": "Venezuela"
+      },
+      {
+        "sampleFreq": 24,
+        "mappedValue": 15,
+        "sourceValue": "中华人民共和国/China"
+      },
+      {
+        "sampleFreq": 24,
+        "mappedValue": 16,
+        "sourceValue": "الإمارات العربيّة المتّحدة"
+      },
+      {
+        "sampleFreq": 22,
+        "mappedValue": 17,
+        "sourceValue": "ශ්‍රී ලංකා"
+      },
+      {
+        "sampleFreq": 21,
+        "mappedValue": 18,
+        "sourceValue": "‏پاکستان‎"
+      },
+      {
+        "sampleFreq": 21,
+        "mappedValue": 19,
+        "sourceValue": "Indonesia"
+      },
+      {
+        "sampleFreq": 20,
+        "mappedValue": 20,
+        "sourceValue": "Việt Nam"
+      },
+      {
+        "sampleFreq": 19,
+        "mappedValue": 21,
+        "sourceValue": "Colombia"
+      },
+      {
+        "sampleFreq": 17,
+        "mappedValue": 22,
+        "sourceValue": "Costa Rica"
+      },
+      {
+        "sampleFreq": 12,
+        "mappedValue": 23,
+        "sourceValue": "‏الكويت‎"
+      },
+      {
+        "sampleFreq": 12,
+        "mappedValue": 24,
+        "sourceValue": "Jamaica"
+      },
+      {
+        "sampleFreq": 12,
+        "mappedValue": 25,
+        "sourceValue": "Hong Kong"
+      },
+      {
+        "sampleFreq": 12,
+        "mappedValue": 26,
+        "sourceValue": "Ecuador"
+      },
+      {
+        "sampleFreq": 12,
+        "mappedValue": 27,
+        "sourceValue": "Egypt"
+      },
+      {
+        "sampleFreq": 11,
+        "mappedValue": 28,
+        "sourceValue": "বাংলাদেশ"
+      },
+      {
+        "sampleFreq": 11,
+        "mappedValue": 29,
+        "sourceValue": "حدود ‏المملكة العربية السعودية‎"
+      },
+      {
+        "sampleFreq": 11,
+        "mappedValue": 30,
+        "sourceValue": "日本"
+      },
+      {
+        "sampleFreq": 11,
+        "mappedValue": 31,
+        "sourceValue": "República Dominicana"
+      },
+      {
+        "sampleFreq": 9,
+        "mappedValue": 32,
+        "sourceValue": "Guatemala"
+      },
+      {
+        "sampleFreq": 9,
+        "mappedValue": 33,
+        "sourceValue": "The Bahamas"
+      },
+      {
+        "sampleFreq": 9,
+        "mappedValue": 34,
+        "sourceValue": "España"
+      },
+      {
+        "sampleFreq": 9,
+        "mappedValue": 35,
+        "sourceValue": "Perú"
+      },
+      {
+        "sampleFreq": 9,
+        "mappedValue": 36,
+        "sourceValue": "Honduras"
+      },
+      {
+        "sampleFreq": 8,
+        "mappedValue": 37,
+        "sourceValue": "Trinidad and Tobago"
+      },
+      {
+        "sampleFreq": 8,
+        "mappedValue": 38,
+        "sourceValue": "Zimbabwe"
+      },
+      {
+        "sampleFreq": 7,
+        "mappedValue": 39,
+        "sourceValue": "Bolivia"
+      },
+      {
+        "sampleFreq": 6,
+        "mappedValue": 40,
+        "sourceValue": "Nigeria"
+      },
+      {
+        "sampleFreq": 6,
+        "mappedValue": 41,
+        "sourceValue": "Panamá"
+      },
+      {
+        "sampleFreq": 6,
+        "mappedValue": 42,
+        "sourceValue": "U.S. Virgin Is."
+      },
+      {
+        "sampleFreq": 5,
+        "mappedValue": 43,
+        "sourceValue": "Guyana"
+      },
+      {
+        "sampleFreq": 5,
+        "mappedValue": 44,
+        "sourceValue": "برني دارالسلام‎"
+      },
+      {
+        "sampleFreq": 5,
+        "mappedValue": 45,
+        "sourceValue": "Kenya"
+      },
+      {
+        "sampleFreq": 5,
+        "mappedValue": 46,
+        "sourceValue": "中華民國"
+      },
+      {
+        "sampleFreq": 5,
+        "mappedValue": 47,
+        "sourceValue": "ኢትዮጵያ Ethiopia"
+      },
+      {
+        "sampleFreq": 5,
+        "mappedValue": 48,
+        "sourceValue": "Barbados"
+      },
+      {
+        "sampleFreq": 5,
+        "mappedValue": 49,
+        "sourceValue": "מדינת ישראל"
+      },
+      {
+        "sampleFreq": 4,
+        "mappedValue": 50,
+        "sourceValue": "Cayman Islands"
+      },
+      {
+        "sampleFreq": 4,
+        "mappedValue": 51,
+        "sourceValue": "Namibia"
+      },
+      {
+        "sampleFreq": 4,
+        "mappedValue": 52,
+        "sourceValue": "‏البحرين‎"
+      },
+      {
+        "sampleFreq": 4,
+        "mappedValue": 53,
+        "sourceValue": "Cuba"
+      },
+      {
+        "sampleFreq": 4,
+        "mappedValue": 54,
+        "sourceValue": "Turks and Caicos Islands"
+      },
+      {
+        "sampleFreq": 4,
+        "mappedValue": 55,
+        "sourceValue": "Mauritius"
+      },
+      {
+        "sampleFreq": 4,
+        "mappedValue": 56,
+        "sourceValue": "नेपाल"
+      },
+      {
+        "sampleFreq": 3,
+        "mappedValue": 57,
+        "sourceValue": "Paraguay"
+      },
+      {
+        "sampleFreq": 3,
+        "mappedValue": 58,
+        "sourceValue": "Belize"
+      },
+      {
+        "sampleFreq": 3,
+        "mappedValue": 59,
+        "sourceValue": "Ayiti"
+      },
+      {
+        "sampleFreq": 3,
+        "mappedValue": 60,
+        "sourceValue": "ပြည်ထောင်စုမြန်မာနိုင်ငံတော်‌"
+      },
+      {
+        "sampleFreq": 3,
+        "mappedValue": 61,
+        "sourceValue": "British Virgin Islands"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 62,
+        "sourceValue": "Muso oa Lesotho"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 63,
+        "sourceValue": "Zambia"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 64,
+        "sourceValue": "‏قطر‎"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 65,
+        "sourceValue": "Aruba"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 66,
+        "sourceValue": "Uruguay"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 67,
+        "sourceValue": "ليبيا (Libya)"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 68,
+        "sourceValue": "‏ايران‎"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 69,
+        "sourceValue": "Viti"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 70,
+        "sourceValue": "الأردن"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 71,
+        "sourceValue": "Senegal"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 72,
+        "sourceValue": "Botswana"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 73,
+        "sourceValue": "Macao"
+      },
+      {
+        "sampleFreq": 2,
+        "mappedValue": 74,
+        "sourceValue": "Suriname"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 75,
+        "sourceValue": "Solomon Islands"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 76,
+        "sourceValue": "ព្រះរាជាណាចក្រកម្ពុជា"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 77,
+        "sourceValue": "Ghana"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 78,
+        "sourceValue": "CuraÃ§ao"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 79,
+        "sourceValue": "Saint Helena, Ascension and Tristan da Cunha"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 80,
+        "sourceValue": "Congo-Kinshasa"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 81,
+        "sourceValue": "São Tomé e Príncipe"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 82,
+        "sourceValue": "ދިވެހިރާއްޖޭގެ ޖުމުހޫރިއްޔާ"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 83,
+        "sourceValue": "Saint Lucia"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 84,
+        "sourceValue": "Fr. Polynesia"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 85,
+        "sourceValue": "Koninkrijk der Nederlanden"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 86,
+        "sourceValue": "Swatini"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 87,
+        "sourceValue": "El Salvador"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 88,
+        "sourceValue": "جمهورية العراق"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 89,
+        "sourceValue": "‏سلطنة عمان‎"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 90,
+        "sourceValue": "Guam"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 91,
+        "sourceValue": "Cabo Verde"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 92,
+        "sourceValue": "Tonga"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 93,
+        "sourceValue": "Papua Niugini"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 94,
+        "sourceValue": "ປະເທດລາວ"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 95,
+        "sourceValue": "Timór Loro Sa\u0027e"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 96,
+        "sourceValue": "Antarctica"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 97,
+        "sourceValue": "Sint Maarten"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 98,
+        "sourceValue": "France"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 99,
+        "sourceValue": "Cameroun"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 100,
+        "sourceValue": "Nicaragua"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 101,
+        "sourceValue": "Saint Vincent and the Grenadines"
+      },
+      {
+        "sampleFreq": 1,
+        "mappedValue": 102,
+        "sourceValue": "Uganda"
+      }
+    ],
+    "per_feature": {
+      "country": {
+        "min_samples": 10,
+        "customProcessorWantsMatrix": false,
+        "role": "TARGET",
+        "dummy_drop": "NONE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "type": "CATEGORY",
+        "max_nb_categories": 100,
+        "max_cat_safety": 200
+      },
+      "datetime": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Date",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "shape": {
+        "min_samples": 10,
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_drop": "DROP",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "customProcessorWantsMatrix": false,
+        "missing_handling": "NONE",
+        "category_handling": "DUMMIFY",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "max_nb_categories": 100,
+        "max_cat_safety": 200
+      },
+      "city": {
+        "min_samples": 10,
+        "missing_impute_with": "MODE",
+        "role": "INPUT",
+        "dummy_drop": "DROP",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "type": "CATEGORY",
+        "customProcessorWantsMatrix": false,
+        "missing_handling": "NONE",
+        "category_handling": "DUMMIFY",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text",
+          "userModified": false
+        },
+        "max_nb_categories": 100,
+        "max_cat_safety": 200
+      },
+      "latitude": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "longitude": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      }
+    },
+    "skipPreprocessing": false,
+    "feature_generation": {
+      "polynomial_combinations": {
+        "behavior": "DISABLED"
+      },
+      "manual_interactions": {
+        "interactions": []
+      },
+      "numericals_clustering": {
+        "all_features": false,
+        "input_features": [],
+        "k": 0,
+        "behavior": "DISABLED"
+      },
+      "categoricals_count_transformer": {
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      },
+      "pairwise_linear": {
+        "behavior": "DISABLED"
+      }
+    },
+    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleSeed": 1337,
+    "feature_selection_params": {
+      "pca_params": {
+        "n_features": 25,
+        "variance_proportion": 0.9
+      },
+      "custom_params": {
+        "code": "# type your code here"
+      },
+      "method": "NONE",
+      "correlation_params": {
+        "min_abs_correlation": 0.0,
+        "n_features": 25
+      },
+      "lasso_params": {
+        "alpha": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "cross_validate": true
+      },
+      "random_forest_params": {
+        "depth": 10,
+        "n_trees": 30,
+        "n_features": 25
+      }
+    }
+  },
+  "backendType": "PY_MEMORY",
+  "expectedPreparationOutputSchema": {
+    "columns": [
+      {
+        "name": "datetime",
+        "type": "date"
+      },
+      {
+        "name": "city",
+        "type": "string"
+      },
+      {
+        "name": "country",
+        "type": "string"
+      },
+      {
+        "name": "shape",
+        "type": "string"
+      },
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      }
+    ],
+    "userModified": false
+  },
+  "splitParams": {
+    "testOnLargerValues": true,
+    "instanceIdRefresher": 0,
+    "ssdSeed": 1337,
+    "nFolds": 5,
+    "subSamplingSeed": 1337,
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 100000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "ssdTrainingRatio": 0.8,
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "kfold": false
+  },
+  "script": {
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "explorationSampling": {
+      "_refreshTrigger": 0,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxRecords": 10000,
+        "ordering": {
+          "rules": [],
+          "enabled": false
+        },
+        "withinFirstN": -1,
+        "partitionSelectionMethod": "ALL",
+        "maxStoredBytes": 104857600,
+        "targetRatio": 0.02,
+        "maxReadUncompressedBytes": -1,
+        "samplingMethod": "HEAD_SEQUENTIAL"
+      },
+      "autoRefreshSample": false
+    },
+    "explorationFilters": [],
+    "exploreUIParams": {},
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "previewMode": "ALL_ROWS",
+    "vizSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false
+    },
+    "analysisColumnData": {
+      "country": {
+        "meaning": "Text"
+      }
+    },
+    "columnWidthsByName": {},
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    }
+  },
+  "sparkParams": {
+    "pipelineAllowMerge": true,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "pipelineAllowStart": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT",
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkRepartitionNonHDFS": 1,
+    "sparkUseGlobalMetastore": false
+  }
+}

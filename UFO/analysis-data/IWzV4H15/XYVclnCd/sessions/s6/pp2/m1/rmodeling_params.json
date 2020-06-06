@@ -1,0 +1,60 @@
+{
+  "algorithm": "LOGISTIC_REGRESSION",
+  "logit_grid": {
+    "enabled": true,
+    "multi_class": "ovr",
+    "penalty": {
+      "values": {
+        "l1": {
+          "enabled": false
+        },
+        "l2": {
+          "enabled": true
+        }
+      }
+    },
+    "C": {
+      "values": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "n_jobs": 2
+  },
+  "max_ensemble_nodes_serialized": 0,
+  "metrics": {
+    "evaluationMetric": "ROC_AUC",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 5,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "randomized": true,
+    "nIter": 0,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}

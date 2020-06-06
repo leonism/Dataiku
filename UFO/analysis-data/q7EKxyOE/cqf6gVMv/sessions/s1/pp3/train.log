@@ -1,0 +1,20 @@
+[2020/04/24-14:41:23.513] [MRT-497] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=null
+[2020/04/24-14:41:24.077] [MRT-497] [INFO] [dku.kernels]  - Getting kernel tail
+[2020/04/24-14:41:24.081] [MRT-497] [INFO] [dku.kernels]  - Trying to enrich exception: com.dataiku.dip.io.SocketBlockLinkKernelException: Failed to train : <type 'exceptions.IOError'> : [Errno 2] No such file or directory: u'/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/UFO/q7EKxyOE/cqf6gVMv/sessions/s1/pp3/m1/train_info.json' from kernel com.dataiku.dip.analysis.coreservices.AnalysisMLKernel@672f58a process=com.dataiku.dip.security.process.RegularProcess@784bb891 pid=3710 retcode=null
+[2020/04/24-14:41:24.082] [MRT-497] [WARN] [dku.analysis.ml.python]  - Training failed
+com.dataiku.dip.io.SocketBlockLinkKernelException: Failed to train : <type 'exceptions.IOError'> : [Errno 2] No such file or directory: u'/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/UFO/q7EKxyOE/cqf6gVMv/sessions/s1/pp3/m1/train_info.json'
+	at com.dataiku.dip.io.SocketBlockLinkInteraction.throwExceptionFromPython(SocketBlockLinkInteraction.java:302)
+	at com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.checkException(SocketBlockLinkInteraction.java:215)
+	at com.dataiku.dip.io.SocketBlockLinkInteraction$AsyncResult.get(SocketBlockLinkInteraction.java:190)
+	at com.dataiku.dip.io.SingleCommandKernelLink$1.call(SingleCommandKernelLink.java:208)
+	at com.dataiku.dip.analysis.ml.prediction.PredictionTrainAdditionalThread.process(PredictionTrainAdditionalThread.java:74)
+	at com.dataiku.dip.analysis.ml.shared.PRNSTrainThread.run(PRNSTrainThread.java:137)
+[2020/04/24-14:41:24.091] [KNL-python-single-command-kernel-err-516] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/24-14:41:24.091] [KNL-python-single-command-kernel-out-515] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/24-14:41:26.196] [KNL-python-single-command-kernel-monitor-514] [INFO] [dku.kernels]  - Process done with code 137
+[2020/04/24-14:41:26.236] [FT-TrainWorkThread-P5GbgZ5a-496] [INFO] [dku.analysis.ml.python] T-cqf6gVMv - Processing thread joined ...
+[2020/04/24-14:41:26.241] [FT-TrainWorkThread-P5GbgZ5a-496] [INFO] [dku.analysis.ml.python] T-cqf6gVMv - Joining processing thread ...
+[2020/04/24-14:48:05.801] [FT-TrainWorkThread-P5GbgZ5a-496] [INFO] [dku.analysis.ml.python] T-cqf6gVMv - Processing thread joined ...
+[2020/04/24-14:48:05.867] [FT-TrainWorkThread-P5GbgZ5a-496] [INFO] [dku.analysis.prediction] T-cqf6gVMv - Train done
+[2020/04/24-14:48:05.881] [FT-TrainWorkThread-P5GbgZ5a-496] [INFO] [dku.analysis.prediction] T-cqf6gVMv - Train done
+[2020/04/24-14:48:05.951] [FT-TrainWorkThread-P5GbgZ5a-496] [INFO] [dku.analysis.prediction] T-cqf6gVMv - Publishing mltask-train-done reflected event

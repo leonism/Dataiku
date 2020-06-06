@@ -1,0 +1,36 @@
+{
+    "progress": {
+        "top_level_todo": [], 
+        "stack": [
+            {
+                "start": 1587827366775, 
+                "name": "Grid searching", 
+                "target": null
+            }
+        ], 
+        "top_level_done": [
+            {
+                "name": "Loading train set", 
+                "time": 826
+            }, 
+            {
+                "name": "Loading test set", 
+                "time": 187
+            }, 
+            {
+                "name": "Collecting preprocessing data", 
+                "time": 175
+            }, 
+            {
+                "name": "Preprocessing train set", 
+                "time": 298
+            }, 
+            {
+                "name": "Preprocessing test set", 
+                "time": 87
+            }
+        ]
+    }, 
+    "state": "RUNNING", 
+    "startTime": 1587827365168
+}

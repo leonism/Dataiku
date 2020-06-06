@@ -1,0 +1,61 @@
+{
+    "details": {
+        "country": {
+            "levels": [
+                "United States", 
+                "Canada", 
+                "United Kingdom", 
+                "Australia", 
+                "New Zealand", 
+                "Singapura", 
+                "M\u00e9xico", 
+                "Brasil", 
+                "Vi\u1ec7t Nam", 
+                "Italia", 
+                "Venezuela", 
+                "Slovenija", 
+                "\u4e2d\u83ef\u6c11\u570b", 
+                "Jamaica", 
+                "Rom\u00e2nia", 
+                "\u0e23\u0e32\u0e0a\u0e2d\u0e32\u0e13\u0e32\u0e08\u0e31\u0e01\u0e23\u0e44\u0e17\u0e22", 
+                "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd/China", 
+                "U.S. Virgin Is.", 
+                "\u05de\u05d3\u05d9\u05e0\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc", 
+                "\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0438\u0458\u0430", 
+                "Portugal", 
+                "South Africa", 
+                "\u0dc1\u0dca\u200d\u0dbb\u0dd3 \u0dbd\u0d82\u0d9a\u0dcf", 
+                "India", 
+                "Slovensko", 
+                "GB"
+            ], 
+            "with_others": true
+        }, 
+        "shape": {
+            "levels": [
+                "Light", 
+                "Triangle", 
+                "Unknown", 
+                "Circle", 
+                "Other", 
+                "Oval", 
+                "Disk", 
+                "Sphere", 
+                "Fireball", 
+                "Cigar", 
+                "Changing", 
+                "Formation", 
+                "Diamond", 
+                "Chevron", 
+                "Flash", 
+                "Cylinder", 
+                "Teardrop", 
+                "Rectangle", 
+                "Egg", 
+                "Cone", 
+                "Cross"
+            ], 
+            "with_others": true
+        }
+    }
+}

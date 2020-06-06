@@ -1,0 +1,161 @@
+{
+    "per_feature": {
+        "city": {
+            "stats": {}
+        }, 
+        "country": {
+            "stats": {
+                "mostFrequentValue": "United States", 
+                "leastFrequentValue": "GB"
+            }, 
+            "category_possible_counts": [
+                575, 
+                29, 
+                24, 
+                6, 
+                3, 
+                2, 
+                2, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1, 
+                1
+            ], 
+            "category_possible_values": [
+                "United States", 
+                "Canada", 
+                "United Kingdom", 
+                "Australia", 
+                "New Zealand", 
+                "Singapura", 
+                "M\u00e9xico", 
+                "Brasil", 
+                "Vi\u1ec7t Nam", 
+                "Italia", 
+                "Venezuela", 
+                "Slovenija", 
+                "\u4e2d\u83ef\u6c11\u570b", 
+                "Jamaica", 
+                "Rom\u00e2nia", 
+                "\u0e23\u0e32\u0e0a\u0e2d\u0e32\u0e13\u0e32\u0e08\u0e31\u0e01\u0e23\u0e44\u0e17\u0e22", 
+                "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd/China", 
+                "U.S. Virgin Is.", 
+                "\u05de\u05d3\u05d9\u05e0\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc", 
+                "\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0438\u0458\u0430", 
+                "Portugal", 
+                "South Africa", 
+                "\u0dc1\u0dca\u200d\u0dbb\u0dd3 \u0dbd\u0d82\u0d9a\u0dcf", 
+                "India", 
+                "Slovensko", 
+                "GB"
+            ]
+        }, 
+        "longitude": {
+            "stats": {
+                "std": 45.036759634468595, 
+                "p99": 146.85758727999985, 
+                "min": -159.3219444, 
+                "max": 174.763332, 
+                "average": -84.89667490850758, 
+                "median": -87.90097225
+            }, 
+            "missing_impute_with_value": -84.89667490850758
+        }, 
+        "datetime": {
+            "stats": {
+                "std": 329314174.14892155, 
+                "p99": 3541816800.0, 
+                "min": 1376438400.0, 
+                "max": 3546547200.0, 
+                "average": 3238208770.909091, 
+                "median": 3314563200.0
+            }
+        }, 
+        "shape": {
+            "stats": {
+                "mostFrequentValue": "Light", 
+                "leastFrequentValue": "Cross"
+            }, 
+            "category_possible_counts": [
+                142, 
+                65, 
+                62, 
+                56, 
+                42, 
+                39, 
+                39, 
+                39, 
+                29, 
+                28, 
+                16, 
+                16, 
+                14, 
+                14, 
+                14, 
+                13, 
+                10, 
+                10, 
+                6, 
+                5, 
+                1
+            ], 
+            "category_possible_values": [
+                "Light", 
+                "Triangle", 
+                "Unknown", 
+                "Circle", 
+                "Other", 
+                "Oval", 
+                "Disk", 
+                "Sphere", 
+                "Fireball", 
+                "Cigar", 
+                "Changing", 
+                "Formation", 
+                "Diamond", 
+                "Chevron", 
+                "Flash", 
+                "Cylinder", 
+                "Teardrop", 
+                "Rectangle", 
+                "Egg", 
+                "Cone", 
+                "Cross"
+            ]
+        }, 
+        "latitude": {
+            "stats": {
+                "std": 11.478731074925609, 
+                "p99": 53.95048593, 
+                "min": -43.532054, 
+                "max": 55.833333, 
+                "average": 37.20439714735001, 
+                "median": 38.56333335
+            }, 
+            "missing_impute_with_value": 37.20439714735001
+        }
+    }, 
+    "feature_order": [
+        "city", 
+        "country", 
+        "longitude", 
+        "datetime", 
+        "shape", 
+        "latitude"
+    ]
+}

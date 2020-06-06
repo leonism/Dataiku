@@ -1,0 +1,63 @@
+{
+  "state": "DONE",
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "C",
+        "val": "10.0"
+      },
+      {
+        "name": "penalty",
+        "val": "l2"
+      }
+    ]
+  },
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 847
+      },
+      {
+        "name": "Loading test set",
+        "time": 400
+      },
+      {
+        "name": "Collecting preprocessing data",
+        "time": 397
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 333
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 305
+      },
+      {
+        "name": "Grid searching",
+        "time": 1843336
+      },
+      {
+        "name": "Fitting model",
+        "time": 130001
+      },
+      {
+        "name": "Saving model",
+        "time": 112
+      },
+      {
+        "name": "Scoring model",
+        "time": 104806
+      }
+    ]
+  },
+  "startTime": 1587822204847,
+  "endTime": 1587824285422,
+  "preprocessingTime": 0,
+  "trainingTime": 2080575
+}

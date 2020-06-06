@@ -1,0 +1,14 @@
+{
+    "num_values": [
+        37.20439714735001, 
+        -84.89667490850758, 
+        null
+    ], 
+    "cat_values": [], 
+    "cat_columns": [], 
+    "num_columns": [
+        "latitude", 
+        "longitude", 
+        "datetime"
+    ]
+}

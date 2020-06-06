@@ -1,0 +1,122 @@
+{
+  "steps": [
+    {
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "GeoPoints",
+        "lat_column": "latitude",
+        "lon_column": "longitude"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "CityLevelReverseGeocoder",
+      "params": {
+        "inputCol": "GeoPoints",
+        "l8OutCol": "City",
+        "l7OutCol": "City",
+        "l6OutCol": "Dept",
+        "l3OutCol": "Region",
+        "l2OutCol": "Countries"
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    },
+    {
+      "type": "ColumnsSelector",
+      "params": {
+        "keep": false,
+        "appliesTo": "COLUMNS",
+        "columns": [
+          "City_enName",
+          "Dept_enName",
+          "City",
+          "Dept",
+          "Region",
+          "Region_enName",
+          "Countries"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "columnWidthsByName": {
+    "datetime": 183,
+    "city": 211,
+    "country": 211,
+    "shape": 100,
+    "latitude": 106,
+    "longitude": 113,
+    "GeoPoints": 225,
+    "City": 176,
+    "City_enName": 176,
+    "Dept": 218,
+    "Dept_enName": 218,
+    "Region": 127,
+    "Region_enName": 127,
+    "Countries_iso": 113,
+    "Countries": 211,
+    "Countries_enName": 211
+  },
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  },
+  "sorting": [],
+  "analysisColumnData": {
+    "country": {
+      "meaning": "Text"
+    },
+    "latitude": {
+      "meaning": "Latitude"
+    },
+    "longitude": {
+      "meaning": "Longitude"
+    }
+  },
+  "explorationSampling": {
+    "selection": {
+      "maxStoredBytes": 104857600,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 10000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": false,
+    "_refreshTrigger": 0
+  },
+  "vizSampling": {
+    "autoRefreshSample": false,
+    "_refreshTrigger": 0
+  },
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "globalSearchQuery": "",
+  "explorationFilters": [],
+  "previewMode": "ALL_ROWS"
+}
