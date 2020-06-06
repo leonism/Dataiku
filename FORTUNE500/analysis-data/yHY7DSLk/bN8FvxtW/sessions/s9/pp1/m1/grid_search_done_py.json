@@ -1,0 +1,116 @@
+[
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 12, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 201312, 
+        "test_score": 0.5199000370233248, 
+        "fit_time": 2437, 
+        "num_samples": 74, 
+        "best_iteration": null, 
+        "train_score": 0.999472816501802, 
+        "parameter_id": 1, 
+        "time": 203749, 
+        "done_at": 1587980302989, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 12, \"min_samples_leaf\": 1}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 12, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 312982, 
+        "test_score": 0.5238714090287278, 
+        "fit_time": 2283, 
+        "num_samples": 86, 
+        "best_iteration": null, 
+        "train_score": 0.9998138957816377, 
+        "parameter_id": 1, 
+        "time": 315265, 
+        "done_at": 1587980414518, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 12, \"min_samples_leaf\": 1}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 6, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 170851, 
+        "test_score": 0.5096443228454173, 
+        "fit_time": 624, 
+        "num_samples": 86, 
+        "best_iteration": null, 
+        "train_score": 0.9968775847808106, 
+        "parameter_id": 0, 
+        "time": 171475, 
+        "done_at": 1587980474480, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 6, \"min_samples_leaf\": 1}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 12, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 372797, 
+        "test_score": 0.548562412342216, 
+        "fit_time": 2678, 
+        "num_samples": 93, 
+        "best_iteration": null, 
+        "train_score": 0.9999291450165328, 
+        "parameter_id": 1, 
+        "time": 375475, 
+        "done_at": 1587980474789, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 12, \"min_samples_leaf\": 1}@2"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 6, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 387187, 
+        "test_score": 0.5087930396149575, 
+        "fit_time": 1985, 
+        "num_samples": 74, 
+        "best_iteration": null, 
+        "train_score": 0.9833410014569434, 
+        "parameter_id": 0, 
+        "time": 389172, 
+        "done_at": 1587980489343, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 6, \"min_samples_leaf\": 1}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 3, 
+            "max_depth": 6, 
+            "min_samples_leaf": 1
+        }, 
+        "score_time": 148776, 
+        "test_score": 0.546166432912576, 
+        "fit_time": 651, 
+        "num_samples": 93, 
+        "best_iteration": null, 
+        "train_score": 0.9979924421350969, 
+        "parameter_id": 0, 
+        "time": 149427, 
+        "done_at": 1587980563968, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 3, \"max_depth\": 6, \"min_samples_leaf\": 1}@2"
+    }
+]

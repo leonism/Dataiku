@@ -1,0 +1,67 @@
+{
+    "timeOrderingEnabled": false, 
+    "preSearchDescription": {
+        "importantParams": [
+            {
+                "vals": [
+                    "l2"
+                ], 
+                "name": "penalty"
+            }, 
+            {
+                "vals": [
+                    "0.01", 
+                    "0.1", 
+                    "1.0", 
+                    "10.0", 
+                    "100.0"
+                ], 
+                "name": "C"
+            }
+        ], 
+        "gridLength": 5
+    }, 
+    "trainingTime": 0, 
+    "state": "RUNNING", 
+    "sampleWeightsEnabled": false, 
+    "startTime": 1587981992267, 
+    "preprocessingTime": 0, 
+    "progress": {
+        "top_level_todo": [
+            "Fitting model", 
+            "Saving model", 
+            "Scoring model"
+        ], 
+        "stack": [
+            {
+                "start": 1587981992910, 
+                "name": "Grid searching", 
+                "target": null
+            }
+        ], 
+        "top_level_done": [
+            {
+                "name": "Loading train set", 
+                "time": 133
+            }, 
+            {
+                "name": "Loading test set", 
+                "time": 34
+            }, 
+            {
+                "name": "Collecting statistics", 
+                "time": 41
+            }, 
+            {
+                "name": "Preprocessing train set", 
+                "time": 174
+            }, 
+            {
+                "name": "Preprocessing test set", 
+                "time": 160
+            }
+        ]
+    }, 
+    "endTime": 0, 
+    "modelId": "m1"
+}

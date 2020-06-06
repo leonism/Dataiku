@@ -1,0 +1,148 @@
+{
+  "algorithm": "XGBOOST_REGRESSION",
+  "xgboost_grid": {
+    "enabled": true,
+    "max_depth": {
+      "values": [
+        3
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "learning_rate": {
+      "values": [
+        0.2
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "gamma": {
+      "values": [
+        0.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "min_child_weight": {
+      "values": [
+        0.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "max_delta_step": {
+      "values": [
+        0.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "subsample": {
+      "values": [
+        1.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "colsample_bytree": {
+      "values": [
+        1.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "colsample_bylevel": {
+      "values": [
+        1.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "alpha": {
+      "values": [
+        0.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "lambda": {
+      "values": [
+        1.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "booster": {
+      "values": {
+        "dart": {
+          "enabled": false
+        },
+        "gbtree": {
+          "enabled": true
+        }
+      }
+    },
+    "objective": {
+      "values": {
+        "binary_logistic": {
+          "enabled": false
+        },
+        "multi_softprob": {
+          "enabled": false
+        },
+        "reg_gamma": {
+          "enabled": false
+        },
+        "reg_linear": {
+          "enabled": true
+        },
+        "reg_logistic": {
+          "enabled": false
+        }
+      }
+    },
+    "n_estimators": 300,
+    "nthread": 4,
+    "scale_pos_weight": 1.0,
+    "base_score": 0.5,
+    "impute_missing": false,
+    "missing": 0.0,
+    "cpu_tree_method": "auto",
+    "gpu_tree_method": "gpu_exact",
+    "enable_cuda": false,
+    "seed": 1337,
+    "enable_early_stopping": true,
+    "early_stopping_rounds": 4
+  },
+  "max_ensemble_nodes_serialized": 0,
+  "metrics": {
+    "evaluationMetric": "R2",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 1,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "randomized": true,
+    "nIter": 0,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}

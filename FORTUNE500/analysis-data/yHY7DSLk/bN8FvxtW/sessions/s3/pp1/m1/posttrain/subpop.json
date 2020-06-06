@@ -1,0 +1,13 @@
+{
+    "onSample": false, 
+    "sampleSize": 10000, 
+    "computedOn": "test set", 
+    "features": [
+        {
+            "folderPath": "subpop-515cac473736ba25bd6eb1c7384d344a", 
+            "feature": "Revenue (in millions)", 
+            "done_at": 1587979379195
+        }
+    ], 
+    "randomState": 1337
+}

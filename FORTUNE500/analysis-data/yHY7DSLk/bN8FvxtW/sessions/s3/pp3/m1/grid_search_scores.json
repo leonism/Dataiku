@@ -1,0 +1,36 @@
+{
+    "gridSize": 3, 
+    "nThreads": 4, 
+    "metric": "R2", 
+    "gridPoints": [
+        {
+            "index": 0, 
+            "finishedAt": 1587977398109.0, 
+            "score": 0.2644523867736414, 
+            "parameters": {
+                "alpha": 0.1
+            }, 
+            "time": 4423.0
+        }, 
+        {
+            "index": 1, 
+            "finishedAt": 1587977397538.0, 
+            "score": 0.23802755926498878, 
+            "parameters": {
+                "alpha": 1.0
+            }, 
+            "time": 6113.0
+        }, 
+        {
+            "index": 2, 
+            "finishedAt": 1587977395607.0, 
+            "score": 0.17989016483688147, 
+            "parameters": {
+                "alpha": 3.0
+            }, 
+            "time": 6728.0
+        }
+    ], 
+    "startedAt": 1587977393303, 
+    "nSplits": 3
+}

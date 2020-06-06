@@ -1,0 +1,1008 @@
+[2020/04/27-15:49:26.901] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/27-15:49:26.905] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction]  - ** Start train session s3
+[2020/04/27-15:49:26.907] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/27-15:49:26.912] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 11] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337 i=725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.918] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 17] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337, instance id: 725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.922] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 21] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337 i=725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.926] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 25] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337 i=725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.932] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Joining processing thread ...
+[2020/04/27-15:49:26.934] [MRT-1848] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp2 in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/FORTUNE500/yHY7DSLk/bN8FvxtW/sessions/s3/pp2
+[2020/04/27-15:49:26.943] [MRT-1848] [INFO] [dku.block.link]  - Started a socket on port 54973
+[2020/04/27-15:49:26.946] [MRT-1848] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/FORTUNE500/yHY7DSLk/bN8FvxtW/sessions/s3/pp2/train.log
+[2020/04/27-15:49:26.947] [MRT-1848] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2020/04/27-15:49:26.949] [MRT-1848] [WARN] [dku.code.projectLibs]  - External libraries file not found: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/FORTUNE500/lib/external-libraries.json
+[2020/04/27-15:49:26.950] [MRT-1848] [INFO] [dku.code.projectLibs]  - EXTERNAL LIBS FROM FORTUNE500 is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/04/27-15:49:26.953] [MRT-1848] [INFO] [dku.code.projectLibs]  - chunkFolder is /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/FORTUNE500/lib/R
+[2020/04/27-15:49:26.954] [MRT-1848] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2020/04/27-15:49:26.955] [MRT-1848] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-FORTUNE500-mIlqbZJ on behalf of admin id=analysis-ml-FORTUNE500-mIlqbZJ_FF0lWIxXYPHA
+[2020/04/27-15:49:26.956] [MRT-1848] [INFO] [dku.security.process]  - Starting process (regular)
+[2020/04/27-15:49:26.989] [MRT-1848] [INFO] [dku.security.process]  - Process started with pid=4520
+[2020/04/27-15:49:26.992] [MRT-1848] [INFO] [dku.processes.cgroups]  - Will use cgroups []
+[2020/04/27-15:49:26.996] [MRT-1848] [INFO] [dku.processes.cgroups]  - Applying rules to used cgroups: []
+Installing debugging signal handler
+[2020-04-27 15:49:32,525] [4520/MainThread] [INFO] [root] Connecting to parent at port 54973
+[2020-04-27 15:49:32,530] [4520/MainThread] [INFO] [root] Connected to parent at port 54973
+[2020/04/27-15:49:32.532] [MRT-1848] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2020/04/27-15:49:32.549] [MRT-1848] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+[2020-04-27 15:49:36,461] [4520/MainThread] [INFO] [root] Running analysis command: train_prediction_models_nosave
+[2020-04-27 15:49:36,465] [4520/MainThread] [INFO] [dataiku.doctor.commands] PPS is {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Revenue (in millions)': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Company': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Profit (in millions)': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Rank': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Year': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'DROP_ROW', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'ENABLED_MANUAL'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-27 15:49:36,465] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading train set
+[2020-04-27 15:49:36,467] [4520/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-27 15:49:36,467] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Year: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:49:36,467] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Rank: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:49:36,467] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Company: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-27 15:49:36,467] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Revenue (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:49:36,467] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Profit (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=TARGET)
+[2020-04-27 15:49:36,467] [4520/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Revenue (in millions)': <type 'numpy.float64'>, u'Company': 'str', u'Profit (in millions)': <type 'numpy.float64'>, u'Rank': <type 'numpy.float64'>, u'Year': <type 'numpy.float64'>}
+[2020-04-27 15:49:36,573] [4520/MainThread] [INFO] [root] Loaded table
+[2020-04-27 15:49:36,578] [4520/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-27 15:49:36,578] [4520/MainThread] [INFO] [dataiku.doctor.commands] Loaded train df: shape=(20120,5)
+[2020-04-27 15:49:36,579] [4520/MainThread] [INFO] [dataiku.doctor.commands] Train col : Year (float64)
+[2020-04-27 15:49:36,579] [4520/MainThread] [INFO] [dataiku.doctor.commands] Train col : Rank (float64)
+[2020-04-27 15:49:36,579] [4520/MainThread] [INFO] [dataiku.doctor.commands] Train col : Company (object)
+[2020-04-27 15:49:36,579] [4520/MainThread] [INFO] [dataiku.doctor.commands] Train col : Revenue (in millions) (float64)
+[2020-04-27 15:49:36,580] [4520/MainThread] [INFO] [dataiku.doctor.commands] Train col : Profit (in millions) (float64)
+[2020-04-27 15:49:36,580] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading train set
+[2020-04-27 15:49:36,580] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading test set
+[2020-04-27 15:49:36,584] [4520/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-27 15:49:36,584] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Year: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:49:36,585] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Rank: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:49:36,585] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Company: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-27 15:49:36,585] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Revenue (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:49:36,585] [4520/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Profit (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=TARGET)
+[2020-04-27 15:49:36,585] [4520/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Revenue (in millions)': <type 'numpy.float64'>, u'Company': 'str', u'Profit (in millions)': <type 'numpy.float64'>, u'Rank': <type 'numpy.float64'>, u'Year': <type 'numpy.float64'>}
+[2020-04-27 15:49:36,615] [4520/MainThread] [INFO] [root] Loaded table
+[2020-04-27 15:49:36,616] [4520/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-27 15:49:36,616] [4520/MainThread] [INFO] [dataiku.doctor.commands] Loaded test df: shape=(5011,5)
+[2020-04-27 15:49:36,617] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading test set
+[2020-04-27 15:49:36,617] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2020-04-27 15:49:36,618] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Revenue (in millions)... (type=NUMERIC)
+[2020-04-27 15:49:36,618] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-27 15:49:36,622] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Company... (type=CATEGORY)
+[2020-04-27 15:49:36,642] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Profit (in millions)... (type=NUMERIC)
+[2020-04-27 15:49:36,642] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Rank... (type=NUMERIC)
+[2020-04-27 15:49:36,642] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-27 15:49:36,644] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Year... (type=NUMERIC)
+[2020-04-27 15:49:36,644] [4520/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-27 15:49:36,648] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2020-04-27 15:49:36,649] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] generating interactions
+[2020-04-27 15:49:36,649] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Revenue (in millions)': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Company': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Profit (in millions)': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Rank': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Year': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'DROP_ROW', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'ENABLED_MANUAL'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-27 15:49:36,649] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] No feature selection to perform
+[2020-04-27 15:49:36,650] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing train set
+[2020-04-27 15:49:36,650] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 20120
+[2020-04-27 15:49:36,651] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RemapValueToOutput
+[2020-04-27 15:49:36,651] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:SingleColumnDropNARows (Year)
+[2020-04-27 15:49:36,652] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-27 15:49:36,652] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:49:36,669] [4520/MainThread] [INFO] [dku.ml.preprocessing] After SCDNA input_df=(20120, 5)
+[2020-04-27 15:49:36,669] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:49:36,669] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Revenue (in millions)': 4319.147882703789, u'Rank': 249.50074552683895, u'Year': None}
+[2020-04-27 15:49:36,671] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Revenue (in millions))
+[2020-04-27 15:49:36,671] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Revenue (in millions) (avg=4319.1478827 std=11416.403101 shift=4319.1478827 inv_scale=8.75932630578e-05)
+[2020-04-27 15:49:36,725] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Revenue (in millions) (avg=-6.85986569625e-16 std=1.0) nulls=0
+[2020-04-27 15:49:36,726] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Rank)
+[2020-04-27 15:49:36,726] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Rank (avg=249.500745527 std=144.636683338 shift=249.500745527 inv_scale=0.00691387535253)
+[2020-04-27 15:49:36,729] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Rank (avg=1.15491888198e-16 std=1.0) nulls=0
+[2020-04-27 15:49:36,730] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Year)
+[2020-04-27 15:49:36,730] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Year (avg=1979.96053678 std=14.7911091772 shift=1979.96053678 inv_scale=0.0676081819166)
+[2020-04-27 15:49:36,735] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Year (avg=8.89084035022e-14 std=1.0) nulls=0
+[2020-04-27 15:49:36,735] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-27 15:49:36,735] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:PairwiseLinearCombinationsGenerator
+[2020-04-27 15:49:36,741] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:BlockStdRescalingProcessor
+[2020-04-27 15:49:36,744] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Company)
+[2020-04-27 15:49:36,791] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(20120, 103) nnz=20120
+[2020-04-27 15:49:36,792] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:49:36,792] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:49:36,792] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-27 15:49:36,792] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:49:36,792] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:49:36,793] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-27 15:49:36,793] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RealignTarget
+[2020-04-27 15:49:36,793] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (20120,)
+[2020-04-27 15:49:36,802] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (20120,)
+[2020-04-27 15:49:36,802] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-27 15:49:36,803] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-04-27 15:49:36,803] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (20120, 108) target before = (20120,)
+[2020-04-27 15:49:36,808] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:49:36,842] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(20120, 5)
+[2020-04-27 15:49:36,842] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (20120, 108) target after = (20120,)
+[2020-04-27 15:49:36,842] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:49:36,842] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-27 15:49:36,843] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (20120, 5) 
+[2020-04-27 15:49:36,843] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(20120, 108) 
+[2020-04-27 15:49:36,843] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:49:36,843] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((20120,))
+[2020-04-27 15:49:36,843] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-27 15:49:36,843] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 20120
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (20120, 5) 
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((20120, 5))
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((20120, 108))
+[2020-04-27 15:49:36,844] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((20120,))
+[2020-04-27 15:49:36,850] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing train set
+[2020-04-27 15:49:36,850] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing test set
+[2020-04-27 15:49:36,852] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 5011
+[2020-04-27 15:49:36,852] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RemapValueToOutput
+[2020-04-27 15:49:36,852] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:SingleColumnDropNARows (Year)
+[2020-04-27 15:49:36,853] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-27 15:49:36,854] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:49:36,858] [4520/MainThread] [INFO] [dku.ml.preprocessing] After SCDNA input_df=(5011, 5)
+[2020-04-27 15:49:36,858] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:49:36,858] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Revenue (in millions)': 4319.147882703789, u'Rank': 249.50074552683895, u'Year': None}
+[2020-04-27 15:49:36,860] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Revenue (in millions))
+[2020-04-27 15:49:36,861] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Revenue (in millions) (avg=4248.00221513 std=11318.3173503 shift=4319.1478827 inv_scale=8.75932630578e-05)
+[2020-04-27 15:49:36,867] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Revenue (in millions) (avg=-0.0062318811755 std=0.991408349037) nulls=0
+[2020-04-27 15:49:36,867] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Rank)
+[2020-04-27 15:49:36,867] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Rank (avg=250.724605867 std=143.672902752 shift=249.500745527 inv_scale=0.00691387535253)
+[2020-04-27 15:49:36,870] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Rank (avg=0.00846161784141 std=0.993336541164) nulls=0
+[2020-04-27 15:49:36,870] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Year)
+[2020-04-27 15:49:36,871] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Year (avg=1979.79125923 std=14.6595132516 shift=1979.96053678 inv_scale=0.0676081819166)
+[2020-04-27 15:49:36,872] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Year (avg=-0.0114445473697 std=0.991103038722) nulls=0
+[2020-04-27 15:49:36,873] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-27 15:49:36,873] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:PairwiseLinearCombinationsGenerator
+[2020-04-27 15:49:36,876] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:BlockStdRescalingProcessor
+[2020-04-27 15:49:36,878] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Company)
+[2020-04-27 15:49:36,889] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(5011, 103) nnz=5011
+[2020-04-27 15:49:36,889] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:49:36,889] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:49:36,889] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-27 15:49:36,890] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:49:36,890] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:49:36,890] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-27 15:49:36,890] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RealignTarget
+[2020-04-27 15:49:36,890] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (5011,)
+[2020-04-27 15:49:36,892] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (5011,)
+[2020-04-27 15:49:36,892] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-27 15:49:36,893] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-04-27 15:49:36,893] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (5011, 108) target before = (5011,)
+[2020-04-27 15:49:36,901] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:49:36,915] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(5011, 5)
+[2020-04-27 15:49:36,915] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (5011, 108) target after = (5011,)
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (5011, 5) 
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(5011, 108) 
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((5011,))
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-27 15:49:36,916] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 5011
+[2020-04-27 15:49:36,916] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:49:36,917] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-27 15:49:36,917] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (5011, 5) 
+[2020-04-27 15:49:36,917] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-27 15:49:36,917] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:49:36,917] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((5011, 5))
+[2020-04-27 15:49:36,917] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((5011, 108))
+[2020-04-27 15:49:36,917] [4520/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((5011,))
+[2020-04-27 15:49:36,917] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing test set
+[2020-04-27 15:49:36,918] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Grid searching
+[2020-04-27 15:49:36,930] [4520/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-27 15:49:36,930] [4520/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:49:36,951] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(20120,108) tn=2172960 nnz=120720 fill_ratio=0.06
+[2020-04-27 15:49:36,951] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-27 15:49:37,092] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common] Create CLF from params: {u'computeLearningCurves': False, u'rf_regressor_grid': {u'n_jobs': 1, u'max_tree_depth': {u'gridMode': u'EXPLICIT', u'values': [6, 12], u'nValues': 0}, u'selection_mode': u'auto', u'enabled': True, u'min_samples_leaf': {u'gridMode': u'EXPLICIT', u'values': [10], u'nValues': 0}, u'n_estimators': {u'gridMode': u'EXPLICIT', u'values': [100], u'nValues': 0}, u'max_feature_prop': 0.3, u'max_features': {u'gridMode': u'EXPLICIT', u'values': [5], u'nValues': 0}}, u'algorithm': u'RANDOM_FOREST_REGRESSION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 2, u'metrics': {u'customEvaluationMetricNeedsProba': False, u'evaluationMetric': u'R2', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'customEvaluationMetricGIB': True}, u'forcedClassifierThreshold': 0.0, u'skipExpensiveReports': False, u'max_ensemble_nodes_serialized': 6000, u'pluginAlgoCustomGridSearch': False} for algorithm RANDOM_FOREST_REGRESSION
+[2020-04-27 15:49:37,100] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common] Using K-Fold CV with k=3
+[2020-04-27 15:49:37,100] [4520/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.TreesHyperparametersSpace object at 0x11837dd50>
+[2020-04-27 15:49:37,102] [4520/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fitting 3 folds for each of 2 candidates, totalling 6 fits
+[Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020-04-27 15:49:37,110] [4520/GS-123145355284480] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=12, min_samples_leaf=10 
+[2020-04-27 15:49:37,116] [4520/GS-123145359491072] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=12, min_samples_leaf=10 
+[2020-04-27 15:49:37,122] [4520/GS-123145363697664] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=12, min_samples_leaf=10 
+[2020-04-27 15:49:37,293] [4520/GS-123145367904256] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s remaining:    0.0s
+building tree 2 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.5s remaining:    0.0s
+building tree 2 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s remaining:    0.0s
+building tree 2 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+building tree 3 of 100
+building tree 3 of 100
+building tree 3 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s remaining:    0.0s
+building tree 2 of 100
+building tree 4 of 100
+building tree 4 of 100
+building tree 4 of 100
+building tree 3 of 100
+building tree 5 of 100
+building tree 5 of 100
+building tree 5 of 100
+building tree 6 of 100
+building tree 4 of 100
+building tree 7 of 100
+building tree 6 of 100
+building tree 6 of 100
+building tree 5 of 100
+building tree 8 of 100
+building tree 7 of 100
+building tree 7 of 100
+building tree 6 of 100
+building tree 9 of 100
+building tree 8 of 100
+building tree 8 of 100
+building tree 10 of 100
+building tree 7 of 100
+building tree 9 of 100
+building tree 11 of 100
+building tree 9 of 100
+building tree 8 of 100
+building tree 12 of 100
+building tree 10 of 100
+building tree 9 of 100
+building tree 13 of 100
+building tree 10 of 100
+building tree 11 of 100
+building tree 14 of 100
+building tree 10 of 100
+building tree 11 of 100
+building tree 12 of 100
+building tree 15 of 100
+building tree 11 of 100
+building tree 16 of 100
+building tree 12 of 100
+building tree 13 of 100
+building tree 12 of 100
+building tree 17 of 100
+building tree 13 of 100
+building tree 14 of 100
+building tree 18 of 100
+building tree 13 of 100
+building tree 19 of 100
+building tree 14 of 100building tree 15 of 100
+building tree 20 of 100
+building tree 14 of 100
+building tree 15 of 100
+building tree 16 of 100
+building tree 21 of 100
+building tree 17 of 100
+building tree 16 of 100
+building tree 15 of 100
+building tree 22 of 100
+building tree 17 of 100
+building tree 18 of 100
+building tree 23 of 100
+building tree 16 of 100
+building tree 24 of 100
+building tree 19 of 100
+building tree 18 of 100
+building tree 17 of 100
+building tree 25 of 100
+building tree 20 of 100
+building tree 19 of 100
+building tree 26 of 100
+building tree 18 of 100
+building tree 21 of 100
+building tree 27 of 100
+building tree 20 of 100
+building tree 19 of 100
+building tree 28 of 100
+building tree 22 of 100
+building tree 21 of 100
+building tree 20 of 100
+building tree 29 of 100
+building tree 23 of 100
+building tree 22 of 100
+building tree 21 of 100
+building tree 30 of 100
+building tree 24 of 100
+building tree 31 of 100
+building tree 23 of 100
+building tree 22 of 100
+building tree 32 of 100
+building tree 25 of 100
+building tree 24 of 100
+building tree 23 of 100
+building tree 33 of 100
+building tree 26 of 100
+building tree 34 of 100
+building tree 24 of 100
+building tree 25 of 100
+building tree 35 of 100
+building tree 27 of 100
+building tree 25 of 100
+building tree 26 of 100
+building tree 36 of 100
+building tree 28 of 100
+building tree 26 of 100
+building tree 37 of 100
+building tree 27 of 100
+building tree 29 of 100
+building tree 38 of 100
+building tree 27 of 100
+building tree 28 of 100
+building tree 39 of 100
+building tree 30 of 100
+building tree 28 of 100
+building tree 29 of 100
+building tree 40 of 100
+building tree 31 of 100
+building tree 29 of 100
+building tree 41 of 100
+building tree 30 of 100
+building tree 32 of 100
+building tree 30 of 100
+building tree 42 of 100
+building tree 31 of 100
+building tree 33 of 100
+building tree 43 of 100
+building tree 31 of 100
+building tree 32 of 100building tree 44 of 100
+building tree 34 of 100
+building tree 32 of 100
+building tree 45 of 100
+building tree 33 of 100
+building tree 35 of 100
+building tree 33 of 100
+building tree 46 of 100
+building tree 36 of 100
+building tree 34 of 100
+building tree 47 of 100
+building tree 34 of 100
+building tree 48 of 100
+building tree 37 of 100
+building tree 35 of 100
+building tree 35 of 100
+building tree 49 of 100
+building tree 38 of 100
+building tree 36 of 100
+building tree 50 of 100
+building tree 36 of 100
+building tree 51 of 100
+building tree 37 of 100
+building tree 39 of 100
+building tree 52 of 100
+building tree 37 of 100
+building tree 53 of 100
+building tree 38 of 100
+building tree 40 of 100
+building tree 38 of 100
+building tree 54 of 100
+building tree 41 of 100
+building tree 39 of 100
+building tree 39 of 100
+building tree 55 of 100
+building tree 56 of 100
+building tree 42 of 100
+building tree 40 of 100
+building tree 40 of 100
+building tree 57 of 100
+building tree 43 of 100
+building tree 41 of 100
+building tree 41 of 100
+building tree 58 of 100
+building tree 44 of 100
+building tree 59 of 100
+building tree 42 of 100
+building tree 42 of 100
+building tree 45 of 100
+building tree 60 of 100
+building tree 43 of 100
+building tree 43 of 100
+building tree 61 of 100
+building tree 46 of 100
+building tree 44 of 100
+building tree 44 of 100
+building tree 62 of 100
+building tree 47 of 100
+building tree 45 of 100
+building tree 63 of 100
+building tree 45 of 100
+building tree 48 of 100
+building tree 64 of 100
+building tree 46 of 100
+building tree 46 of 100
+building tree 49 of 100
+building tree 65 of 100
+building tree 66 of 100
+building tree 47 of 100
+building tree 47 of 100
+building tree 50 of 100
+building tree 67 of 100
+building tree 51 of 100
+building tree 48 of 100
+building tree 48 of 100
+building tree 68 of 100
+building tree 52 of 100
+building tree 49 of 100
+building tree 69 of 100
+building tree 49 of 100
+building tree 70 of 100
+building tree 50 of 100
+building tree 53 of 100
+building tree 50 of 100
+building tree 71 of 100
+building tree 51 of 100
+building tree 54 of 100
+building tree 72 of 100
+building tree 51 of 100
+building tree 52 of 100
+building tree 55 of 100
+building tree 73 of 100
+building tree 52 of 100
+building tree 74 of 100
+building tree 53 of 100
+building tree 56 of 100
+building tree 53 of 100
+building tree 75 of 100
+building tree 54 of 100
+building tree 57 of 100
+building tree 54 of 100
+building tree 76 of 100
+building tree 55 of 100
+building tree 58 of 100
+building tree 77 of 100
+building tree 55 of 100
+building tree 78 of 100
+building tree 56 of 100
+building tree 59 of 100
+building tree 56 of 100
+building tree 79 of 100
+building tree 60 of 100
+building tree 57 of 100
+building tree 80 of 100
+building tree 57 of 100
+building tree 61 of 100
+building tree 81 of 100
+building tree 58 of 100
+building tree 58 of 100
+building tree 82 of 100
+building tree 62 of 100
+building tree 59 of 100
+building tree 59 of 100
+building tree 83 of 100
+building tree 63 of 100
+building tree 60 of 100
+building tree 84 of 100
+building tree 60 of 100
+building tree 64 of 100
+building tree 61 of 100
+building tree 85 of 100
+building tree 61 of 100
+building tree 86 of 100
+building tree 65 of 100
+building tree 62 of 100
+building tree 62 of 100
+building tree 87 of 100
+building tree 66 of 100
+building tree 63 of 100
+building tree 88 of 100
+building tree 67 of 100
+building tree 63 of 100
+building tree 89 of 100
+building tree 64 of 100
+building tree 68 of 100
+building tree 90 of 100
+building tree 64 of 100
+building tree 65 of 100
+building tree 91 of 100
+building tree 69 of 100
+building tree 65 of 100
+building tree 66 of 100
+building tree 92 of 100
+building tree 70 of 100
+building tree 66 of 100
+building tree 93 of 100
+building tree 67 of 100
+building tree 71 of 100
+building tree 94 of 100
+building tree 67 of 100
+building tree 95 of 100
+building tree 72 of 100
+building tree 68 of 100
+building tree 68 of 100
+building tree 96 of 100
+building tree 73 of 100
+building tree 69 of 100
+building tree 69 of 100
+building tree 97 of 100
+building tree 74 of 100
+building tree 98 of 100
+building tree 70 of 100
+building tree 70 of 100
+building tree 75 of 100
+building tree 99 of 100
+building tree 71 of 100
+building tree 71 of 100
+building tree 100 of 100
+building tree 76 of 100
+building tree 72 of 100
+building tree 72 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   25.4s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 77 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 73 of 100
+building tree 73 of 100
+building tree 78 of 100
+building tree 74 of 100
+building tree 74 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.5s finished
+[2020-04-27 15:50:05,561] [4520/GS-123145367904256] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 (ft=27.5s st=0.7s sc=0.409705242322)
+[2020-04-27 15:50:05,570] [4520/GS-123145367904256] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 
+building tree 79 of 100
+building tree 75 of 100
+building tree 75 of 100
+building tree 80 of 100
+building tree 76 of 100
+building tree 76 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+building tree 81 of 100
+building tree 77 of 100
+building tree 77 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s remaining:    0.0s
+building tree 2 of 100
+building tree 82 of 100
+building tree 3 of 100
+building tree 78 of 100
+building tree 78 of 100
+building tree 83 of 100
+building tree 4 of 100
+building tree 79 of 100
+building tree 79 of 100
+building tree 5 of 100
+building tree 84 of 100
+building tree 80 of 100
+building tree 80 of 100
+building tree 6 of 100
+building tree 85 of 100
+building tree 7 of 100
+building tree 81 of 100
+building tree 81 of 100
+building tree 86 of 100
+building tree 8 of 100
+building tree 82 of 100
+building tree 82 of 100
+building tree 9 of 100
+building tree 87 of 100
+building tree 10 of 100
+building tree 83 of 100
+building tree 83 of 100
+building tree 88 of 100
+building tree 11 of 100
+building tree 84 of 100
+building tree 84 of 100
+building tree 89 of 100
+building tree 12 of 100
+building tree 90 of 100
+building tree 85 of 100
+building tree 85 of 100
+building tree 13 of 100
+building tree 14 of 100
+building tree 91 of 100
+building tree 86 of 100
+building tree 86 of 100
+building tree 15 of 100
+building tree 92 of 100
+building tree 87 of 100
+building tree 16 of 100
+building tree 87 of 100
+building tree 93 of 100
+building tree 17 of 100
+building tree 88 of 100
+building tree 88 of 100
+building tree 18 of 100
+building tree 94 of 100
+building tree 89 of 100
+building tree 89 of 100
+building tree 19 of 100
+building tree 95 of 100
+building tree 20 of 100
+building tree 90 of 100
+building tree 90 of 100
+building tree 96 of 100
+building tree 21 of 100
+building tree 91 of 100
+building tree 91 of 100
+building tree 97 of 100
+building tree 22 of 100
+building tree 23 of 100
+building tree 92 of 100
+building tree 92 of 100
+building tree 98 of 100
+building tree 24 of 100
+building tree 99 of 100
+building tree 93 of 100
+building tree 93 of 100
+building tree 25 of 100
+building tree 100 of 100
+building tree 26 of 100
+building tree 94 of 100
+building tree 94 of 100
+building tree 27 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   33.0s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 95 of 100
+building tree 95 of 100
+building tree 28 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.4s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 96 of 100
+building tree 96 of 100
+building tree 29 of 100
+building tree 30 of 100
+building tree 97 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.5s finished
+[2020-04-27 15:50:13,317] [4520/GS-123145363697664] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=12, min_samples_leaf=10 (ft=35.3s st=0.9s sc=0.236762175933)
+building tree 97 of 100
+[2020-04-27 15:50:13,332] [4520/GS-123145363697664] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 
+building tree 31 of 100
+building tree 98 of 100
+building tree 98 of 100
+building tree 32 of 100
+building tree 99 of 100
+building tree 33 of 100
+building tree 99 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+building tree 34 of 100
+building tree 100 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s remaining:    0.0s
+building tree 2 of 100
+building tree 100 of 100
+building tree 35 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   34.4s finished
+building tree 3 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 36 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   35.1s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 4 of 100
+building tree 37 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.2s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 5 of 100
+building tree 38 of 100
+building tree 6 of 100
+building tree 39 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.3s finished
+[2020-04-27 15:50:14,805] [4520/GS-123145359491072] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=12, min_samples_leaf=10 (ft=37.1s st=0.6s sc=0.109649040151)
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.3s finished
+[2020-04-27 15:50:14,867] [4520/GS-123145355284480] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=12, min_samples_leaf=10 (ft=37.2s st=0.5s sc=0.397141730979)
+building tree 7 of 100
+building tree 40 of 100
+building tree 41 of 100
+building tree 8 of 100
+building tree 9 of 100
+building tree 42 of 100
+building tree 10 of 100
+building tree 43 of 100
+building tree 44 of 100
+building tree 11 of 100
+building tree 12 of 100
+building tree 45 of 100
+building tree 13 of 100
+building tree 46 of 100
+building tree 14 of 100
+building tree 47 of 100
+building tree 15 of 100
+building tree 48 of 100
+building tree 16 of 100
+building tree 49 of 100
+building tree 17 of 100
+building tree 50 of 100
+building tree 18 of 100
+building tree 51 of 100
+building tree 19 of 100
+building tree 52 of 100
+building tree 20 of 100
+building tree 53 of 100
+building tree 21 of 100
+building tree 54 of 100
+building tree 22 of 100
+building tree 55 of 100
+building tree 56 of 100
+building tree 23 of 100
+building tree 24 of 100
+building tree 57 of 100
+building tree 58 of 100
+building tree 25 of 100
+building tree 59 of 100
+building tree 26 of 100
+building tree 60 of 100
+building tree 27 of 100
+building tree 61 of 100
+building tree 28 of 100
+building tree 62 of 100
+building tree 29 of 100
+building tree 63 of 100
+building tree 30 of 100
+building tree 64 of 100
+building tree 31 of 100
+building tree 32 of 100
+building tree 65 of 100
+building tree 33 of 100
+building tree 66 of 100
+building tree 67 of 100
+building tree 34 of 100
+building tree 35 of 100
+building tree 68 of 100
+building tree 69 of 100
+building tree 36 of 100
+building tree 70 of 100
+building tree 37 of 100
+building tree 71 of 100
+building tree 38 of 100
+building tree 72 of 100
+building tree 39 of 100
+building tree 73 of 100
+building tree 40 of 100
+building tree 74 of 100
+building tree 41 of 100
+building tree 75 of 100
+building tree 42 of 100
+building tree 76 of 100
+building tree 43 of 100
+building tree 44 of 100
+building tree 77 of 100
+building tree 45 of 100
+building tree 78 of 100
+building tree 46 of 100
+building tree 79 of 100
+building tree 47 of 100
+building tree 80 of 100
+building tree 48 of 100
+building tree 81 of 100
+building tree 49 of 100
+building tree 82 of 100
+building tree 50 of 100
+building tree 83 of 100
+building tree 51 of 100
+building tree 84 of 100
+building tree 52 of 100
+building tree 85 of 100
+building tree 53 of 100
+building tree 86 of 100
+building tree 54 of 100
+building tree 87 of 100
+building tree 55 of 100
+building tree 88 of 100
+building tree 56 of 100
+building tree 89 of 100
+building tree 57 of 100
+building tree 90 of 100
+building tree 58 of 100
+building tree 91 of 100
+building tree 59 of 100
+building tree 92 of 100
+building tree 60 of 100
+building tree 93 of 100
+building tree 61 of 100
+building tree 94 of 100
+building tree 62 of 100
+building tree 95 of 100
+building tree 63 of 100
+building tree 96 of 100
+building tree 64 of 100
+building tree 97 of 100
+building tree 65 of 100
+building tree 98 of 100
+building tree 66 of 100
+building tree 99 of 100
+building tree 67 of 100
+building tree 100 of 100
+building tree 68 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   15.3s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 69 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 70 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020-04-27 15:50:21,912] [4520/GS-123145367904256] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 (ft=16.1s st=0.2s sc=0.111675086067)
+building tree 71 of 100
+building tree 72 of 100
+building tree 73 of 100
+building tree 74 of 100
+building tree 75 of 100
+building tree 76 of 100
+building tree 77 of 100
+building tree 78 of 100
+building tree 79 of 100
+building tree 80 of 100
+building tree 81 of 100
+building tree 82 of 100
+building tree 83 of 100
+building tree 84 of 100
+building tree 85 of 100
+building tree 86 of 100
+building tree 87 of 100
+building tree 88 of 100
+building tree 89 of 100
+building tree 90 of 100
+building tree 91 of 100
+building tree 92 of 100
+building tree 93 of 100
+building tree 94 of 100
+building tree 95 of 100
+building tree 96 of 100
+building tree 97 of 100
+building tree 98 of 100
+building tree 99 of 100
+building tree 100 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   10.4s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.0s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020-04-27 15:50:24,468] [4520/GS-123145363697664] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 (ft=11.0s st=0.1s sc=0.237178534486)
+[Parallel(n_jobs=4)]: Done   6 out of   6 | elapsed:   47.4s finished
+[2020-04-27 15:50:25,410] [4520/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search ended, got 6 scores out of 6
+[2020-04-27 15:50:25,411] [4520/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search done, best_parameters being : {'max_features': u'auto', 'n_estimators': 100, 'min_samples_split': 30, 'max_depth': 6, 'min_samples_leaf': 10}
+[2020-04-27 15:50:25,412] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Grid searching
+[2020-04-27 15:50:25,413] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2020-04-27 15:50:25,414] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common] Fitting model:
+[2020-04-27 15:50:25,416] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common]   Model is: RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=6,
+           max_features=u'auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=10, min_samples_split=30,
+           min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=1,
+           oob_score=False, random_state=1337, verbose=2, warm_start=False)
+[2020-04-27 15:50:25,416] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X class: <type 'numpy.ndarray'>
+[2020-04-27 15:50:25,416] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X shape: (20120, 108)
+[2020-04-27 15:50:25,416] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_y shape: (20120,)
+[2020-04-27 15:50:25,416] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common]   calibration enabled: a sub-sample of the train data has been saved for calibration
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s remaining:    0.0s
+building tree 2 of 100
+building tree 3 of 100
+building tree 4 of 100
+building tree 5 of 100
+building tree 6 of 100
+building tree 7 of 100
+building tree 8 of 100
+building tree 9 of 100
+building tree 10 of 100
+building tree 11 of 100
+building tree 12 of 100
+building tree 13 of 100
+building tree 14 of 100
+building tree 15 of 100
+building tree 16 of 100
+building tree 17 of 100
+building tree 18 of 100
+building tree 19 of 100
+building tree 20 of 100
+building tree 21 of 100
+building tree 22 of 100
+building tree 23 of 100
+building tree 24 of 100
+building tree 25 of 100
+building tree 26 of 100
+building tree 27 of 100
+building tree 28 of 100
+building tree 29 of 100
+building tree 30 of 100
+building tree 31 of 100
+building tree 32 of 100
+building tree 33 of 100
+building tree 34 of 100
+building tree 35 of 100
+building tree 36 of 100
+building tree 37 of 100
+building tree 38 of 100
+building tree 39 of 100
+building tree 40 of 100
+building tree 41 of 100
+building tree 42 of 100
+building tree 43 of 100
+building tree 44 of 100
+building tree 45 of 100
+building tree 46 of 100
+building tree 47 of 100
+building tree 48 of 100
+building tree 49 of 100
+building tree 50 of 100
+building tree 51 of 100
+building tree 52 of 100
+building tree 53 of 100
+building tree 54 of 100
+building tree 55 of 100
+building tree 56 of 100
+building tree 57 of 100
+building tree 58 of 100
+building tree 59 of 100
+building tree 60 of 100
+building tree 61 of 100
+building tree 62 of 100
+building tree 63 of 100
+building tree 64 of 100
+building tree 65 of 100
+building tree 66 of 100
+building tree 67 of 100
+building tree 68 of 100
+building tree 69 of 100
+building tree 70 of 100
+building tree 71 of 100
+building tree 72 of 100
+building tree 73 of 100
+building tree 74 of 100
+building tree 75 of 100
+building tree 76 of 100
+building tree 77 of 100
+building tree 78 of 100
+building tree 79 of 100
+building tree 80 of 100
+building tree 81 of 100
+building tree 82 of 100
+building tree 83 of 100
+building tree 84 of 100
+building tree 85 of 100
+building tree 86 of 100
+building tree 87 of 100
+building tree 88 of 100
+building tree 89 of 100
+building tree 90 of 100
+building tree 91 of 100
+building tree 92 of 100
+building tree 93 of 100
+building tree 94 of 100
+building tree 95 of 100
+building tree 96 of 100
+building tree 97 of 100
+building tree 98 of 100
+building tree 99 of 100
+building tree 100 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   16.9s finished
+[2020-04-27 15:50:42,719] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_fit] RF Params are {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'min_impurity_decrease': 0.0, 'verbose': 2, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 10, 'n_estimators': 100, 'min_samples_split': 30, 'min_weight_fraction_leaf': 0.0, 'criterion': 'mse', 'random_state': 1337, 'min_impurity_split': None, 'max_features': u'auto', 'max_depth': 6} 
+[2020-04-27 15:50:42,719] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_fit] Output params are {'resolved': {'rf': {'max_tree_depth': 6, 'selection_mode': u'auto', 'njobs': 1, 'min_samples_leaf': 10, 'estimators': 100}, 'skipExpensiveReports': False, 'algorithm': u'RANDOM_FOREST_REGRESSION'}, 'other': {'rf_min_samples_split': 30}}
+[2020-04-27 15:50:42,720] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2020-04-27 15:50:42,720] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2020-04-27 15:50:42,801] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2020-04-27 15:50:42,801] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2020-04-27 15:50:42,803] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Intrinsic scoring
+[2020-04-27 15:50:42,804] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Extracting rescalers
+[2020-04-27 15:50:42,804] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Creating random forest trees summary
+[2020-04-27 15:50:43,040] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Computing RF PDP
+(100, 1)
+[2020-04-27 15:50:44,773] [4520/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Computing feature importance
+[2020-04-27 15:50:44,841] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(5011,108) tn=541188 nnz=30066 fill_ratio=0.06
+[2020-04-27 15:50:44,842] [4520/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-27 15:50:44,850] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Creating predictions on test set
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020-04-27 15:50:44,948] [4520/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Computing regression performance on [  146.300549     136.74180357    98.1214821  ... -1480.99244797
+  -473.12241855   -60.23059914]
+[2020-04-27 15:50:45,079] [4520/MainThread] [INFO] [dataiku.doctor.utils.metrics] Negative values, not computing RMSLE
+[2020-04-27 15:50:45,351] [4520/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2020/04/27-15:50:45.365] [MRT-1848] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2020/04/27-15:50:45.366] [MRT-1848] [INFO] [dku.analysis.prediction]  - Training returned ok
+[2020/04/27-15:50:45.368] [MRT-1848] [INFO] [dku.ml.versioning]  - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/FORTUNE500/yHY7DSLk/bN8FvxtW/sessions/s3/pp2/m1
+[2020/04/27-15:50:45.376] [KNL-python-single-command-kernel-out-1858] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/27-15:50:45.376] [KNL-python-single-command-kernel-err-1859] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/27-15:50:45.409] [KNL-python-single-command-kernel-monitor-1857] [INFO] [dku.kernels]  - Process done with code 143
+[2020/04/27-15:50:45.412] [KNL-python-single-command-kernel-monitor-1857] [INFO] [dip.tickets]  - Destroying API ticket for analysis-ml-FORTUNE500-mIlqbZJ on behalf of admin
+[2020/04/27-15:50:55.753] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Processing thread joined ...
+[2020/04/27-15:50:55.760] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Joining processing thread ...
+[2020/04/27-15:50:55.763] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Processing thread joined ...
+[2020/04/27-15:50:55.766] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction] T-bN8FvxtW - Train done
+[2020/04/27-15:50:55.769] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction] T-bN8FvxtW - Train done
+[2020/04/27-15:50:55.875] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction] T-bN8FvxtW - Publishing mltask-train-done reflected event

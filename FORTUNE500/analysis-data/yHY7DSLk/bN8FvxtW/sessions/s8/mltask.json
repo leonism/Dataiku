@@ -1,0 +1,9359 @@
+{
+  "predictionType": "BINARY_CLASSIFICATION",
+  "targetVariable": "Profit (in millions)",
+  "weight": {
+    "weightMethod": "CLASS_WEIGHT"
+  },
+  "time": {
+    "enabled": false,
+    "ascending": true
+  },
+  "calibration": {
+    "calibrationMethod": "NO_CALIBRATION"
+  },
+  "guessPolicy": "DEFAULT",
+  "splitParams": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "RANDOM_FIXED_RATIO",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "preprocessing": {
+    "feature_selection_params": {
+      "method": "NONE",
+      "random_forest_params": {
+        "n_trees": 30,
+        "depth": 10,
+        "n_features": 25
+      },
+      "lasso_params": {
+        "alpha": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "cross_validate": true
+      },
+      "pca_params": {
+        "n_features": 25,
+        "variance_proportion": 0.9
+      },
+      "correlation_params": {
+        "min_abs_correlation": 0.0,
+        "n_features": 25
+      },
+      "custom_params": {
+        "code": "# type your code here"
+      }
+    },
+    "target_remapping": [
+      {
+        "sourceValue": "3.0",
+        "mappedValue": 0,
+        "sampleFreq": 63
+      },
+      {
+        "sourceValue": "6.0",
+        "mappedValue": 1,
+        "sampleFreq": 62
+      },
+      {
+        "sourceValue": "3.1",
+        "mappedValue": 2,
+        "sampleFreq": 61
+      },
+      {
+        "sourceValue": "3.4",
+        "mappedValue": 3,
+        "sampleFreq": 60
+      },
+      {
+        "sourceValue": "2.6",
+        "mappedValue": 4,
+        "sampleFreq": 59
+      },
+      {
+        "sourceValue": "5.7",
+        "mappedValue": 5,
+        "sampleFreq": 59
+      },
+      {
+        "sourceValue": "3.7",
+        "mappedValue": 6,
+        "sampleFreq": 58
+      },
+      {
+        "sourceValue": "4.8",
+        "mappedValue": 7,
+        "sampleFreq": 58
+      },
+      {
+        "sourceValue": "4.0",
+        "mappedValue": 8,
+        "sampleFreq": 57
+      },
+      {
+        "sourceValue": "4.7",
+        "mappedValue": 9,
+        "sampleFreq": 57
+      },
+      {
+        "sourceValue": "2.8",
+        "mappedValue": 10,
+        "sampleFreq": 56
+      },
+      {
+        "sourceValue": "3.6",
+        "mappedValue": 11,
+        "sampleFreq": 56
+      },
+      {
+        "sourceValue": "5.0",
+        "mappedValue": 12,
+        "sampleFreq": 56
+      },
+      {
+        "sourceValue": "6.1",
+        "mappedValue": 13,
+        "sampleFreq": 55
+      },
+      {
+        "sourceValue": "4.2",
+        "mappedValue": 14,
+        "sampleFreq": 55
+      },
+      {
+        "sourceValue": "6.2",
+        "mappedValue": 15,
+        "sampleFreq": 54
+      },
+      {
+        "sourceValue": "6.6",
+        "mappedValue": 16,
+        "sampleFreq": 54
+      },
+      {
+        "sourceValue": "7.0",
+        "mappedValue": 17,
+        "sampleFreq": 54
+      },
+      {
+        "sourceValue": "5.5",
+        "mappedValue": 18,
+        "sampleFreq": 54
+      },
+      {
+        "sourceValue": "2.4",
+        "mappedValue": 19,
+        "sampleFreq": 53
+      },
+      {
+        "sourceValue": "3.5",
+        "mappedValue": 20,
+        "sampleFreq": 52
+      },
+      {
+        "sourceValue": "4.3",
+        "mappedValue": 21,
+        "sampleFreq": 51
+      },
+      {
+        "sourceValue": "6.5",
+        "mappedValue": 22,
+        "sampleFreq": 50
+      },
+      {
+        "sourceValue": "3.8",
+        "mappedValue": 23,
+        "sampleFreq": 50
+      },
+      {
+        "sourceValue": "4.1",
+        "mappedValue": 24,
+        "sampleFreq": 50
+      },
+      {
+        "sourceValue": "4.6",
+        "mappedValue": 25,
+        "sampleFreq": 50
+      },
+      {
+        "sourceValue": "2.7",
+        "mappedValue": 26,
+        "sampleFreq": 49
+      },
+      {
+        "sourceValue": "5.8",
+        "mappedValue": 27,
+        "sampleFreq": 49
+      },
+      {
+        "sourceValue": "3.2",
+        "mappedValue": 28,
+        "sampleFreq": 48
+      },
+      {
+        "sourceValue": "3.3",
+        "mappedValue": 29,
+        "sampleFreq": 48
+      },
+      {
+        "sourceValue": "4.9",
+        "mappedValue": 30,
+        "sampleFreq": 48
+      },
+      {
+        "sourceValue": "5.1",
+        "mappedValue": 31,
+        "sampleFreq": 48
+      },
+      {
+        "sourceValue": "5.4",
+        "mappedValue": 32,
+        "sampleFreq": 48
+      },
+      {
+        "sourceValue": "6.9",
+        "mappedValue": 33,
+        "sampleFreq": 47
+      },
+      {
+        "sourceValue": "2.2",
+        "mappedValue": 34,
+        "sampleFreq": 47
+      },
+      {
+        "sourceValue": "2.5",
+        "mappedValue": 35,
+        "sampleFreq": 47
+      },
+      {
+        "sourceValue": "8.1",
+        "mappedValue": 36,
+        "sampleFreq": 47
+      },
+      {
+        "sourceValue": "5.2",
+        "mappedValue": 37,
+        "sampleFreq": 47
+      },
+      {
+        "sourceValue": "4.4",
+        "mappedValue": 38,
+        "sampleFreq": 46
+      },
+      {
+        "sourceValue": "9.4",
+        "mappedValue": 39,
+        "sampleFreq": 46
+      },
+      {
+        "sourceValue": "5.6",
+        "mappedValue": 40,
+        "sampleFreq": 46
+      },
+      {
+        "sourceValue": "7.4",
+        "mappedValue": 41,
+        "sampleFreq": 45
+      },
+      {
+        "sourceValue": "8.0",
+        "mappedValue": 42,
+        "sampleFreq": 45
+      },
+      {
+        "sourceValue": "6.3",
+        "mappedValue": 43,
+        "sampleFreq": 44
+      },
+      {
+        "sourceValue": "6.4",
+        "mappedValue": 44,
+        "sampleFreq": 44
+      },
+      {
+        "sourceValue": "2.9",
+        "mappedValue": 45,
+        "sampleFreq": 44
+      },
+      {
+        "sourceValue": "9.6",
+        "mappedValue": 46,
+        "sampleFreq": 44
+      },
+      {
+        "sourceValue": "1.9",
+        "mappedValue": 47,
+        "sampleFreq": 44
+      },
+      {
+        "sourceValue": "7.3",
+        "mappedValue": 48,
+        "sampleFreq": 43
+      },
+      {
+        "sourceValue": "7.8",
+        "mappedValue": 49,
+        "sampleFreq": 43
+      },
+      {
+        "sourceValue": "10.1",
+        "mappedValue": 50,
+        "sampleFreq": 42
+      },
+      {
+        "sourceValue": "7.1",
+        "mappedValue": 51,
+        "sampleFreq": 42
+      },
+      {
+        "sourceValue": "7.6",
+        "mappedValue": 52,
+        "sampleFreq": 42
+      },
+      {
+        "sourceValue": "12.1",
+        "mappedValue": 53,
+        "sampleFreq": 42
+      },
+      {
+        "sourceValue": "4.5",
+        "mappedValue": 54,
+        "sampleFreq": 41
+      },
+      {
+        "sourceValue": "2.3",
+        "mappedValue": 55,
+        "sampleFreq": 40
+      },
+      {
+        "sourceValue": "3.9",
+        "mappedValue": 56,
+        "sampleFreq": 40
+      },
+      {
+        "sourceValue": "7.2",
+        "mappedValue": 57,
+        "sampleFreq": 39
+      },
+      {
+        "sourceValue": "7.7",
+        "mappedValue": 58,
+        "sampleFreq": 39
+      },
+      {
+        "sourceValue": "7.9",
+        "mappedValue": 59,
+        "sampleFreq": 39
+      },
+      {
+        "sourceValue": "8.4",
+        "mappedValue": 60,
+        "sampleFreq": 39
+      },
+      {
+        "sourceValue": "9.0",
+        "mappedValue": 61,
+        "sampleFreq": 39
+      },
+      {
+        "sourceValue": "5.9",
+        "mappedValue": 62,
+        "sampleFreq": 39
+      },
+      {
+        "sourceValue": "1.4",
+        "mappedValue": 63,
+        "sampleFreq": 39
+      },
+      {
+        "sourceValue": "10.2",
+        "mappedValue": 64,
+        "sampleFreq": 37
+      },
+      {
+        "sourceValue": "11.3",
+        "mappedValue": 65,
+        "sampleFreq": 37
+      },
+      {
+        "sourceValue": "11.1",
+        "mappedValue": 66,
+        "sampleFreq": 37
+      },
+      {
+        "sourceValue": "8.9",
+        "mappedValue": 67,
+        "sampleFreq": 37
+      },
+      {
+        "sourceValue": "1.8",
+        "mappedValue": 68,
+        "sampleFreq": 37
+      },
+      {
+        "sourceValue": "6.7",
+        "mappedValue": 69,
+        "sampleFreq": 36
+      },
+      {
+        "sourceValue": "8.2",
+        "mappedValue": 70,
+        "sampleFreq": 36
+      },
+      {
+        "sourceValue": "8.7",
+        "mappedValue": 71,
+        "sampleFreq": 36
+      },
+      {
+        "sourceValue": "1.3",
+        "mappedValue": 72,
+        "sampleFreq": 36
+      },
+      {
+        "sourceValue": "1.7",
+        "mappedValue": 73,
+        "sampleFreq": 36
+      },
+      {
+        "sourceValue": "10.7",
+        "mappedValue": 74,
+        "sampleFreq": 35
+      },
+      {
+        "sourceValue": "2.1",
+        "mappedValue": 75,
+        "sampleFreq": 35
+      },
+      {
+        "sourceValue": "5.3",
+        "mappedValue": 76,
+        "sampleFreq": 35
+      },
+      {
+        "sourceValue": "7.5",
+        "mappedValue": 77,
+        "sampleFreq": 34
+      },
+      {
+        "sourceValue": "8.3",
+        "mappedValue": 78,
+        "sampleFreq": 34
+      },
+      {
+        "sourceValue": "8.5",
+        "mappedValue": 79,
+        "sampleFreq": 34
+      },
+      {
+        "sourceValue": "9.1",
+        "mappedValue": 80,
+        "sampleFreq": 34
+      },
+      {
+        "sourceValue": "9.5",
+        "mappedValue": 81,
+        "sampleFreq": 34
+      },
+      {
+        "sourceValue": "1.1",
+        "mappedValue": 82,
+        "sampleFreq": 34
+      },
+      {
+        "sourceValue": "1.2",
+        "mappedValue": 83,
+        "sampleFreq": 34
+      },
+      {
+        "sourceValue": "10.8",
+        "mappedValue": 84,
+        "sampleFreq": 33
+      },
+      {
+        "sourceValue": "2.0",
+        "mappedValue": 85,
+        "sampleFreq": 33
+      },
+      {
+        "sourceValue": "1.5",
+        "mappedValue": 86,
+        "sampleFreq": 33
+      },
+      {
+        "sourceValue": "1.6",
+        "mappedValue": 87,
+        "sampleFreq": 33
+      },
+      {
+        "sourceValue": "10.4",
+        "mappedValue": 88,
+        "sampleFreq": 32
+      },
+      {
+        "sourceValue": "9.2",
+        "mappedValue": 89,
+        "sampleFreq": 32
+      },
+      {
+        "sourceValue": "15.2",
+        "mappedValue": 90,
+        "sampleFreq": 31
+      },
+      {
+        "sourceValue": "12.7",
+        "mappedValue": 91,
+        "sampleFreq": 31
+      },
+      {
+        "sourceValue": "8.8",
+        "mappedValue": 92,
+        "sampleFreq": 31
+      },
+      {
+        "sourceValue": "6.8",
+        "mappedValue": 93,
+        "sampleFreq": 30
+      },
+      {
+        "sourceValue": "13.1",
+        "mappedValue": 94,
+        "sampleFreq": 30
+      },
+      {
+        "sourceValue": "9.3",
+        "mappedValue": 95,
+        "sampleFreq": 30
+      },
+      {
+        "sourceValue": "14.1",
+        "mappedValue": 96,
+        "sampleFreq": 30
+      },
+      {
+        "sourceValue": "12.4",
+        "mappedValue": 97,
+        "sampleFreq": 29
+      },
+      {
+        "sourceValue": "9.7",
+        "mappedValue": 98,
+        "sampleFreq": 29
+      },
+      {
+        "sourceValue": "14.8",
+        "mappedValue": 99,
+        "sampleFreq": 29
+      },
+      {
+        "sourceValue": "10.6",
+        "mappedValue": 100,
+        "sampleFreq": 28
+      },
+      {
+        "sourceValue": "10.0",
+        "mappedValue": 101,
+        "sampleFreq": 28
+      },
+      {
+        "sourceValue": "11.5",
+        "mappedValue": 102,
+        "sampleFreq": 28
+      },
+      {
+        "sourceValue": "14.0",
+        "mappedValue": 103,
+        "sampleFreq": 28
+      },
+      {
+        "sourceValue": "15.0",
+        "mappedValue": 104,
+        "sampleFreq": 27
+      },
+      {
+        "sourceValue": "11.4",
+        "mappedValue": 105,
+        "sampleFreq": 27
+      },
+      {
+        "sourceValue": "12.8",
+        "mappedValue": 106,
+        "sampleFreq": 27
+      },
+      {
+        "sourceValue": "13.2",
+        "mappedValue": 107,
+        "sampleFreq": 27
+      },
+      {
+        "sourceValue": "9.9",
+        "mappedValue": 108,
+        "sampleFreq": 27
+      },
+      {
+        "sourceValue": "14.9",
+        "mappedValue": 109,
+        "sampleFreq": 27
+      },
+      {
+        "sourceValue": "10.3",
+        "mappedValue": 110,
+        "sampleFreq": 26
+      },
+      {
+        "sourceValue": "11.6",
+        "mappedValue": 111,
+        "sampleFreq": 26
+      },
+      {
+        "sourceValue": "14.2",
+        "mappedValue": 112,
+        "sampleFreq": 26
+      },
+      {
+        "sourceValue": "14.5",
+        "mappedValue": 113,
+        "sampleFreq": 26
+      },
+      {
+        "sourceValue": "11.7",
+        "mappedValue": 114,
+        "sampleFreq": 25
+      },
+      {
+        "sourceValue": "13.3",
+        "mappedValue": 115,
+        "sampleFreq": 25
+      },
+      {
+        "sourceValue": "10.5",
+        "mappedValue": 116,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "11.8",
+        "mappedValue": 117,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "12.2",
+        "mappedValue": 118,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "12.0",
+        "mappedValue": 119,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "8.6",
+        "mappedValue": 120,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "0.9",
+        "mappedValue": 121,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "22.1",
+        "mappedValue": 122,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "14.3",
+        "mappedValue": 123,
+        "sampleFreq": 24
+      },
+      {
+        "sourceValue": "15.1",
+        "mappedValue": 124,
+        "sampleFreq": 23
+      },
+      {
+        "sourceValue": "15.7",
+        "mappedValue": 125,
+        "sampleFreq": 23
+      },
+      {
+        "sourceValue": "12.6",
+        "mappedValue": 126,
+        "sampleFreq": 23
+      },
+      {
+        "sourceValue": "13.0",
+        "mappedValue": 127,
+        "sampleFreq": 23
+      },
+      {
+        "sourceValue": "13.8",
+        "mappedValue": 128,
+        "sampleFreq": 23
+      },
+      {
+        "sourceValue": "9.8",
+        "mappedValue": 129,
+        "sampleFreq": 23
+      },
+      {
+        "sourceValue": "15.3",
+        "mappedValue": 130,
+        "sampleFreq": 22
+      },
+      {
+        "sourceValue": "13.5",
+        "mappedValue": 131,
+        "sampleFreq": 22
+      },
+      {
+        "sourceValue": "14.7",
+        "mappedValue": 132,
+        "sampleFreq": 22
+      },
+      {
+        "sourceValue": "11.0",
+        "mappedValue": 133,
+        "sampleFreq": 21
+      },
+      {
+        "sourceValue": "11.9",
+        "mappedValue": 134,
+        "sampleFreq": 21
+      },
+      {
+        "sourceValue": "16.2",
+        "mappedValue": 135,
+        "sampleFreq": 21
+      },
+      {
+        "sourceValue": "12.9",
+        "mappedValue": 136,
+        "sampleFreq": 21
+      },
+      {
+        "sourceValue": "0.6",
+        "mappedValue": 137,
+        "sampleFreq": 21
+      },
+      {
+        "sourceValue": "17.0",
+        "mappedValue": 138,
+        "sampleFreq": 21
+      },
+      {
+        "sourceValue": "13.7",
+        "mappedValue": 139,
+        "sampleFreq": 21
+      },
+      {
+        "sourceValue": "16.4",
+        "mappedValue": 140,
+        "sampleFreq": 20
+      },
+      {
+        "sourceValue": "16.3",
+        "mappedValue": 141,
+        "sampleFreq": 20
+      },
+      {
+        "sourceValue": "0.8",
+        "mappedValue": 142,
+        "sampleFreq": 20
+      },
+      {
+        "sourceValue": "14.4",
+        "mappedValue": 143,
+        "sampleFreq": 20
+      },
+      {
+        "sourceValue": "10.9",
+        "mappedValue": 144,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "19.0",
+        "mappedValue": 145,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "11.2",
+        "mappedValue": 146,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "16.8",
+        "mappedValue": 147,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "16.7",
+        "mappedValue": 148,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "12.5",
+        "mappedValue": 149,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "0.3",
+        "mappedValue": 150,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "17.3",
+        "mappedValue": 151,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "17.1",
+        "mappedValue": 152,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "18.0",
+        "mappedValue": 153,
+        "sampleFreq": 19
+      },
+      {
+        "sourceValue": "15.4",
+        "mappedValue": 154,
+        "sampleFreq": 18
+      },
+      {
+        "sourceValue": "16.5",
+        "mappedValue": 155,
+        "sampleFreq": 18
+      },
+      {
+        "sourceValue": "12.3",
+        "mappedValue": 156,
+        "sampleFreq": 18
+      },
+      {
+        "sourceValue": "17.5",
+        "mappedValue": 157,
+        "sampleFreq": 18
+      },
+      {
+        "sourceValue": "13.4",
+        "mappedValue": 158,
+        "sampleFreq": 18
+      },
+      {
+        "sourceValue": "15.6",
+        "mappedValue": 159,
+        "sampleFreq": 17
+      },
+      {
+        "sourceValue": "20.6",
+        "mappedValue": 160,
+        "sampleFreq": 17
+      },
+      {
+        "sourceValue": "17.6",
+        "mappedValue": 161,
+        "sampleFreq": 17
+      },
+      {
+        "sourceValue": "17.2",
+        "mappedValue": 162,
+        "sampleFreq": 17
+      },
+      {
+        "sourceValue": "19.1",
+        "mappedValue": 163,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "15.8",
+        "mappedValue": 164,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "15.5",
+        "mappedValue": 165,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "20.5",
+        "mappedValue": 166,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "20.9",
+        "mappedValue": 167,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "16.1",
+        "mappedValue": 168,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "0.5",
+        "mappedValue": 169,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "17.4",
+        "mappedValue": 170,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "13.9",
+        "mappedValue": 171,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "13.6",
+        "mappedValue": 172,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "18.5",
+        "mappedValue": 173,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "18.4",
+        "mappedValue": 174,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "18.1",
+        "mappedValue": 175,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "14.6",
+        "mappedValue": 176,
+        "sampleFreq": 16
+      },
+      {
+        "sourceValue": "19.9",
+        "mappedValue": 177,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "15.9",
+        "mappedValue": 178,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "24.0",
+        "mappedValue": 179,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "20.7",
+        "mappedValue": 180,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "20.1",
+        "mappedValue": 181,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "0.7",
+        "mappedValue": 182,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "18.8",
+        "mappedValue": 183,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "18.2",
+        "mappedValue": 184,
+        "sampleFreq": 15
+      },
+      {
+        "sourceValue": "16.6",
+        "mappedValue": 185,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "21.5",
+        "mappedValue": 186,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "0.4",
+        "mappedValue": 187,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "17.8",
+        "mappedValue": 188,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "22.6",
+        "mappedValue": 189,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "18.6",
+        "mappedValue": 190,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "23.4",
+        "mappedValue": 191,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "23.9",
+        "mappedValue": 192,
+        "sampleFreq": 14
+      },
+      {
+        "sourceValue": "28.1",
+        "mappedValue": 193,
+        "sampleFreq": 13
+      },
+      {
+        "sourceValue": "20.3",
+        "mappedValue": 194,
+        "sampleFreq": 13
+      },
+      {
+        "sourceValue": "21.3",
+        "mappedValue": 195,
+        "sampleFreq": 13
+      },
+      {
+        "sourceValue": "17.7",
+        "mappedValue": 196,
+        "sampleFreq": 13
+      },
+      {
+        "sourceValue": "18.3",
+        "mappedValue": 197,
+        "sampleFreq": 13
+      },
+      {
+        "sourceValue": "23.3",
+        "mappedValue": 198,
+        "sampleFreq": 13
+      },
+      {
+        "sourceValue": "23.2",
+        "mappedValue": 199,
+        "sampleFreq": 13
+      },
+      {
+        "sourceValue": "19.4",
+        "mappedValue": 200,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "24.8",
+        "mappedValue": 201,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "24.4",
+        "mappedValue": 202,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "20.4",
+        "mappedValue": 203,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "20.0",
+        "mappedValue": 204,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "42.3",
+        "mappedValue": 205,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "16.0",
+        "mappedValue": 206,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "25.1",
+        "mappedValue": 207,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "21.9",
+        "mappedValue": 208,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "21.7",
+        "mappedValue": 209,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "26.7",
+        "mappedValue": 210,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "26.6",
+        "mappedValue": 211,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "22.4",
+        "mappedValue": 212,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "22.3",
+        "mappedValue": 213,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "31.2",
+        "mappedValue": 214,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "18.7",
+        "mappedValue": 215,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "27.9",
+        "mappedValue": 216,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "23.7",
+        "mappedValue": 217,
+        "sampleFreq": 12
+      },
+      {
+        "sourceValue": "32.4",
+        "mappedValue": 218,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "19.3",
+        "mappedValue": 219,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "28.8",
+        "mappedValue": 220,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "28.6",
+        "mappedValue": 221,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "24.3",
+        "mappedValue": 222,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "24.6",
+        "mappedValue": 223,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "20.8",
+        "mappedValue": 224,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "29.0",
+        "mappedValue": 225,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "16.9",
+        "mappedValue": 226,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "25.6",
+        "mappedValue": 227,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "34.0",
+        "mappedValue": 228,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "21.6",
+        "mappedValue": 229,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "21.2",
+        "mappedValue": 230,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "21.1",
+        "mappedValue": 231,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "30.5",
+        "mappedValue": 232,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "0.2",
+        "mappedValue": 233,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "26.2",
+        "mappedValue": 234,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "35.2",
+        "mappedValue": 235,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "22.7",
+        "mappedValue": 236,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "27.1",
+        "mappedValue": 237,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "23.0",
+        "mappedValue": 238,
+        "sampleFreq": 11
+      },
+      {
+        "sourceValue": "45.3",
+        "mappedValue": 239,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "32.1",
+        "mappedValue": 240,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "19.8",
+        "mappedValue": 241,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "28.2",
+        "mappedValue": 242,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "37.8",
+        "mappedValue": 243,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "24.2",
+        "mappedValue": 244,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "24.1",
+        "mappedValue": 245,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "24.7",
+        "mappedValue": 246,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "24.5",
+        "mappedValue": 247,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "33.5",
+        "mappedValue": 248,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "33.2",
+        "mappedValue": 249,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "33.9",
+        "mappedValue": 250,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "29.9",
+        "mappedValue": 251,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "29.5",
+        "mappedValue": 252,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "25.2",
+        "mappedValue": 253,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "25.0",
+        "mappedValue": 254,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "25.7",
+        "mappedValue": 255,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "26.0",
+        "mappedValue": 256,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "35.8",
+        "mappedValue": 257,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "22.2",
+        "mappedValue": 258,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "22.9",
+        "mappedValue": 259,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "22.8",
+        "mappedValue": 260,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "44.8",
+        "mappedValue": 261,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "27.5",
+        "mappedValue": 262,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "23.1",
+        "mappedValue": 263,
+        "sampleFreq": 10
+      },
+      {
+        "sourceValue": "19.6",
+        "mappedValue": 264,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "19.2",
+        "mappedValue": 265,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "28.5",
+        "mappedValue": 266,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "28.0",
+        "mappedValue": 267,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "37.4",
+        "mappedValue": 268,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "33.0",
+        "mappedValue": 269,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "38.7",
+        "mappedValue": 270,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "25.4",
+        "mappedValue": 271,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "21.4",
+        "mappedValue": 272,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "43.8",
+        "mappedValue": 273,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "0.1",
+        "mappedValue": 274,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "39.8",
+        "mappedValue": 275,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "35.5",
+        "mappedValue": 276,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "31.6",
+        "mappedValue": 277,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "31.3",
+        "mappedValue": 278,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "31.1",
+        "mappedValue": 279,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "27.8",
+        "mappedValue": 280,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "23.5",
+        "mappedValue": 281,
+        "sampleFreq": 9
+      },
+      {
+        "sourceValue": "45.5",
+        "mappedValue": 282,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "32.6",
+        "mappedValue": 283,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "41.2",
+        "mappedValue": 284,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "41.3",
+        "mappedValue": 285,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "19.5",
+        "mappedValue": 286,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "46.5",
+        "mappedValue": 287,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "46.7",
+        "mappedValue": 288,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "33.6",
+        "mappedValue": 289,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "20.2",
+        "mappedValue": 290,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "29.4",
+        "mappedValue": 291,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "38.6",
+        "mappedValue": 292,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "34.7",
+        "mappedValue": 293,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "34.5",
+        "mappedValue": 294,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "30.2",
+        "mappedValue": 295,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "26.1",
+        "mappedValue": 296,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "26.9",
+        "mappedValue": 297,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "26.8",
+        "mappedValue": 298,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "22.5",
+        "mappedValue": 299,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "22.0",
+        "mappedValue": 300,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "40.1",
+        "mappedValue": 301,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "-0.6",
+        "mappedValue": 302,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "27.6",
+        "mappedValue": 303,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "49.6",
+        "mappedValue": 304,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "36.2",
+        "mappedValue": 305,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "23.6",
+        "mappedValue": 306,
+        "sampleFreq": 8
+      },
+      {
+        "sourceValue": "32.2",
+        "mappedValue": 307,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "32.0",
+        "mappedValue": 308,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "19.7",
+        "mappedValue": 309,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "-1.0",
+        "mappedValue": 310,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "28.3",
+        "mappedValue": 311,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "37.2",
+        "mappedValue": 312,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "37.5",
+        "mappedValue": 313,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "37.7",
+        "mappedValue": 314,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "37.0",
+        "mappedValue": 315,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "42.6",
+        "mappedValue": 316,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "29.6",
+        "mappedValue": 317,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "29.2",
+        "mappedValue": 318,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "38.8",
+        "mappedValue": 319,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "25.9",
+        "mappedValue": 320,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "25.3",
+        "mappedValue": 321,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "34.2",
+        "mappedValue": 322,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "34.1",
+        "mappedValue": 323,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "56.2",
+        "mappedValue": 324,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "21.0",
+        "mappedValue": 325,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "43.9",
+        "mappedValue": 326,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "30.8",
+        "mappedValue": 327,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "30.7",
+        "mappedValue": 328,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "52.3",
+        "mappedValue": 329,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "17.9",
+        "mappedValue": 330,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "39.5",
+        "mappedValue": 331,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "26.4",
+        "mappedValue": 332,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "35.1",
+        "mappedValue": 333,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "35.9",
+        "mappedValue": 334,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "44.1",
+        "mappedValue": 335,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "31.9",
+        "mappedValue": 336,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "31.8",
+        "mappedValue": 337,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "40.0",
+        "mappedValue": 338,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "18.9",
+        "mappedValue": 339,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "-0.9",
+        "mappedValue": 340,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "-0.5",
+        "mappedValue": 341,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "27.4",
+        "mappedValue": 342,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "27.3",
+        "mappedValue": 343,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "27.2",
+        "mappedValue": 344,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "36.7",
+        "mappedValue": 345,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "36.6",
+        "mappedValue": 346,
+        "sampleFreq": 7
+      },
+      {
+        "sourceValue": "45.4",
+        "mappedValue": 347,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "32.3",
+        "mappedValue": 348,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "41.5",
+        "mappedValue": 349,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "63.8",
+        "mappedValue": 350,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "50.2",
+        "mappedValue": 351,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "24.9",
+        "mappedValue": 352,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "46.1",
+        "mappedValue": 353,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "33.3",
+        "mappedValue": 354,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "51.4",
+        "mappedValue": 355,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "60.1",
+        "mappedValue": 356,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "60.5",
+        "mappedValue": 357,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "-2.0",
+        "mappedValue": 358,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "29.8",
+        "mappedValue": 359,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "29.3",
+        "mappedValue": 360,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "29.1",
+        "mappedValue": 361,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "38.2",
+        "mappedValue": 362,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "38.5",
+        "mappedValue": 363,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "38.0",
+        "mappedValue": 364,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "25.5",
+        "mappedValue": 365,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "34.9",
+        "mappedValue": 366,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "34.8",
+        "mappedValue": 367,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "34.6",
+        "mappedValue": 368,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "43.1",
+        "mappedValue": 369,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "43.2",
+        "mappedValue": 370,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "30.4",
+        "mappedValue": 371,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "30.1",
+        "mappedValue": 372,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "52.0",
+        "mappedValue": 373,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "52.5",
+        "mappedValue": 374,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "26.5",
+        "mappedValue": 375,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "26.3",
+        "mappedValue": 376,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "48.3",
+        "mappedValue": 377,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "35.0",
+        "mappedValue": 378,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "44.5",
+        "mappedValue": 379,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "31.5",
+        "mappedValue": 380,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "31.0",
+        "mappedValue": 381,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "53.7",
+        "mappedValue": 382,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "40.7",
+        "mappedValue": 383,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "-0.8",
+        "mappedValue": 384,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "27.7",
+        "mappedValue": 385,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "36.3",
+        "mappedValue": 386,
+        "sampleFreq": 6
+      },
+      {
+        "sourceValue": "32.7",
+        "mappedValue": 387,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "54.7",
+        "mappedValue": 388,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "54.0",
+        "mappedValue": 389,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "76.1",
+        "mappedValue": 390,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "41.8",
+        "mappedValue": 391,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "50.0",
+        "mappedValue": 392,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "50.5",
+        "mappedValue": 393,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "72.0",
+        "mappedValue": 394,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "72.3",
+        "mappedValue": 395,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "-1.9",
+        "mappedValue": 396,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "28.9",
+        "mappedValue": 397,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "28.7",
+        "mappedValue": 398,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "28.4",
+        "mappedValue": 399,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "55.1",
+        "mappedValue": 400,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "55.3",
+        "mappedValue": 401,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "55.4",
+        "mappedValue": 402,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "42.8",
+        "mappedValue": 403,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "42.9",
+        "mappedValue": 404,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "42.1",
+        "mappedValue": 405,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "51.2",
+        "mappedValue": 406,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "51.6",
+        "mappedValue": 407,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "51.7",
+        "mappedValue": 408,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "38.1",
+        "mappedValue": 409,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "25.8",
+        "mappedValue": 410,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "47.3",
+        "mappedValue": 411,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "47.4",
+        "mappedValue": 412,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "47.1",
+        "mappedValue": 413,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "56.1",
+        "mappedValue": 414,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "43.7",
+        "mappedValue": 415,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "43.0",
+        "mappedValue": 416,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "43.3",
+        "mappedValue": 417,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "30.0",
+        "mappedValue": 418,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "65.6",
+        "mappedValue": 419,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "39.3",
+        "mappedValue": 420,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "48.6",
+        "mappedValue": 421,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "48.8",
+        "mappedValue": 422,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "35.3",
+        "mappedValue": 423,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "57.0",
+        "mappedValue": 424,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "57.3",
+        "mappedValue": 425,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "44.6",
+        "mappedValue": 426,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "44.9",
+        "mappedValue": 427,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "44.0",
+        "mappedValue": 428,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "53.3",
+        "mappedValue": 429,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "75.6",
+        "mappedValue": 430,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "40.3",
+        "mappedValue": 431,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "40.4",
+        "mappedValue": 432,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "-0.2",
+        "mappedValue": 433,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "-0.7",
+        "mappedValue": 434,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "-0.3",
+        "mappedValue": 435,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "49.9",
+        "mappedValue": 436,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "49.1",
+        "mappedValue": 437,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "49.3",
+        "mappedValue": 438,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "49.5",
+        "mappedValue": 439,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "49.0",
+        "mappedValue": 440,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "36.0",
+        "mappedValue": 441,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "36.5",
+        "mappedValue": 442,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "23.8",
+        "mappedValue": 443,
+        "sampleFreq": 5
+      },
+      {
+        "sourceValue": "45.8",
+        "mappedValue": 444,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "45.9",
+        "mappedValue": 445,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "54.1",
+        "mappedValue": 446,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "41.0",
+        "mappedValue": 447,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "76.2",
+        "mappedValue": 448,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "41.9",
+        "mappedValue": 449,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "41.4",
+        "mappedValue": 450,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "50.3",
+        "mappedValue": 451,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "50.7",
+        "mappedValue": 452,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "50.9",
+        "mappedValue": 453,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "72.2",
+        "mappedValue": 454,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "81.0",
+        "mappedValue": 455,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-1.1",
+        "mappedValue": 456,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-1.7",
+        "mappedValue": 457,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "90.4",
+        "mappedValue": 458,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "37.1",
+        "mappedValue": 459,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "59.2",
+        "mappedValue": 460,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "46.4",
+        "mappedValue": 461,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "68.6",
+        "mappedValue": 462,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "68.8",
+        "mappedValue": 463,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "33.4",
+        "mappedValue": 464,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "33.8",
+        "mappedValue": 465,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "55.6",
+        "mappedValue": 466,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "55.8",
+        "mappedValue": 467,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "86.3",
+        "mappedValue": 468,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "86.6",
+        "mappedValue": 469,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "86.7",
+        "mappedValue": 470,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-2.6",
+        "mappedValue": 471,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-2.7",
+        "mappedValue": 472,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "38.9",
+        "mappedValue": 473,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "47.5",
+        "mappedValue": 474,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "47.2",
+        "mappedValue": 475,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "34.3",
+        "mappedValue": 476,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "117.2",
+        "mappedValue": 477,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-7.7",
+        "mappedValue": 478,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "30.3",
+        "mappedValue": 479,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "52.9",
+        "mappedValue": 480,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-3.4",
+        "mappedValue": 481,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-3.3",
+        "mappedValue": 482,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "83.7",
+        "mappedValue": 483,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "48.4",
+        "mappedValue": 484,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "48.7",
+        "mappedValue": 485,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "35.7",
+        "mappedValue": 486,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "35.6",
+        "mappedValue": 487,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "57.5",
+        "mappedValue": 488,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "57.1",
+        "mappedValue": 489,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "57.2",
+        "mappedValue": 490,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "44.2",
+        "mappedValue": 491,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "53.9",
+        "mappedValue": 492,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "53.0",
+        "mappedValue": 493,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "75.2",
+        "mappedValue": 494,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "40.2",
+        "mappedValue": 495,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "40.5",
+        "mappedValue": 496,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "40.8",
+        "mappedValue": 497,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "62.5",
+        "mappedValue": 498,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "-4.6",
+        "mappedValue": 499,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "84.6",
+        "mappedValue": 500,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "27.0",
+        "mappedValue": 501,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "49.2",
+        "mappedValue": 502,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "36.1",
+        "mappedValue": 503,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "36.8",
+        "mappedValue": 504,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "36.4",
+        "mappedValue": 505,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "58.8",
+        "mappedValue": 506,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "58.9",
+        "mappedValue": 507,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "45.6",
+        "mappedValue": 508,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "45.0",
+        "mappedValue": 509,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "45.1",
+        "mappedValue": 510,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "67.3",
+        "mappedValue": 511,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "32.5",
+        "mappedValue": 512,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "89.2",
+        "mappedValue": 513,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "54.9",
+        "mappedValue": 514,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "54.5",
+        "mappedValue": 515,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "76.4",
+        "mappedValue": 516,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-19.3",
+        "mappedValue": 517,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "41.1",
+        "mappedValue": 518,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "41.7",
+        "mappedValue": 519,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "98.1",
+        "mappedValue": 520,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "111.7",
+        "mappedValue": 521,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "63.2",
+        "mappedValue": 522,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "63.1",
+        "mappedValue": 523,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "63.6",
+        "mappedValue": 524,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-5.5",
+        "mappedValue": 525,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "50.1",
+        "mappedValue": 526,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-1.6",
+        "mappedValue": 527,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-1.8",
+        "mappedValue": 528,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-1.5",
+        "mappedValue": 529,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "59.3",
+        "mappedValue": 530,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "59.6",
+        "mappedValue": 531,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "150.0",
+        "mappedValue": 532,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "46.9",
+        "mappedValue": 533,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "46.0",
+        "mappedValue": 534,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "46.2",
+        "mappedValue": 535,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "68.7",
+        "mappedValue": 536,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "68.3",
+        "mappedValue": 537,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "33.1",
+        "mappedValue": 538,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "33.7",
+        "mappedValue": 539,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "103.4",
+        "mappedValue": 540,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "55.5",
+        "mappedValue": 541,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "77.3",
+        "mappedValue": 542,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "77.5",
+        "mappedValue": 543,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "42.2",
+        "mappedValue": 544,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "42.4",
+        "mappedValue": 545,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "42.5",
+        "mappedValue": 546,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "42.7",
+        "mappedValue": 547,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "64.9",
+        "mappedValue": 548,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "64.4",
+        "mappedValue": 549,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "64.7",
+        "mappedValue": 550,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-6.4",
+        "mappedValue": 551,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-6.0",
+        "mappedValue": 552,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "51.3",
+        "mappedValue": 553,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "51.8",
+        "mappedValue": 554,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "73.9",
+        "mappedValue": 555,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "60.3",
+        "mappedValue": 556,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "60.2",
+        "mappedValue": 557,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "95.2",
+        "mappedValue": 558,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "60.9",
+        "mappedValue": 559,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "60.8",
+        "mappedValue": 560,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "82.2",
+        "mappedValue": 561,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-2.9",
+        "mappedValue": 562,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-2.4",
+        "mappedValue": 563,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "29.7",
+        "mappedValue": 564,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "38.3",
+        "mappedValue": 565,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "38.4",
+        "mappedValue": 566,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "47.7",
+        "mappedValue": 567,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "47.8",
+        "mappedValue": 568,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "69.4",
+        "mappedValue": 569,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "69.0",
+        "mappedValue": 570,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "34.4",
+        "mappedValue": 571,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "56.6",
+        "mappedValue": 572,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "56.9",
+        "mappedValue": 573,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "21.8",
+        "mappedValue": 574,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "78.2",
+        "mappedValue": 575,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "43.5",
+        "mappedValue": 576,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "65.7",
+        "mappedValue": 577,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "65.9",
+        "mappedValue": 578,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "65.0",
+        "mappedValue": 579,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "65.4",
+        "mappedValue": 580,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "65.3",
+        "mappedValue": 581,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "30.6",
+        "mappedValue": 582,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "87.5",
+        "mappedValue": 583,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "52.4",
+        "mappedValue": 584,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "52.6",
+        "mappedValue": 585,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "52.8",
+        "mappedValue": 586,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "135.8",
+        "mappedValue": 587,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "100.6",
+        "mappedValue": 588,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "61.5",
+        "mappedValue": 589,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "61.9",
+        "mappedValue": 590,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-3.2",
+        "mappedValue": 591,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "83.5",
+        "mappedValue": 592,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "70.4",
+        "mappedValue": 593,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "130.9",
+        "mappedValue": 594,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "70.5",
+        "mappedValue": 595,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "39.1",
+        "mappedValue": 596,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "39.4",
+        "mappedValue": 597,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "39.7",
+        "mappedValue": 598,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "48.5",
+        "mappedValue": 599,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "48.9",
+        "mappedValue": 600,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "108.1",
+        "mappedValue": 601,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "161.4",
+        "mappedValue": 602,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "35.4",
+        "mappedValue": 603,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "79.8",
+        "mappedValue": 604,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "79.3",
+        "mappedValue": 605,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "79.2",
+        "mappedValue": 606,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "44.3",
+        "mappedValue": 607,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "66.7",
+        "mappedValue": 608,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "66.0",
+        "mappedValue": 609,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "66.2",
+        "mappedValue": 610,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "66.5",
+        "mappedValue": 611,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-8.9",
+        "mappedValue": 612,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "88.8",
+        "mappedValue": 613,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "53.2",
+        "mappedValue": 614,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "53.4",
+        "mappedValue": 615,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "40.6",
+        "mappedValue": 616,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "40.9",
+        "mappedValue": 617,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "62.1",
+        "mappedValue": 618,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "101.8",
+        "mappedValue": 619,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "71.6",
+        "mappedValue": 620,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-0.1",
+        "mappedValue": 621,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "-0.4",
+        "mappedValue": 622,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "80.7",
+        "mappedValue": 623,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "49.4",
+        "mappedValue": 624,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "49.8",
+        "mappedValue": 625,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "58.3",
+        "mappedValue": 626,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "58.5",
+        "mappedValue": 627,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "58.7",
+        "mappedValue": 628,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "58.0",
+        "mappedValue": 629,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "58.1",
+        "mappedValue": 630,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "190.2",
+        "mappedValue": 631,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "102.3",
+        "mappedValue": 632,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "213.8",
+        "mappedValue": 633,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "67.6",
+        "mappedValue": 634,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "67.8",
+        "mappedValue": 635,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "67.2",
+        "mappedValue": 636,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "67.1",
+        "mappedValue": 637,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-9.7",
+        "mappedValue": 638,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-9.4",
+        "mappedValue": 639,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "32.9",
+        "mappedValue": 640,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "32.8",
+        "mappedValue": 641,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "89.9",
+        "mappedValue": 642,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "89.0",
+        "mappedValue": 643,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "89.3",
+        "mappedValue": 644,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "89.4",
+        "mappedValue": 645,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "54.2",
+        "mappedValue": 646,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "54.3",
+        "mappedValue": 647,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "54.4",
+        "mappedValue": 648,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "54.6",
+        "mappedValue": 649,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "76.7",
+        "mappedValue": 650,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "76.6",
+        "mappedValue": 651,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "41.6",
+        "mappedValue": 652,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "133.4",
+        "mappedValue": 653,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "133.2",
+        "mappedValue": 654,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "63.4",
+        "mappedValue": 655,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "63.3",
+        "mappedValue": 656,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "111.1",
+        "mappedValue": 657,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "63.5",
+        "mappedValue": 658,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "85.9",
+        "mappedValue": 659,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "85.6",
+        "mappedValue": 660,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "146.9",
+        "mappedValue": 661,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "50.4",
+        "mappedValue": 662,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "50.6",
+        "mappedValue": 663,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "159.8",
+        "mappedValue": 664,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "124.5",
+        "mappedValue": 665,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "124.9",
+        "mappedValue": 666,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "72.4",
+        "mappedValue": 667,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "72.7",
+        "mappedValue": 668,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "72.9",
+        "mappedValue": 669,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "198.7",
+        "mappedValue": 670,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "94.3",
+        "mappedValue": 671,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "94.4",
+        "mappedValue": 672,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "81.1",
+        "mappedValue": 673,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "141.8",
+        "mappedValue": 674,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-1.2",
+        "mappedValue": 675,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "154.7",
+        "mappedValue": 676,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "81.7",
+        "mappedValue": 677,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "154.0",
+        "mappedValue": 678,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "132.4",
+        "mappedValue": 679,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "189.2",
+        "mappedValue": 680,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "90.1",
+        "mappedValue": 681,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "90.6",
+        "mappedValue": 682,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "37.9",
+        "mappedValue": 683,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "119.4",
+        "mappedValue": 684,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "59.4",
+        "mappedValue": 685,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "59.5",
+        "mappedValue": 686,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "59.7",
+        "mappedValue": 687,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "46.6",
+        "mappedValue": 688,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "46.8",
+        "mappedValue": 689,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "46.3",
+        "mappedValue": 690,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "68.5",
+        "mappedValue": 691,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "68.4",
+        "mappedValue": 692,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "68.1",
+        "mappedValue": 693,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "68.2",
+        "mappedValue": 694,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "125.5",
+        "mappedValue": 695,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "138.5",
+        "mappedValue": 696,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "201.9",
+        "mappedValue": 697,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "55.9",
+        "mappedValue": 698,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "55.0",
+        "mappedValue": 699,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "55.2",
+        "mappedValue": 700,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-20.6",
+        "mappedValue": 701,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "77.9",
+        "mappedValue": 702,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "77.1",
+        "mappedValue": 703,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "249.5",
+        "mappedValue": 704,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "99.3",
+        "mappedValue": 705,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "64.1",
+        "mappedValue": 706,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "64.2",
+        "mappedValue": 707,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "64.6",
+        "mappedValue": 708,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-6.5",
+        "mappedValue": 709,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-6.7",
+        "mappedValue": 710,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "51.0",
+        "mappedValue": 711,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "51.1",
+        "mappedValue": 712,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "86.0",
+        "mappedValue": 713,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-29.7",
+        "mappedValue": 714,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "73.2",
+        "mappedValue": 715,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "73.5",
+        "mappedValue": 716,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "73.8",
+        "mappedValue": 717,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "95.1",
+        "mappedValue": 718,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "60.0",
+        "mappedValue": 719,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "147.5",
+        "mappedValue": 720,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "95.7",
+        "mappedValue": 721,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "60.4",
+        "mappedValue": 722,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "82.3",
+        "mappedValue": 723,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "82.0",
+        "mappedValue": 724,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-2.5",
+        "mappedValue": 725,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-2.8",
+        "mappedValue": 726,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-2.2",
+        "mappedValue": 727,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-2.1",
+        "mappedValue": 728,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "82.7",
+        "mappedValue": 729,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "82.4",
+        "mappedValue": 730,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "164.0",
+        "mappedValue": 731,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "142.2",
+        "mappedValue": 732,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "120.7",
+        "mappedValue": 733,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-11.1",
+        "mappedValue": 734,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-33.8",
+        "mappedValue": 735,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "160.5",
+        "mappedValue": 736,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "47.6",
+        "mappedValue": 737,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "47.9",
+        "mappedValue": 738,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "69.6",
+        "mappedValue": 739,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "69.8",
+        "mappedValue": 740,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "151.6",
+        "mappedValue": 741,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "69.1",
+        "mappedValue": 742,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "56.5",
+        "mappedValue": 743,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "148.4",
+        "mappedValue": 744,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-52.1",
+        "mappedValue": 745,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "78.6",
+        "mappedValue": 746,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "78.1",
+        "mappedValue": 747,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "78.4",
+        "mappedValue": 748,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "78.3",
+        "mappedValue": 749,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "290.5",
+        "mappedValue": 750,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "104.1",
+        "mappedValue": 751,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "104.4",
+        "mappedValue": 752,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "104.7",
+        "mappedValue": 753,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "170.2",
+        "mappedValue": 754,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "65.5",
+        "mappedValue": 755,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-7.8",
+        "mappedValue": 756,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-7.5",
+        "mappedValue": 757,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "30.9",
+        "mappedValue": 758,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "157.8",
+        "mappedValue": 759,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "157.1",
+        "mappedValue": 760,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "157.0",
+        "mappedValue": 761,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "74.9",
+        "mappedValue": 762,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "122.4",
+        "mappedValue": 763,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "61.0",
+        "mappedValue": 764,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "61.2",
+        "mappedValue": 765,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "61.1",
+        "mappedValue": 766,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "100.8",
+        "mappedValue": 767,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "96.2",
+        "mappedValue": 768,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "100.1",
+        "mappedValue": 769,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "211.9",
+        "mappedValue": 770,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "113.5",
+        "mappedValue": 771,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "113.9",
+        "mappedValue": 772,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "61.4",
+        "mappedValue": 773,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "61.6",
+        "mappedValue": 774,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "61.7",
+        "mappedValue": 775,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "83.1",
+        "mappedValue": 776,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-3.8",
+        "mappedValue": 777,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "83.0",
+        "mappedValue": 778,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-3.5",
+        "mappedValue": 779,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-3.7",
+        "mappedValue": 780,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "83.6",
+        "mappedValue": 781,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "83.9",
+        "mappedValue": 782,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "70.1",
+        "mappedValue": 783,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "187.7",
+        "mappedValue": 784,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "70.7",
+        "mappedValue": 785,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "39.2",
+        "mappedValue": 786,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "39.6",
+        "mappedValue": 787,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "92.9",
+        "mappedValue": 788,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "108.8",
+        "mappedValue": 789,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "48.2",
+        "mappedValue": 790,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "48.0",
+        "mappedValue": 791,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "48.1",
+        "mappedValue": 792,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-12.0",
+        "mappedValue": 793,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "57.4",
+        "mappedValue": 794,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "57.7",
+        "mappedValue": 795,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "212.6",
+        "mappedValue": 796,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "114.0",
+        "mappedValue": 797,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "79.5",
+        "mappedValue": 798,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "79.1",
+        "mappedValue": 799,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "79.0",
+        "mappedValue": 800,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "44.7",
+        "mappedValue": 801,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "149.4",
+        "mappedValue": 802,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "66.8",
+        "mappedValue": 803,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "66.1",
+        "mappedValue": 804,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "66.4",
+        "mappedValue": 805,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-8.8",
+        "mappedValue": 806,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "180.2",
+        "mappedValue": 807,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "31.7",
+        "mappedValue": 808,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "127.0",
+        "mappedValue": 809,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "127.1",
+        "mappedValue": 810,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "31.4",
+        "mappedValue": 811,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-8.2",
+        "mappedValue": 812,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-8.1",
+        "mappedValue": 813,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "88.7",
+        "mappedValue": 814,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "53.8",
+        "mappedValue": 815,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "105.1",
+        "mappedValue": 816,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "53.5",
+        "mappedValue": 817,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "75.9",
+        "mappedValue": 818,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "75.8",
+        "mappedValue": 819,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "75.4",
+        "mappedValue": 820,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-18.9",
+        "mappedValue": 821,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "62.3",
+        "mappedValue": 822,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "62.2",
+        "mappedValue": 823,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "62.4",
+        "mappedValue": 824,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "62.7",
+        "mappedValue": 825,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "158.1",
+        "mappedValue": 826,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "62.9",
+        "mappedValue": 827,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-4.8",
+        "mappedValue": 828,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-4.9",
+        "mappedValue": 829,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "354.3",
+        "mappedValue": 830,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-4.0",
+        "mappedValue": 831,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "123.3",
+        "mappedValue": 832,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "234.0",
+        "mappedValue": 833,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "84.3",
+        "mappedValue": 834,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "84.9",
+        "mappedValue": 835,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "71.1",
+        "mappedValue": 836,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "71.3",
+        "mappedValue": 837,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "71.2",
+        "mappedValue": 838,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "71.7",
+        "mappedValue": 839,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "71.9",
+        "mappedValue": 840,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "93.0",
+        "mappedValue": 841,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "93.7",
+        "mappedValue": 842,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "93.8",
+        "mappedValue": 843,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "49.7",
+        "mappedValue": 844,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "36.9",
+        "mappedValue": 845,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-13.7",
+        "mappedValue": 846,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "109.4",
+        "mappedValue": 847,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "843.6",
+        "mappedValue": 848,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "58.4",
+        "mappedValue": 849,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "58.2",
+        "mappedValue": 850,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "-76.9",
+        "mappedValue": 851,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "488.5",
+        "mappedValue": 852,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "45.7",
+        "mappedValue": 853,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "137.7",
+        "mappedValue": 854,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "45.2",
+        "mappedValue": 855,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-41.6",
+        "mappedValue": 856,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "200.1",
+        "mappedValue": 857,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "431.2",
+        "mappedValue": 858,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-41.8",
+        "mappedValue": 859,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "200.9",
+        "mappedValue": 860,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "137.9",
+        "mappedValue": 861,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "431.6",
+        "mappedValue": 862,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "200.4",
+        "mappedValue": 863,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "102.6",
+        "mappedValue": 864,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "102.5",
+        "mappedValue": 865,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "102.8",
+        "mappedValue": 866,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "102.7",
+        "mappedValue": 867,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "102.0",
+        "mappedValue": 868,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "102.2",
+        "mappedValue": 869,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "67.5",
+        "mappedValue": 870,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "115.6",
+        "mappedValue": 871,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "115.8",
+        "mappedValue": 872,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "115.0",
+        "mappedValue": 873,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-63.8",
+        "mappedValue": 874,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "115.9",
+        "mappedValue": 875,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "849.3",
+        "mappedValue": 876,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1047.6",
+        "mappedValue": 877,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1047.4",
+        "mappedValue": 878,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-9.1",
+        "mappedValue": 879,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-9.0",
+        "mappedValue": 880,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-32.4",
+        "mappedValue": 881,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-32.3",
+        "mappedValue": 882,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-32.6",
+        "mappedValue": 883,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "89.8",
+        "mappedValue": 884,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "89.5",
+        "mappedValue": 885,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "89.6",
+        "mappedValue": 886,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "226.9",
+        "mappedValue": 887,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "703.0",
+        "mappedValue": 888,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-89.7",
+        "mappedValue": 889,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1189.5",
+        "mappedValue": 890,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-54.6",
+        "mappedValue": 891,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "106.9",
+        "mappedValue": 892,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "226.1",
+        "mappedValue": 893,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "76.8",
+        "mappedValue": 894,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "128.5",
+        "mappedValue": 895,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1461.6",
+        "mappedValue": 896,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "128.3",
+        "mappedValue": 897,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "76.0",
+        "mappedValue": 898,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "76.5",
+        "mappedValue": 899,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-19.4",
+        "mappedValue": 900,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "231.0",
+        "mappedValue": 901,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "653.5",
+        "mappedValue": 902,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "231.1",
+        "mappedValue": 903,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-19.7",
+        "mappedValue": 904,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "133.7",
+        "mappedValue": 905,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "133.0",
+        "mappedValue": 906,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "288.2",
+        "mappedValue": 907,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "288.0",
+        "mappedValue": 908,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "98.9",
+        "mappedValue": 909,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "98.7",
+        "mappedValue": 910,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "98.8",
+        "mappedValue": 911,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "409.6",
+        "mappedValue": 912,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "98.2",
+        "mappedValue": 913,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1065.0",
+        "mappedValue": 914,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "98.5",
+        "mappedValue": 915,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "98.3",
+        "mappedValue": 916,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "111.5",
+        "mappedValue": 917,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "63.9",
+        "mappedValue": 918,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1078.8",
+        "mappedValue": 919,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "111.9",
+        "mappedValue": 920,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "111.2",
+        "mappedValue": 921,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "577.4",
+        "mappedValue": 922,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-5.7",
+        "mappedValue": 923,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "85.0",
+        "mappedValue": 924,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-5.8",
+        "mappedValue": 925,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "266.1",
+        "mappedValue": 926,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "168.5",
+        "mappedValue": 927,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "168.3",
+        "mappedValue": 928,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "871.5",
+        "mappedValue": 929,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-5.2",
+        "mappedValue": 930,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-5.4",
+        "mappedValue": 931,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "168.2",
+        "mappedValue": 932,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-5.0",
+        "mappedValue": 933,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-170.6",
+        "mappedValue": 934,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "342.0",
+        "mappedValue": 935,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "85.2",
+        "mappedValue": 936,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "85.8",
+        "mappedValue": 937,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "244.5",
+        "mappedValue": 938,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "244.4",
+        "mappedValue": 939,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "377.7",
+        "mappedValue": 940,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-85.2",
+        "mappedValue": 941,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "146.2",
+        "mappedValue": 942,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "50.8",
+        "mappedValue": 943,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-50.7",
+        "mappedValue": 944,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "257.8",
+        "mappedValue": 945,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "72.1",
+        "mappedValue": 946,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "609.1",
+        "mappedValue": 947,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "159.4",
+        "mappedValue": 948,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "320.1",
+        "mappedValue": 949,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "453.8",
+        "mappedValue": 950,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "805.2",
+        "mappedValue": 951,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "222.0",
+        "mappedValue": 952,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "355.1",
+        "mappedValue": 953,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "124.7",
+        "mappedValue": 954,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "124.1",
+        "mappedValue": 955,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "124.2",
+        "mappedValue": 956,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "903.9",
+        "mappedValue": 957,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "124.0",
+        "mappedValue": 958,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "94.1",
+        "mappedValue": 959,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "94.2",
+        "mappedValue": 960,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "198.2",
+        "mappedValue": 961,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "208.2",
+        "mappedValue": 962,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "94.5",
+        "mappedValue": 963,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "94.6",
+        "mappedValue": 964,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "163.7",
+        "mappedValue": 965,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "94.7",
+        "mappedValue": 966,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-14.1",
+        "mappedValue": 967,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-14.5",
+        "mappedValue": 968,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "840.9",
+        "mappedValue": 969,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "176.9",
+        "mappedValue": 970,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "81.3",
+        "mappedValue": 971,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "81.2",
+        "mappedValue": 972,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "546.2",
+        "mappedValue": 973,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "546.5",
+        "mappedValue": 974,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "511.2",
+        "mappedValue": 975,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "511.1",
+        "mappedValue": 976,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "81.6",
+        "mappedValue": 977,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "154.5",
+        "mappedValue": 978,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "483.3",
+        "mappedValue": 979,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "230.2",
+        "mappedValue": 980,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "230.4",
+        "mappedValue": 981,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "132.8",
+        "mappedValue": 982,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "132.9",
+        "mappedValue": 983,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "385.4",
+        "mappedValue": 984,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "132.3",
+        "mappedValue": 985,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-27.1",
+        "mappedValue": 986,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-80.9",
+        "mappedValue": 987,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-27.0",
+        "mappedValue": 988,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-27.6",
+        "mappedValue": 989,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "688.6",
+        "mappedValue": 990,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "822.0",
+        "mappedValue": 991,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "194.9",
+        "mappedValue": 992,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "302.1",
+        "mappedValue": 993,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "302.3",
+        "mappedValue": 994,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-45.0",
+        "mappedValue": 995,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "204.3",
+        "mappedValue": 996,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "626.3",
+        "mappedValue": 997,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "106.0",
+        "mappedValue": 998,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "37.3",
+        "mappedValue": 999,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "106.1",
+        "mappedValue": 1000,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "37.6",
+        "mappedValue": 1001,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "106.4",
+        "mappedValue": 1002,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "106.6",
+        "mappedValue": 1003,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-10.2",
+        "mappedValue": 1004,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-10.5",
+        "mappedValue": 1005,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-10.6",
+        "mappedValue": 1006,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-10.8",
+        "mappedValue": 1007,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "270.6",
+        "mappedValue": 1008,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "217.2",
+        "mappedValue": 1009,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "626.6",
+        "mappedValue": 1010,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "119.2",
+        "mappedValue": 1011,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "270.2",
+        "mappedValue": 1012,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "119.3",
+        "mappedValue": 1013,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "172.3",
+        "mappedValue": 1014,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-10.1",
+        "mappedValue": 1015,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "172.5",
+        "mappedValue": 1016,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-67.0",
+        "mappedValue": 1017,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "119.8",
+        "mappedValue": 1018,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "119.7",
+        "mappedValue": 1019,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "59.8",
+        "mappedValue": 1020,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "315.3",
+        "mappedValue": 1021,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "59.0",
+        "mappedValue": 1022,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "59.1",
+        "mappedValue": 1023,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "150.1",
+        "mappedValue": 1024,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "150.9",
+        "mappedValue": 1025,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "515.7",
+        "mappedValue": 1026,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "328.7",
+        "mappedValue": 1027,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "328.5",
+        "mappedValue": 1028,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-143.2",
+        "mappedValue": 1029,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "381.4",
+        "mappedValue": 1030,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-23.4",
+        "mappedValue": 1031,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "258.4",
+        "mappedValue": 1032,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "321.0",
+        "mappedValue": 1033,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "574.2",
+        "mappedValue": 1034,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "68.0",
+        "mappedValue": 1035,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "321.5",
+        "mappedValue": 1036,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "454.8",
+        "mappedValue": 1037,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "356.1",
+        "mappedValue": 1038,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "125.4",
+        "mappedValue": 1039,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1309.5",
+        "mappedValue": 1040,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "356.5",
+        "mappedValue": 1041,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "356.2",
+        "mappedValue": 1042,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "236.6",
+        "mappedValue": 1043,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "191.0",
+        "mappedValue": 1044,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "236.8",
+        "mappedValue": 1045,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "138.6",
+        "mappedValue": 1046,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2162.8",
+        "mappedValue": 1047,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "103.2",
+        "mappedValue": 1048,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "55.7",
+        "mappedValue": 1049,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "103.5",
+        "mappedValue": 1050,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "561.4",
+        "mappedValue": 1051,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "103.9",
+        "mappedValue": 1052,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "116.1",
+        "mappedValue": 1053,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "116.2",
+        "mappedValue": 1054,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "116.4",
+        "mappedValue": 1055,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "116.7",
+        "mappedValue": 1056,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "116.6",
+        "mappedValue": 1057,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-20.5",
+        "mappedValue": 1058,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "77.7",
+        "mappedValue": 1059,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "77.6",
+        "mappedValue": 1060,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "312.1",
+        "mappedValue": 1061,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "77.0",
+        "mappedValue": 1062,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-20.0",
+        "mappedValue": 1063,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "77.4",
+        "mappedValue": 1064,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-77.1",
+        "mappedValue": 1065,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "42.0",
+        "mappedValue": 1066,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "249.2",
+        "mappedValue": 1067,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-42.9",
+        "mappedValue": 1068,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "325.8",
+        "mappedValue": 1069,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "99.9",
+        "mappedValue": 1070,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "99.0",
+        "mappedValue": 1071,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "254.6",
+        "mappedValue": 1072,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "64.8",
+        "mappedValue": 1073,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "156.5",
+        "mappedValue": 1074,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "156.9",
+        "mappedValue": 1075,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "156.8",
+        "mappedValue": 1076,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "64.0",
+        "mappedValue": 1077,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "64.3",
+        "mappedValue": 1078,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "64.5",
+        "mappedValue": 1079,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "578.3",
+        "mappedValue": 1080,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-6.9",
+        "mappedValue": 1081,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "970.0",
+        "mappedValue": 1082,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "970.3",
+        "mappedValue": 1083,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "121.7",
+        "mappedValue": 1084,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "121.6",
+        "mappedValue": 1085,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "352.3",
+        "mappedValue": 1086,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "121.9",
+        "mappedValue": 1087,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "352.1",
+        "mappedValue": 1088,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "121.1",
+        "mappedValue": 1089,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "121.0",
+        "mappedValue": 1090,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "121.3",
+        "mappedValue": 1091,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "121.2",
+        "mappedValue": 1092,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-103.3",
+        "mappedValue": 1093,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "134.6",
+        "mappedValue": 1094,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "86.8",
+        "mappedValue": 1095,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "86.1",
+        "mappedValue": 1096,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "134.3",
+        "mappedValue": 1097,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "134.1",
+        "mappedValue": 1098,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-29.9",
+        "mappedValue": 1099,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "330.3",
+        "mappedValue": 1100,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "51.5",
+        "mappedValue": 1101,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-356.4",
+        "mappedValue": 1102,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "51.9",
+        "mappedValue": 1103,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2443.3",
+        "mappedValue": 1104,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "73.0",
+        "mappedValue": 1105,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "210.7",
+        "mappedValue": 1106,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "112.6",
+        "mappedValue": 1107,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "112.9",
+        "mappedValue": 1108,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "530.0",
+        "mappedValue": 1109,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "530.1",
+        "mappedValue": 1110,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "112.1",
+        "mappedValue": 1111,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "112.3",
+        "mappedValue": 1112,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "112.2",
+        "mappedValue": 1113,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "267.9",
+        "mappedValue": 1114,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "806.0",
+        "mappedValue": 1115,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "73.3",
+        "mappedValue": 1116,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "73.7",
+        "mappedValue": 1117,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "245.8",
+        "mappedValue": 1118,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "476.9",
+        "mappedValue": 1119,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "147.4",
+        "mappedValue": 1120,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "3142.2",
+        "mappedValue": 1121,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "147.9",
+        "mappedValue": 1122,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1710.7",
+        "mappedValue": 1123,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "147.6",
+        "mappedValue": 1124,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "95.4",
+        "mappedValue": 1125,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "95.5",
+        "mappedValue": 1126,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "95.3",
+        "mappedValue": 1127,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "95.9",
+        "mappedValue": 1128,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "147.1",
+        "mappedValue": 1129,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "480.7",
+        "mappedValue": 1130,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-15.1",
+        "mappedValue": 1131,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "427.2",
+        "mappedValue": 1132,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-15.7",
+        "mappedValue": 1133,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-15.9",
+        "mappedValue": 1134,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1050.6",
+        "mappedValue": 1135,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "284.8",
+        "mappedValue": 1136,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "82.1",
+        "mappedValue": 1137,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "547.1",
+        "mappedValue": 1138,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "186.2",
+        "mappedValue": 1139,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-37.6",
+        "mappedValue": 1140,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-227.3",
+        "mappedValue": 1141,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "610.6",
+        "mappedValue": 1142,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "199.2",
+        "mappedValue": 1143,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "82.5",
+        "mappedValue": 1144,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "82.9",
+        "mappedValue": 1145,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "360.9",
+        "mappedValue": 1146,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1531.8",
+        "mappedValue": 1147,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "262.7",
+        "mappedValue": 1148,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "164.9",
+        "mappedValue": 1149,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "395.1",
+        "mappedValue": 1150,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "164.4",
+        "mappedValue": 1151,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "275.6",
+        "mappedValue": 1152,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "275.5",
+        "mappedValue": 1153,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "418.7",
+        "mappedValue": 1154,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1459.1",
+        "mappedValue": 1155,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "471.4",
+        "mappedValue": 1156,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "418.2",
+        "mappedValue": 1157,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-28.8",
+        "mappedValue": 1158,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "471.8",
+        "mappedValue": 1159,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "142.5",
+        "mappedValue": 1160,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "142.3",
+        "mappedValue": 1161,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "253.7",
+        "mappedValue": 1162,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "253.6",
+        "mappedValue": 1163,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "91.1",
+        "mappedValue": 1164,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "91.5",
+        "mappedValue": 1165,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "91.3",
+        "mappedValue": 1166,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "253.4",
+        "mappedValue": 1167,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "155.5",
+        "mappedValue": 1168,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1019.5",
+        "mappedValue": 1169,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2398.1",
+        "mappedValue": 1170,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "120.0",
+        "mappedValue": 1171,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "91.8",
+        "mappedValue": 1172,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "91.6",
+        "mappedValue": 1173,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "91.7",
+        "mappedValue": 1174,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "120.3",
+        "mappedValue": 1175,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-11.3",
+        "mappedValue": 1176,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-11.8",
+        "mappedValue": 1177,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "227.0",
+        "mappedValue": 1178,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "227.2",
+        "mappedValue": 1179,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "280.7",
+        "mappedValue": 1180,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "129.1",
+        "mappedValue": 1181,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "280.2",
+        "mappedValue": 1182,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "129.5",
+        "mappedValue": 1183,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "129.2",
+        "mappedValue": 1184,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "182.8",
+        "mappedValue": 1185,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1793.4",
+        "mappedValue": 1186,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "182.6",
+        "mappedValue": 1187,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "338.9",
+        "mappedValue": 1188,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "401.1",
+        "mappedValue": 1189,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "195.6",
+        "mappedValue": 1190,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "195.4",
+        "mappedValue": 1191,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "160.2",
+        "mappedValue": 1192,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "391.2",
+        "mappedValue": 1193,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "160.0",
+        "mappedValue": 1194,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "205.6",
+        "mappedValue": 1195,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "205.2",
+        "mappedValue": 1196,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "205.1",
+        "mappedValue": 1197,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "107.0",
+        "mappedValue": 1198,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "107.5",
+        "mappedValue": 1199,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "107.4",
+        "mappedValue": 1200,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "338.5",
+        "mappedValue": 1201,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "391.8",
+        "mappedValue": 1202,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "316.7",
+        "mappedValue": 1203,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-59.6",
+        "mappedValue": 1204,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "218.1",
+        "mappedValue": 1205,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "271.9",
+        "mappedValue": 1206,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "889.0",
+        "mappedValue": 1207,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-155.8",
+        "mappedValue": 1208,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "173.1",
+        "mappedValue": 1209,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "47.0",
+        "mappedValue": 1210,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1090.9",
+        "mappedValue": 1211,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-24.0",
+        "mappedValue": 1212,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "769.8",
+        "mappedValue": 1213,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "414.5",
+        "mappedValue": 1214,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "636.7",
+        "mappedValue": 1215,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "151.0",
+        "mappedValue": 1216,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "69.3",
+        "mappedValue": 1217,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "69.5",
+        "mappedValue": 1218,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "69.7",
+        "mappedValue": 1219,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "69.9",
+        "mappedValue": 1220,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "151.3",
+        "mappedValue": 1221,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "151.2",
+        "mappedValue": 1222,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "151.5",
+        "mappedValue": 1223,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-46.6",
+        "mappedValue": 1224,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "329.5",
+        "mappedValue": 1225,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1575.5",
+        "mappedValue": 1226,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "427.9",
+        "mappedValue": 1227,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "344.4",
+        "mappedValue": 1228,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "246.8",
+        "mappedValue": 1229,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "148.3",
+        "mappedValue": 1230,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "56.7",
+        "mappedValue": 1231,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "56.8",
+        "mappedValue": 1232,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "148.7",
+        "mappedValue": 1233,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "148.6",
+        "mappedValue": 1234,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "562.5",
+        "mappedValue": 1235,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "56.3",
+        "mappedValue": 1236,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "56.4",
+        "mappedValue": 1237,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-52.9",
+        "mappedValue": 1238,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "322.1",
+        "mappedValue": 1239,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1232.3",
+        "mappedValue": 1240,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "126.3",
+        "mappedValue": 1241,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "78.8",
+        "mappedValue": 1242,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "126.2",
+        "mappedValue": 1243,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "78.7",
+        "mappedValue": 1244,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "78.0",
+        "mappedValue": 1245,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "584.8",
+        "mappedValue": 1246,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "357.1",
+        "mappedValue": 1247,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "192.1",
+        "mappedValue": 1248,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "237.2",
+        "mappedValue": 1249,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "237.3",
+        "mappedValue": 1250,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "237.4",
+        "mappedValue": 1251,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "237.5",
+        "mappedValue": 1252,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "237.6",
+        "mappedValue": 1253,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "290.7",
+        "mappedValue": 1254,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "290.9",
+        "mappedValue": 1255,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "139.1",
+        "mappedValue": 1256,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "139.2",
+        "mappedValue": 1257,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "629.5",
+        "mappedValue": 1258,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "139.6",
+        "mappedValue": 1259,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "629.8",
+        "mappedValue": 1260,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "192.4",
+        "mappedValue": 1261,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "43.4",
+        "mappedValue": 1262,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "43.6",
+        "mappedValue": 1263,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "300.5",
+        "mappedValue": 1264,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "202.0",
+        "mappedValue": 1265,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-43.9",
+        "mappedValue": 1266,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "104.2",
+        "mappedValue": 1267,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "104.6",
+        "mappedValue": 1268,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "104.5",
+        "mappedValue": 1269,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "313.9",
+        "mappedValue": 1270,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "215.0",
+        "mappedValue": 1271,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "65.8",
+        "mappedValue": 1272,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "117.0",
+        "mappedValue": 1273,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "117.6",
+        "mappedValue": 1274,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "170.9",
+        "mappedValue": 1275,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "65.1",
+        "mappedValue": 1276,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "170.7",
+        "mappedValue": 1277,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-7.4",
+        "mappedValue": 1278,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "348.8",
+        "mappedValue": 1279,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-7.6",
+        "mappedValue": 1280,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "117.8",
+        "mappedValue": 1281,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "847.4",
+        "mappedValue": 1282,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-7.1",
+        "mappedValue": 1283,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-7.0",
+        "mappedValue": 1284,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "313.8",
+        "mappedValue": 1285,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-7.3",
+        "mappedValue": 1286,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-7.2",
+        "mappedValue": 1287,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1276.7",
+        "mappedValue": 1288,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "277.8",
+        "mappedValue": 1289,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "179.9",
+        "mappedValue": 1290,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "340.1",
+        "mappedValue": 1291,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "179.4",
+        "mappedValue": 1292,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "87.2",
+        "mappedValue": 1293,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "87.0",
+        "mappedValue": 1294,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "87.6",
+        "mappedValue": 1295,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "87.4",
+        "mappedValue": 1296,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "242.7",
+        "mappedValue": 1297,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "242.9",
+        "mappedValue": 1298,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-83.8",
+        "mappedValue": 1299,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "242.1",
+        "mappedValue": 1300,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "242.3",
+        "mappedValue": 1301,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "144.8",
+        "mappedValue": 1302,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "144.6",
+        "mappedValue": 1303,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "52.1",
+        "mappedValue": 1304,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "144.4",
+        "mappedValue": 1305,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "52.7",
+        "mappedValue": 1306,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "375.4",
+        "mappedValue": 1307,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "255.4",
+        "mappedValue": 1308,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "255.9",
+        "mappedValue": 1309,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "74.0",
+        "mappedValue": 1310,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "255.2",
+        "mappedValue": 1311,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "157.5",
+        "mappedValue": 1312,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "157.3",
+        "mappedValue": 1313,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "709.9",
+        "mappedValue": 1314,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "157.7",
+        "mappedValue": 1315,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "709.3",
+        "mappedValue": 1316,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "451.4",
+        "mappedValue": 1317,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "451.1",
+        "mappedValue": 1318,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "451.6",
+        "mappedValue": 1319,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "220.4",
+        "mappedValue": 1320,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "451.8",
+        "mappedValue": 1321,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "220.5",
+        "mappedValue": 1322,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "122.5",
+        "mappedValue": 1323,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "353.3",
+        "mappedValue": 1324,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "122.8",
+        "mappedValue": 1325,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1731.9",
+        "mappedValue": 1326,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "122.7",
+        "mappedValue": 1327,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "74.2",
+        "mappedValue": 1328,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "74.1",
+        "mappedValue": 1329,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "122.0",
+        "mappedValue": 1330,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "122.2",
+        "mappedValue": 1331,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "74.6",
+        "mappedValue": 1332,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "74.8",
+        "mappedValue": 1333,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "233.4",
+        "mappedValue": 1334,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "651.5",
+        "mappedValue": 1335,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "135.4",
+        "mappedValue": 1336,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "135.1",
+        "mappedValue": 1337,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "135.2",
+        "mappedValue": 1338,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "135.0",
+        "mappedValue": 1339,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "100.5",
+        "mappedValue": 1340,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "331.1",
+        "mappedValue": 1341,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "96.1",
+        "mappedValue": 1342,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "100.2",
+        "mappedValue": 1343,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "211.3",
+        "mappedValue": 1344,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "148.9",
+        "mappedValue": 1345,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "113.4",
+        "mappedValue": 1346,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "113.3",
+        "mappedValue": 1347,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "113.8",
+        "mappedValue": 1348,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "61.3",
+        "mappedValue": 1349,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "113.0",
+        "mappedValue": 1350,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-3.9",
+        "mappedValue": 1351,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "83.2",
+        "mappedValue": 1352,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "540.8",
+        "mappedValue": 1353,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-3.1",
+        "mappedValue": 1354,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-3.0",
+        "mappedValue": 1355,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-38.3",
+        "mappedValue": 1356,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "152.8",
+        "mappedValue": 1357,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "152.3",
+        "mappedValue": 1358,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "83.3",
+        "mappedValue": 1359,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "83.4",
+        "mappedValue": 1360,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "83.8",
+        "mappedValue": 1361,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "481.7",
+        "mappedValue": 1362,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "70.2",
+        "mappedValue": 1363,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "70.3",
+        "mappedValue": 1364,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "428.2",
+        "mappedValue": 1365,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "633.6",
+        "mappedValue": 1366,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "130.8",
+        "mappedValue": 1367,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "130.2",
+        "mappedValue": 1368,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "130.3",
+        "mappedValue": 1369,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "130.0",
+        "mappedValue": 1370,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "383.4",
+        "mappedValue": 1371,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "130.6",
+        "mappedValue": 1372,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "130.4",
+        "mappedValue": 1373,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "187.2",
+        "mappedValue": 1374,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "70.6",
+        "mappedValue": 1375,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "187.4",
+        "mappedValue": 1376,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "70.8",
+        "mappedValue": 1377,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "70.9",
+        "mappedValue": 1378,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "92.2",
+        "mappedValue": 1379,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "361.4",
+        "mappedValue": 1380,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "557.5",
+        "mappedValue": 1381,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "39.9",
+        "mappedValue": 1382,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "620.5",
+        "mappedValue": 1383,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "263.6",
+        "mappedValue": 1384,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "39.0",
+        "mappedValue": 1385,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "396.6",
+        "mappedValue": 1386,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "92.8",
+        "mappedValue": 1387,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "92.6",
+        "mappedValue": 1388,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "165.5",
+        "mappedValue": 1389,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "165.4",
+        "mappedValue": 1390,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-16.1",
+        "mappedValue": 1391,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-16.4",
+        "mappedValue": 1392,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "276.3",
+        "mappedValue": 1393,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "419.4",
+        "mappedValue": 1394,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "419.3",
+        "mappedValue": 1395,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "178.4",
+        "mappedValue": 1396,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "472.3",
+        "mappedValue": 1397,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "241.4",
+        "mappedValue": 1398,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "143.8",
+        "mappedValue": 1399,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "374.7",
+        "mappedValue": 1400,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "873.1",
+        "mappedValue": 1401,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "143.2",
+        "mappedValue": 1402,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "143.3",
+        "mappedValue": 1403,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1935.7",
+        "mappedValue": 1404,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1837.6",
+        "mappedValue": 1405,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "348.1",
+        "mappedValue": 1406,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-56.2",
+        "mappedValue": 1407,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "108.6",
+        "mappedValue": 1408,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "424.0",
+        "mappedValue": 1409,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "206.6",
+        "mappedValue": 1410,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "183.1",
+        "mappedValue": 1411,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "183.7",
+        "mappedValue": 1412,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "183.8",
+        "mappedValue": 1413,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "504.8",
+        "mappedValue": 1414,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "294.4",
+        "mappedValue": 1415,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "294.2",
+        "mappedValue": 1416,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "402.1",
+        "mappedValue": 1417,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "304.2",
+        "mappedValue": 1418,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "206.4",
+        "mappedValue": 1419,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "437.0",
+        "mappedValue": 1420,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "108.2",
+        "mappedValue": 1421,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "161.9",
+        "mappedValue": 1422,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "526.1",
+        "mappedValue": 1423,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "161.6",
+        "mappedValue": 1424,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-12.2",
+        "mappedValue": 1425,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-12.6",
+        "mappedValue": 1426,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "219.3",
+        "mappedValue": 1427,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "174.8",
+        "mappedValue": 1428,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "174.1",
+        "mappedValue": 1429,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "370.1",
+        "mappedValue": 1430,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-69.6",
+        "mappedValue": 1431,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "57.6",
+        "mappedValue": 1432,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "57.8",
+        "mappedValue": 1433,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "149.9",
+        "mappedValue": 1434,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "608.1",
+        "mappedValue": 1435,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "114.3",
+        "mappedValue": 1436,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "114.5",
+        "mappedValue": 1437,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1035.7",
+        "mappedValue": 1438,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "114.7",
+        "mappedValue": 1439,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "114.9",
+        "mappedValue": 1440,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "247.9",
+        "mappedValue": 1441,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "959.0",
+        "mappedValue": 1442,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "585.1",
+        "mappedValue": 1443,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "310.2",
+        "mappedValue": 1444,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "79.6",
+        "mappedValue": 1445,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "79.9",
+        "mappedValue": 1446,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "310.7",
+        "mappedValue": 1447,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "585.6",
+        "mappedValue": 1448,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "310.6",
+        "mappedValue": 1449,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-75.8",
+        "mappedValue": 1450,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "127.8",
+        "mappedValue": 1451,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "550.4",
+        "mappedValue": 1452,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "225.9",
+        "mappedValue": 1453,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "44.4",
+        "mappedValue": 1454,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "345.3",
+        "mappedValue": 1455,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "247.6",
+        "mappedValue": 1456,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "149.0",
+        "mappedValue": 1457,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "421.7",
+        "mappedValue": 1458,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "66.6",
+        "mappedValue": 1459,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "66.9",
+        "mappedValue": 1460,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "66.3",
+        "mappedValue": 1461,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "323.2",
+        "mappedValue": 1462,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-8.4",
+        "mappedValue": 1463,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-8.6",
+        "mappedValue": 1464,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-8.5",
+        "mappedValue": 1465,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "127.2",
+        "mappedValue": 1466,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "127.7",
+        "mappedValue": 1467,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1627.3",
+        "mappedValue": 1468,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "193.2",
+        "mappedValue": 1469,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "238.3",
+        "mappedValue": 1470,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "336.8",
+        "mappedValue": 1471,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "835.5",
+        "mappedValue": 1472,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "800.0",
+        "mappedValue": 1473,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "291.2",
+        "mappedValue": 1474,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "88.0",
+        "mappedValue": 1475,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "301.6",
+        "mappedValue": 1476,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "88.1",
+        "mappedValue": 1477,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "88.5",
+        "mappedValue": 1478,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "933.9",
+        "mappedValue": 1479,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "88.3",
+        "mappedValue": 1480,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "203.0",
+        "mappedValue": 1481,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "434.5",
+        "mappedValue": 1482,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "203.5",
+        "mappedValue": 1483,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "105.0",
+        "mappedValue": 1484,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "105.3",
+        "mappedValue": 1485,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "105.2",
+        "mappedValue": 1486,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "53.1",
+        "mappedValue": 1487,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "110.3",
+        "mappedValue": 1488,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "110.4",
+        "mappedValue": 1489,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "265.8",
+        "mappedValue": 1490,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "808.5",
+        "mappedValue": 1491,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "167.8",
+        "mappedValue": 1492,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "75.1",
+        "mappedValue": 1493,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "75.0",
+        "mappedValue": 1494,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "75.5",
+        "mappedValue": 1495,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "75.7",
+        "mappedValue": 1496,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "906.5",
+        "mappedValue": 1497,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-18.0",
+        "mappedValue": 1498,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-18.3",
+        "mappedValue": 1499,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-18.4",
+        "mappedValue": 1500,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "278.0",
+        "mappedValue": 1501,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "341.2",
+        "mappedValue": 1502,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "341.7",
+        "mappedValue": 1503,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "62.0",
+        "mappedValue": 1504,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "474.6",
+        "mappedValue": 1505,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "145.6",
+        "mappedValue": 1506,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "97.3",
+        "mappedValue": 1507,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "145.0",
+        "mappedValue": 1508,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "158.5",
+        "mappedValue": 1509,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "158.2",
+        "mappedValue": 1510,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "158.0",
+        "mappedValue": 1511,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "62.8",
+        "mappedValue": 1512,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "221.7",
+        "mappedValue": 1513,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1591.8",
+        "mappedValue": 1514,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "84.0",
+        "mappedValue": 1515,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "84.1",
+        "mappedValue": 1516,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1734.8",
+        "mappedValue": 1517,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "123.8",
+        "mappedValue": 1518,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-4.5",
+        "mappedValue": 1519,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "123.0",
+        "mappedValue": 1520,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "870.0",
+        "mappedValue": 1521,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-4.2",
+        "mappedValue": 1522,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-4.1",
+        "mappedValue": 1523,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "136.5",
+        "mappedValue": 1524,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "136.8",
+        "mappedValue": 1525,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "84.5",
+        "mappedValue": 1526,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "84.2",
+        "mappedValue": 1527,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "84.8",
+        "mappedValue": 1528,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "136.0",
+        "mappedValue": 1529,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "389.1",
+        "mappedValue": 1530,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "84.7",
+        "mappedValue": 1531,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "430.1",
+        "mappedValue": 1532,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "101.5",
+        "mappedValue": 1533,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "332.3",
+        "mappedValue": 1534,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "892.8",
+        "mappedValue": 1535,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "332.7",
+        "mappedValue": 1536,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "101.2",
+        "mappedValue": 1537,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "71.0",
+        "mappedValue": 1538,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2125.6",
+        "mappedValue": 1539,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "175.3",
+        "mappedValue": 1540,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "175.4",
+        "mappedValue": 1541,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "175.2",
+        "mappedValue": 1542,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-26.0",
+        "mappedValue": 1543,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-26.2",
+        "mappedValue": 1544,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-26.9",
+        "mappedValue": 1545,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "371.9",
+        "mappedValue": 1546,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "634.9",
+        "mappedValue": 1547,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "140.3",
+        "mappedValue": 1548,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1292.4",
+        "mappedValue": 1549,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "140.4",
+        "mappedValue": 1550,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "71.4",
+        "mappedValue": 1551,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "371.4",
+        "mappedValue": 1552,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "318.2",
+        "mappedValue": 1553,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "140.8",
+        "mappedValue": 1554,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "71.8",
+        "mappedValue": 1555,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "140.5",
+        "mappedValue": 1556,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "754.4",
+        "mappedValue": 1557,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "93.1",
+        "mappedValue": 1558,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "153.8",
+        "mappedValue": 1559,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "153.2",
+        "mappedValue": 1560,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "153.0",
+        "mappedValue": 1561,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "621.0",
+        "mappedValue": 1562,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-48.5",
+        "mappedValue": 1563,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "950.1",
+        "mappedValue": 1564,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "656.7",
+        "mappedValue": 1565,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "93.5",
+        "mappedValue": 1566,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "93.9",
+        "mappedValue": 1567,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "482.7",
+        "mappedValue": 1568,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-17.0",
+        "mappedValue": 1569,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-17.4",
+        "mappedValue": 1570,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-70.0",
+        "mappedValue": 1571,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "131.0",
+        "mappedValue": 1572,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "131.3",
+        "mappedValue": 1573,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "131.4",
+        "mappedValue": 1574,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "80.4",
+        "mappedValue": 1575,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "80.5",
+        "mappedValue": 1576,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "309.5",
+        "mappedValue": 1577,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "545.7",
+        "mappedValue": 1578,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-39.3",
+        "mappedValue": 1579,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "407.2",
+        "mappedValue": 1580,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-39.8",
+        "mappedValue": 1581,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "80.8",
+        "mappedValue": 1582,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "80.9",
+        "mappedValue": 1583,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "166.8",
+        "mappedValue": 1584,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "166.9",
+        "mappedValue": 1585,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-57.4",
+        "mappedValue": 1586,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "118.2",
+        "mappedValue": 1587,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "118.5",
+        "mappedValue": 1588,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "171.6",
+        "mappedValue": 1589,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-22.4",
+        "mappedValue": 1590,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-22.7",
+        "mappedValue": 1591,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "118.7",
+        "mappedValue": 1592,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "118.6",
+        "mappedValue": 1593,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "314.0",
+        "mappedValue": 1594,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "758.1",
+        "mappedValue": 1595,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "505.6",
+        "mappedValue": 1596,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1017.5",
+        "mappedValue": 1597,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "229.7",
+        "mappedValue": 1598,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "327.6",
+        "mappedValue": 1599,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-13.2",
+        "mappedValue": 1600,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-13.4",
+        "mappedValue": 1601,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "527.8",
+        "mappedValue": 1602,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-13.5",
+        "mappedValue": 1603,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "109.7",
+        "mappedValue": 1604,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-13.9",
+        "mappedValue": 1605,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "184.0",
+        "mappedValue": 1606,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "229.2",
+        "mappedValue": 1607,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "282.2",
+        "mappedValue": 1608,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "282.8",
+        "mappedValue": 1609,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "282.9",
+        "mappedValue": 1610,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "282.7",
+        "mappedValue": 1611,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "58.6",
+        "mappedValue": 1612,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "403.7",
+        "mappedValue": 1613,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "184.8",
+        "mappedValue": 1614,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1279.3",
+        "mappedValue": 1615,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "-35.5",
+        "mappedValue": 1616,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1586.4",
+        "mappedValue": 1617,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "403.5",
+        "mappedValue": 1618,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "295.5",
+        "mappedValue": 1619,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "197.0",
+        "mappedValue": 1620,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "207.4",
+        "mappedValue": 1621,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "207.2",
+        "mappedValue": 1622,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "260.5",
+        "mappedValue": 1623,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "109.1",
+        "mappedValue": 1624,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "109.0",
+        "mappedValue": 1625,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "109.2",
+        "mappedValue": 1626,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "162.4",
+        "mappedValue": 1627,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "162.8",
+        "mappedValue": 1628,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "1.0",
+        "mappedValue": 1629,
+        "sampleFreq": 30
+      }
+    ],
+    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleSeed": 1337,
+    "per_feature": {
+      "Company": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "dummy_drop": "AUTO",
+        "role": "INPUT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "Text"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Year": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Profit (in millions)": {
+        "generate_derivative": false,
+        "impute_constant_value": 0.0,
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "TARGET",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Rank": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Revenue (in millions)": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      }
+    },
+    "feature_generation": {
+      "pairwise_linear": {
+        "behavior": "DISABLED"
+      },
+      "polynomial_combinations": {
+        "behavior": "DISABLED"
+      },
+      "manual_interactions": {
+        "interactions": []
+      },
+      "numericals_clustering": {
+        "k": 0,
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      },
+      "categoricals_count_transformer": {
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      }
+    }
+  },
+  "modeling": {
+    "skipExpensiveReports": false,
+    "random_forest_regression": {
+      "enabled": false,
+      "n_estimators": {
+        "values": [
+          100
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "n_jobs": 1,
+      "max_tree_depth": {
+        "values": [
+          8
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_samples_leaf": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_feature_prop": 0.3
+    },
+    "random_forest_classification": {
+      "enabled": true,
+      "n_estimators": {
+        "values": [
+          100
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "n_jobs": 4,
+      "max_tree_depth": {
+        "values": [
+          6,
+          12
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_samples_leaf": {
+        "values": [
+          1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_feature_prop": 0.3
+    },
+    "extra_trees": {
+      "enabled": false,
+      "n_estimators": {
+        "values": [
+          30
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "n_jobs": 4,
+      "max_tree_depth": {
+        "values": [
+          8
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_samples_leaf": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_feature_prop": 0.3
+    },
+    "gbt_classification": {
+      "enabled": false,
+      "n_estimators": {
+        "values": [
+          100
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_depth": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_samples_leaf": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "values": [
+          0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_feature_prop": 0.3,
+      "learning_rate": {
+        "values": [
+          0.1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "loss": {
+        "values": {
+          "deviance": {
+            "enabled": true
+          },
+          "exponential": {
+            "enabled": false
+          }
+        }
+      }
+    },
+    "gbt_regression": {
+      "enabled": false,
+      "n_estimators": {
+        "values": [
+          100
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_depth": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_samples_leaf": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "values": [
+          0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_feature_prop": 0.3,
+      "learning_rate": {
+        "values": [
+          0.1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "loss": {
+        "values": {
+          "huber": {
+            "enabled": false
+          },
+          "lad": {
+            "enabled": false
+          },
+          "ls": {
+            "enabled": true
+          }
+        }
+      }
+    },
+    "decision_tree_classification": {
+      "enabled": false,
+      "max_depth": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_samples_leaf": {
+        "values": [
+          1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "criterion": {
+        "values": {
+          "entropy": {
+            "enabled": false
+          },
+          "gini": {
+            "enabled": true
+          }
+        }
+      },
+      "splitter": {
+        "values": {
+          "best": {
+            "enabled": true
+          },
+          "random": {
+            "enabled": false
+          }
+        }
+      }
+    },
+    "decision_tree_regression": {
+      "enabled": false,
+      "max_depth": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_samples_leaf": {
+        "values": [
+          1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "criterion": {
+        "values": {
+          "entropy": {
+            "enabled": false
+          },
+          "gini": {
+            "enabled": true
+          }
+        }
+      },
+      "splitter": {
+        "values": {
+          "best": {
+            "enabled": true
+          },
+          "random": {
+            "enabled": false
+          }
+        }
+      }
+    },
+    "ridge_regression": {
+      "alphaMode": "MANUAL",
+      "alpha": {
+        "values": [
+          0.1,
+          1.0,
+          3.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "enabled": false
+    },
+    "lasso_regression": {
+      "alphaMode": "AUTO_CV",
+      "alpha": {
+        "values": [
+          0.1,
+          1.0,
+          10.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "enabled": false
+    },
+    "leastsquare_regression": {
+      "enabled": false,
+      "n_jobs": 2
+    },
+    "sgd_regression": {
+      "enabled": false,
+      "loss": {
+        "values": {
+          "huber": {
+            "enabled": false
+          },
+          "squared_loss": {
+            "enabled": true
+          }
+        }
+      },
+      "epsilon": {
+        "values": [
+          0.01
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "penalty": {
+        "values": {
+          "elasticnet": {
+            "enabled": false
+          },
+          "l1": {
+            "enabled": true
+          },
+          "l2": {
+            "enabled": false
+          }
+        }
+      },
+      "alpha": {
+        "values": [
+          0.001,
+          1.0E-4,
+          1.0E-5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "l1_ratio": 0.15,
+      "max_iter": 1000,
+      "tol": 0.001,
+      "n_jobs": 2
+    },
+    "knn": {
+      "enabled": false,
+      "k": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "distance_weighting": false,
+      "algorithm": "auto",
+      "p": 2,
+      "leaf_size": 30
+    },
+    "logistic_regression": {
+      "enabled": true,
+      "multi_class": "ovr",
+      "penalty": {
+        "values": {
+          "l1": {
+            "enabled": false
+          },
+          "l2": {
+            "enabled": true
+          }
+        }
+      },
+      "C": {
+        "values": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "n_jobs": 2
+    },
+    "neural_network": {
+      "enabled": false,
+      "layer_sizes": {
+        "values": [
+          10
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 0.001,
+      "batch_size": 200,
+      "auto_batch": true,
+      "max_iter": 200,
+      "seed": 1337,
+      "tol": 1.0E-4,
+      "early_stopping": false,
+      "validation_fraction": 0.1,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1.0E-8,
+      "learning_rate": "constant",
+      "power_t": 0.5,
+      "momentum": 0.8,
+      "nesterovs_momentum": true,
+      "shuffle": true,
+      "learning_rate_init": 0.001
+    },
+    "svc_classifier": {
+      "enabled": false,
+      "C": {
+        "values": [
+          1.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "gamma": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "kernel": {
+        "values": {
+          "linear": {
+            "enabled": false
+          },
+          "poly": {
+            "enabled": false
+          },
+          "rbf": {
+            "enabled": true
+          },
+          "sigmoid": {
+            "enabled": false
+          }
+        }
+      },
+      "coef0": 0.0,
+      "tol": 0.001,
+      "max_iter": -1
+    },
+    "svm_regression": {
+      "enabled": false,
+      "C": {
+        "values": [
+          1.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "gamma": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "kernel": {
+        "values": {
+          "linear": {
+            "enabled": false
+          },
+          "poly": {
+            "enabled": false
+          },
+          "rbf": {
+            "enabled": true
+          },
+          "sigmoid": {
+            "enabled": false
+          }
+        }
+      },
+      "coef0": 0.0,
+      "tol": 0.001,
+      "max_iter": -1
+    },
+    "sgd_classifier": {
+      "enabled": false,
+      "loss": {
+        "values": {
+          "log": {
+            "enabled": true
+          },
+          "modified_huber": {
+            "enabled": false
+          }
+        }
+      },
+      "penalty": {
+        "values": {
+          "elasticnet": {
+            "enabled": false
+          },
+          "l1": {
+            "enabled": true
+          },
+          "l2": {
+            "enabled": false
+          }
+        }
+      },
+      "alpha": {
+        "values": [
+          0.001,
+          1.0E-4,
+          1.0E-5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "l1_ratio": 0.15,
+      "max_iter": 1000,
+      "tol": 0.001,
+      "n_jobs": 2
+    },
+    "lars_params": {
+      "enabled": false,
+      "max_features": 0,
+      "K": 100
+    },
+    "xgboost": {
+      "enabled": false,
+      "max_depth": {
+        "values": [
+          3
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "learning_rate": {
+        "values": [
+          0.2
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "gamma": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "min_child_weight": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_delta_step": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "subsample": {
+        "values": [
+          1.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "colsample_bytree": {
+        "values": [
+          1.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "colsample_bylevel": {
+        "values": [
+          1.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "alpha": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "lambda": {
+        "values": [
+          1.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "booster": {
+        "values": {
+          "dart": {
+            "enabled": false
+          },
+          "gbtree": {
+            "enabled": true
+          }
+        }
+      },
+      "objective": {
+        "values": {
+          "binary_logistic": {
+            "enabled": false
+          },
+          "multi_softprob": {
+            "enabled": false
+          },
+          "reg_gamma": {
+            "enabled": false
+          },
+          "reg_linear": {
+            "enabled": true
+          },
+          "reg_logistic": {
+            "enabled": false
+          }
+        }
+      },
+      "n_estimators": 300,
+      "nthread": 4,
+      "scale_pos_weight": 1.0,
+      "base_score": 0.5,
+      "impute_missing": false,
+      "missing": 0.0,
+      "cpu_tree_method": "auto",
+      "gpu_tree_method": "gpu_exact",
+      "enable_cuda": false,
+      "seed": 1337,
+      "enable_early_stopping": true,
+      "early_stopping_rounds": 4
+    },
+    "deep_learning_sparkling": {
+      "enabled": false,
+      "hidden": [
+        10,
+        10
+      ],
+      "activation": "RECTIFIER",
+      "epochs": 10.0,
+      "l1": 0.0,
+      "l2": 0.0,
+      "max_w2": -1.0,
+      "dropout": false,
+      "input_dropout_ratio": 0.0,
+      "hidden_dropout_ratios": [
+        0.1,
+        0.2
+      ],
+      "use_adaptative": true,
+      "rho": 0.99,
+      "epsilon": 1.0E-8,
+      "rate": 0.005,
+      "rate_annealing": 1.0E-6,
+      "rate_decay": 1.0,
+      "momentum_start": 0.0,
+      "momentum_ramp": 1000000.0,
+      "momentum_stable": 0.0
+    },
+    "gbm_sparkling": {
+      "enabled": false,
+      "learn_rate": 0.1,
+      "ntrees": 50,
+      "max_depth": 5,
+      "min_rows": 10,
+      "family": "AUTO",
+      "nbins": 20,
+      "nbins_cats": 1024,
+      "balance_classes": false,
+      "max_after_balance_size": 2.0,
+      "tweedie_power": 1.5
+    },
+    "glm_sparkling": {
+      "enabled": false,
+      "family": "gaussian",
+      "alpha": 0.5,
+      "lambda": 0.0,
+      "max_iter": 100,
+      "beta_epsilon": 1.0E-4,
+      "tweedie_variance_power": 0.5
+    },
+    "rf_sparkling": {
+      "enabled": false,
+      "ntrees": 50,
+      "max_depth": 5,
+      "min_rows": 1,
+      "mtries": -1,
+      "sample_rate": 0.6666,
+      "nbins": 20,
+      "nbins_cats": 1024
+    },
+    "nb_sparkling": {
+      "enabled": false,
+      "laplace": 0.0,
+      "min_std_dev": 0.001
+    },
+    "mllib_logit": {
+      "enabled": false,
+      "max_iter": 30,
+      "reg_param": {
+        "values": [
+          0.1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "enet_param": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      }
+    },
+    "mllib_naive_bayes": {
+      "enabled": false,
+      "lambda": {
+        "values": [
+          1.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      }
+    },
+    "mllib_linreg": {
+      "enabled": false,
+      "max_iter": 30,
+      "reg_param": {
+        "values": [
+          0.1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "enet_param": {
+        "values": [
+          0.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      }
+    },
+    "mllib_rf": {
+      "enabled": false,
+      "cache_node_ids": false,
+      "checkpoint_interval": 10,
+      "impurity": "gini",
+      "max_bins": 32,
+      "max_depth": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_memory_mb": 256,
+      "min_info_gain": 0.0,
+      "min_instance_per_node": 1,
+      "seed": 1337,
+      "subsampling_rate": 1.0,
+      "num_trees": {
+        "values": [
+          20
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "subset_strategy": "auto",
+      "step_size": {
+        "values": [
+          0.1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      }
+    },
+    "mllib_gbt": {
+      "enabled": false,
+      "cache_node_ids": false,
+      "checkpoint_interval": 10,
+      "impurity": "gini",
+      "max_bins": 32,
+      "max_depth": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_memory_mb": 256,
+      "min_info_gain": 0.0,
+      "min_instance_per_node": 1,
+      "seed": 1337,
+      "subsampling_rate": 1.0,
+      "num_trees": {
+        "values": [
+          20
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "subset_strategy": "auto",
+      "step_size": {
+        "values": [
+          0.1
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      }
+    },
+    "vertica_linear_regression": {
+      "enabled": false,
+      "maxIterations": 200,
+      "epsilon": 1.0E-6,
+      "optimizer": "BFGS"
+    },
+    "vertica_logistic_regression": {
+      "enabled": false,
+      "maxIterations": 200,
+      "epsilon": 1.0E-6,
+      "optimizer": "BFGS"
+    },
+    "mllib_dt": {
+      "enabled": false,
+      "max_depth": {
+        "values": [
+          5
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "max_bins": 32,
+      "max_memory_mb": 256,
+      "min_info_gain": 0.0,
+      "min_instance_per_node": 1,
+      "cache_node_ids": false,
+      "checkpoint_interval": 10
+    },
+    "custom_python": [],
+    "plugin_python": {},
+    "keras": {
+      "epochs": 10,
+      "batchSize": 32,
+      "trainOnAllData": true,
+      "stepsPerEpoch": 100,
+      "shuffleData": true,
+      "useGPU": false,
+      "gpuList": [
+        0
+      ],
+      "perGPUMemoryFraction": 0.5,
+      "gpuAllowGrowth": false,
+      "advancedFitMode": false,
+      "enabled": false,
+      "kerasInputs": [
+        "main"
+      ]
+    },
+    "grid_search": true,
+    "gridSearchParams": {
+      "mode": "KFOLD",
+      "splitRatio": 0.8,
+      "shuffleIterations": 1,
+      "nFolds": 3,
+      "stratified": true,
+      "strategy": "GRID",
+      "randomized": true,
+      "nIter": 0,
+      "timeout": 0,
+      "nJobs": 4
+    },
+    "metrics": {
+      "evaluationMetric": "ROC_AUC",
+      "customEvaluationMetricGIB": true,
+      "customEvaluationMetricNeedsProba": false,
+      "thresholdOptimizationMetric": "F1",
+      "costMatrixWeights": {
+        "tpGain": 1.0,
+        "tnGain": 0.0,
+        "fpGain": -0.3,
+        "fnGain": 0.0
+      },
+      "liftPoint": 0.4
+    },
+    "custom_mllib": [],
+    "max_ensemble_nodes_serialized": 6000
+  },
+  "id": "bN8FvxtW",
+  "initiator": "admin",
+  "taskType": "PREDICTION",
+  "name": "Predict Profit (in millions)",
+  "backendType": "PY_MEMORY",
+  "maxConcurrentModelTraining": 2,
+  "envSelection": {
+    "envMode": "USE_BUILTIN_MODE"
+  },
+  "containerSelection": {
+    "containerMode": "INHERIT"
+  },
+  "sparkParams": {
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
+    "sparkUseGlobalMetastore": false,
+    "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+    "sparkRepartitionNonHDFS": 1,
+    "pipelineAllowStart": true,
+    "pipelineAllowMerge": true,
+    "sparkExecutionEngine": "SPARK_SUBMIT"
+  },
+  "sparkCheckpoint": "NONE",
+  "predictionDisplayScript": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "predictionDisplayCharts": [],
+  "partitionedModel": {
+    "enabled": false,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": -1,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    }
+  }
+}

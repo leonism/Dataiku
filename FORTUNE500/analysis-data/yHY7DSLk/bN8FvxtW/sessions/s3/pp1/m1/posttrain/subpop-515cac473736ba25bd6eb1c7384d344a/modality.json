@@ -1,0 +1,90 @@
+{
+    "isDate": false, 
+    "weightedNbRecords": 5011, 
+    "modalities": [
+        {
+            "count": 502, 
+            "index": 0, 
+            "gte": 49.7, 
+            "filePath": "modality_perf_0.json", 
+            "weightedCount": 502, 
+            "lte": 145.4
+        }, 
+        {
+            "count": 502, 
+            "index": 1, 
+            "gt": 145.4, 
+            "filePath": "modality_perf_1.json", 
+            "weightedCount": 502, 
+            "lte": 280.7
+        }, 
+        {
+            "count": 500, 
+            "index": 2, 
+            "gt": 280.7, 
+            "filePath": "modality_perf_2.json", 
+            "weightedCount": 500, 
+            "lte": 453.4
+        }, 
+        {
+            "count": 501, 
+            "index": 3, 
+            "gt": 453.4, 
+            "filePath": "modality_perf_3.json", 
+            "weightedCount": 501, 
+            "lte": 650.6
+        }, 
+        {
+            "count": 501, 
+            "index": 4, 
+            "gt": 650.6, 
+            "filePath": "modality_perf_4.json", 
+            "weightedCount": 501, 
+            "lte": 994.2
+        }, 
+        {
+            "count": 501, 
+            "index": 5, 
+            "gt": 994.2, 
+            "filePath": "modality_perf_5.json", 
+            "weightedCount": 501, 
+            "lte": 1690.0
+        }, 
+        {
+            "count": 501, 
+            "index": 6, 
+            "gt": 1690.0, 
+            "filePath": "modality_perf_6.json", 
+            "weightedCount": 501, 
+            "lte": 3046.7
+        }, 
+        {
+            "count": 501, 
+            "index": 7, 
+            "gt": 3046.7, 
+            "filePath": "modality_perf_7.json", 
+            "weightedCount": 501, 
+            "lte": 4805.0
+        }, 
+        {
+            "count": 501, 
+            "index": 8, 
+            "gt": 4805.0, 
+            "filePath": "modality_perf_8.json", 
+            "weightedCount": 501, 
+            "lte": 9588.0
+        }, 
+        {
+            "count": 501, 
+            "index": 9, 
+            "gt": 9588.0, 
+            "filePath": "modality_perf_9.json", 
+            "weightedCount": 501, 
+            "lte": 219812.0
+        }
+    ], 
+    "feature": "Revenue (in millions)", 
+    "computed_as_type": "NUMERIC", 
+    "sameNumRowsAsSplit": true, 
+    "nbRecords": 5011
+}

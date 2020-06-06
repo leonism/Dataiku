@@ -1,0 +1,72 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 1,
+    "importantParams": []
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "layer_sizes",
+        "val": "[10]"
+      },
+      {
+        "name": "activation",
+        "val": "relu"
+      },
+      {
+        "name": "alpha",
+        "val": "0.001"
+      },
+      {
+        "name": "solver",
+        "val": "adam"
+      }
+    ]
+  },
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 112
+      },
+      {
+        "name": "Loading test set",
+        "time": 51
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 56
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 232
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 80
+      },
+      {
+        "name": "Fitting model",
+        "time": 20248
+      },
+      {
+        "name": "Saving model",
+        "time": 10
+      },
+      {
+        "name": "Scoring model",
+        "time": 158
+      }
+    ]
+  },
+  "startTime": 1587977407003,
+  "endTime": 1587977427966,
+  "preprocessingTime": 544,
+  "trainingTime": 20419
+}

@@ -1,0 +1,30 @@
+{
+    "resolved": {
+        "xgboost": {
+            "enable_early_stopping": true, 
+            "colsample_bytree": 1.0, 
+            "colsample_bylevel": 1.0, 
+            "scale_pos_weight": 1.0, 
+            "learning_rate": 0.2, 
+            "missing": null, 
+            "max_delta_step": 0.0, 
+            "nthread": 4, 
+            "min_child_weight": 0.0, 
+            "impute_missing": false, 
+            "n_estimators": 35, 
+            "subsample": 1.0, 
+            "seed": 1337, 
+            "early_stopping_rounds": 4, 
+            "base_score": 0.5, 
+            "objective": "reg_linear", 
+            "alpha": 0.0, 
+            "booster": "gbtree", 
+            "max_depth": 3, 
+            "gamma": 0.0, 
+            "lambda": 1.0
+        }, 
+        "skipExpensiveReports": false, 
+        "algorithm": "XGBOOST_REGRESSION"
+    }, 
+    "other": {}
+}

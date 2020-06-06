@@ -1,0 +1,80 @@
+[
+    {
+        "parameters": {
+            "reg_alpha": 0.0, 
+            "colsample_bytree": 1.0, 
+            "colsample_bylevel": 1.0, 
+            "learning_rate": 0.2, 
+            "max_delta_step": 0.0, 
+            "min_child_weight": 0.0, 
+            "subsample": 1.0, 
+            "reg_lambda": 1.0, 
+            "objective": "reg:linear", 
+            "max_depth": 3, 
+            "gamma": 0.0, 
+            "booster": "gbtree"
+        }, 
+        "score_time": 154, 
+        "test_score": 0.47612186396361256, 
+        "fit_time": 9715, 
+        "num_samples": 6707, 
+        "best_iteration": 26, 
+        "train_score": 0.583739686663699, 
+        "parameter_id": 0, 
+        "time": 9869, 
+        "done_at": 1587977442997, 
+        "grid_point_id": "{\"reg_alpha\": 0.0, \"colsample_bytree\": 1.0, \"colsample_bylevel\": 1.0, \"learning_rate\": 0.2, \"max_delta_step\": 0.0, \"min_child_weight\": 0.0, \"subsample\": 1.0, \"reg_lambda\": 1.0, \"objective\": \"reg:linear\", \"max_depth\": 3, \"gamma\": 0.0, \"booster\": \"gbtree\"}@0"
+    }, 
+    {
+        "parameters": {
+            "reg_alpha": 0.0, 
+            "colsample_bytree": 1.0, 
+            "colsample_bylevel": 1.0, 
+            "learning_rate": 0.2, 
+            "max_delta_step": 0.0, 
+            "min_child_weight": 0.0, 
+            "subsample": 1.0, 
+            "reg_lambda": 1.0, 
+            "objective": "reg:linear", 
+            "max_depth": 3, 
+            "gamma": 0.0, 
+            "booster": "gbtree"
+        }, 
+        "score_time": 169, 
+        "test_score": 0.16173550741468512, 
+        "fit_time": 12194, 
+        "num_samples": 6707, 
+        "best_iteration": 34, 
+        "train_score": 0.5133933713698233, 
+        "parameter_id": 0, 
+        "time": 12363, 
+        "done_at": 1587977445495, 
+        "grid_point_id": "{\"reg_alpha\": 0.0, \"colsample_bytree\": 1.0, \"colsample_bylevel\": 1.0, \"learning_rate\": 0.2, \"max_delta_step\": 0.0, \"min_child_weight\": 0.0, \"subsample\": 1.0, \"reg_lambda\": 1.0, \"objective\": \"reg:linear\", \"max_depth\": 3, \"gamma\": 0.0, \"booster\": \"gbtree\"}@1"
+    }, 
+    {
+        "parameters": {
+            "reg_alpha": 0.0, 
+            "colsample_bytree": 1.0, 
+            "colsample_bylevel": 1.0, 
+            "learning_rate": 0.2, 
+            "max_delta_step": 0.0, 
+            "min_child_weight": 0.0, 
+            "subsample": 1.0, 
+            "reg_lambda": 1.0, 
+            "objective": "reg:linear", 
+            "max_depth": 3, 
+            "gamma": 0.0, 
+            "booster": "gbtree"
+        }, 
+        "score_time": 118, 
+        "test_score": 0.29024605454566665, 
+        "fit_time": 15643, 
+        "num_samples": 6706, 
+        "best_iteration": 58, 
+        "train_score": 0.8200478381995598, 
+        "parameter_id": 0, 
+        "time": 15761, 
+        "done_at": 1587977448897, 
+        "grid_point_id": "{\"reg_alpha\": 0.0, \"colsample_bytree\": 1.0, \"colsample_bylevel\": 1.0, \"learning_rate\": 0.2, \"max_delta_step\": 0.0, \"min_child_weight\": 0.0, \"subsample\": 1.0, \"reg_lambda\": 1.0, \"objective\": \"reg:linear\", \"max_depth\": 3, \"gamma\": 0.0, \"booster\": \"gbtree\"}@2"
+    }
+]

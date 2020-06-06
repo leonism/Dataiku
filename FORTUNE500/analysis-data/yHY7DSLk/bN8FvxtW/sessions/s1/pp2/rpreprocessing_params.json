@@ -1,0 +1,164 @@
+{
+  "target_remapping": [],
+  "skipPreprocessing": false,
+  "per_feature": {
+    "Company": {
+      "category_handling": "DUMMIFY",
+      "missing_handling": "NONE",
+      "missing_impute_with": "MODE",
+      "dummy_clip": "MAX_NB_CATEGORIES",
+      "cumulative_proportion": 0.95,
+      "min_samples": 10,
+      "max_nb_categories": 100,
+      "max_cat_safety": 200,
+      "dummy_drop": "DROP",
+      "role": "INPUT",
+      "type": "CATEGORY",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "Text"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Year": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "LongMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Profit (in millions)": {
+      "generate_derivative": false,
+      "impute_constant_value": 0.0,
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "TARGET",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "DoubleMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Rank": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "LongMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Revenue (in millions)": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "rescaling": "AVGSTD",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "DoubleMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    }
+  },
+  "reduce": {
+    "enabled": false,
+    "kept_variance": 0.0
+  },
+  "feature_generation": {
+    "pairwise_linear": {
+      "behavior": "DISABLED"
+    },
+    "polynomial_combinations": {
+      "behavior": "DISABLED"
+    },
+    "manual_interactions": {
+      "interactions": []
+    },
+    "numericals_clustering": {
+      "k": 0,
+      "all_features": false,
+      "input_features": [],
+      "behavior": "DISABLED"
+    },
+    "categoricals_count_transformer": {
+      "all_features": false,
+      "input_features": [],
+      "behavior": "DISABLED"
+    }
+  },
+  "feature_selection_params": {
+    "method": "NONE",
+    "random_forest_params": {
+      "n_trees": 30,
+      "depth": 10,
+      "n_features": 25
+    },
+    "lasso_params": {
+      "alpha": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "cross_validate": true
+    },
+    "pca_params": {
+      "n_features": 25,
+      "variance_proportion": 0.9
+    },
+    "correlation_params": {
+      "min_abs_correlation": 0.0,
+      "n_features": 25
+    },
+    "custom_params": {
+      "code": "# type your code here"
+    }
+  },
+  "preprocessingFitSampleRatio": 1.0,
+  "preprocessingFitSampleSeed": 1337
+}

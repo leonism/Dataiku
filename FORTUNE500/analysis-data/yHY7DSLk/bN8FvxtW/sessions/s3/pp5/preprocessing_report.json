@@ -1,0 +1,6 @@
+{
+    "pairwise_linear": {
+        "built_features": 1, 
+        "input_features": 2
+    }
+}

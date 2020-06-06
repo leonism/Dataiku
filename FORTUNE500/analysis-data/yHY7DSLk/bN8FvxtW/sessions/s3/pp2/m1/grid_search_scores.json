@@ -1,0 +1,35 @@
+{
+    "gridSize": 2, 
+    "nThreads": 4, 
+    "metric": "R2", 
+    "gridPoints": [
+        {
+            "index": 0, 
+            "finishedAt": 1587977424468.0, 
+            "score": 0.25285373333814865, 
+            "parameters": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 30, 
+                "max_depth": 6, 
+                "min_samples_leaf": 10
+            }, 
+            "time": 55715.0
+        }, 
+        {
+            "index": 1, 
+            "finishedAt": 1587977414867.0, 
+            "score": 0.24785785123817972, 
+            "parameters": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 30, 
+                "max_depth": 12, 
+                "min_samples_leaf": 10
+            }, 
+            "time": 111638.0
+        }
+    ], 
+    "startedAt": 1587977377104, 
+    "nSplits": 3
+}

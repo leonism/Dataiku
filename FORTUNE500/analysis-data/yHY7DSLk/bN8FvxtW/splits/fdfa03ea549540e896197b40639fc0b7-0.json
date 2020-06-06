@@ -1,0 +1,52 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "SORTED",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "ssdColumn": "Year",
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1587977278152,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dSORTED,splitBeforePrepare\u003dtrue,ds\u003dfortune500_train,sel\u003d(method\u003dfull),r\u003d0.8,c\u003dYear,ascending\u003dtrue",
+  "instanceId": "fdfa03ea549540e896197b40639fc0b7-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Year","type":"bigint"},
+      {"name":"Rank","type":"bigint"},
+      {"name":"Company","type":"string"},
+      {"name":"Revenue (in millions)","type":"double"},
+      {"name":"Profit (in millions)","type":"double"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train-fdfa03ea549540e896197b40639fc0b7-0.csv.gz",
+  "testPath": "test-fdfa03ea549540e896197b40639fc0b7-0.csv.gz",
+  "trainRows": 20104,
+  "testRows": 5027,
+  "fullRows": 0
+}

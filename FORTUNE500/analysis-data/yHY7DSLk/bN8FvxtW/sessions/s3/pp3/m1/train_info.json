@@ -1,0 +1,73 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 3,
+    "importantParams": [
+      {
+        "name": "alpha",
+        "vals": [
+          "0.1",
+          "1.0",
+          "3.0"
+        ]
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "alpha",
+        "val": "0.1"
+      }
+    ]
+  },
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 73
+      },
+      {
+        "name": "Loading test set",
+        "time": 31
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 38
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 184
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 77
+      },
+      {
+        "name": "Grid searching",
+        "time": 5210
+      },
+      {
+        "name": "Fitting model",
+        "time": 844
+      },
+      {
+        "name": "Saving model",
+        "time": 2
+      },
+      {
+        "name": "Scoring model",
+        "time": 1183
+      }
+    ]
+  },
+  "startTime": 1587977392727,
+  "endTime": 1587977400377,
+  "preprocessingTime": 408,
+  "trainingTime": 7242
+}

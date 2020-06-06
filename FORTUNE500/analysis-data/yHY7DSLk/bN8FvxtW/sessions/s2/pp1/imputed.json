@@ -1,0 +1,14 @@
+{
+    "num_values": [
+        2176.4106943891798, 
+        249.02521886191803, 
+        null
+    ], 
+    "cat_values": [], 
+    "cat_columns": [], 
+    "num_columns": [
+        "Revenue (in millions)", 
+        "Rank", 
+        "Year"
+    ]
+}

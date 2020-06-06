@@ -1,0 +1,16 @@
+{
+    "resolved": {
+        "skipExpensiveReports": false, 
+        "algorithm": "EXTRA_TREES", 
+        "extra_trees": {
+            "max_tree_depth": 8, 
+            "selection_mode": "auto", 
+            "njobs": 4, 
+            "min_samples_leaf": 3, 
+            "estimators": 30
+        }
+    }, 
+    "other": {
+        "rf_min_samples_split": 9
+    }
+}

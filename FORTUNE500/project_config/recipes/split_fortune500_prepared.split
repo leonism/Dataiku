@@ -1,0 +1,234 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": -1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "column": "Profit (in millions)",
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false,
+      "value": ""
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Year",
+              "col": "Rank",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Rank",
+              "col": "Year",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Company",
+              "col": "Rank",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Revenue (in millions)",
+              "col": "Rank",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Profit (in millions)",
+              "col": "Rank",
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Year",
+                "type": "bigint"
+              },
+              {
+                "name": "Rank",
+                "type": "bigint"
+              },
+              {
+                "name": "Company",
+                "type": "string"
+              },
+              {
+                "name": "Revenue (in millions)",
+                "type": "double"
+              },
+              {
+                "name": "Profit (in millions)",
+                "type": "double"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    },
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Year",
+              "col": "Rank",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Rank",
+              "col": "Year",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Company",
+              "col": "Rank",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Revenue (in millions)",
+              "col": "Rank",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Profit (in millions)",
+              "col": "Rank",
+              "num": 0,
+              "operator": "empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "Year",
+                "type": "bigint"
+              },
+              {
+                "name": "Rank",
+                "type": "bigint"
+              },
+              {
+                "name": "Company",
+                "type": "string"
+              },
+              {
+                "name": "Revenue (in millions)",
+                "type": "double"
+              },
+              {
+                "name": "Profit (in millions)",
+                "type": "double"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "enabled": true
+      },
+      "outputIndex": 1
+    }
+  ]
+}

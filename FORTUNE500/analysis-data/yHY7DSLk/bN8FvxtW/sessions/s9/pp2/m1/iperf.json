@@ -1,0 +1,72 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 5, 
+    "modelInputNRows": 253, 
+    "modelInputNCols": 105, 
+    "modelInputMemory": 212520, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 45.097807414059005, 
+            "scoreTime": 285.9926666666667, 
+            "fitTime": 0.6446666666666666, 
+            "score": 0.5292608101582814, 
+            "params": {
+                "penalty": "l2", 
+                "C": 0.01
+            }, 
+            "fitTimeStd": 0.047953681355611844, 
+            "scoreStd": 0.01313226964965246
+        }, 
+        {
+            "scoreTimeStd": 62.59203323285018, 
+            "scoreTime": 339.19266666666664, 
+            "fitTime": 0.585, 
+            "score": 0.5318584234396229, 
+            "params": {
+                "penalty": "l2", 
+                "C": 1.0
+            }, 
+            "fitTimeStd": 0.17034279164868313, 
+            "scoreStd": 0.00923172114693569
+        }, 
+        {
+            "scoreTimeStd": 12.15096156231634, 
+            "scoreTime": 325.31333333333333, 
+            "fitTime": 5.6193333333333335, 
+            "score": 0.536265884950783, 
+            "params": {
+                "penalty": "l2", 
+                "C": 100.0
+            }, 
+            "fitTimeStd": 1.862759482297403, 
+            "scoreStd": 0.004850316666532596
+        }, 
+        {
+            "scoreTimeStd": 12.686929030392752, 
+            "scoreTime": 399.1093333333333, 
+            "fitTime": 0.9910000000000001, 
+            "score": 0.5351380671198672, 
+            "params": {
+                "penalty": "l2", 
+                "C": 10.0
+            }, 
+            "fitTimeStd": 0.08640987597877146, 
+            "scoreStd": 0.007993745319245751
+        }, 
+        {
+            "scoreTimeStd": 59.16065017860737, 
+            "scoreTime": 346.94866666666667, 
+            "fitTime": 0.6046666666666667, 
+            "score": 0.5300737573806886, 
+            "params": {
+                "penalty": "l2", 
+                "C": 0.1
+            }, 
+            "fitTimeStd": 0.10772908407461539, 
+            "scoreStd": 0.011089936069337258
+        }
+    ], 
+    "gridBestScore": 0.536265884950783, 
+    "modelInputIsSparse": false
+}

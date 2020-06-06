@@ -1,0 +1,590 @@
+[2020/04/27-15:49:26.901] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/27-15:49:26.905] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction]  - ** Start train session s3
+[2020/04/27-15:49:26.907] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/27-15:49:26.912] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 11] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337 i=725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.918] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 17] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337, instance id: 725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.922] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 21] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337 i=725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.926] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.splits] T-bN8FvxtW - [ct: 25] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=fortune500_train,sel=(method=full),r=0.8,s=1337 i=725edbdf27066425d153bb936a0c8eb4-0
+[2020/04/27-15:49:26.932] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Joining processing thread ...
+[2020/04/27-15:50:28.012] [MRT-1847] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp5 in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/FORTUNE500/yHY7DSLk/bN8FvxtW/sessions/s3/pp5
+[2020/04/27-15:50:28.015] [MRT-1847] [INFO] [dku.block.link]  - Started a socket on port 55044
+[2020/04/27-15:50:28.016] [MRT-1847] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/FORTUNE500/yHY7DSLk/bN8FvxtW/sessions/s3/pp5/train.log
+[2020/04/27-15:50:28.019] [MRT-1847] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2020/04/27-15:50:28.020] [MRT-1847] [WARN] [dku.code.projectLibs]  - External libraries file not found: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/FORTUNE500/lib/external-libraries.json
+[2020/04/27-15:50:28.022] [MRT-1847] [INFO] [dku.code.projectLibs]  - EXTERNAL LIBS FROM FORTUNE500 is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/04/27-15:50:28.023] [MRT-1847] [INFO] [dku.code.projectLibs]  - chunkFolder is /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/FORTUNE500/lib/R
+[2020/04/27-15:50:28.026] [MRT-1847] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2020/04/27-15:50:28.027] [MRT-1847] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-FORTUNE500-PuZLz0F on behalf of admin id=analysis-ml-FORTUNE500-PuZLz0F_O0D5jGCFxwvq
+[2020/04/27-15:50:28.030] [MRT-1847] [INFO] [dku.security.process]  - Starting process (regular)
+[2020/04/27-15:50:28.036] [MRT-1847] [INFO] [dku.security.process]  - Process started with pid=4635
+[2020/04/27-15:50:28.037] [MRT-1847] [INFO] [dku.processes.cgroups]  - Will use cgroups []
+[2020/04/27-15:50:28.038] [MRT-1847] [INFO] [dku.processes.cgroups]  - Applying rules to used cgroups: []
+Installing debugging signal handler
+[2020-04-27 15:50:31,649] [4635/MainThread] [INFO] [root] Connecting to parent at port 55044
+[2020-04-27 15:50:31,650] [4635/MainThread] [INFO] [root] Connected to parent at port 55044
+[2020/04/27-15:50:31.651] [MRT-1847] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2020/04/27-15:50:31.653] [MRT-1847] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+[2020-04-27 15:50:32,802] [4635/MainThread] [INFO] [root] Running analysis command: train_prediction_models_nosave
+[2020-04-27 15:50:32,805] [4635/MainThread] [INFO] [dataiku.doctor.commands] PPS is {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Revenue (in millions)': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Company': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Profit (in millions)': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Rank': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Year': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'DROP_ROW', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'ENABLED_MANUAL'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-27 15:50:32,805] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading train set
+[2020-04-27 15:50:32,808] [4635/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-27 15:50:32,808] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Year: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:50:32,808] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Rank: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:50:32,808] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Company: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-27 15:50:32,808] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Revenue (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:50:32,809] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Profit (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=TARGET)
+[2020-04-27 15:50:32,809] [4635/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Revenue (in millions)': <type 'numpy.float64'>, u'Company': 'str', u'Profit (in millions)': <type 'numpy.float64'>, u'Rank': <type 'numpy.float64'>, u'Year': <type 'numpy.float64'>}
+[2020-04-27 15:50:32,841] [4635/MainThread] [INFO] [root] Loaded table
+[2020-04-27 15:50:32,842] [4635/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-27 15:50:32,842] [4635/MainThread] [INFO] [dataiku.doctor.commands] Loaded train df: shape=(20120,5)
+[2020-04-27 15:50:32,842] [4635/MainThread] [INFO] [dataiku.doctor.commands] Train col : Year (float64)
+[2020-04-27 15:50:32,842] [4635/MainThread] [INFO] [dataiku.doctor.commands] Train col : Rank (float64)
+[2020-04-27 15:50:32,842] [4635/MainThread] [INFO] [dataiku.doctor.commands] Train col : Company (object)
+[2020-04-27 15:50:32,842] [4635/MainThread] [INFO] [dataiku.doctor.commands] Train col : Revenue (in millions) (float64)
+[2020-04-27 15:50:32,843] [4635/MainThread] [INFO] [dataiku.doctor.commands] Train col : Profit (in millions) (float64)
+[2020-04-27 15:50:32,843] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading train set
+[2020-04-27 15:50:32,843] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading test set
+[2020-04-27 15:50:32,844] [4635/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-27 15:50:32,844] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Year: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:50:32,844] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Rank: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:50:32,844] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Company: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-27 15:50:32,844] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Revenue (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-27 15:50:32,844] [4635/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Profit (in millions): <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=TARGET)
+[2020-04-27 15:50:32,844] [4635/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Revenue (in millions)': <type 'numpy.float64'>, u'Company': 'str', u'Profit (in millions)': <type 'numpy.float64'>, u'Rank': <type 'numpy.float64'>, u'Year': <type 'numpy.float64'>}
+[2020-04-27 15:50:32,857] [4635/MainThread] [INFO] [root] Loaded table
+[2020-04-27 15:50:32,857] [4635/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-27 15:50:32,857] [4635/MainThread] [INFO] [dataiku.doctor.commands] Loaded test df: shape=(5011,5)
+[2020-04-27 15:50:32,858] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading test set
+[2020-04-27 15:50:32,858] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2020-04-27 15:50:32,859] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Revenue (in millions)... (type=NUMERIC)
+[2020-04-27 15:50:32,859] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-27 15:50:32,862] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Company... (type=CATEGORY)
+[2020-04-27 15:50:32,873] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Profit (in millions)... (type=NUMERIC)
+[2020-04-27 15:50:32,874] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Rank... (type=NUMERIC)
+[2020-04-27 15:50:32,874] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-27 15:50:32,877] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Year... (type=NUMERIC)
+[2020-04-27 15:50:32,878] [4635/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-27 15:50:32,880] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2020-04-27 15:50:32,881] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] generating interactions
+[2020-04-27 15:50:32,881] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Revenue (in millions)': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Company': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Profit (in millions)': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Rank': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Year': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'DROP_ROW', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'ENABLED_MANUAL'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-27 15:50:32,881] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] No feature selection to perform
+[2020-04-27 15:50:32,882] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing train set
+[2020-04-27 15:50:32,883] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 20120
+[2020-04-27 15:50:32,883] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RemapValueToOutput
+[2020-04-27 15:50:32,883] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:SingleColumnDropNARows (Year)
+[2020-04-27 15:50:32,884] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-27 15:50:32,884] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:50:32,892] [4635/MainThread] [INFO] [dku.ml.preprocessing] After SCDNA input_df=(20120, 5)
+[2020-04-27 15:50:32,892] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:50:32,892] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Revenue (in millions)': 4319.147882703789, u'Rank': 249.50074552683895, u'Year': None}
+[2020-04-27 15:50:32,894] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Revenue (in millions))
+[2020-04-27 15:50:32,895] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Revenue (in millions) (avg=4319.1478827 std=11416.403101 shift=4319.1478827 inv_scale=8.75932630578e-05)
+[2020-04-27 15:50:32,908] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Revenue (in millions) (avg=-6.85986569625e-16 std=1.0) nulls=0
+[2020-04-27 15:50:32,908] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Rank)
+[2020-04-27 15:50:32,908] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Rank (avg=249.500745527 std=144.636683338 shift=249.500745527 inv_scale=0.00691387535253)
+[2020-04-27 15:50:32,910] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Rank (avg=1.15491888198e-16 std=1.0) nulls=0
+[2020-04-27 15:50:32,911] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Year)
+[2020-04-27 15:50:32,911] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Year (avg=1979.96053678 std=14.7911091772 shift=1979.96053678 inv_scale=0.0676081819166)
+[2020-04-27 15:50:32,913] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Year (avg=8.89084035022e-14 std=1.0) nulls=0
+[2020-04-27 15:50:32,914] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-27 15:50:32,914] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:PairwiseLinearCombinationsGenerator
+[2020-04-27 15:50:32,917] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:BlockStdRescalingProcessor
+[2020-04-27 15:50:32,920] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Company)
+[2020-04-27 15:50:32,932] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(20120, 103) nnz=20120
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RealignTarget
+[2020-04-27 15:50:32,933] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (20120,)
+[2020-04-27 15:50:32,937] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (20120,)
+[2020-04-27 15:50:32,937] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-27 15:50:32,938] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-04-27 15:50:32,938] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (20120, 108) target before = (20120,)
+[2020-04-27 15:50:32,943] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:50:32,960] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(20120, 5)
+[2020-04-27 15:50:32,960] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (20120, 108) target after = (20120,)
+[2020-04-27 15:50:32,960] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:50:32,960] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-27 15:50:32,960] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (20120, 5) 
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(20120, 108) 
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((20120,))
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-27 15:50:32,961] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 20120
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (20120, 5) 
+[2020-04-27 15:50:32,961] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-27 15:50:32,962] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:50:32,962] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((20120, 5))
+[2020-04-27 15:50:32,962] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((20120, 108))
+[2020-04-27 15:50:32,962] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((20120,))
+[2020-04-27 15:50:32,965] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing train set
+[2020-04-27 15:50:32,965] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing test set
+[2020-04-27 15:50:32,966] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 5011
+[2020-04-27 15:50:32,967] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RemapValueToOutput
+[2020-04-27 15:50:32,967] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:SingleColumnDropNARows (Year)
+[2020-04-27 15:50:32,968] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-27 15:50:32,968] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:50:32,971] [4635/MainThread] [INFO] [dku.ml.preprocessing] After SCDNA input_df=(5011, 5)
+[2020-04-27 15:50:32,972] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:50:32,972] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Revenue (in millions)': 4319.147882703789, u'Rank': 249.50074552683895, u'Year': None}
+[2020-04-27 15:50:32,973] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Revenue (in millions))
+[2020-04-27 15:50:32,974] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Revenue (in millions) (avg=4248.00221513 std=11318.3173503 shift=4319.1478827 inv_scale=8.75932630578e-05)
+[2020-04-27 15:50:32,976] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Revenue (in millions) (avg=-0.0062318811755 std=0.991408349037) nulls=0
+[2020-04-27 15:50:32,976] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Rank)
+[2020-04-27 15:50:32,976] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Rank (avg=250.724605867 std=143.672902752 shift=249.500745527 inv_scale=0.00691387535253)
+[2020-04-27 15:50:32,978] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Rank (avg=0.00846161784141 std=0.993336541164) nulls=0
+[2020-04-27 15:50:32,978] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Year)
+[2020-04-27 15:50:32,978] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Year (avg=1979.79125923 std=14.6595132516 shift=1979.96053678 inv_scale=0.0676081819166)
+[2020-04-27 15:50:32,979] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Year (avg=-0.0114445473697 std=0.991103038722) nulls=0
+[2020-04-27 15:50:32,979] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-27 15:50:32,979] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:PairwiseLinearCombinationsGenerator
+[2020-04-27 15:50:32,981] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:BlockStdRescalingProcessor
+[2020-04-27 15:50:32,983] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Company)
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(5011, 103) nnz=5011
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-27 15:50:32,989] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RealignTarget
+[2020-04-27 15:50:32,990] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (5011,)
+[2020-04-27 15:50:32,991] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (5011,)
+[2020-04-27 15:50:32,991] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-27 15:50:32,992] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-04-27 15:50:32,992] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (5011, 108) target before = (5011,)
+[2020-04-27 15:50:32,994] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(5011, 5)
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (5011, 108) target after = (5011,)
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (5011, 5) 
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(5011, 108) 
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((5011,))
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-27 15:50:33,004] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 5011
+[2020-04-27 15:50:33,004] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-27 15:50:33,005] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-27 15:50:33,005] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (5011, 5) 
+[2020-04-27 15:50:33,005] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-27 15:50:33,005] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-27 15:50:33,005] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((5011, 5))
+[2020-04-27 15:50:33,005] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((5011, 108))
+[2020-04-27 15:50:33,005] [4635/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((5011,))
+[2020-04-27 15:50:33,005] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing test set
+[2020-04-27 15:50:33,006] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2020-04-27 15:50:33,015] [4635/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-27 15:50:33,016] [4635/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-27 15:50:33,030] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(20120,108) tn=2172960 nnz=120720 fill_ratio=0.06
+[2020-04-27 15:50:33,031] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-27 15:50:33,059] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common] Create CLF from params: {u'computeLearningCurves': False, u'xgboost_grid': {u'cpu_tree_method': u'auto', u'seed': 1337, u'early_stopping_rounds': 4, u'enable_early_stopping': True, u'enable_cuda': False, u'missing': 0.0, u'nthread': 4, u'min_child_weight': {u'gridMode': u'EXPLICIT', u'values': [0.0], u'nValues': 0}, u'objective': {u'values': {u'reg_linear': {u'enabled': True}, u'reg_logistic': {u'enabled': False}, u'reg_gamma': {u'enabled': False}, u'multi_softprob': {u'enabled': False}, u'binary_logistic': {u'enabled': False}}}, u'impute_missing': False, u'colsample_bylevel': {u'gridMode': u'EXPLICIT', u'values': [1.0], u'nValues': 0}, u'scale_pos_weight': 1.0, u'learning_rate': {u'gridMode': u'EXPLICIT', u'values': [0.2], u'nValues': 0}, u'max_delta_step': {u'gridMode': u'EXPLICIT', u'values': [0.0], u'nValues': 0}, u'base_score': 0.5, u'n_estimators': 300, u'alpha': {u'gridMode': u'EXPLICIT', u'values': [0.0], u'nValues': 0}, u'booster': {u'values': {u'gbtree': {u'enabled': True}, u'dart': {u'enabled': False}}}, u'colsample_bytree': {u'gridMode': u'EXPLICIT', u'values': [1.0], u'nValues': 0}, u'enabled': True, u'max_depth': {u'gridMode': u'EXPLICIT', u'values': [3], u'nValues': 0}, u'subsample': {u'gridMode': u'EXPLICIT', u'values': [1.0], u'nValues': 0}, u'gpu_tree_method': u'gpu_exact', u'gamma': {u'gridMode': u'EXPLICIT', u'values': [0.0], u'nValues': 0}, u'lambda': {u'gridMode': u'EXPLICIT', u'values': [1.0], u'nValues': 0}}, u'algorithm': u'XGBOOST_REGRESSION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 1, u'metrics': {u'customEvaluationMetricNeedsProba': False, u'evaluationMetric': u'R2', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'customEvaluationMetricGIB': True}, u'forcedClassifierThreshold': 0.0, u'skipExpensiveReports': False, u'max_ensemble_nodes_serialized': 0, u'pluginAlgoCustomGridSearch': False} for algorithm XGBOOST_REGRESSION
+[2020-04-27 15:50:33,060] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common] Using K-Fold CV with k=3
+[2020-04-27 15:50:33,114] [4635/MainThread] [INFO] [dataiku.doctor.prediction.regression_fit] Early stopping enabled
+('Get xgb metric for', u'R2')
+('XGBoost metric:', None)
+[2020-04-27 15:50:33,115] [4635/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.HyperparametersSpace object at 0x110b74a50>
+[2020-04-27 15:50:33,116] [4635/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Performing k-fold search on n_estimators parameter for <class 'dataiku.doctor.prediction.dku_xgboost.DkuXGBRegressor'>
+[2020-04-27 15:50:33,116] [4635/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020-04-27 15:50:33,127] [4635/GS-123145410899968] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=0: reg_alpha=0.0, colsample_bytree=1.0, colsample_bylevel=1.0, learning_rate=0.2, max_delta_step=0.0, min_child_weight=0.0, subsample=1.0, reg_lambda=1.0, objective=reg:linear, max_depth=3, gamma=0.0, booster=gbtree 
+[2020-04-27 15:50:33,132] [4635/GS-123145415106560] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=1: reg_alpha=0.0, colsample_bytree=1.0, colsample_bylevel=1.0, learning_rate=0.2, max_delta_step=0.0, min_child_weight=0.0, subsample=1.0, reg_lambda=1.0, objective=reg:linear, max_depth=3, gamma=0.0, booster=gbtree 
+[2020-04-27 15:50:33,136] [4635/GS-123145419313152] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=2: reg_alpha=0.0, colsample_bytree=1.0, colsample_bylevel=1.0, learning_rate=0.2, max_delta_step=0.0, min_child_weight=0.0, subsample=1.0, reg_lambda=1.0, objective=reg:linear, max_depth=3, gamma=0.0, booster=gbtree 
+[15:50:33] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:33] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:33] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[0]	validation_0-rmse:1169.91	validation_1-rmse:1202.92
+Multiple eval metrics have been passed: 'validation_1-rmse' will be used for early stopping.
+Will train until validation_1-rmse hasn't improved in 4 rounds.
+[0]	validation_0-rmse:1288.69	validation_1-rmse:772.549
+Multiple eval metrics have been passed: 'validation_1-rmse' will be used for early stopping.
+Will train until validation_1-rmse hasn't improved in 4 rounds.
+[0]	validation_0-rmse:999.14	validation_1-rmse:1480.45
+Multiple eval metrics have been passed: 'validation_1-rmse' will be used for early stopping.
+Will train until validation_1-rmse hasn't improved in 4 rounds.
+[15:50:33] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[1]	validation_0-rmse:1249.52	validation_1-rmse:718.753
+[1]	validation_0-rmse:1071.55	validation_1-rmse:1162.54
+[1]	validation_0-rmse:953.359	validation_1-rmse:1455.81
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[2]	validation_0-rmse:1040.9	validation_1-rmse:1134.62
+[2]	validation_0-rmse:1222.11	validation_1-rmse:684.174
+[2]	validation_0-rmse:919.408	validation_1-rmse:1435.43
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[3]	validation_0-rmse:1017.07	validation_1-rmse:1114.34
+[3]	validation_0-rmse:1155	validation_1-rmse:661.16
+[3]	validation_0-rmse:895.873	validation_1-rmse:1427.4
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:34] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[4]	validation_0-rmse:945.779	validation_1-rmse:1100.62
+[4]	validation_0-rmse:1139.19	validation_1-rmse:640.316
+[4]	validation_0-rmse:878.148	validation_1-rmse:1416.44
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[5]	validation_0-rmse:933.624	validation_1-rmse:1092.85
+[5]	validation_0-rmse:1123.82	validation_1-rmse:629.454
+[5]	validation_0-rmse:864.87	validation_1-rmse:1411.38
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[6]	validation_0-rmse:923.092	validation_1-rmse:1089.26
+[6]	validation_0-rmse:1114.21	validation_1-rmse:618.715
+[6]	validation_0-rmse:851.748	validation_1-rmse:1405.48
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[7]	validation_0-rmse:864.156	validation_1-rmse:1080.74
+[7]	validation_0-rmse:1065.14	validation_1-rmse:608.973
+[7]	validation_0-rmse:843.025	validation_1-rmse:1401.15
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[8]	validation_0-rmse:815.459	validation_1-rmse:1077.41
+[8]	validation_0-rmse:835.509	validation_1-rmse:1398.14
+[8]	validation_0-rmse:1058.71	validation_1-rmse:603.99
+[15:50:35] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[9]	validation_0-rmse:807.348	validation_1-rmse:1073
+[9]	validation_0-rmse:1018.81	validation_1-rmse:598.71
+[9]	validation_0-rmse:827.524	validation_1-rmse:1396.54
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[10]	validation_0-rmse:985.486	validation_1-rmse:594.236
+[10]	validation_0-rmse:801.816	validation_1-rmse:1071.73
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[10]	validation_0-rmse:822.379	validation_1-rmse:1394.62
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[11]	validation_0-rmse:972.253	validation_1-rmse:592.317
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 10 extra nodes, 0 pruned nodes, max_depth=3
+[11]	validation_0-rmse:798.228	validation_1-rmse:1069.08
+[11]	validation_0-rmse:818.478	validation_1-rmse:1393.67
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:36] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[12]	validation_0-rmse:944.825	validation_1-rmse:594.271
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[12]	validation_0-rmse:793.579	validation_1-rmse:1067.75
+[12]	validation_0-rmse:815.485	validation_1-rmse:1393.45
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[13]	validation_0-rmse:942.523	validation_1-rmse:593.269
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[13]	validation_0-rmse:750.693	validation_1-rmse:1066.5
+[13]	validation_0-rmse:813.208	validation_1-rmse:1393.74
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[14]	validation_0-rmse:937.412	validation_1-rmse:593.792
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[14]	validation_0-rmse:748.836	validation_1-rmse:1065.74
+[14]	validation_0-rmse:808.207	validation_1-rmse:1389.78
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[15]	validation_0-rmse:934.712	validation_1-rmse:590.791
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:37] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 10 extra nodes, 0 pruned nodes, max_depth=3
+[15]	validation_0-rmse:743.077	validation_1-rmse:1064.83
+[15]	validation_0-rmse:806.675	validation_1-rmse:1388.38
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[16]	validation_0-rmse:932.965	validation_1-rmse:590.03
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[16]	validation_0-rmse:741.734	validation_1-rmse:1063.4
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[16]	validation_0-rmse:803.098	validation_1-rmse:1386.63
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[17]	validation_0-rmse:929.118	validation_1-rmse:592.223
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[17]	validation_0-rmse:740.275	validation_1-rmse:1063.46
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[17]	validation_0-rmse:800.253	validation_1-rmse:1384.63
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[18]	validation_0-rmse:927.325	validation_1-rmse:591.43
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[18]	validation_0-rmse:703.354	validation_1-rmse:1062.64
+[18]	validation_0-rmse:771.557	validation_1-rmse:1384.46
+[15:50:38] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[19]	validation_0-rmse:924.632	validation_1-rmse:589.947
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[19]	validation_0-rmse:699.417	validation_1-rmse:1062.96
+[19]	validation_0-rmse:769.599	validation_1-rmse:1384.48
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[20]	validation_0-rmse:923.025	validation_1-rmse:589.48
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[20]	validation_0-rmse:668.457	validation_1-rmse:1061.54
+[20]	validation_0-rmse:768.22	validation_1-rmse:1384.31
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 10 extra nodes, 0 pruned nodes, max_depth=3
+[21]	validation_0-rmse:921.999	validation_1-rmse:587.556
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[21]	validation_0-rmse:663.984	validation_1-rmse:1061.21
+[15:50:39] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[21]	validation_0-rmse:765.657	validation_1-rmse:1383.28
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[22]	validation_0-rmse:920.605	validation_1-rmse:586.371
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[22]	validation_0-rmse:662.564	validation_1-rmse:1060.14
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[22]	validation_0-rmse:764.73	validation_1-rmse:1382.97
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[23]	validation_0-rmse:917.154	validation_1-rmse:590.033
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[23]	validation_0-rmse:661.225	validation_1-rmse:1058.56
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 10 extra nodes, 0 pruned nodes, max_depth=3
+[23]	validation_0-rmse:763.821	validation_1-rmse:1382.18
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[24]	validation_0-rmse:916.579	validation_1-rmse:589.513
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[24]	validation_0-rmse:655.055	validation_1-rmse:1056.54
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[24]	validation_0-rmse:762.861	validation_1-rmse:1381.86
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[25]	validation_0-rmse:911.098	validation_1-rmse:586.516
+[15:50:40] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[25]	validation_0-rmse:629.868	validation_1-rmse:1056.59
+[15:50:41] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[25]	validation_0-rmse:761.953	validation_1-rmse:1381.59
+[15:50:41] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[26]	validation_0-rmse:888.935	validation_1-rmse:584.571
+[15:50:41] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 10 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:41] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[26]	validation_0-rmse:628.871	validation_1-rmse:1055.26
+[26]	validation_0-rmse:761.424	validation_1-rmse:1380.57
+[15:50:41] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[27]	validation_0-rmse:886.49	validation_1-rmse:588.619
+[15:50:41] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[27]	validation_0-rmse:627.56	validation_1-rmse:1054.16
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[27]	validation_0-rmse:759.406	validation_1-rmse:1379.81
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[28]	validation_0-rmse:885.477	validation_1-rmse:588.229
+[28]	validation_0-rmse:606.226	validation_1-rmse:1053.78
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[28]	validation_0-rmse:758.679	validation_1-rmse:1379.59
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[29]	validation_0-rmse:867.136	validation_1-rmse:587.417
+[29]	validation_0-rmse:605.415	validation_1-rmse:1053.4
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[29]	validation_0-rmse:757.757	validation_1-rmse:1380.12
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:42] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[30]	validation_0-rmse:866.47	validation_1-rmse:586.651
+Stopping. Best iteration:
+[26]	validation_0-rmse:888.935	validation_1-rmse:584.571
+[30]	validation_0-rmse:604.693	validation_1-rmse:1052.31
+[30]	validation_0-rmse:757.258	validation_1-rmse:1379.88
+[2020-04-27 15:50:42,996] [4635/GS-123145410899968] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=0: reg_alpha=0.0, colsample_bytree=1.0, colsample_bylevel=1.0, learning_rate=0.2, max_delta_step=0.0, min_child_weight=0.0, subsample=1.0, reg_lambda=1.0, objective=reg:linear, max_depth=3, gamma=0.0, booster=gbtree (ft=9.7s st=0.2s sc=0.476121863964)
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[31]	validation_0-rmse:600.673	validation_1-rmse:1051.09
+[31]	validation_0-rmse:755.069	validation_1-rmse:1378.18
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[32]	validation_0-rmse:583.065	validation_1-rmse:1050.45
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[32]	validation_0-rmse:730.134	validation_1-rmse:1378.46
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[33]	validation_0-rmse:579.335	validation_1-rmse:1050.41
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[33]	validation_0-rmse:729.508	validation_1-rmse:1378.37
+[15:50:43] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[34]	validation_0-rmse:578.436	validation_1-rmse:1049.35
+[15:50:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[34]	validation_0-rmse:729.001	validation_1-rmse:1377.81
+[15:50:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[35]	validation_0-rmse:576.153	validation_1-rmse:1049.18
+[15:50:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[35]	validation_0-rmse:728.115	validation_1-rmse:1378.27
+[15:50:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[36]	validation_0-rmse:575.541	validation_1-rmse:1049.23
+[15:50:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[36]	validation_0-rmse:727.568	validation_1-rmse:1378.21
+[37]	validation_0-rmse:574.71	validation_1-rmse:1048.54
+[15:50:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:44] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[37]	validation_0-rmse:727.158	validation_1-rmse:1378.09
+[38]	validation_0-rmse:571.747	validation_1-rmse:1048.65
+[15:50:45] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15:50:45] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[38]	validation_0-rmse:726.675	validation_1-rmse:1377.94
+Stopping. Best iteration:
+[34]	validation_0-rmse:729.001	validation_1-rmse:1377.81
+[39]	validation_0-rmse:571.035	validation_1-rmse:1048.14
+[2020-04-27 15:50:45,495] [4635/GS-123145415106560] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=1: reg_alpha=0.0, colsample_bytree=1.0, colsample_bylevel=1.0, learning_rate=0.2, max_delta_step=0.0, min_child_weight=0.0, subsample=1.0, reg_lambda=1.0, objective=reg:linear, max_depth=3, gamma=0.0, booster=gbtree (ft=12.2s st=0.2s sc=0.161735507415)
+[15:50:45] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[40]	validation_0-rmse:570.394	validation_1-rmse:1047.4
+[15:50:45] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[41]	validation_0-rmse:569.272	validation_1-rmse:1046.95
+[15:50:45] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[42]	validation_0-rmse:568.521	validation_1-rmse:1047.03
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[43]	validation_0-rmse:566.885	validation_1-rmse:1047.03
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[44]	validation_0-rmse:566.191	validation_1-rmse:1047.06
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[45]	validation_0-rmse:563.55	validation_1-rmse:1046.62
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[46]	validation_0-rmse:560.451	validation_1-rmse:1045.42
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[47]	validation_0-rmse:545.447	validation_1-rmse:1045.72
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[48]	validation_0-rmse:544.436	validation_1-rmse:1045.39
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[49]	validation_0-rmse:543.964	validation_1-rmse:1045.22
+[15:50:46] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[50]	validation_0-rmse:543.43	validation_1-rmse:1045.08
+[15:50:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[51]	validation_0-rmse:542.983	validation_1-rmse:1044.53
+[15:50:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[52]	validation_0-rmse:541.447	validation_1-rmse:1043.84
+[15:50:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[53]	validation_0-rmse:541.002	validation_1-rmse:1043.59
+[15:50:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[54]	validation_0-rmse:538.005	validation_1-rmse:1044.29
+[15:50:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[55]	validation_0-rmse:525.722	validation_1-rmse:1043.8
+[15:50:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[56]	validation_0-rmse:525.298	validation_1-rmse:1043.71
+[15:50:47] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[57]	validation_0-rmse:515.35	validation_1-rmse:1043.51
+[15:50:48] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[58]	validation_0-rmse:512.318	validation_1-rmse:1042.75
+[15:50:48] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 10 extra nodes, 0 pruned nodes, max_depth=3
+[59]	validation_0-rmse:510.825	validation_1-rmse:1042.93
+[15:50:48] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[60]	validation_0-rmse:505.605	validation_1-rmse:1043.19
+[15:50:48] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[61]	validation_0-rmse:504.964	validation_1-rmse:1043.2
+[15:50:48] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[62]	validation_0-rmse:504.574	validation_1-rmse:1043.15
+Stopping. Best iteration:
+[58]	validation_0-rmse:512.318	validation_1-rmse:1042.75
+[2020-04-27 15:50:48,897] [4635/GS-123145419313152] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=2: reg_alpha=0.0, colsample_bytree=1.0, colsample_bylevel=1.0, learning_rate=0.2, max_delta_step=0.0, min_child_weight=0.0, subsample=1.0, reg_lambda=1.0, objective=reg:linear, max_depth=3, gamma=0.0, booster=gbtree (ft=15.6s st=0.1s sc=0.290246054546)
+[Parallel(n_jobs=4)]: Done   3 out of   3 | elapsed:   15.8s finished
+[2020-04-27 15:50:49,179] [4635/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search ended, got 3 scores out of 3
+[2020-04-27 15:50:49,182] [4635/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search done, best_parameters being : {'reg_alpha': 0.0, 'colsample_bytree': 1.0, 'colsample_bylevel': 1.0, 'learning_rate': 0.2, 'max_delta_step': 0.0, 'min_child_weight': 0.0, 'n_estimators': 35, 'subsample': 1.0, 'reg_lambda': 1.0, 'objective': u'reg:linear', 'max_depth': 3, 'gamma': 0.0, 'booster': u'gbtree'}
+[2020-04-27 15:50:49,184] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common] Fitting model:
+[2020-04-27 15:50:49,185] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common]   Model is: DkuXGBRegressor(base_score=0.5, booster=u'gbtree', colsample_bylevel=1.0,
+        colsample_bytree=1.0, gamma=0.0, learning_rate=0.2,
+        max_delta_step=0.0, max_depth=3, min_child_weight=0.0,
+        missing=None, n_estimators=35, n_jobs=4, objective=u'reg:linear',
+        random_state=1337, reg_alpha=0.0, reg_lambda=1.0,
+        scale_pos_weight=1.0, silent=0, subsample=1.0, tree_method=u'auto')
+[2020-04-27 15:50:49,185] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X class: <type 'numpy.ndarray'>
+[2020-04-27 15:50:49,185] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X shape: (20120, 108)
+[2020-04-27 15:50:49,186] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_y shape: (20120,)
+[2020-04-27 15:50:49,186] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common]   calibration enabled: a sub-sample of the train data has been saved for calibration
+[15:50:49] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[0]	validation_0-rmse:1178.78
+Will train until validation_0-rmse hasn't improved in 4 rounds.
+[15:50:49] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[1]	validation_0-rmse:1100.91
+[15:50:49] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[2]	validation_0-rmse:1069.86
+[15:50:50] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[3]	validation_0-rmse:1014.37
+[15:50:50] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[4]	validation_0-rmse:997.94
+[15:50:50] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[5]	validation_0-rmse:986.789
+[15:50:50] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[6]	validation_0-rmse:975.525
+[15:50:50] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[7]	validation_0-rmse:965.729
+[15:50:50] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[8]	validation_0-rmse:959.658
+[15:50:51] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[9]	validation_0-rmse:920.664
+[15:50:51] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[10]	validation_0-rmse:916.899
+[15:50:51] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[11]	validation_0-rmse:914.409
+[15:50:51] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[12]	validation_0-rmse:912.492
+[15:50:51] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[13]	validation_0-rmse:909.918
+[15:50:51] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[14]	validation_0-rmse:907.374
+[15:50:52] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[15]	validation_0-rmse:904.65
+[15:50:52] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[16]	validation_0-rmse:903.2
+[15:50:52] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[17]	validation_0-rmse:901.87
+[15:50:52] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[18]	validation_0-rmse:898.539
+[15:50:52] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[19]	validation_0-rmse:868.071
+[15:50:53] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[20]	validation_0-rmse:867.105
+[15:50:53] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[21]	validation_0-rmse:866.405
+[15:50:53] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[22]	validation_0-rmse:861.253
+[15:50:53] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[23]	validation_0-rmse:857.731
+[15:50:53] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[24]	validation_0-rmse:839.15
+[15:50:53] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[25]	validation_0-rmse:838.439
+[15:50:54] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[26]	validation_0-rmse:835.789
+[15:50:54] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[27]	validation_0-rmse:811.013
+[15:50:54] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[28]	validation_0-rmse:810.273
+[15:50:54] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 12 extra nodes, 0 pruned nodes, max_depth=3
+[29]	validation_0-rmse:809.618
+[15:50:54] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[30]	validation_0-rmse:808.831
+[15:50:54] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[31]	validation_0-rmse:808.177
+[15:50:55] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[32]	validation_0-rmse:805.535
+[15:50:55] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[33]	validation_0-rmse:801.924
+[15:50:55] src/tree/updater_prune.cc:74: tree pruning end, 1 roots, 14 extra nodes, 0 pruned nodes, max_depth=3
+[34]	validation_0-rmse:787.096
+[2020-04-27 15:50:55,558] [4635/MainThread] [INFO] [dataiku.doctor.prediction.regression_fit] Selected XGBoost Params are {'reg_alpha': 0.0, 'n_jobs': 4, 'colsample_bytree': 1.0, 'silent': 0, 'colsample_bylevel': 1.0, 'scale_pos_weight': 1.0, 'learning_rate': 0.2, 'missing': None, 'max_delta_step': 0.0, 'base_score': 0.5, 'n_estimators': 35, 'subsample': 1.0, 'reg_lambda': 1.0, 'random_state': 1337, 'min_child_weight': 0.0, 'objective': u'reg:linear', 'tree_method': u'auto', 'max_depth': 3, 'gamma': 0.0, 'booster': u'gbtree'} 
+[2020-04-27 15:50:55,558] [4635/MainThread] [INFO] [dataiku.doctor.prediction.regression_fit] Output params are {'resolved': {'xgboost': {'enable_early_stopping': True, 'colsample_bytree': 1.0, 'colsample_bylevel': 1.0, 'scale_pos_weight': 1.0, 'learning_rate': 0.2, 'missing': None, 'max_delta_step': 0.0, 'nthread': 4, 'min_child_weight': 0.0, 'impute_missing': False, 'n_estimators': 35, 'subsample': 1.0, 'seed': 1337, 'early_stopping_rounds': 4, 'base_score': 0.5, 'objective': u'reg_linear', 'alpha': 0.0, 'booster': u'gbtree', 'max_depth': 3, 'gamma': 0.0, 'lambda': 1.0}, 'skipExpensiveReports': False, 'algorithm': u'XGBOOST_REGRESSION'}, 'other': {}}
+[2020-04-27 15:50:55,559] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2020-04-27 15:50:55,559] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2020-04-27 15:50:55,569] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2020-04-27 15:50:55,569] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2020-04-27 15:50:55,571] [4635/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Intrinsic scoring
+[2020-04-27 15:50:55,571] [4635/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Extracting rescalers
+[2020-04-27 15:50:55,582] [4635/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Computing feature importance
+[2020-04-27 15:50:55,585] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(5011,108) tn=541188 nnz=30066 fill_ratio=0.06
+[2020-04-27 15:50:55,585] [4635/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-27 15:50:55,591] [4635/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Creating predictions on test set
+[2020-04-27 15:50:55,608] [4635/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Computing regression performance on [111.8615   273.67215   68.998436 ... 144.85059  144.85059  144.85059 ]
+[2020-04-27 15:50:55,653] [4635/MainThread] [INFO] [dataiku.doctor.utils.metrics] Negative values, not computing RMSLE
+[2020-04-27 15:50:55,711] [4635/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2020/04/27-15:50:55.726] [MRT-1847] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2020/04/27-15:50:55.726] [MRT-1847] [INFO] [dku.analysis.prediction]  - Training returned ok
+[2020/04/27-15:50:55.728] [MRT-1847] [INFO] [dku.ml.versioning]  - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/FORTUNE500/yHY7DSLk/bN8FvxtW/sessions/s3/pp5/m1
+[2020/04/27-15:50:55.734] [KNL-python-single-command-kernel-out-1874] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/27-15:50:55.734] [KNL-python-single-command-kernel-err-1875] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/27-15:50:55.752] [KNL-python-single-command-kernel-monitor-1873] [INFO] [dku.kernels]  - Process done with code 143
+[2020/04/27-15:50:55.753] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Processing thread joined ...
+[2020/04/27-15:50:55.760] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Joining processing thread ...
+[2020/04/27-15:50:55.763] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.ml.python] T-bN8FvxtW - Processing thread joined ...
+[2020/04/27-15:50:55.766] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction] T-bN8FvxtW - Train done
+[2020/04/27-15:50:55.769] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction] T-bN8FvxtW - Train done
+[2020/04/27-15:50:55.875] [FT-TrainWorkThread-XvEZwNuh-1846] [INFO] [dku.analysis.prediction] T-bN8FvxtW - Publishing mltask-train-done reflected event
