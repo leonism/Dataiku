@@ -1,0 +1,16 @@
+{
+    "resolved": {
+        "rf": {
+            "max_tree_depth": 13, 
+            "selection_mode": "auto", 
+            "njobs": 1, 
+            "min_samples_leaf": 10, 
+            "estimators": 100
+        }, 
+        "skipExpensiveReports": false, 
+        "algorithm": "RANDOM_FOREST_REGRESSION"
+    }, 
+    "other": {
+        "rf_min_samples_split": 30
+    }
+}

@@ -1,0 +1,346 @@
+{
+  "exportedWithOptions": {
+    "exportUploads": true,
+    "exportManagedFS": true,
+    "exportAnalysisModels": true,
+    "exportSavedModels": true,
+    "exportManagedFolders": true,
+    "exportAllInputDatasets": true,
+    "exportAllDatasets": true,
+    "exportAllInputManagedFolders": true,
+    "exportGitRepository": false,
+    "exportInsightsData": true,
+    "useManualPluginsInfo": false,
+    "includedDatasetsData": [],
+    "includedSavedModels": [],
+    "includedManagedFolders": [],
+    "shareAllInputDatasets": false
+  },
+  "actualContent": {
+    "includedDatasets": [
+      {
+        "name": "02_01_BuildingPermits",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 17884093
+      },
+      {
+        "name": "02_02_BuildingPermits",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 17884093
+      },
+      {
+        "name": "BuildingPermits",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 7406410
+      },
+      {
+        "name": "BuildingPermits_all_filled",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 7406410
+      },
+      {
+        "name": "BuildingPermits_by_Corp",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 128
+      },
+      {
+        "name": "BuildingPermits_by_Corporation",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 153
+      },
+      {
+        "name": "BuildingPermits_filtered",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 5291824
+      },
+      {
+        "name": "BuildingPermits_joined",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 5291824
+      },
+      {
+        "name": "BuildingPermits_prepared",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 4934017
+      },
+      {
+        "name": "BuildingPermits_stacked",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 6114378
+      },
+      {
+        "name": "WorkType",
+        "type": "UploadedFiles",
+        "usedTransferMethod": "UPLOAD",
+        "size": 1140
+      },
+      {
+        "name": "permits_EstValue_StateValuation",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 6460085
+      },
+      {
+        "name": "permits_cleaned",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 948903
+      },
+      {
+        "name": "permits_scored_StateValuation",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 5043055
+      },
+      {
+        "name": "permits_scored_estValue",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 5073297
+      },
+      {
+        "name": "permits_timeseries",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 213589
+      },
+      {
+        "name": "permits_timeseries_by_EstValue",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 136648
+      },
+      {
+        "name": "permits_timeseries_by_PermitNumber",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 10
+      },
+      {
+        "name": "permits_timeseries_sorted",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 263603
+      },
+      {
+        "name": "permits_timeseries_topn",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 112311
+      },
+      {
+        "name": "permits_timeseries_windows",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 161836
+      },
+      {
+        "name": "permits_uncleaned",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 3976709
+      },
+      {
+        "name": "permits_uncleaned_target",
+        "type": "Filesystem",
+        "usedTransferMethod": "RAW_FILES",
+        "size": 104685
+      }
+    ],
+    "includedSavedModels": [
+      {
+        "id": "MFb7LpbG",
+        "name": "Prediction (RIDGE_REGRESSION) on StateValuation",
+        "size": 3559607
+      },
+      {
+        "id": "NviBZCse",
+        "name": "Prediction (RIDGE_REGRESSION) on EstValue",
+        "size": 2988175
+      }
+    ],
+    "includedManagedFolders": [],
+    "allAnalysisData": true,
+    "insightsData": true
+  },
+  "originalProjectKey": "BUILDINGPERMIT",
+  "manifestVersion": 3,
+  "generatedWithDSSVersion": "7.0.1",
+  "generatedWithDSSConfVersion": "7000",
+  "exportedWithPlugins": [
+    {
+      "pluginId": "geoadmin",
+      "version": "1.1.2"
+    },
+    {
+      "pluginId": "ip-range-matcher",
+      "version": "1.0.2"
+    },
+    {
+      "pluginId": "tableau-export-v2",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "time-series-forecast",
+      "version": "0.4.1"
+    },
+    {
+      "pluginId": "wms-maps-backgrounds",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "local-r-dev-setup",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "excel-sheet-importer",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "get-us-census-block",
+      "version": "0.4.0"
+    },
+    {
+      "pluginId": "anonymizer",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "text-summarization",
+      "version": "1.1.0"
+    },
+    {
+      "pluginId": "geocoder",
+      "version": "1.1.0"
+    },
+    {
+      "pluginId": "qlik-qvx",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "events-aggregator",
+      "version": "0.2.3"
+    },
+    {
+      "pluginId": "named-entity-recognition",
+      "version": "1.1.0"
+    },
+    {
+      "pluginId": "flow-charts",
+      "version": "0.1.1"
+    },
+    {
+      "pluginId": "graph-analytics",
+      "version": "0.0.2"
+    },
+    {
+      "pluginId": "customformula-soundex",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "colorbrewer-palettes",
+      "version": "0.0.1"
+    },
+    {
+      "pluginId": "import-io",
+      "version": "1.0.1"
+    },
+    {
+      "pluginId": "googledrive",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "h2o",
+      "version": "0.0.5"
+    },
+    {
+      "pluginId": "forecastio",
+      "version": "0.4.0"
+    },
+    {
+      "pluginId": "tableau-hyper-export",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "osm-enrichment",
+      "version": "0.0.5"
+    },
+    {
+      "pluginId": "builtin-macros",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "decision-tree-builder",
+      "version": "1.0.3"
+    },
+    {
+      "pluginId": "timeseries-preparation",
+      "version": "1.1.1"
+    },
+    {
+      "pluginId": "hierarchical-charts",
+      "version": "0.1.1"
+    },
+    {
+      "pluginId": "waterfall-chart",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "dataset-audit",
+      "version": "0.0.5"
+    },
+    {
+      "pluginId": "geozip",
+      "version": "2.0"
+    },
+    {
+      "pluginId": "census-us",
+      "version": "0.3.3"
+    },
+    {
+      "pluginId": "sentiment-analysis",
+      "version": "1.3.0"
+    },
+    {
+      "pluginId": "mapbox-maps-backgrounds",
+      "version": "0.0.4"
+    },
+    {
+      "pluginId": "ml-assisted-labeling",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "movies-apis",
+      "version": "0.1.0"
+    },
+    {
+      "pluginId": "warp10",
+      "version": "1.0.1"
+    },
+    {
+      "pluginId": "numeric-base-conversion",
+      "version": "1.0.0"
+    },
+    {
+      "pluginId": "sentence-embedding",
+      "version": "1.2.2"
+    }
+  ],
+  "requiredConnections": {
+    "filesystem_managed": {
+      "name": "filesystem_managed",
+      "type": "Filesystem"
+    }
+  },
+  "usedCodeEnvRefs": [],
+  "hasPartitionedDataset": false
+}

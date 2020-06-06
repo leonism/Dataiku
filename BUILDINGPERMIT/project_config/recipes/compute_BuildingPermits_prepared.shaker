@@ -1,0 +1,426 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "name": "Date Cleaning",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "outCol": "PERMIT ISSUE DATE_parsed",
+            "formats": [
+              "MM/dd/yyyy hh:mm:ss a",
+              "MM/dd/yyyy hh:mm:ss",
+              "MM/dd/yyyy"
+            ],
+            "columns": [
+              "PERMIT ISSUE DATE"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "PERMIT ISSUE DATE"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "name": "Coloumn Cleaning",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "WORK DESCRIPTION"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "PERMIT STATUS",
+            "columns": [
+              "PERMIT SUB-TYPE"
+            ],
+            "reorderAction": "BEFORE_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnReorder",
+          "params": {
+            "referenceColumn": "CONTRACTOR",
+            "columns": [
+              "﻿WORK DESCRIPTION"
+            ],
+            "reorderAction": "AFTER_COLUMN",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "PERMIT NUMBER",
+                "to": "Permit Number"
+              },
+              {
+                "from": "PERMIT TYPE",
+                "to": "Permit Type"
+              },
+              {
+                "from": "PERMIT SUB-TYPE",
+                "to": "Permit SubType"
+              },
+              {
+                "from": "PERMIT STATUS",
+                "to": "Permit Status"
+              },
+              {
+                "from": "PERMIT ISSUE DATE_parsed",
+                "to": "Permit Issue Date"
+              },
+              {
+                "from": "ESTIMATED VALUE OF WORK",
+                "to": "Est Value"
+              },
+              {
+                "from": "STATE VALUATION",
+                "to": "State Valuation"
+              },
+              {
+                "from": "CONTRACTOR",
+                "to": "Contractor"
+              },
+              {
+                "from": "﻿WORK DESCRIPTION",
+                "to": "Work Desc"
+              },
+              {
+                "from": "WORK GROUP",
+                "to": "Work Group"
+              }
+            ]
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "mainColor": "#90d931",
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "Permit Number",
+                "to": "PermitNumber"
+              },
+              {
+                "from": "Permit Type",
+                "to": "PermitType"
+              },
+              {
+                "from": "Permit SubType",
+                "to": "PermitSubType"
+              },
+              {
+                "from": "Permit Status",
+                "to": "PermitStatus"
+              },
+              {
+                "from": "Permit Issue Date",
+                "to": "PermitIssueDate"
+              },
+              {
+                "from": "Est Value",
+                "to": "EstValue"
+              },
+              {
+                "from": "State Valuation",
+                "to": "StateValue"
+              }
+            ]
+          },
+          "alwaysShowComment": false,
+          "secondaryColor": "#deeccb"
+        }
+      ],
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "name": "Cleaning Contractor",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FlagOnValue",
+          "params": {
+            "normalizationMode": "LOWERCASE",
+            "booleanMode": "AND",
+            "columns": [
+              "Contractor"
+            ],
+            "values": [
+              "LLC",
+              "Inc",
+              "Company",
+              "Solutions",
+              "Corp",
+              "Builders",
+              "build",
+              "builder",
+              "Contruction",
+              "Construction",
+              "Improvements",
+              "Co",
+              "Division",
+              "Services",
+              "Service",
+              "Divisions"
+            ],
+            "matchingMode": "PATTERN",
+            "action": "FLAG",
+            "appliesTo": "SINGLE_COLUMN",
+            "flagColumn": "Contractor2"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "if (Contractor2 \u003d\u003d \"1\",\n\"True\", \"False\")",
+            "column": "Corporation"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "StringTransformer",
+          "params": {
+            "mode": "CAPITALIZE_FULLY",
+            "columns": [
+              "Contractor"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "truncate_limit": 0
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "StringTransformer",
+          "params": {
+            "mode": "TRIM",
+            "columns": [
+              "Contractor"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "truncate_limit": 0
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "FindReplace",
+          "params": {
+            "output": "",
+            "mapping": [
+              {
+                "from": "llc",
+                "to": "LLC"
+              },
+              {
+                "from": "Llc",
+                "to": "LLC"
+              }
+            ],
+            "normalization": "EXACT",
+            "columns": [
+              "Contractor"
+            ],
+            "appliesTo": "SINGLE_COLUMN",
+            "stopAfterFirstMatch": false,
+            "matching": "SUBSTRING"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "Contractor2"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(PermitStatus \u003d\u003d \"Finaled\", 3, \nif(PermitStatus \u003d\u003d \"Inspected\", 2, \nif(PermitStatus \u003d\u003d \"Active/Issued\", 3,\"\")))",
+        "column": "PermitStatus2"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "WORK GROUP": 120,
+    "Contractor1found": 135,
+    "StateValuation": 120,
+    "PermitSubType": 225,
+    "Permit Type": 148,
+    "Permit SubType": 225,
+    "Contractor_copy": 300,
+    "PERMIT ISSUE DATE": 169,
+    "PERMIT TYPE": 288,
+    "Contractor2found": 135,
+    "EstValue": 100,
+    "Contractor": 300,
+    "found": 100,
+    "Contractor22": 105,
+    "Contractor21": 105,
+    "Permit type": 288,
+    "﻿WORK DESCRIPTION": 190,
+    "PermitStatus_copy": 143,
+    "PermitType": 288,
+    "Work Desc": 190,
+    "Contractor2": 100,
+    "PermitNumber": 134,
+    "State Valuation": 128,
+    "PermitStatus2": 141,
+    "STATE VALUATION": 128,
+    "Est Value": 100,
+    "newcolumn_expression": 165,
+    "CONTRACTOR": 300,
+    "Permit Number": 141,
+    "Corp": 100,
+    "PERMIT NUMBER": 141,
+    "Work Group": 120,
+    "PERMIT STATUS": 141,
+    "Permit Status": 141,
+    "Corporation": 100,
+    "ESTIMATED VALUE OF WORK": 188,
+    "StateValue": 100,
+    "PermitStatus": 105,
+    "PermitIssueDate": 183,
+    "PERMIT ISSUE DATE_parsed": 218,
+    "PERMIT SUB-TYPE": 225,
+    "WORK DESCRIPTION": 190,
+    "___": 100,
+    "Permit Issue Date": 183
+  },
+  "sorting": [
+    {
+      "column": "Est Value",
+      "ascending": false
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "INDIVIDUAL_COLUMNS_VALUES",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

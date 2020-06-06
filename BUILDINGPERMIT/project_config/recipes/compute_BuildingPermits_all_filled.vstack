@@ -1,0 +1,139 @@
+{
+  "mode": "FROM_INDEX",
+  "selectedColumns": [
+    "Permit Number",
+    "Permit Type",
+    "Permit SubType",
+    "Permit Status",
+    "Permit Issue Date",
+    "Est Value",
+    "State Valuation",
+    "Contractor",
+    "Corporation",
+    "Work Desc",
+    "Work Group"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "permits_cleaned",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "permits_EstValue_StateValuation",
+      "index": 1
+    }
+  ],
+  "copySchemaFromDatasetWithName": "permits_cleaned",
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Permit Number",
+            "type": "string"
+          },
+          {
+            "name": "Permit Type",
+            "type": "string"
+          },
+          {
+            "name": "Permit SubType",
+            "type": "string"
+          },
+          {
+            "name": "Permit Status",
+            "type": "string"
+          },
+          {
+            "name": "Permit Issue Date",
+            "type": "date"
+          },
+          {
+            "name": "Est Value",
+            "type": "double"
+          },
+          {
+            "name": "State Valuation",
+            "type": "double"
+          },
+          {
+            "name": "Contractor",
+            "type": "string"
+          },
+          {
+            "name": "Corporation",
+            "type": "boolean"
+          },
+          {
+            "name": "Work Desc",
+            "type": "string"
+          },
+          {
+            "name": "Work Group",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "selectedColumnsIndexes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "addOriginColumn": false
+}

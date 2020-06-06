@@ -1,0 +1,33 @@
+{
+  "params": {
+    "viewFormat": "HTML_DOCUMENT",
+    "snapshotFormats": {
+      "PDF_DOCUMENT": true,
+      "HTML_DOCUMENT": true
+    },
+    "buildOnSave": true,
+    "envSelection": {
+      "envMode": "INHERIT"
+    }
+  },
+  "name": "rmarkdown report",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1587450029205
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1587450029205
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

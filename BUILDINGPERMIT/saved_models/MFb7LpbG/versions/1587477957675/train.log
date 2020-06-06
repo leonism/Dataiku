@@ -1,0 +1,611 @@
+[2020/04/21-21:05:57.004] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - ----------------------------------------
+[2020/04/21-21:05:57.004] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - DSS startup: jek version:7.0.1
+[2020/04/21-21:05:57.004] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - DSS home: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home
+[2020/04/21-21:05:57.004] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - OS: Mac OS X 10.14.6 x86_64 - Java: Oracle Corporation 1.8.0_241
+[2020/04/21-21:05:56.995] [ActivityExecutor-31] [INFO] [dku.flow.jobrunner] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Allocated a slot for this activity!
+[2020/04/21-21:05:57.011] [ActivityExecutor-31] [INFO] [dku.flow.jobrunner] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Run activity
+[2020/04/21-21:05:57.106] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Executing default pre-activity lifecycle hook
+[2020/04/21-21:05:57.142] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Checking if sources are ready
+[2020/04/21-21:05:57.193] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Readiness cache miss for dataset__admin__BUILDINGPERMIT.permits_cleaned__NP
+[2020/04/21-21:05:57.224] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"BUILDINGPERMIT/permits_cleaned","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/04/21-21:05:57.231] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumerating Filesystem dataset prefix=
+[2020/04/21-21:05:57.271] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumerating local filesystem prefix=/
+[2020/04/21-21:05:57.281] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumeration done nb_paths=1 size=899690
+[2020/04/21-21:05:57.287] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Caching readiness for dataset__admin__BUILDINGPERMIT.permits_cleaned__NP s=READY h=SmADCHLqlyMxFpZEWN4+Tg
+[2020/04/21-21:05:57.288] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Checked source readiness BUILDINGPERMIT.permits_cleaned -> true
+[2020/04/21-21:05:57.291] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Computing hashes to propagate BEFORE activity
+[2020/04/21-21:05:57.302] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Readiness cache miss for dataset__admin__BUILDINGPERMIT.permits_cleaned__NP
+[2020/04/21-21:05:57.305] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"BUILDINGPERMIT/permits_cleaned","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/04/21-21:05:57.307] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumerating Filesystem dataset prefix=
+[2020/04/21-21:05:57.312] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumerating local filesystem prefix=/
+[2020/04/21-21:05:57.316] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumeration done nb_paths=1 size=899690
+[2020/04/21-21:05:57.324] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Caching readiness for dataset__admin__BUILDINGPERMIT.permits_cleaned__NP s=READY h=SmADCHLqlyMxFpZEWN4+Tg
+[2020/04/21-21:05:57.329] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Recorded 1 hashes before activity run
+[2020/04/21-21:05:57.332] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Building recipe runner of type
+[2020/04/21-21:05:57.666] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Recipe runner built, will use 1 thread(s)
+[2020/04/21-21:05:57.667] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Starting execution thread: com.dataiku.dip.analysis.ml.prediction.flow.PredictionTrainingRecipeRunner@462b9f6a
+[2020/04/21-21:05:57.671] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Execution threads started, waiting for activity end
+[2020/04/21-21:05:57.673] [FRT-36-FlowRunnable] [INFO] [dku.flow.activity] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Run thread for activity train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP starting
+[2020/04/21-21:05:57.754] [FRT-36-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"BUILDINGPERMIT/permits_cleaned","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/04/21-21:05:57.762] [FRT-36-FlowRunnable] [INFO] [dku.datasets.ftplike] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumerating Filesystem dataset prefix=
+[2020/04/21-21:05:57.766] [FRT-36-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumerating local filesystem prefix=/
+[2020/04/21-21:05:57.769] [FRT-36-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Enumeration done nb_paths=1 size=899690
+[2020/04/21-21:05:57.771] [FRT-36-FlowRunnable] [INFO] [dku.input.push] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - USTP: push selection.method=HEAD_SEQUENTIAL records=100000 ratio=0.02 col=null
+[2020/04/21-21:05:57.782] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Extractor run: limit={"maxBytes":-1,"maxRecords":100000,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2020/04/21-21:05:57.791] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-21:05:57.793] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-21:05:57.795] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Start compressed [GZIP] stream: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/managed_datasets/BUILDINGPERMIT/permits_cleaned/out-s0.csv.gz / totalRecsBefore=0
+[2020/04/21-21:05:57.800] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-21:05:57.802] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-21:05:59.652] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - after stream totalComp=899690 totalUncomp=5263506 totalRec=36686
+[2020/04/21-21:05:59.653] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Extractor run done, totalCompressed=899690 totalRecords=36686
+[2020/04/21-21:05:59.833] [FRT-36-FlowRunnable] [INFO] [dku.recipes.prediction.train] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Read modeling: 
+ {
+  "algorithm": "RIDGE_REGRESSION",
+  "ridge_grid": {
+    "alphaMode": "MANUAL",
+    "alpha": {
+      "values": [
+        0.1,
+        1.0,
+        3.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "enabled": true
+  },
+  "max_ensemble_nodes_serialized": 0,
+  "metrics": {
+    "evaluationMetric": "R2",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 3,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "randomized": true,
+    "nIter": 0,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}
+[2020/04/21-21:05:59.857] [FRT-36-FlowRunnable] [INFO] [dku.recipes.prediction.train] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Run training in code env built-in (set at deploy-time)
+[2020/04/21-21:05:59.866] [FRT-36-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"BUILDINGPERMIT/permits_cleaned","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/04/21-21:05:59.870] [FRT-36-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"BUILDINGPERMIT/permits_cleaned","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/04/21-21:06:00.035] [FRT-36-FlowRunnable] [INFO] [dku.code.projectLibs] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - EXTERNAL LIBS FROM BUILDINGPERMIT is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/04/21-21:06:00.037] [FRT-36-FlowRunnable] [INFO] [dku.code.projectLibs] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - chunkFolder is /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/jobs/BUILDINGPERMIT/Build_Prediction__RIDGE_REGRESSION__on_StateValuation_2020-04-21T14-05-55.537/localconfig/projects/BUILDINGPERMIT/lib/R
+[2020/04/21-21:06:00.051] [FRT-36-FlowRunnable] [INFO] [xxx] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - RSRC PATH: ["/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/jobs/BUILDINGPERMIT/Build_Prediction__RIDGE_REGRESSION__on_StateValuation_2020-04-21T14-05-55.537/localconfig/projects/BUILDINGPERMIT/lib/R"]
+[2020/04/21-21:06:00.063] [FRT-36-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Writing dku-exec-env for local execution in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/jobs/BUILDINGPERMIT/Build_Prediction__RIDGE_REGRESSION__on_StateValuation_2020-04-21T14-05-55.537/train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP/prediction-train-recipe/pyrunErDtDqJyXaYn/remote-run-env-def.json
+[2020/04/21-21:06:00.083] [FRT-36-FlowRunnable] [INFO] [dku.code.envs.resolution] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Executing Python activity in builtin env
+[2020/04/21-21:06:00.088] [FRT-36-FlowRunnable] [INFO] [dku.flow.abstract.python] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Execute activity command: ["/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/bin/python","-u","-m","dataiku.doctor.prediction.reg_train_recipe","/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/saved_models/BUILDINGPERMIT/MFb7LpbG/versions/1587477957675","/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/saved_models/BUILDINGPERMIT/MFb7LpbG/core/selection","TRAIN_SPLITTED_ONLY"]
+[2020/04/21-21:06:00.091] [FRT-36-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Run command insecurely, from user gerryleonugroho
+[2020/04/21-21:06:00.097] [FRT-36-FlowRunnable] [INFO] [dku.security.process] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Starting process (regular)
+[2020/04/21-21:06:00.113] [FRT-36-FlowRunnable] [INFO] [dku.security.process] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Process started with pid=12297
+[2020/04/21-21:06:00.136] [FRT-36-FlowRunnable] [INFO] [dku.processes.cgroups] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Will use cgroups []
+[2020/04/21-21:06:00.145] [FRT-36-FlowRunnable] [INFO] [dku.processes.cgroups] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Applying rules to used cgroups: []
+[2020/04/21-21:06:00.179] [FRT-36-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Process reads from nothing
+[2020/04/21-21:06:07.894] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,893 INFO START -  Loading train set
+[2020/04/21-21:06:07.897] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,895 INFO Reading with dtypes: None
+[2020/04/21-21:06:07.899] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,895 INFO Computed dtype for Permit Number: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:07.902] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,895 INFO Computed dtype for Permit Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/04/21-21:06:07.905] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Permit SubType: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:07.907] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Permit Status: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:07.908] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Permit Issue Date: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020/04/21-21:06:07.909] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Est Value: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/04/21-21:06:07.910] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for State Valuation: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2020/04/21-21:06:07.913] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Contractor: None (schema_type=string feature_type=TEXT feature_role=REJECT)
+[2020/04/21-21:06:07.915] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Corporation: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:07.917] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Work Desc: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:07.918] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Computed dtype for Work Group: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/04/21-21:06:07.919] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:07,896 INFO Reading with FIXED dtypes: {u'Est Value': <type 'numpy.float64'>, u'Permit SubType': 'str', u'Corporation': 'str', u'Work Desc': 'str', u'Permit Number': 'str', u'Permit Status': 'str', u'State Valuation': <type 'numpy.float64'>}
+[2020/04/21-21:06:08.130] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,129 INFO Loaded table
+[2020/04/21-21:06:08.134] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,134 INFO Normalizing date to numeric : 0       2016-12-30 15:53:40
+[2020/04/21-21:06:08.135] [null-err-39] [INFO] [dku.utils]  - 1       2015-12-29 16:04:57
+[2020/04/21-21:06:08.137] [null-err-39] [INFO] [dku.utils]  - 2       2017-12-26 13:04:49
+[2020/04/21-21:06:08.140] [null-err-39] [INFO] [dku.utils]  - 3       2018-12-21 09:31:06
+[2020/04/21-21:06:08.142] [null-err-39] [INFO] [dku.utils]  - 4       2015-12-21 08:57:42
+[2020/04/21-21:06:08.144] [null-err-39] [INFO] [dku.utils]  - 5       2017-12-20 10:44:05
+[2020/04/21-21:06:08.145] [null-err-39] [INFO] [dku.utils]  - 6       2016-12-20 08:58:32
+[2020/04/21-21:06:08.146] [null-err-39] [INFO] [dku.utils]  - 7       2018-12-18 09:36:28
+[2020/04/21-21:06:08.148] [null-err-39] [INFO] [dku.utils]  - 8       2015-12-18 14:11:18
+[2020/04/21-21:06:08.151] [null-err-39] [INFO] [dku.utils]  - 9       2015-12-18 11:54:41
+[2020/04/21-21:06:08.152] [null-err-39] [INFO] [dku.utils]  - 10      2016-12-16 14:32:49
+[2020/04/21-21:06:08.153] [null-err-39] [INFO] [dku.utils]  - 11      2016-12-16 13:21:53
+[2020/04/21-21:06:08.155] [null-err-39] [INFO] [dku.utils]  - 12      2016-12-14 14:02:46
+[2020/04/21-21:06:08.157] [null-err-39] [INFO] [dku.utils]  - 13      2016-12-14 14:02:45
+[2020/04/21-21:06:08.158] [null-err-39] [INFO] [dku.utils]  - 14      2017-12-13 13:59:22
+[2020/04/21-21:06:08.158] [null-err-39] [INFO] [dku.utils]  - 15      2018-12-12 00:00:00
+[2020/04/21-21:06:08.159] [null-err-39] [INFO] [dku.utils]  - 16      2015-12-10 00:00:00
+[2020/04/21-21:06:08.160] [null-err-39] [INFO] [dku.utils]  - 17      2015-12-08 00:00:00
+[2020/04/21-21:06:08.160] [null-err-39] [INFO] [dku.utils]  - 18      2015-12-07 00:00:00
+[2020/04/21-21:06:08.161] [null-err-39] [INFO] [dku.utils]  - 19      2017-12-06 00:00:00
+[2020/04/21-21:06:08.162] [null-err-39] [INFO] [dku.utils]  - 20      2016-12-06 00:00:00
+[2020/04/21-21:06:08.164] [null-err-39] [INFO] [dku.utils]  - 21      2017-12-05 00:00:00
+[2020/04/21-21:06:08.167] [null-err-39] [INFO] [dku.utils]  - 22      2016-12-05 00:00:00
+[2020/04/21-21:06:08.168] [null-err-39] [INFO] [dku.utils]  - 23      2016-12-05 00:00:00
+[2020/04/21-21:06:08.173] [null-err-39] [INFO] [dku.utils]  - 24      2016-12-05 00:00:00
+[2020/04/21-21:06:08.175] [null-err-39] [INFO] [dku.utils]  - 25      2015-12-04 00:00:00
+[2020/04/21-21:06:08.178] [null-err-39] [INFO] [dku.utils]  - 26      2018-12-03 00:00:00
+[2020/04/21-21:06:08.179] [null-err-39] [INFO] [dku.utils]  - 27      2015-12-02 00:00:00
+[2020/04/21-21:06:08.183] [null-err-39] [INFO] [dku.utils]  - 28      2016-12-01 00:00:00
+[2020/04/21-21:06:08.184] [null-err-39] [INFO] [dku.utils]  - 29      2017-11-29 10:22:29
+[2020/04/21-21:06:08.185] [null-err-39] [INFO] [dku.utils]  -                 ...        
+[2020/04/21-21:06:08.187] [null-err-39] [INFO] [dku.utils]  - 29389   2019-01-04 00:00:00
+[2020/04/21-21:06:08.189] [null-err-39] [INFO] [dku.utils]  - 29390   2019-01-04 00:00:00
+[2020/04/21-21:06:08.191] [null-err-39] [INFO] [dku.utils]  - 29391   2019-01-04 00:00:00
+[2020/04/21-21:06:08.198] [null-err-39] [INFO] [dku.utils]  - 29392   2018-01-04 00:00:00
+[2020/04/21-21:06:08.200] [null-err-39] [INFO] [dku.utils]  - 29393   2018-01-04 00:00:00
+[2020/04/21-21:06:08.201] [null-err-39] [INFO] [dku.utils]  - 29394   2018-01-04 00:00:00
+[2020/04/21-21:06:08.205] [null-err-39] [INFO] [dku.utils]  - 29395   2018-01-04 00:00:00
+[2020/04/21-21:06:08.208] [null-err-39] [INFO] [dku.utils]  - 29396   2018-01-04 00:00:00
+[2020/04/21-21:06:08.212] [null-err-39] [INFO] [dku.utils]  - 29397   2018-01-04 00:00:00
+[2020/04/21-21:06:08.213] [null-err-39] [INFO] [dku.utils]  - 29398   2017-01-04 00:00:00
+[2020/04/21-21:06:08.214] [null-err-39] [INFO] [dku.utils]  - 29399   2017-01-04 00:00:00
+[2020/04/21-21:06:08.215] [null-err-39] [INFO] [dku.utils]  - 29400   2016-01-04 00:00:00
+[2020/04/21-21:06:08.219] [null-err-39] [INFO] [dku.utils]  - 29401   2019-01-03 00:00:00
+[2020/04/21-21:06:08.222] [null-err-39] [INFO] [dku.utils]  - 29402   2019-01-03 00:00:00
+[2020/04/21-21:06:08.223] [null-err-39] [INFO] [dku.utils]  - 29403   2018-01-03 00:00:00
+[2020/04/21-21:06:08.224] [null-err-39] [INFO] [dku.utils]  - 29404   2018-01-03 00:00:00
+[2020/04/21-21:06:08.225] [null-err-39] [INFO] [dku.utils]  - 29405   2018-01-03 00:00:00
+[2020/04/21-21:06:08.232] [null-err-39] [INFO] [dku.utils]  - 29406   2018-01-03 00:00:00
+[2020/04/21-21:06:08.234] [null-err-39] [INFO] [dku.utils]  - 29407   2018-01-03 00:00:00
+[2020/04/21-21:06:08.237] [null-err-39] [INFO] [dku.utils]  - 29408   2018-01-03 00:00:00
+[2020/04/21-21:06:08.238] [null-err-39] [INFO] [dku.utils]  - 29409   2018-01-03 00:00:00
+[2020/04/21-21:06:08.241] [null-err-39] [INFO] [dku.utils]  - 29410   2017-01-03 00:00:00
+[2020/04/21-21:06:08.244] [null-err-39] [INFO] [dku.utils]  - 29411   2017-01-03 00:00:00
+[2020/04/21-21:06:08.245] [null-err-39] [INFO] [dku.utils]  - 29412   2019-01-02 00:00:00
+[2020/04/21-21:06:08.248] [null-err-39] [INFO] [dku.utils]  - 29413   2019-01-02 00:00:00
+[2020/04/21-21:06:08.249] [null-err-39] [INFO] [dku.utils]  - 29414   2019-01-02 00:00:00
+[2020/04/21-21:06:08.250] [null-err-39] [INFO] [dku.utils]  - 29415   2018-01-02 00:00:00
+[2020/04/21-21:06:08.252] [null-err-39] [INFO] [dku.utils]  - 29416   2018-01-02 00:00:00
+[2020/04/21-21:06:08.255] [null-err-39] [INFO] [dku.utils]  - 29417   2018-01-02 00:00:00
+[2020/04/21-21:06:08.255] [null-err-39] [INFO] [dku.utils]  - 29418   2015-01-02 00:00:00
+[2020/04/21-21:06:08.256] [null-err-39] [INFO] [dku.utils]  - Name: Permit Issue Date, Length: 29419, dtype: datetime64[ns]
+[2020/04/21-21:06:08.257] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,143 INFO Normalized date : 0        3.692102e+09
+[2020/04/21-21:06:08.258] [null-err-39] [INFO] [dku.utils]  - 1        3.660394e+09
+[2020/04/21-21:06:08.259] [null-err-39] [INFO] [dku.utils]  - 2        3.723282e+09
+[2020/04/21-21:06:08.262] [null-err-39] [INFO] [dku.utils]  - 3        3.754373e+09
+[2020/04/21-21:06:08.263] [null-err-39] [INFO] [dku.utils]  - 4        3.659677e+09
+[2020/04/21-21:06:08.263] [null-err-39] [INFO] [dku.utils]  - 5        3.722755e+09
+[2020/04/21-21:06:08.264] [null-err-39] [INFO] [dku.utils]  - 6        3.691213e+09
+[2020/04/21-21:06:08.265] [null-err-39] [INFO] [dku.utils]  - 7        3.754115e+09
+[2020/04/21-21:06:08.266] [null-err-39] [INFO] [dku.utils]  - 8        3.659437e+09
+[2020/04/21-21:06:08.267] [null-err-39] [INFO] [dku.utils]  - 9        3.659428e+09
+[2020/04/21-21:06:08.268] [null-err-39] [INFO] [dku.utils]  - 10       3.690888e+09
+[2020/04/21-21:06:08.269] [null-err-39] [INFO] [dku.utils]  - 11       3.690883e+09
+[2020/04/21-21:06:08.270] [null-err-39] [INFO] [dku.utils]  - 12       3.690713e+09
+[2020/04/21-21:06:08.271] [null-err-39] [INFO] [dku.utils]  - 13       3.690713e+09
+[2020/04/21-21:06:08.272] [null-err-39] [INFO] [dku.utils]  - 14       3.722162e+09
+[2020/04/21-21:06:08.273] [null-err-39] [INFO] [dku.utils]  - 15       3.753562e+09
+[2020/04/21-21:06:08.273] [null-err-39] [INFO] [dku.utils]  - 16       3.658694e+09
+[2020/04/21-21:06:08.274] [null-err-39] [INFO] [dku.utils]  - 17       3.658522e+09
+[2020/04/21-21:06:08.276] [null-err-39] [INFO] [dku.utils]  - 18       3.658435e+09
+[2020/04/21-21:06:08.277] [null-err-39] [INFO] [dku.utils]  - 19       3.721507e+09
+[2020/04/21-21:06:08.278] [null-err-39] [INFO] [dku.utils]  - 20       3.689971e+09
+[2020/04/21-21:06:08.278] [null-err-39] [INFO] [dku.utils]  - 21       3.721421e+09
+[2020/04/21-21:06:08.279] [null-err-39] [INFO] [dku.utils]  - 22       3.689885e+09
+[2020/04/21-21:06:08.280] [null-err-39] [INFO] [dku.utils]  - 23       3.689885e+09
+[2020/04/21-21:06:08.281] [null-err-39] [INFO] [dku.utils]  - 24       3.689885e+09
+[2020/04/21-21:06:08.281] [null-err-39] [INFO] [dku.utils]  - 25       3.658176e+09
+[2020/04/21-21:06:08.282] [null-err-39] [INFO] [dku.utils]  - 26       3.752784e+09
+[2020/04/21-21:06:08.283] [null-err-39] [INFO] [dku.utils]  - 27       3.658003e+09
+[2020/04/21-21:06:08.287] [null-err-39] [INFO] [dku.utils]  - 28       3.689539e+09
+[2020/04/21-21:06:08.288] [null-err-39] [INFO] [dku.utils]  - 29       3.720940e+09
+[2020/04/21-21:06:08.289] [null-err-39] [INFO] [dku.utils]  -              ...     
+[2020/04/21-21:06:08.289] [null-err-39] [INFO] [dku.utils]  - 29389    3.755549e+09
+[2020/04/21-21:06:08.290] [null-err-39] [INFO] [dku.utils]  - 29390    3.755549e+09
+[2020/04/21-21:06:08.292] [null-err-39] [INFO] [dku.utils]  - 29391    3.755549e+09
+[2020/04/21-21:06:08.295] [null-err-39] [INFO] [dku.utils]  - 29392    3.724013e+09
+[2020/04/21-21:06:08.298] [null-err-39] [INFO] [dku.utils]  - 29393    3.724013e+09
+[2020/04/21-21:06:08.299] [null-err-39] [INFO] [dku.utils]  - 29394    3.724013e+09
+[2020/04/21-21:06:08.300] [null-err-39] [INFO] [dku.utils]  - 29395    3.724013e+09
+[2020/04/21-21:06:08.301] [null-err-39] [INFO] [dku.utils]  - 29396    3.724013e+09
+[2020/04/21-21:06:08.302] [null-err-39] [INFO] [dku.utils]  - 29397    3.724013e+09
+[2020/04/21-21:06:08.303] [null-err-39] [INFO] [dku.utils]  - 29398    3.692477e+09
+[2020/04/21-21:06:08.305] [null-err-39] [INFO] [dku.utils]  - 29399    3.692477e+09
+[2020/04/21-21:06:08.306] [null-err-39] [INFO] [dku.utils]  - 29400    3.660854e+09
+[2020/04/21-21:06:08.306] [null-err-39] [INFO] [dku.utils]  - 29401    3.755462e+09
+[2020/04/21-21:06:08.307] [null-err-39] [INFO] [dku.utils]  - 29402    3.755462e+09
+[2020/04/21-21:06:08.308] [null-err-39] [INFO] [dku.utils]  - 29403    3.723926e+09
+[2020/04/21-21:06:08.309] [null-err-39] [INFO] [dku.utils]  - 29404    3.723926e+09
+[2020/04/21-21:06:08.310] [null-err-39] [INFO] [dku.utils]  - 29405    3.723926e+09
+[2020/04/21-21:06:08.310] [null-err-39] [INFO] [dku.utils]  - 29406    3.723926e+09
+[2020/04/21-21:06:08.311] [null-err-39] [INFO] [dku.utils]  - 29407    3.723926e+09
+[2020/04/21-21:06:08.312] [null-err-39] [INFO] [dku.utils]  - 29408    3.723926e+09
+[2020/04/21-21:06:08.313] [null-err-39] [INFO] [dku.utils]  - 29409    3.723926e+09
+[2020/04/21-21:06:08.314] [null-err-39] [INFO] [dku.utils]  - 29410    3.692390e+09
+[2020/04/21-21:06:08.315] [null-err-39] [INFO] [dku.utils]  - 29411    3.692390e+09
+[2020/04/21-21:06:08.315] [null-err-39] [INFO] [dku.utils]  - 29412    3.755376e+09
+[2020/04/21-21:06:08.316] [null-err-39] [INFO] [dku.utils]  - 29413    3.755376e+09
+[2020/04/21-21:06:08.317] [null-err-39] [INFO] [dku.utils]  - 29414    3.755376e+09
+[2020/04/21-21:06:08.321] [null-err-39] [INFO] [dku.utils]  - 29415    3.723840e+09
+[2020/04/21-21:06:08.324] [null-err-39] [INFO] [dku.utils]  - 29416    3.723840e+09
+[2020/04/21-21:06:08.325] [null-err-39] [INFO] [dku.utils]  - 29417    3.723840e+09
+[2020/04/21-21:06:08.328] [null-err-39] [INFO] [dku.utils]  - 29418    3.629146e+09
+[2020/04/21-21:06:08.329] [null-err-39] [INFO] [dku.utils]  - Name: Permit Issue Date, Length: 29419, dtype: float64
+[2020/04/21-21:06:08.330] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,144 INFO  Coercion done
+[2020/04/21-21:06:08.331] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,145 INFO Loaded train df: shape=(29419,11)
+[2020/04/21-21:06:08.334] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,145 INFO END -  Loading train set
+[2020/04/21-21:06:08.337] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,145 INFO START -  Loading test set
+[2020/04/21-21:06:08.339] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,146 INFO Reading with dtypes: None
+[2020/04/21-21:06:08.342] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,146 INFO Computed dtype for Permit Number: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:08.343] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,146 INFO Computed dtype for Permit Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/04/21-21:06:08.343] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,146 INFO Computed dtype for Permit SubType: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:08.347] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,146 INFO Computed dtype for Permit Status: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:08.350] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,146 INFO Computed dtype for Permit Issue Date: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020/04/21-21:06:08.351] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,147 INFO Computed dtype for Est Value: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/04/21-21:06:08.354] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,147 INFO Computed dtype for State Valuation: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2020/04/21-21:06:08.355] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,147 INFO Computed dtype for Contractor: None (schema_type=string feature_type=TEXT feature_role=REJECT)
+[2020/04/21-21:06:08.356] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,147 INFO Computed dtype for Corporation: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:08.357] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,147 INFO Computed dtype for Work Desc: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/04/21-21:06:08.358] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,147 INFO Computed dtype for Work Group: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/04/21-21:06:08.359] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,148 INFO Reading with FIXED dtypes: {u'Est Value': <type 'numpy.float64'>, u'Permit SubType': 'str', u'Corporation': 'str', u'Work Desc': 'str', u'Permit Number': 'str', u'Permit Status': 'str', u'State Valuation': <type 'numpy.float64'>}
+[2020/04/21-21:06:08.361] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,243 INFO Loaded table
+[2020/04/21-21:06:08.363] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,247 INFO Normalizing date to numeric : 0      2017-12-28 12:41:29
+[2020/04/21-21:06:08.365] [null-err-39] [INFO] [dku.utils]  - 1      2016-12-28 10:34:50
+[2020/04/21-21:06:08.366] [null-err-39] [INFO] [dku.utils]  - 2      2016-12-22 09:46:25
+[2020/04/21-21:06:08.367] [null-err-39] [INFO] [dku.utils]  - 3      2018-12-20 13:54:46
+[2020/04/21-21:06:08.368] [null-err-39] [INFO] [dku.utils]  - 4      2015-12-17 10:33:14
+[2020/04/21-21:06:08.369] [null-err-39] [INFO] [dku.utils]  - 5      2018-12-13 16:28:36
+[2020/04/21-21:06:08.370] [null-err-39] [INFO] [dku.utils]  - 6      2018-12-11 00:00:00
+[2020/04/21-21:06:08.371] [null-err-39] [INFO] [dku.utils]  - 7      2018-12-06 00:00:00
+[2020/04/21-21:06:08.375] [null-err-39] [INFO] [dku.utils]  - 8      2015-12-02 00:00:00
+[2020/04/21-21:06:08.375] [null-err-39] [INFO] [dku.utils]  - 9      2016-11-29 16:17:36
+[2020/04/21-21:06:08.379] [null-err-39] [INFO] [dku.utils]  - 10     2017-11-21 11:18:29
+[2020/04/21-21:06:08.380] [null-err-39] [INFO] [dku.utils]  - 11     2015-11-20 08:59:59
+[2020/04/21-21:06:08.381] [null-err-39] [INFO] [dku.utils]  - 12     2015-11-19 12:36:37
+[2020/04/21-21:06:08.382] [null-err-39] [INFO] [dku.utils]  - 13     2016-11-15 12:11:02
+[2020/04/21-21:06:08.383] [null-err-39] [INFO] [dku.utils]  - 14     2016-11-15 10:44:41
+[2020/04/21-21:06:08.383] [null-err-39] [INFO] [dku.utils]  - 15     2015-11-13 15:04:30
+[2020/04/21-21:06:08.384] [null-err-39] [INFO] [dku.utils]  - 16     2015-11-13 10:49:06
+[2020/04/21-21:06:08.385] [null-err-39] [INFO] [dku.utils]  - 17     2016-11-09 00:00:00
+[2020/04/21-21:06:08.386] [null-err-39] [INFO] [dku.utils]  - 18     2015-11-09 00:00:00
+[2020/04/21-21:06:08.387] [null-err-39] [INFO] [dku.utils]  - 19     2015-11-05 00:00:00
+[2020/04/21-21:06:08.390] [null-err-39] [INFO] [dku.utils]  - 20     2018-11-02 00:00:00
+[2020/04/21-21:06:08.392] [null-err-39] [INFO] [dku.utils]  - 21     2015-11-02 00:00:00
+[2020/04/21-21:06:08.393] [null-err-39] [INFO] [dku.utils]  - 22     2017-10-24 16:04:22
+[2020/04/21-21:06:08.394] [null-err-39] [INFO] [dku.utils]  - 23     2018-10-23 14:48:32
+[2020/04/21-21:06:08.395] [null-err-39] [INFO] [dku.utils]  - 24     2015-10-22 09:35:50
+[2020/04/21-21:06:08.398] [null-err-39] [INFO] [dku.utils]  - 25     2018-10-19 13:40:57
+[2020/04/21-21:06:08.399] [null-err-39] [INFO] [dku.utils]  - 26     2016-10-18 13:01:27
+[2020/04/21-21:06:08.401] [null-err-39] [INFO] [dku.utils]  - 27     2018-10-16 13:31:40
+[2020/04/21-21:06:08.402] [null-err-39] [INFO] [dku.utils]  - 28     2018-10-15 08:32:57
+[2020/04/21-21:06:08.405] [null-err-39] [INFO] [dku.utils]  - 29     2015-10-15 13:56:08
+[2020/04/21-21:06:08.408] [null-err-39] [INFO] [dku.utils]  -                ...        
+[2020/04/21-21:06:08.409] [null-err-39] [INFO] [dku.utils]  - 7237   2015-01-15 14:51:59
+[2020/04/21-21:06:08.410] [null-err-39] [INFO] [dku.utils]  - 7238   2019-01-14 10:41:41
+[2020/04/21-21:06:08.411] [null-err-39] [INFO] [dku.utils]  - 7239   2015-01-14 09:58:06
+[2020/04/21-21:06:08.413] [null-err-39] [INFO] [dku.utils]  - 7240   2015-01-13 09:10:33
+[2020/04/21-21:06:08.413] [null-err-39] [INFO] [dku.utils]  - 7241   2018-01-12 00:00:00
+[2020/04/21-21:06:08.414] [null-err-39] [INFO] [dku.utils]  - 7242   2019-01-11 00:00:00
+[2020/04/21-21:06:08.415] [null-err-39] [INFO] [dku.utils]  - 7243   2018-01-11 00:00:00
+[2020/04/21-21:06:08.416] [null-err-39] [INFO] [dku.utils]  - 7244   2019-01-10 00:00:00
+[2020/04/21-21:06:08.417] [null-err-39] [INFO] [dku.utils]  - 7245   2019-01-10 00:00:00
+[2020/04/21-21:06:08.418] [null-err-39] [INFO] [dku.utils]  - 7246   2019-01-10 00:00:00
+[2020/04/21-21:06:08.419] [null-err-39] [INFO] [dku.utils]  - 7247   2019-01-10 00:00:00
+[2020/04/21-21:06:08.420] [null-err-39] [INFO] [dku.utils]  - 7248   2018-01-10 00:00:00
+[2020/04/21-21:06:08.423] [null-err-39] [INFO] [dku.utils]  - 7249   2019-01-09 00:00:00
+[2020/04/21-21:06:08.426] [null-err-39] [INFO] [dku.utils]  - 7250   2018-01-09 00:00:00
+[2020/04/21-21:06:08.428] [null-err-39] [INFO] [dku.utils]  - 7251   2019-01-08 00:00:00
+[2020/04/21-21:06:08.430] [null-err-39] [INFO] [dku.utils]  - 7252   2019-01-08 00:00:00
+[2020/04/21-21:06:08.431] [null-err-39] [INFO] [dku.utils]  - 7253   2016-01-08 00:00:00
+[2020/04/21-21:06:08.432] [null-err-39] [INFO] [dku.utils]  - 7254   2016-01-07 00:00:00
+[2020/04/21-21:06:08.433] [null-err-39] [INFO] [dku.utils]  - 7255   2015-01-07 00:00:00
+[2020/04/21-21:06:08.434] [null-err-39] [INFO] [dku.utils]  - 7256   2017-01-06 00:00:00
+[2020/04/21-21:06:08.435] [null-err-39] [INFO] [dku.utils]  - 7257   2016-01-06 00:00:00
+[2020/04/21-21:06:08.439] [null-err-39] [INFO] [dku.utils]  - 7258   2017-01-05 00:00:00
+[2020/04/21-21:06:08.440] [null-err-39] [INFO] [dku.utils]  - 7259   2017-01-05 00:00:00
+[2020/04/21-21:06:08.440] [null-err-39] [INFO] [dku.utils]  - 7260   2016-01-05 00:00:00
+[2020/04/21-21:06:08.441] [null-err-39] [INFO] [dku.utils]  - 7261   2015-01-05 00:00:00
+[2020/04/21-21:06:08.442] [null-err-39] [INFO] [dku.utils]  - 7262   2015-01-05 00:00:00
+[2020/04/21-21:06:08.443] [null-err-39] [INFO] [dku.utils]  - 7263   2019-01-04 00:00:00
+[2020/04/21-21:06:08.444] [null-err-39] [INFO] [dku.utils]  - 7264   2018-01-04 00:00:00
+[2020/04/21-21:06:08.447] [null-err-39] [INFO] [dku.utils]  - 7265   2019-01-03 00:00:00
+[2020/04/21-21:06:08.448] [null-err-39] [INFO] [dku.utils]  - 7266   2018-01-03 00:00:00
+[2020/04/21-21:06:08.449] [null-err-39] [INFO] [dku.utils]  - Name: Permit Issue Date, Length: 7267, dtype: datetime64[ns]
+[2020/04/21-21:06:08.450] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,255 INFO Normalized date : 0       3.723454e+09
+[2020/04/21-21:06:08.452] [null-err-39] [INFO] [dku.utils]  - 1       3.691910e+09
+[2020/04/21-21:06:08.452] [null-err-39] [INFO] [dku.utils]  - 2       3.691389e+09
+[2020/04/21-21:06:08.453] [null-err-39] [INFO] [dku.utils]  - 3       3.754303e+09
+[2020/04/21-21:06:08.454] [null-err-39] [INFO] [dku.utils]  - 4       3.659337e+09
+[2020/04/21-21:06:08.455] [null-err-39] [INFO] [dku.utils]  - 5       3.753707e+09
+[2020/04/21-21:06:08.456] [null-err-39] [INFO] [dku.utils]  - 6       3.753475e+09
+[2020/04/21-21:06:08.456] [null-err-39] [INFO] [dku.utils]  - 7       3.753043e+09
+[2020/04/21-21:06:08.457] [null-err-39] [INFO] [dku.utils]  - 8       3.658003e+09
+[2020/04/21-21:06:08.459] [null-err-39] [INFO] [dku.utils]  - 9       3.689425e+09
+[2020/04/21-21:06:08.477] [null-err-39] [INFO] [dku.utils]  - 10      3.720252e+09
+[2020/04/21-21:06:08.481] [null-err-39] [INFO] [dku.utils]  - 11      3.656999e+09
+[2020/04/21-21:06:08.484] [null-err-39] [INFO] [dku.utils]  - 12      3.656925e+09
+[2020/04/21-21:06:08.485] [null-err-39] [INFO] [dku.utils]  - 13      3.688201e+09
+[2020/04/21-21:06:08.491] [null-err-39] [INFO] [dku.utils]  - 14      3.688195e+09
+[2020/04/21-21:06:08.493] [null-err-39] [INFO] [dku.utils]  - 15      3.656416e+09
+[2020/04/21-21:06:08.496] [null-err-39] [INFO] [dku.utils]  - 16      3.656401e+09
+[2020/04/21-21:06:08.497] [null-err-39] [INFO] [dku.utils]  - 17      3.687638e+09
+[2020/04/21-21:06:08.498] [null-err-39] [INFO] [dku.utils]  - 18      3.656016e+09
+[2020/04/21-21:06:08.499] [null-err-39] [INFO] [dku.utils]  - 19      3.655670e+09
+[2020/04/21-21:06:08.500] [null-err-39] [INFO] [dku.utils]  - 20      3.750106e+09
+[2020/04/21-21:06:08.505] [null-err-39] [INFO] [dku.utils]  - 21      3.655411e+09
+[2020/04/21-21:06:08.508] [null-err-39] [INFO] [dku.utils]  - 22      3.717850e+09
+[2020/04/21-21:06:08.510] [null-err-39] [INFO] [dku.utils]  - 23      3.749295e+09
+[2020/04/21-21:06:08.511] [null-err-39] [INFO] [dku.utils]  - 24      3.654495e+09
+[2020/04/21-21:06:08.512] [null-err-39] [INFO] [dku.utils]  - 25      3.748945e+09
+[2020/04/21-21:06:08.513] [null-err-39] [INFO] [dku.utils]  - 26      3.685784e+09
+[2020/04/21-21:06:08.514] [null-err-39] [INFO] [dku.utils]  - 27      3.748686e+09
+[2020/04/21-21:06:08.516] [null-err-39] [INFO] [dku.utils]  - 28      3.748581e+09
+[2020/04/21-21:06:08.519] [null-err-39] [INFO] [dku.utils]  - 29      3.653906e+09
+[2020/04/21-21:06:08.525] [null-err-39] [INFO] [dku.utils]  -             ...     
+[2020/04/21-21:06:08.527] [null-err-39] [INFO] [dku.utils]  - 7237    3.630322e+09
+[2020/04/21-21:06:08.528] [null-err-39] [INFO] [dku.utils]  - 7238    3.756451e+09
+[2020/04/21-21:06:08.532] [null-err-39] [INFO] [dku.utils]  - 7239    3.630218e+09
+[2020/04/21-21:06:08.540] [null-err-39] [INFO] [dku.utils]  - 7240    3.630129e+09
+[2020/04/21-21:06:08.541] [null-err-39] [INFO] [dku.utils]  - 7241    3.724704e+09
+[2020/04/21-21:06:08.563] [null-err-39] [INFO] [dku.utils]  - 7242    3.756154e+09
+[2020/04/21-21:06:08.564] [null-err-39] [INFO] [dku.utils]  - 7243    3.724618e+09
+[2020/04/21-21:06:08.567] [null-err-39] [INFO] [dku.utils]  - 7244    3.756067e+09
+[2020/04/21-21:06:08.570] [null-err-39] [INFO] [dku.utils]  - 7245    3.756067e+09
+[2020/04/21-21:06:08.573] [null-err-39] [INFO] [dku.utils]  - 7246    3.756067e+09
+[2020/04/21-21:06:08.575] [null-err-39] [INFO] [dku.utils]  - 7247    3.756067e+09
+[2020/04/21-21:06:08.578] [null-err-39] [INFO] [dku.utils]  - 7248    3.724531e+09
+[2020/04/21-21:06:08.579] [null-err-39] [INFO] [dku.utils]  - 7249    3.755981e+09
+[2020/04/21-21:06:08.582] [null-err-39] [INFO] [dku.utils]  - 7250    3.724445e+09
+[2020/04/21-21:06:08.583] [null-err-39] [INFO] [dku.utils]  - 7251    3.755894e+09
+[2020/04/21-21:06:08.584] [null-err-39] [INFO] [dku.utils]  - 7252    3.755894e+09
+[2020/04/21-21:06:08.585] [null-err-39] [INFO] [dku.utils]  - 7253    3.661200e+09
+[2020/04/21-21:06:08.586] [null-err-39] [INFO] [dku.utils]  - 7254    3.661114e+09
+[2020/04/21-21:06:08.589] [null-err-39] [INFO] [dku.utils]  - 7255    3.629578e+09
+[2020/04/21-21:06:08.590] [null-err-39] [INFO] [dku.utils]  - 7256    3.692650e+09
+[2020/04/21-21:06:08.591] [null-err-39] [INFO] [dku.utils]  - 7257    3.661027e+09
+[2020/04/21-21:06:08.592] [null-err-39] [INFO] [dku.utils]  - 7258    3.692563e+09
+[2020/04/21-21:06:08.593] [null-err-39] [INFO] [dku.utils]  - 7259    3.692563e+09
+[2020/04/21-21:06:08.594] [null-err-39] [INFO] [dku.utils]  - 7260    3.660941e+09
+[2020/04/21-21:06:08.595] [null-err-39] [INFO] [dku.utils]  - 7261    3.629405e+09
+[2020/04/21-21:06:08.595] [null-err-39] [INFO] [dku.utils]  - 7262    3.629405e+09
+[2020/04/21-21:06:08.596] [null-err-39] [INFO] [dku.utils]  - 7263    3.755549e+09
+[2020/04/21-21:06:08.597] [null-err-39] [INFO] [dku.utils]  - 7264    3.724013e+09
+[2020/04/21-21:06:08.599] [null-err-39] [INFO] [dku.utils]  - 7265    3.755462e+09
+[2020/04/21-21:06:08.600] [null-err-39] [INFO] [dku.utils]  - 7266    3.723926e+09
+[2020/04/21-21:06:08.602] [null-err-39] [INFO] [dku.utils]  - Name: Permit Issue Date, Length: 7267, dtype: float64
+[2020/04/21-21:06:08.603] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,256 INFO  Coercion done
+[2020/04/21-21:06:08.606] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,256 INFO Loaded test df: shape=(7267,11)
+[2020/04/21-21:06:08.607] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,256 INFO END -  Loading test set
+[2020/04/21-21:06:08.608] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,256 INFO START -  Collecting preprocessing data
+[2020/04/21-21:06:08.609] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,257 INFO Looking at Work Group... (type=CATEGORY)
+[2020/04/21-21:06:08.610] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,257 INFO Looking at Permit Issue Date... (type=NUMERIC)
+[2020/04/21-21:06:08.611] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,257 INFO Checking series of type: float64 (isM8=False)
+[2020/04/21-21:06:08.612] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,261 INFO Looking at Est Value... (type=NUMERIC)
+[2020/04/21-21:06:08.613] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,262 INFO Checking series of type: float64 (isM8=False)
+[2020/04/21-21:06:08.614] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,265 INFO Looking at Permit SubType... (type=CATEGORY)
+[2020/04/21-21:06:08.615] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,284 INFO Looking at Corporation... (type=CATEGORY)
+[2020/04/21-21:06:08.616] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,300 INFO Looking at Work Desc... (type=CATEGORY)
+[2020/04/21-21:06:08.617] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,318 INFO Looking at Permit Type... (type=CATEGORY)
+[2020/04/21-21:06:08.618] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,318 INFO Looking at Permit Number... (type=CATEGORY)
+[2020/04/21-21:06:08.619] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,395 INFO Looking at Permit Status... (type=CATEGORY)
+[2020/04/21-21:06:08.620] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,414 INFO Looking at State Valuation... (type=NUMERIC)
+[2020/04/21-21:06:08.623] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,415 INFO Looking at Contractor... (type=TEXT)
+[2020/04/21-21:06:08.624] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,416 INFO generating interactions
+[2020/04/21-21:06:08.625] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,416 INFO {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Work Group': {u'missing_impute_with': u'MODE', u'autoReason': u'REJECT_ZERO_VARIANCE', u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'customProcessorWantsMatrix': False, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Issue Date': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Date', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Est Value': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Permit SubType': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'DROP'}, u'Corporation': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Boolean', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'DROP'}, u'Work Desc': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'DROP'}, u'Permit Type': {u'missing_impute_with': u'MODE', u'autoReason': u'REJECT_ZERO_VARIANCE', u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'customProcessorWantsMatrix': False, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Number': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'DROP'}, u'Permit Status': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'DROP'}, u'State Valuation': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Contractor': {u'hashSVDHashSize': 200000, u'autoReason': u'REJECT_DEFAULT_TEXT_HANDLING', u'useCustomVectorizer': False, u'customHandlingCode': u'', u'hashSVDSVDLimit': 50000, u'customProcessorWantsMatrix': False, u'hashSVDSVDComponents': 100, u'sendToInput': u'main', u'maxWords': 0, u'state': {u'userModified': False, u'recordedMeaning': u'FreeText', u'autoModifiedByDSS': False}, u'ngramMaxSize': 1, u'text_handling': u'TOKENIZE_HASHING_SVD', u'ngramMinSize': 1, u'stopWordsMode': u'NONE', u'minRowsRatio': 0.001, u'role': u'REJECT', u'type': u'TEXT', u'maxRowsRatio': 0.8, u'name': u'Contractor'}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020/04/21-21:06:08.630] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,416 INFO No feature selection to perform
+[2020/04/21-21:06:08.631] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,417 INFO END -  Collecting preprocessing data
+[2020/04/21-21:06:08.634] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,417 INFO START -  Preprocessing train set
+[2020/04/21-21:06:08.636] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,420 INFO Set MF index len 29419
+[2020/04/21-21:06:08.639] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,420 DEBUG FIT/PROCESS WITH Step:RemapValueToOutput
+[2020/04/21-21:06:08.640] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,420 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/04/21-21:06:08.643] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,421 DEBUG MIMIFI: Imputing with map {u'Permit Issue Date': 3693374857.716068, u'Est Value': 147638.24154458003}
+[2020/04/21-21:06:08.644] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,424 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Permit Issue Date)
+[2020/04/21-21:06:08.647] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,424 DEBUG   Rescale Permit Issue Date (avg=3693374857.72 std=36571154.2572 shift=3693374857.72 inv_scale=2.7343955101e-08)
+[2020/04/21-21:06:08.648] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,479 DEBUG   Rescaled Permit Issue Date (avg=1.23436693372e-15 std=1.0) nulls=0
+[2020/04/21-21:06:08.649] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,479 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Est Value)
+[2020/04/21-21:06:08.653] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,480 DEBUG   Rescale Est Value (avg=147638.241545 std=1790600.9594 shift=147638.241545 inv_scale=5.58471721325e-07)
+[2020/04/21-21:06:08.654] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,484 DEBUG   Rescaled Est Value (avg=1.42693273795e-15 std=1.0) nulls=0
+[2020/04/21-21:06:08.655] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,484 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020/04/21-21:06:08.655] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,484 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Permit SubType)
+[2020/04/21-21:06:08.656] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,569 DEBUG Dummifier: Append a sparse block shape=(29419, 7) nnz=29015
+[2020/04/21-21:06:08.657] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,574 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Corporation)
+[2020/04/21-21:06:08.658] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,592 DEBUG Dummifier: Append a sparse block shape=(29419, 2) nnz=19453
+[2020/04/21-21:06:08.661] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,593 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Work Desc)
+[2020/04/21-21:06:08.663] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,618 DEBUG Dummifier: Append a sparse block shape=(29419, 5) nnz=29417
+[2020/04/21-21:06:08.665] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,619 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Permit Number)
+[2020/04/21-21:06:08.666] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,638 DEBUG Dummifier: Append a sparse block shape=(29419, 102) nnz=202
+[2020/04/21-21:06:08.667] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,639 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Permit Status)
+[2020/04/21-21:06:08.668] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG Dummifier: Append a sparse block shape=(29419, 3) nnz=24329
+[2020/04/21-21:06:08.669] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/04/21-21:06:08.670] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG MIMIFI: Imputing with map {}
+[2020/04/21-21:06:08.670] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020/04/21-21:06:08.671] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/04/21-21:06:08.672] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG MIMIFI: Imputing with map {}
+[2020/04/21-21:06:08.673] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020/04/21-21:06:08.674] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,656 DEBUG FIT/PROCESS WITH Step:RealignTarget
+[2020/04/21-21:06:08.676] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,657 DEBUG Realign target series = (29419,)
+[2020/04/21-21:06:08.677] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,663 DEBUG After realign target: (29419,)
+[2020/04/21-21:06:08.677] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,663 DEBUG FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020/04/21-21:06:08.678] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,665 DEBUG Deleting 0 rows because no target
+[2020/04/21-21:06:08.679] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,665 DEBUG MF before = (29419, 121) target before = (29419,)
+[2020/04/21-21:06:08.683] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,681 INFO MultiFrame, dropping rows: []
+[2020/04/21-21:06:08.716] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,716 DEBUG After DRWNT input_df=(29419, 11)
+[2020/04/21-21:06:08.717] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,716 DEBUG MF after = (29419, 121) target after = (29419,)
+[2020/04/21-21:06:08.719] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,716 DEBUG FIT/PROCESS WITH Step:DumpPipelineState
+[2020/04/21-21:06:08.721] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG ********* Pipeline state (Before feature selection)
+[2020/04/21-21:06:08.722] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG    input_df= (29419, 11) 
+[2020/04/21-21:06:08.723] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG    current_mf=(29419, 121) 
+[2020/04/21-21:06:08.724] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG    PPR: 
+[2020/04/21-21:06:08.727] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG       target = <class 'pandas.core.series.Series'> ((29419,))
+[2020/04/21-21:06:08.728] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020/04/21-21:06:08.729] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 INFO Set MF index len 29419
+[2020/04/21-21:06:08.730] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG FIT/PROCESS WITH Step:DumpPipelineState
+[2020/04/21-21:06:08.731] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG ********* Pipeline state (At end)
+[2020/04/21-21:06:08.732] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,717 DEBUG    input_df= (29419, 11) 
+[2020/04/21-21:06:08.735] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,718 DEBUG    current_mf=(0, 0) 
+[2020/04/21-21:06:08.737] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,718 DEBUG    PPR: 
+[2020/04/21-21:06:08.744] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,719 DEBUG       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((29419, 11))
+[2020/04/21-21:06:08.746] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,720 DEBUG       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((29419, 121))
+[2020/04/21-21:06:08.746] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,720 DEBUG       target = <class 'pandas.core.series.Series'> ((29419,))
+[2020/04/21-21:06:08.749] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,728 INFO END -  Preprocessing train set
+[2020/04/21-21:06:08.751] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,728 INFO START -  Preprocessing test set
+[2020/04/21-21:06:08.752] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,729 INFO Set MF index len 7267
+[2020/04/21-21:06:08.753] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,729 DEBUG PROCESS WITH Step:RemapValueToOutput
+[2020/04/21-21:06:08.760] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,729 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/04/21-21:06:08.761] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,729 DEBUG MIMIFI: Imputing with map {u'Permit Issue Date': 3693374857.716068, u'Est Value': 147638.24154458003}
+[2020/04/21-21:06:08.763] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,736 DEBUG PROCESS WITH Step:RescalingProcessor2 (Permit Issue Date)
+[2020/04/21-21:06:08.765] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,746 DEBUG   Rescale Permit Issue Date (avg=3692891056.67 std=36515958.1119 shift=3693374857.72 inv_scale=2.7343955101e-08)
+[2020/04/21-21:06:08.766] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,752 DEBUG   Rescaled Permit Issue Date (avg=-0.0132290340736 std=0.998490719081) nulls=0
+[2020/04/21-21:06:08.768] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,752 DEBUG PROCESS WITH Step:RescalingProcessor2 (Est Value)
+[2020/04/21-21:06:08.773] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,753 DEBUG   Rescale Est Value (avg=146804.888675 std=2077909.16897 shift=147638.241545 inv_scale=5.58471721325e-07)
+[2020/04/21-21:06:08.775] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,766 DEBUG   Rescaled Est Value (avg=-0.00046540401164 std=1.16045351035) nulls=0
+[2020/04/21-21:06:08.778] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,767 DEBUG PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020/04/21-21:06:08.780] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,767 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Permit SubType)
+[2020/04/21-21:06:08.800] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,799 DEBUG Dummifier: Append a sparse block shape=(7267, 7) nnz=7159
+[2020/04/21-21:06:08.802] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,801 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Corporation)
+[2020/04/21-21:06:08.848] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,848 DEBUG Dummifier: Append a sparse block shape=(7267, 2) nnz=4791
+[2020/04/21-21:06:08.849] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,848 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Work Desc)
+[2020/04/21-21:06:08.864] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,863 DEBUG Dummifier: Append a sparse block shape=(7267, 5) nnz=7267
+[2020/04/21-21:06:08.865] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,863 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Permit Number)
+[2020/04/21-21:06:08.883] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,881 DEBUG Dummifier: Append a sparse block shape=(7267, 102) nnz=0
+[2020/04/21-21:06:08.884] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,882 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Permit Status)
+[2020/04/21-21:06:08.895] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,895 DEBUG Dummifier: Append a sparse block shape=(7267, 3) nnz=6021
+[2020/04/21-21:06:08.896] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/04/21-21:06:08.898] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG MIMIFI: Imputing with map {}
+[2020/04/21-21:06:08.900] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020/04/21-21:06:08.902] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/04/21-21:06:08.904] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG MIMIFI: Imputing with map {}
+[2020/04/21-21:06:08.906] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020/04/21-21:06:08.908] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG PROCESS WITH Step:RealignTarget
+[2020/04/21-21:06:08.909] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,896 DEBUG Realign target series = (7267,)
+[2020/04/21-21:06:08.910] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,898 DEBUG After realign target: (7267,)
+[2020/04/21-21:06:08.911] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,898 DEBUG PROCESS WITH Step:DropRowsWhereNoTarget
+[2020/04/21-21:06:08.911] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,899 DEBUG Deleting 0 rows because no target
+[2020/04/21-21:06:08.912] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,899 DEBUG MF before = (7267, 121) target before = (7267,)
+[2020/04/21-21:06:08.913] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,901 INFO MultiFrame, dropping rows: []
+[2020/04/21-21:06:08.929] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,929 DEBUG After DRWNT input_df=(7267, 11)
+[2020/04/21-21:06:08.930] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,929 DEBUG MF after = (7267, 121) target after = (7267,)
+[2020/04/21-21:06:08.931] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,929 DEBUG PROCESS WITH Step:DumpPipelineState
+[2020/04/21-21:06:08.931] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,929 DEBUG ********* Pipeline state (Before feature selection)
+[2020/04/21-21:06:08.932] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,929 DEBUG    input_df= (7267, 11) 
+[2020/04/21-21:06:08.933] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,929 DEBUG    current_mf=(7267, 121) 
+[2020/04/21-21:06:08.933] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,929 DEBUG    PPR: 
+[2020/04/21-21:06:08.934] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG       target = <class 'pandas.core.series.Series'> ((7267,))
+[2020/04/21-21:06:08.935] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG PROCESS WITH Step:EmitCurrentMFAsResult
+[2020/04/21-21:06:08.936] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 INFO Set MF index len 7267
+[2020/04/21-21:06:08.937] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG PROCESS WITH Step:DumpPipelineState
+[2020/04/21-21:06:08.939] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG ********* Pipeline state (At end)
+[2020/04/21-21:06:08.941] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG    input_df= (7267, 11) 
+[2020/04/21-21:06:08.942] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG    current_mf=(0, 0) 
+[2020/04/21-21:06:08.943] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG    PPR: 
+[2020/04/21-21:06:08.944] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((7267, 11))
+[2020/04/21-21:06:08.944] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((7267, 121))
+[2020/04/21-21:06:08.948] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,930 DEBUG       target = <class 'pandas.core.series.Series'> ((7267,))
+[2020/04/21-21:06:08.949] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,931 INFO END -  Preprocessing test set
+[2020/04/21-21:06:08.950] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,931 INFO START -  Grid searching
+[2020/04/21-21:06:08.951] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,943 DEBUG Deleting 0 rows
+[2020/04/21-21:06:08.952] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,943 INFO MultiFrame, dropping rows: []
+[2020/04/21-21:06:08.965] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,965 INFO prepare multiframe shape=(29419,121) tn=3559699 nnz=161254 fill_ratio=0.05
+[2020/04/21-21:06:08.966] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:08,965 INFO too small, using array
+[2020/04/21-21:06:09.141] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,141 INFO Create CLF from params: {u'computeLearningCurves': False, u'ridge_grid': {u'alpha': {u'gridMode': u'EXPLICIT', u'values': [0.1, 1.0, 3.0], u'nValues': 0}, u'alphaMode': u'MANUAL', u'enabled': True}, u'algorithm': u'RIDGE_REGRESSION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 3, u'metrics': {u'customEvaluationMetricNeedsProba': False, u'evaluationMetric': u'R2', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'customEvaluationMetricGIB': True}, u'forcedClassifierThreshold': 0.0, u'skipExpensiveReports': False, u'max_ensemble_nodes_serialized': 0, u'pluginAlgoCustomGridSearch': False} for algorithm RIDGE_REGRESSION
+[2020/04/21-21:06:09.143] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,141 INFO Using K-Fold CV with k=3
+[2020/04/21-21:06:09.147] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,142 INFO Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.HyperparametersSpace object at 0x115e3dfd0>
+[2020/04/21-21:06:09.148] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,145 INFO Fitting 3 folds for each of 3 candidates, totalling 9 fits
+[2020/04/21-21:06:09.150] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020/04/21-21:06:09.168] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,168 INFO Fit  p=1 s=0: alpha=1.0 .......................................................
+[2020/04/21-21:06:09.175] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,175 INFO Fit  p=1 s=1: alpha=1.0 .......................................................
+[2020/04/21-21:06:09.184] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,184 INFO Fit  p=1 s=2: alpha=1.0 .......................................................
+[2020/04/21-21:06:09.294] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,291 INFO Fit  p=2 s=0: alpha=3.0 .......................................................
+[2020/04/21-21:06:09.690] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,688 INFO Done p=1 s=2: alpha=1.0 (ft=0.4s st=0.1s sc=0.751471004819)
+[2020/04/21-21:06:09.700] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,699 INFO Fit  p=2 s=1: alpha=3.0 .......................................................
+[2020/04/21-21:06:09.868] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,867 INFO Done p=1 s=0: alpha=1.0 (ft=0.3s st=0.4s sc=0.750735984413)
+[2020/04/21-21:06:09.878] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,878 INFO Fit  p=2 s=2: alpha=3.0 .......................................................
+[2020/04/21-21:06:09.879] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,878 INFO Done p=1 s=1: alpha=1.0 (ft=0.4s st=0.3s sc=0.753961932207)
+[2020/04/21-21:06:09.893] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,893 INFO Fit  p=0 s=0: alpha=0.1 .......................................................
+[2020/04/21-21:06:09.905] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,905 INFO Done p=2 s=0: alpha=3.0 (ft=0.6s st=0.0s sc=0.442645965345)
+[2020/04/21-21:06:09.907] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,906 INFO Done p=2 s=1: alpha=3.0 (ft=0.2s st=0.0s sc=0.445634959033)
+[2020/04/21-21:06:09.921] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,921 INFO Fit  p=0 s=1: alpha=0.1 .......................................................
+[2020/04/21-21:06:09.925] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:09,925 INFO Fit  p=0 s=2: alpha=0.1 .......................................................
+[2020/04/21-21:06:10.137] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:10,137 INFO Done p=2 s=2: alpha=3.0 (ft=0.2s st=0.1s sc=0.444069024605)
+[2020/04/21-21:06:10.155] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:10,155 INFO Done p=0 s=1: alpha=0.1 (ft=0.2s st=0.1s sc=0.991510123376)
+[2020/04/21-21:06:10.156] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:10,156 INFO Done p=0 s=0: alpha=0.1 (ft=0.2s st=0.1s sc=0.991326504025)
+[2020/04/21-21:06:10.173] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:10,173 INFO Done p=0 s=2: alpha=0.1 (ft=0.2s st=0.0s sc=0.991178714144)
+[2020/04/21-21:06:10.178] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=4)]: Done   9 out of   9 | elapsed:    1.0s finished
+[2020/04/21-21:06:11.188] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,187 INFO Grid search ended, got 9 scores out of 9
+[2020/04/21-21:06:11.189] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,189 INFO Grid search done, best_parameters being : {'alpha': 0.1}
+[2020/04/21-21:06:11.192] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,191 INFO END -  Grid searching
+[2020/04/21-21:06:11.193] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,191 INFO START -  Fitting model
+[2020/04/21-21:06:11.196] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,192 INFO Fitting model:
+[2020/04/21-21:06:11.197] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,193 INFO   Model is: Ridge(alpha=0.1, copy_X=True, fit_intercept=True, max_iter=None,
+[2020/04/21-21:06:11.198] [null-err-39] [INFO] [dku.utils]  -    normalize=True, random_state=None, solver='auto', tol=0.001)
+[2020/04/21-21:06:11.199] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,193 INFO   train_X class: <type 'numpy.ndarray'>
+[2020/04/21-21:06:11.200] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,193 INFO   train_X shape: (29419, 121)
+[2020/04/21-21:06:11.201] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,194 INFO   train_y shape: (29419,)
+[2020/04/21-21:06:11.202] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,194 INFO   calibration enabled: a sub-sample of the train data has been saved for calibration
+[2020/04/21-21:06:11.306] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,306 INFO Output params are {'resolved': {'ridge': {'alpha': 0.1}, 'skipExpensiveReports': False, 'algorithm': u'RIDGE_REGRESSION'}, 'other': {}}
+[2020/04/21-21:06:11.307] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,306 INFO END -  Fitting model
+[2020/04/21-21:06:11.310] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,306 INFO START -  Saving model
+[2020/04/21-21:06:11.313] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,309 INFO END -  Saving model
+[2020/04/21-21:06:11.314] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,309 INFO START -  Scoring model
+[2020/04/21-21:06:11.318] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,310 INFO Intrinsic scoring
+[2020/04/21-21:06:11.322] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,310 INFO Extracting rescalers
+[2020/04/21-21:06:11.325] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,311 INFO Computing regression coeffs
+[2020/04/21-21:06:11.356] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,356 INFO Coefs: [ 1.59728755e+05  1.62152936e+06  1.10203332e+03 -1.98653356e+04
+[2020/04/21-21:06:11.357] [null-err-39] [INFO] [dku.utils]  -   9.30142947e+03 -6.80680073e+04  1.56603910e+04 -1.64022459e+04
+[2020/04/21-21:06:11.359] [null-err-39] [INFO] [dku.utils]  -   8.24805253e+04  0.00000000e+00  4.78896198e+03  0.00000000e+00
+[2020/04/21-21:06:11.359] [null-err-39] [INFO] [dku.utils]  -  -1.72908388e+04 -1.49431356e+04  6.79689969e+04  3.34443055e+04
+[2020/04/21-21:06:11.360] [null-err-39] [INFO] [dku.utils]  -   0.00000000e+00  1.03988241e+04 -1.36713738e+04  5.93714347e+03
+[2020/04/21-21:06:11.361] [null-err-39] [INFO] [dku.utils]  -  -1.86725788e+03  3.09542656e+03 -2.30642155e+04  3.73783112e+03
+[2020/04/21-21:06:11.362] [null-err-39] [INFO] [dku.utils]  -   3.75275526e+03 -3.10620395e+04  4.82790880e+04  2.15347038e+03
+[2020/04/21-21:06:11.363] [null-err-39] [INFO] [dku.utils]  -  -5.81616819e+04 -6.49571068e+04 -3.56221371e+04 -3.73861050e+04
+[2020/04/21-21:06:11.364] [null-err-39] [INFO] [dku.utils]  -  -2.34049486e+03 -2.95162343e+04 -2.38432538e+04  5.40758088e+03
+[2020/04/21-21:06:11.365] [null-err-39] [INFO] [dku.utils]  -   2.91947229e+03  8.10715615e+03 -2.10554534e+04  5.04041794e+03
+[2020/04/21-21:06:11.366] [null-err-39] [INFO] [dku.utils]  -  -2.87199996e+04  4.38731989e+03 -9.63658172e+03 -9.56690921e+03
+[2020/04/21-21:06:11.367] [null-err-39] [INFO] [dku.utils]  -  -1.22098459e+04  5.20071554e+03  1.04615887e+03 -2.96622405e+04
+[2020/04/21-21:06:11.371] [null-err-39] [INFO] [dku.utils]  -   4.35227761e+04  1.08306234e+04  2.85176890e+03 -1.54221418e+05
+[2020/04/21-21:06:11.372] [null-err-39] [INFO] [dku.utils]  -  -1.81602090e+04  1.25352224e+04  5.01974759e+04 -2.59714284e+04
+[2020/04/21-21:06:11.375] [null-err-39] [INFO] [dku.utils]  -   1.00322499e+03 -2.10552196e+04 -2.32002599e+04 -7.20594059e+03
+[2020/04/21-21:06:11.378] [null-err-39] [INFO] [dku.utils]  -   4.96366081e+03  1.93048358e+03  7.09600908e+03  2.05660218e+03
+[2020/04/21-21:06:11.379] [null-err-39] [INFO] [dku.utils]  -  -1.01039902e+03 -5.08684942e+04  4.52481131e+03 -5.68791223e+03
+[2020/04/21-21:06:11.382] [null-err-39] [INFO] [dku.utils]  -   6.64897993e+03 -2.07067411e+04 -6.82284227e+03  2.72295850e+03
+[2020/04/21-21:06:11.383] [null-err-39] [INFO] [dku.utils]  -  -2.02581514e+04  7.04165412e+03 -1.96132571e+04  7.34595512e+03
+[2020/04/21-21:06:11.384] [null-err-39] [INFO] [dku.utils]  -   1.09619483e+03  7.29310581e+02 -1.45710157e+04 -8.55939170e+04
+[2020/04/21-21:06:11.385] [null-err-39] [INFO] [dku.utils]  -  -3.70629951e+04 -2.39218925e+04  3.87596725e+03 -2.37768802e+04
+[2020/04/21-21:06:11.386] [null-err-39] [INFO] [dku.utils]  -  -3.65749362e+04  8.68160500e+03  3.92086672e+03  4.09079091e+03
+[2020/04/21-21:06:11.387] [null-err-39] [INFO] [dku.utils]  -   5.41453166e+03 -8.28518697e+03 -2.72705785e+04 -4.05863978e+03
+[2020/04/21-21:06:11.388] [null-err-39] [INFO] [dku.utils]  -  -3.95830825e+04 -2.47520149e+04 -3.74595812e+04 -9.87962247e+03
+[2020/04/21-21:06:11.389] [null-err-39] [INFO] [dku.utils]  -  -1.85050314e+04  4.91714360e+03  4.70495647e+03 -2.44079125e+04
+[2020/04/21-21:06:11.390] [null-err-39] [INFO] [dku.utils]  -   5.54089463e+03  7.14196252e+03 -3.13196261e+02 -2.87134189e+04
+[2020/04/21-21:06:11.391] [null-err-39] [INFO] [dku.utils]  -   5.69324533e+03 -3.26266013e+04  6.89960354e+03 -8.58410846e+04
+[2020/04/21-21:06:11.392] [null-err-39] [INFO] [dku.utils]  -  -2.71823555e+04 -3.40732179e+04  7.18759208e+04  3.54751763e+03
+[2020/04/21-21:06:11.393] [null-err-39] [INFO] [dku.utils]  -  -3.10632050e+04 -3.80958604e+04  5.46205899e+03 -5.05317141e+03
+[2020/04/21-21:06:11.397] [null-err-39] [INFO] [dku.utils]  -   4.92937669e+02  9.95646031e+03  0.00000000e+00  3.71574296e+03
+[2020/04/21-21:06:11.400] [null-err-39] [INFO] [dku.utils]  -   1.35620913e+04  0.00000000e+00]
+[2020/04/21-21:06:11.401] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,357 INFO Sample variance: 27723960496.780178
+[2020/04/21-21:06:11.404] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,396 INFO Singular variance matrix
+[2020/04/21-21:06:11.405] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,404 INFO prepare multiframe shape=(7267,121) tn=879307 nnz=39772 fill_ratio=0.05
+[2020/04/21-21:06:11.406] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,404 INFO too small, using array
+[2020/04/21-21:06:11.423] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,423 INFO Creating predictions on test set
+[2020/04/21-21:06:11.428] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,427 INFO Computing regression performance on [185648.14670551 484297.97099043 290822.82449949 ...  21313.2100827
+[2020/04/21-21:06:11.432] [null-err-39] [INFO] [dku.utils]  -   15994.07699119  15927.4589106 ]
+[2020/04/21-21:06:11.485] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,485 INFO Negative values, not computing RMSLE
+[2020/04/21-21:06:11.579] [null-err-39] [INFO] [dku.utils]  - 2020-04-21 21:06:11,579 INFO END -  Scoring model
+[2020/04/21-21:06:11.742] [FRT-36-FlowRunnable] [INFO] [dku.ml.versioning] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/saved_models/BUILDINGPERMIT/MFb7LpbG/versions/1587477957675
+[2020/04/21-21:06:11.865] [FRT-36-FlowRunnable] [INFO] [dku.flow.activity] act.train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Run thread done for activity train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP
+[2020/04/21-21:06:11.897] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - activity is finished
+[2020/04/21-21:06:11.898] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Executing default post-activity lifecycle hook
+[2020/04/21-21:06:11.903] [ActivityExecutor-31] [INFO] [dip.cluster.selector] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Build cluster settings hadoop=__builtin__ k8s=__builtin__ authSource=USER_FROM_UI
+[2020/04/21-21:06:11.908] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Activity successful, computing metrics and running checks
+[2020/04/21-21:06:12.077] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Activity checks produced 0 values
+[2020/04/21-21:06:12.078] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Activity successful, final-committing: Thread[FRT-36-FlowRunnable,5,]
+[2020/04/21-21:06:12.080] [ActivityExecutor-31] [INFO] [dku.recipes.prediction.train] running train_Prediction__RIDGE_REGRESSION__on_StateValuation_permits_cleaned_NP - Setting new version as active scoring version

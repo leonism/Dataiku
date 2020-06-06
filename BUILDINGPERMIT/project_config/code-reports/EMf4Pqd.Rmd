@@ -1,0 +1,71 @@
+---
+title: "R Markdown report"
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) document.
+You can write a combination of **markdown** and **code**.
+
+## Writing R Markdown in DSS
+
+### R code
+
+
+You can use Dataiku R API.
+
+```{r}
+library(dataiku)
+df <- iris
+#df <- dkuReadDataset("YOUR_DATASET_NAME", samplingMethod="head", nbRows=100000)
+plot(df)
+```
+
+<!-- The R environnement is shared across blocks -->
+
+```{r, echo = FALSE}
+print(head(df), row.names = FALSE)
+```
+
+### Inline code
+
+*Unlike Jupyter, RMarkdown lets you write
+inline code: `r a <- 'ex';b <- 'ample'; paste0(a,b)`. The result is rendered
+as the surrounding text*.
+
+```{r, include = FALSE}
+count <- function(str, letter) sum(gregexpr(letter, str)[[1]] > 0)
+```
+
+| Name          | Count of a                  | Count of j                |
+| ------------- |:-------------:              | ----------:               |
+| Alivia        | `r count('alivia', 'a')`    | `r count('alivia', 'j')`  |
+| Claude        | `r count('claude', 'a')`    | `r count('claude', 'j')`  |
+| Jeremy        | `r count('jeremy', 'a')`    | `r count('jeremy', 'j')`  |
+| Jorie         | `r count('jorie', 'a')`     | `r count('jorie', 'j')`   |
+
+---
+
+## Styling
+<span>You can use <strong class="purple">HTML</strong> and <strong class="purple">CSS</strong> to style your document.</span>
+<marquee direction="right">&hellip;&nbsp;&gt;&lt;&gt;</marquee>
+
+```{css}
+
+.purple {
+    color: purple;
+    font-size: 1.2em;
+    transform: rotate(19deg);
+    display: inline-block;
+    margin: 10px;
+}
+
+h1.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+```
+
+## Publication
+
+ - It is possible to publish a document to a dashboard. Click on "Action>Publish" on the top right button.
+ - You can also download the output of this document in various formats.

@@ -1,0 +1,63 @@
+{
+  "algorithm": "NEURAL_NETWORK",
+  "neural_network_grid": {
+    "enabled": true,
+    "layer_sizes": {
+      "values": [
+        10
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "activation": "relu",
+    "solver": "adam",
+    "alpha": 0.001,
+    "batch_size": 200,
+    "auto_batch": true,
+    "max_iter": 200,
+    "seed": 1337,
+    "tol": 1.0E-4,
+    "early_stopping": false,
+    "validation_fraction": 0.1,
+    "beta_1": 0.9,
+    "beta_2": 0.999,
+    "epsilon": 1.0E-8,
+    "learning_rate": "constant",
+    "power_t": 0.5,
+    "momentum": 0.8,
+    "nesterovs_momentum": true,
+    "shuffle": true,
+    "learning_rate_init": 0.001
+  },
+  "max_ensemble_nodes_serialized": 0,
+  "metrics": {
+    "evaluationMetric": "R2",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 0,
+  "grid_search_params": {
+    "mode": "TIME_SERIES_KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "randomized": true,
+    "nIter": 0,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}

@@ -1,0 +1,155 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Est Value_min",
+            "to": "EstValueMin"
+          },
+          {
+            "from": "Est Value_max",
+            "to": "EstValueMax"
+          },
+          {
+            "from": "Est Value_avg",
+            "to": "EstValueAvg"
+          },
+          {
+            "from": "Est Value_sum",
+            "to": "EstValueSum"
+          },
+          {
+            "from": "State Valuation_min",
+            "to": "StateValuationMin"
+          },
+          {
+            "from": "State Valuation_max",
+            "to": "StateValuationMax"
+          },
+          {
+            "from": "State Valuation_avg",
+            "to": "StateValuationAvg"
+          },
+          {
+            "from": "State Valuation_sum",
+            "to": "StateValuationSum"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "format(\"%.0f\", EstValueMax)",
+        "column": "EstValueMax"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "format(\"%.0f\", EstValueSum)",
+        "column": "EstValueSum"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "format(\"%.0f\", StateValuationMax)",
+        "column": "StateValuationMax"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "format(\"%.0f\", StateValuationSum)",
+        "column": "StateValuationSum"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Est Value_sum": 162,
+    "StateValuationSum": 169,
+    "State Valuation_min": 158,
+    "State Valuation_avg": 183,
+    "EstValueMax": 127,
+    "newcolumn_expression": 165,
+    "Est Value_min": 113,
+    "Est Value_avg": 141,
+    "StateValuationMax": 169,
+    "Corporation": 127,
+    "EstValueSum": 162,
+    "State Valuation_max": 183,
+    "EstValueMin": 127,
+    "EstValueAvg": 141,
+    "StateValuationMin": 143,
+    "StateValuationAvg": 169,
+    "Est Value_max": 141,
+    "State Valuation_sum": 183
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

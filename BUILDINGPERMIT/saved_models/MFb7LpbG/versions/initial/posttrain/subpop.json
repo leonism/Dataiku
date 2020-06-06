@@ -1,0 +1,13 @@
+{
+    "onSample": false, 
+    "sampleSize": 10000, 
+    "computedOn": "test set", 
+    "features": [
+        {
+            "folderPath": "subpop-6f828d3282b92393d65a6fdb633b9fda", 
+            "feature": "Est Value", 
+            "done_at": 1587450465472
+        }
+    ], 
+    "randomState": 1337
+}

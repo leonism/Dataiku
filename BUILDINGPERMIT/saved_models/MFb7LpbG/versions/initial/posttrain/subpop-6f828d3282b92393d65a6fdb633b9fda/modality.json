@@ -1,0 +1,90 @@
+{
+    "isDate": false, 
+    "weightedNbRecords": 7267, 
+    "modalities": [
+        {
+            "count": 772, 
+            "index": 0, 
+            "gte": 1.0, 
+            "filePath": "modality_perf_0.json", 
+            "weightedCount": 772, 
+            "lte": 1200.0
+        }, 
+        {
+            "count": 695, 
+            "index": 1, 
+            "gt": 1200.0, 
+            "filePath": "modality_perf_1.json", 
+            "weightedCount": 695, 
+            "lte": 2200.0
+        }, 
+        {
+            "count": 713, 
+            "index": 2, 
+            "gt": 2200.0, 
+            "filePath": "modality_perf_2.json", 
+            "weightedCount": 713, 
+            "lte": 3822.4
+        }, 
+        {
+            "count": 727, 
+            "index": 3, 
+            "gt": 3822.4, 
+            "filePath": "modality_perf_3.json", 
+            "weightedCount": 727, 
+            "lte": 5908.6
+        }, 
+        {
+            "count": 748, 
+            "index": 4, 
+            "gt": 5908.6, 
+            "filePath": "modality_perf_4.json", 
+            "weightedCount": 748, 
+            "lte": 9000.0
+        }, 
+        {
+            "count": 729, 
+            "index": 5, 
+            "gt": 9000.0, 
+            "filePath": "modality_perf_5.json", 
+            "weightedCount": 729, 
+            "lte": 13552.0
+        }, 
+        {
+            "count": 778, 
+            "index": 6, 
+            "gt": 13552.0, 
+            "filePath": "modality_perf_6.json", 
+            "weightedCount": 778, 
+            "lte": 20000.0
+        }, 
+        {
+            "count": 670, 
+            "index": 7, 
+            "gt": 20000.0, 
+            "filePath": "modality_perf_7.json", 
+            "weightedCount": 670, 
+            "lte": 35000.0
+        }, 
+        {
+            "count": 710, 
+            "index": 8, 
+            "gt": 35000.0, 
+            "filePath": "modality_perf_8.json", 
+            "weightedCount": 710, 
+            "lte": 98000.0
+        }, 
+        {
+            "count": 725, 
+            "index": 9, 
+            "gt": 98000.0, 
+            "filePath": "modality_perf_9.json", 
+            "weightedCount": 725, 
+            "lte": 150559718.0
+        }
+    ], 
+    "feature": "Est Value", 
+    "computed_as_type": "NUMERIC", 
+    "sameNumRowsAsSplit": true, 
+    "nbRecords": 7267
+}

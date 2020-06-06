@@ -1,0 +1,61 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "firstRows": 1,
+  "keys": [
+    "PermitNumber"
+  ],
+  "computedColumns": [],
+  "retrievedColumns": [
+    "PermitNumber",
+    "EstValue"
+  ],
+  "lastRows": 1,
+  "duplicateCount": true,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "rank": false,
+  "denseRank": false,
+  "orders": [
+    {
+      "column": "EstValue",
+      "desc": true
+    }
+  ],
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
+}

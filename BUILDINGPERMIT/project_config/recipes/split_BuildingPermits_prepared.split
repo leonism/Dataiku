@@ -1,0 +1,225 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": 1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "PermitNumber",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "PermitType",
+              "col": "PermitNumber",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "PermitSubType",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "PermitStatus",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "PermitStatus2",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "PermitIssueDate",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "EstValue",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "StateValue",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Contractor",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Work Desc",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Work Group",
+              "col": "PermitType",
+              "num": 0,
+              "operator": "not empty"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "PermitNumber",
+                "type": "string"
+              },
+              {
+                "name": "PermitType",
+                "type": "string"
+              },
+              {
+                "name": "PermitSubType",
+                "type": "string"
+              },
+              {
+                "name": "PermitStatus",
+                "type": "string"
+              },
+              {
+                "name": "PermitStatus2",
+                "type": "bigint"
+              },
+              {
+                "name": "PermitIssueDate",
+                "type": "date"
+              },
+              {
+                "name": "EstValue",
+                "type": "double"
+              },
+              {
+                "name": "StateValue",
+                "type": "double"
+              },
+              {
+                "name": "Contractor",
+                "type": "string"
+              },
+              {
+                "name": "Corporation",
+                "type": "boolean"
+              },
+              {
+                "name": "Work Desc",
+                "type": "string"
+              },
+              {
+                "name": "Work Group",
+                "type": "string"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ]
+}

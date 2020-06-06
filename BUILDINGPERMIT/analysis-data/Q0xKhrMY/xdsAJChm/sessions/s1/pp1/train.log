@@ -1,0 +1,1304 @@
+[2020/04/21-13:24:49.499] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/21-13:24:49.517] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.prediction]  - ** Start train session s1
+[2020/04/21-13:24:49.518] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/04/21-13:24:49.580] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.data] T-xdsAJChm - [ct: 83] Need to compute sampleId before checking memory cache
+[2020/04/21-13:24:49.581] [FT-TrainWorkThread-xtTjhTLp-363] [DEBUG] [dip.shaker.runner] T-xdsAJChm - [ct: 84] Script settings sampleMax=104857600 processedMax=-1
+[2020/04/21-13:24:49.584] [FT-TrainWorkThread-xtTjhTLp-363] [DEBUG] [dip.shaker.runner] T-xdsAJChm - [ct: 87] Processing with sampleMax=104857600 processedMax=524288000
+[2020/04/21-13:24:49.586] [FT-TrainWorkThread-xtTjhTLp-363] [DEBUG] [dip.shaker.runner] T-xdsAJChm - [ct: 89] Computed required sample id : eb373307e8dc85732dbb3d618b165a32-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce
+[2020/04/21-13:24:49.589] [FT-TrainWorkThread-xtTjhTLp-363] [DEBUG] [dku.shaker.cache] T-xdsAJChm - Shaker MemoryCache get on BUILDINGPERMIT.permits_cleaned key=ds=cb128cf2004580c18b2210bd67aee3ed--scr=4fc404bb26f129d898c9b01d3c3fc717--samp=eb373307e8dc85732dbb3d618b165a32-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce: hit
+[2020/04/21-13:24:49.593] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 96] Column Permit Number meaning=Text fail=0
+[2020/04/21-13:24:49.594] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 97] Column Permit Type meaning=Text fail=0
+[2020/04/21-13:24:49.596] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 99] Column Permit SubType meaning=Text fail=0
+[2020/04/21-13:24:49.598] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 101] Column Permit Status meaning=Text fail=0
+[2020/04/21-13:24:49.600] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 103] Column Permit Issue Date meaning=Date fail=0
+[2020/04/21-13:24:49.602] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 105] Column Est Value meaning=DoubleMeaning fail=0
+[2020/04/21-13:24:49.604] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 107] Column State Valuation meaning=LongMeaning fail=0
+[2020/04/21-13:24:49.605] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 108] Column Contractor meaning=FreeText fail=0
+[2020/04/21-13:24:49.608] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 111] Column Corporation meaning=Boolean fail=0
+[2020/04/21-13:24:49.609] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 112] Column Work Desc meaning=Text fail=0
+[2020/04/21-13:24:49.612] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.shaker.schema] T-xdsAJChm - [ct: 115] Column Work Group meaning=Text fail=0
+[2020/04/21-13:24:49.633] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.datasets.file] T-xdsAJChm - [ct: 136] Building Filesystem handler config: {"connection":"filesystem_managed","path":"BUILDINGPERMIT/permits_cleaned","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/04/21-13:24:49.663] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.datasets.ftplike] T-xdsAJChm - Enumerating Filesystem dataset prefix=
+[2020/04/21-13:24:49.668] [FT-TrainWorkThread-xtTjhTLp-363] [DEBUG] [dku.fs.local] T-xdsAJChm - [ct: 171] Enumerating local filesystem prefix=/
+[2020/04/21-13:24:49.684] [FT-TrainWorkThread-xtTjhTLp-363] [DEBUG] [dku.fs.local] T-xdsAJChm - [ct: 187] Enumeration done nb_paths=1 size=899690
+[2020/04/21-13:24:49.686] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.input.push] T-xdsAJChm - USTP: push selection.method=HEAD_SEQUENTIAL records=100000 ratio=0.02 col=null
+[2020/04/21-13:24:49.688] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.format] T-xdsAJChm - [ct: 191] Extractor run: limit={"maxBytes":-1,"maxRecords":100000,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2020/04/21-13:24:49.690] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku] T-xdsAJChm - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-13:24:49.692] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku] T-xdsAJChm - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-13:24:49.693] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.format] T-xdsAJChm - [ct: 196] Start compressed [GZIP] stream: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/managed_datasets/BUILDINGPERMIT/permits_cleaned/out-s0.csv.gz / totalRecsBefore=0
+[2020/04/21-13:24:49.696] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku] T-xdsAJChm - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-13:24:49.697] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku] T-xdsAJChm - getCompression filename=**out-s0.csv.gz**
+[2020/04/21-13:24:52.330] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.format] T-xdsAJChm - [ct: 2833] after stream totalComp=899690 totalUncomp=5263506 totalRec=36686
+[2020/04/21-13:24:52.331] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.format] T-xdsAJChm - [ct: 2834] Extractor run done, totalCompressed=899690 totalRecords=36686
+[2020/04/21-13:24:52.341] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.splits] T-xdsAJChm - [ct: 2844] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=permits_cleaned,sel=(method=head-s,records=100000),r=0.8,s=1337, instance id: 000dd3782aa86cd1ae3658ba81da8145-0
+[2020/04/21-13:24:52.344] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.splits] T-xdsAJChm - [ct: 2847] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=permits_cleaned,sel=(method=head-s,records=100000),r=0.8,s=1337 i=000dd3782aa86cd1ae3658ba81da8145-0
+[2020/04/21-13:24:52.347] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.splits] T-xdsAJChm - [ct: 2850] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=permits_cleaned,sel=(method=head-s,records=100000),r=0.8,s=1337 i=000dd3782aa86cd1ae3658ba81da8145-0
+[2020/04/21-13:24:52.364] [MRT-364] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp1 in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/BUILDINGPERMIT/Q0xKhrMY/xdsAJChm/sessions/s1/pp1
+[2020/04/21-13:24:52.370] [MRT-364] [INFO] [dku.block.link]  - Started a socket on port 55265
+[2020/04/21-13:24:52.370] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.ml.python] T-xdsAJChm - Joining processing thread ...
+[2020/04/21-13:24:52.373] [MRT-364] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/BUILDINGPERMIT/Q0xKhrMY/xdsAJChm/sessions/s1/pp1/train.log
+[2020/04/21-13:24:52.379] [MRT-364] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2020/04/21-13:24:52.384] [MRT-364] [WARN] [dku.code.projectLibs]  - External libraries file not found: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/BUILDINGPERMIT/lib/external-libraries.json
+[2020/04/21-13:24:52.385] [MRT-364] [INFO] [dku.code.projectLibs]  - EXTERNAL LIBS FROM BUILDINGPERMIT is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/04/21-13:24:52.387] [MRT-364] [INFO] [dku.code.projectLibs]  - chunkFolder is /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/BUILDINGPERMIT/lib/R
+[2020/04/21-13:24:52.391] [MRT-364] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2020/04/21-13:24:52.395] [MRT-364] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-BUILDINGPERMIT-FGplueE on behalf of admin id=analysis-ml-BUILDINGPERMIT-FGplueE_0lG0KZK6Lnt1
+[2020/04/21-13:24:52.395] [MRT-364] [INFO] [dku.security.process]  - Starting process (regular)
+[2020/04/21-13:24:52.422] [MRT-364] [INFO] [dku.security.process]  - Process started with pid=4918
+[2020/04/21-13:24:52.425] [MRT-364] [INFO] [dku.processes.cgroups]  - Will use cgroups []
+[2020/04/21-13:24:52.430] [MRT-364] [INFO] [dku.processes.cgroups]  - Applying rules to used cgroups: []
+Installing debugging signal handler
+[2020-04-21 13:24:58,741] [4918/MainThread] [INFO] [root] Connecting to parent at port 55265
+[2020-04-21 13:24:58,743] [4918/MainThread] [INFO] [root] Connected to parent at port 55265
+[2020/04/21-13:24:58.744] [MRT-364] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2020/04/21-13:24:58.748] [MRT-364] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+[2020-04-21 13:25:02,123] [4918/MainThread] [INFO] [root] Running analysis command: train_prediction_models_nosave
+[2020-04-21 13:25:02,127] [4918/MainThread] [INFO] [dataiku.doctor.commands] PPS is {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Work Group': {u'missing_impute_with': u'MODE', u'autoReason': u'REJECT_ZERO_VARIANCE', u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'customProcessorWantsMatrix': False, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Issue Date': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Date', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Est Value': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Permit SubType': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Corporation': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Boolean', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Work Desc': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Type': {u'missing_impute_with': u'MODE', u'autoReason': u'REJECT_ZERO_VARIANCE', u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'customProcessorWantsMatrix': False, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Number': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Status': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'State Valuation': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Contractor': {u'hashSVDHashSize': 200000, u'autoReason': u'REJECT_DEFAULT_TEXT_HANDLING', u'useCustomVectorizer': False, u'customHandlingCode': u'', u'hashSVDSVDLimit': 50000, u'customProcessorWantsMatrix': False, u'hashSVDSVDComponents': 100, u'sendToInput': u'main', u'maxWords': 0, u'state': {u'userModified': False, u'recordedMeaning': u'FreeText', u'autoModifiedByDSS': False}, u'ngramMaxSize': 1, u'text_handling': u'TOKENIZE_HASHING_SVD', u'ngramMinSize': 1, u'stopWordsMode': u'NONE', u'minRowsRatio': 0.001, u'role': u'REJECT', u'type': u'TEXT', u'maxRowsRatio': 0.8, u'name': u'Contractor'}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-21 13:25:02,128] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading train set
+[2020-04-21 13:25:02,129] [4918/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-21 13:25:02,129] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Number: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,129] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-21 13:25:02,129] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit SubType: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,129] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Status: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,129] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Issue Date: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020-04-21 13:25:02,130] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Est Value: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-21 13:25:02,130] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for State Valuation: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2020-04-21 13:25:02,130] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Contractor: None (schema_type=string feature_type=TEXT feature_role=REJECT)
+[2020-04-21 13:25:02,130] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Corporation: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,130] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Work Desc: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,130] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Work Group: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-21 13:25:02,130] [4918/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Est Value': <type 'numpy.float64'>, u'Permit SubType': 'str', u'Corporation': 'str', u'Work Desc': 'str', u'Permit Number': 'str', u'Permit Status': 'str', u'State Valuation': <type 'numpy.float64'>}
+[2020-04-21 13:25:02,494] [4918/MainThread] [INFO] [root] Loaded table
+[2020-04-21 13:25:02,498] [4918/MainThread] [INFO] [dataiku.doctor.utils] Normalizing date to numeric : 0       2016-12-30 15:53:40
+1       2015-12-29 16:04:57
+2       2017-12-26 13:04:49
+3       2018-12-21 09:31:06
+4       2015-12-21 08:57:42
+5       2017-12-20 10:44:05
+6       2016-12-20 08:58:32
+7       2018-12-18 09:36:28
+8       2015-12-18 14:11:18
+9       2015-12-18 11:54:41
+10      2016-12-16 14:32:49
+11      2016-12-16 13:21:53
+12      2016-12-14 14:02:46
+13      2016-12-14 14:02:45
+14      2017-12-13 13:59:22
+15      2018-12-12 00:00:00
+16      2015-12-10 00:00:00
+17      2015-12-08 00:00:00
+18      2015-12-07 00:00:00
+19      2017-12-06 00:00:00
+20      2016-12-06 00:00:00
+21      2017-12-05 00:00:00
+22      2016-12-05 00:00:00
+23      2016-12-05 00:00:00
+24      2016-12-05 00:00:00
+25      2015-12-04 00:00:00
+26      2018-12-03 00:00:00
+27      2015-12-02 00:00:00
+28      2016-12-01 00:00:00
+29      2017-11-29 10:22:29
+                ...        
+29389   2019-01-04 00:00:00
+29390   2019-01-04 00:00:00
+29391   2019-01-04 00:00:00
+29392   2018-01-04 00:00:00
+29393   2018-01-04 00:00:00
+29394   2018-01-04 00:00:00
+29395   2018-01-04 00:00:00
+29396   2018-01-04 00:00:00
+29397   2018-01-04 00:00:00
+29398   2017-01-04 00:00:00
+29399   2017-01-04 00:00:00
+29400   2016-01-04 00:00:00
+29401   2019-01-03 00:00:00
+29402   2019-01-03 00:00:00
+29403   2018-01-03 00:00:00
+29404   2018-01-03 00:00:00
+29405   2018-01-03 00:00:00
+29406   2018-01-03 00:00:00
+29407   2018-01-03 00:00:00
+29408   2018-01-03 00:00:00
+29409   2018-01-03 00:00:00
+29410   2017-01-03 00:00:00
+29411   2017-01-03 00:00:00
+29412   2019-01-02 00:00:00
+29413   2019-01-02 00:00:00
+29414   2019-01-02 00:00:00
+29415   2018-01-02 00:00:00
+29416   2018-01-02 00:00:00
+29417   2018-01-02 00:00:00
+29418   2015-01-02 00:00:00
+Name: Permit Issue Date, Length: 29419, dtype: datetime64[ns]
+[2020-04-21 13:25:02,508] [4918/MainThread] [INFO] [dataiku.doctor.utils] Normalized date : 0        3.692102e+09
+1        3.660394e+09
+2        3.723282e+09
+3        3.754373e+09
+4        3.659677e+09
+5        3.722755e+09
+6        3.691213e+09
+7        3.754115e+09
+8        3.659437e+09
+9        3.659428e+09
+10       3.690888e+09
+11       3.690883e+09
+12       3.690713e+09
+13       3.690713e+09
+14       3.722162e+09
+15       3.753562e+09
+16       3.658694e+09
+17       3.658522e+09
+18       3.658435e+09
+19       3.721507e+09
+20       3.689971e+09
+21       3.721421e+09
+22       3.689885e+09
+23       3.689885e+09
+24       3.689885e+09
+25       3.658176e+09
+26       3.752784e+09
+27       3.658003e+09
+28       3.689539e+09
+29       3.720940e+09
+             ...     
+29389    3.755549e+09
+29390    3.755549e+09
+29391    3.755549e+09
+29392    3.724013e+09
+29393    3.724013e+09
+29394    3.724013e+09
+29395    3.724013e+09
+29396    3.724013e+09
+29397    3.724013e+09
+29398    3.692477e+09
+29399    3.692477e+09
+29400    3.660854e+09
+29401    3.755462e+09
+29402    3.755462e+09
+29403    3.723926e+09
+29404    3.723926e+09
+29405    3.723926e+09
+29406    3.723926e+09
+29407    3.723926e+09
+29408    3.723926e+09
+29409    3.723926e+09
+29410    3.692390e+09
+29411    3.692390e+09
+29412    3.755376e+09
+29413    3.755376e+09
+29414    3.755376e+09
+29415    3.723840e+09
+29416    3.723840e+09
+29417    3.723840e+09
+29418    3.629146e+09
+Name: Permit Issue Date, Length: 29419, dtype: float64
+[2020-04-21 13:25:02,510] [4918/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-21 13:25:02,510] [4918/MainThread] [INFO] [dataiku.doctor.commands] Loaded train df: shape=(29419,11)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Permit Number (object)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Permit Type (object)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Permit SubType (object)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Permit Status (object)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Permit Issue Date (float64)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Est Value (float64)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : State Valuation (float64)
+[2020-04-21 13:25:02,511] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Contractor (object)
+[2020-04-21 13:25:02,512] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Corporation (object)
+[2020-04-21 13:25:02,512] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Work Desc (object)
+[2020-04-21 13:25:02,512] [4918/MainThread] [INFO] [dataiku.doctor.commands] Train col : Work Group (object)
+[2020-04-21 13:25:02,512] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading train set
+[2020-04-21 13:25:02,512] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading test set
+[2020-04-21 13:25:02,514] [4918/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-04-21 13:25:02,514] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Number: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,514] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-21 13:25:02,514] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit SubType: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,514] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Status: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Permit Issue Date: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Est Value: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for State Valuation: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Contractor: None (schema_type=string feature_type=TEXT feature_role=REJECT)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Corporation: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Work Desc: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Work Group: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-04-21 13:25:02,515] [4918/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Est Value': <type 'numpy.float64'>, u'Permit SubType': 'str', u'Corporation': 'str', u'Work Desc': 'str', u'Permit Number': 'str', u'Permit Status': 'str', u'State Valuation': <type 'numpy.float64'>}
+[2020-04-21 13:25:02,616] [4918/MainThread] [INFO] [root] Loaded table
+[2020-04-21 13:25:02,623] [4918/MainThread] [INFO] [dataiku.doctor.utils] Normalizing date to numeric : 0      2017-12-28 12:41:29
+1      2016-12-28 10:34:50
+2      2016-12-22 09:46:25
+3      2018-12-20 13:54:46
+4      2015-12-17 10:33:14
+5      2018-12-13 16:28:36
+6      2018-12-11 00:00:00
+7      2018-12-06 00:00:00
+8      2015-12-02 00:00:00
+9      2016-11-29 16:17:36
+10     2017-11-21 11:18:29
+11     2015-11-20 08:59:59
+12     2015-11-19 12:36:37
+13     2016-11-15 12:11:02
+14     2016-11-15 10:44:41
+15     2015-11-13 15:04:30
+16     2015-11-13 10:49:06
+17     2016-11-09 00:00:00
+18     2015-11-09 00:00:00
+19     2015-11-05 00:00:00
+20     2018-11-02 00:00:00
+21     2015-11-02 00:00:00
+22     2017-10-24 16:04:22
+23     2018-10-23 14:48:32
+24     2015-10-22 09:35:50
+25     2018-10-19 13:40:57
+26     2016-10-18 13:01:27
+27     2018-10-16 13:31:40
+28     2018-10-15 08:32:57
+29     2015-10-15 13:56:08
+               ...        
+7237   2015-01-15 14:51:59
+7238   2019-01-14 10:41:41
+7239   2015-01-14 09:58:06
+7240   2015-01-13 09:10:33
+7241   2018-01-12 00:00:00
+7242   2019-01-11 00:00:00
+7243   2018-01-11 00:00:00
+7244   2019-01-10 00:00:00
+7245   2019-01-10 00:00:00
+7246   2019-01-10 00:00:00
+7247   2019-01-10 00:00:00
+7248   2018-01-10 00:00:00
+7249   2019-01-09 00:00:00
+7250   2018-01-09 00:00:00
+7251   2019-01-08 00:00:00
+7252   2019-01-08 00:00:00
+7253   2016-01-08 00:00:00
+7254   2016-01-07 00:00:00
+7255   2015-01-07 00:00:00
+7256   2017-01-06 00:00:00
+7257   2016-01-06 00:00:00
+7258   2017-01-05 00:00:00
+7259   2017-01-05 00:00:00
+7260   2016-01-05 00:00:00
+7261   2015-01-05 00:00:00
+7262   2015-01-05 00:00:00
+7263   2019-01-04 00:00:00
+7264   2018-01-04 00:00:00
+7265   2019-01-03 00:00:00
+7266   2018-01-03 00:00:00
+Name: Permit Issue Date, Length: 7267, dtype: datetime64[ns]
+[2020-04-21 13:25:02,629] [4918/MainThread] [INFO] [dataiku.doctor.utils] Normalized date : 0       3.723454e+09
+1       3.691910e+09
+2       3.691389e+09
+3       3.754303e+09
+4       3.659337e+09
+5       3.753707e+09
+6       3.753475e+09
+7       3.753043e+09
+8       3.658003e+09
+9       3.689425e+09
+10      3.720252e+09
+11      3.656999e+09
+12      3.656925e+09
+13      3.688201e+09
+14      3.688195e+09
+15      3.656416e+09
+16      3.656401e+09
+17      3.687638e+09
+18      3.656016e+09
+19      3.655670e+09
+20      3.750106e+09
+21      3.655411e+09
+22      3.717850e+09
+23      3.749295e+09
+24      3.654495e+09
+25      3.748945e+09
+26      3.685784e+09
+27      3.748686e+09
+28      3.748581e+09
+29      3.653906e+09
+            ...     
+7237    3.630322e+09
+7238    3.756451e+09
+7239    3.630218e+09
+7240    3.630129e+09
+7241    3.724704e+09
+7242    3.756154e+09
+7243    3.724618e+09
+7244    3.756067e+09
+7245    3.756067e+09
+7246    3.756067e+09
+7247    3.756067e+09
+7248    3.724531e+09
+7249    3.755981e+09
+7250    3.724445e+09
+7251    3.755894e+09
+7252    3.755894e+09
+7253    3.661200e+09
+7254    3.661114e+09
+7255    3.629578e+09
+7256    3.692650e+09
+7257    3.661027e+09
+7258    3.692563e+09
+7259    3.692563e+09
+7260    3.660941e+09
+7261    3.629405e+09
+7262    3.629405e+09
+7263    3.755549e+09
+7264    3.724013e+09
+7265    3.755462e+09
+7266    3.723926e+09
+Name: Permit Issue Date, Length: 7267, dtype: float64
+[2020-04-21 13:25:02,630] [4918/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-04-21 13:25:02,630] [4918/MainThread] [INFO] [dataiku.doctor.commands] Loaded test df: shape=(7267,11)
+[2020-04-21 13:25:02,630] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading test set
+[2020-04-21 13:25:02,630] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2020-04-21 13:25:02,631] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Work Group... (type=CATEGORY)
+[2020-04-21 13:25:02,631] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Permit Issue Date... (type=NUMERIC)
+[2020-04-21 13:25:02,631] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-21 13:25:02,638] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Est Value... (type=NUMERIC)
+[2020-04-21 13:25:02,639] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-04-21 13:25:02,642] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Permit SubType... (type=CATEGORY)
+[2020-04-21 13:25:02,659] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Corporation... (type=CATEGORY)
+[2020-04-21 13:25:02,674] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Work Desc... (type=CATEGORY)
+[2020-04-21 13:25:02,687] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Permit Type... (type=CATEGORY)
+[2020-04-21 13:25:02,687] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Permit Number... (type=CATEGORY)
+[2020-04-21 13:25:02,744] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Permit Status... (type=CATEGORY)
+[2020-04-21 13:25:02,759] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at State Valuation... (type=NUMERIC)
+[2020-04-21 13:25:02,759] [4918/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Contractor... (type=TEXT)
+[2020-04-21 13:25:02,759] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2020-04-21 13:25:02,760] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] generating interactions
+[2020-04-21 13:25:02,761] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Work Group': {u'missing_impute_with': u'MODE', u'autoReason': u'REJECT_ZERO_VARIANCE', u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'customProcessorWantsMatrix': False, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Issue Date': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'Date', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Est Value': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Permit SubType': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Corporation': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Boolean', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Work Desc': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Type': {u'missing_impute_with': u'MODE', u'autoReason': u'REJECT_ZERO_VARIANCE', u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'customProcessorWantsMatrix': False, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Number': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Permit Status': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'State Valuation': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Contractor': {u'hashSVDHashSize': 200000, u'autoReason': u'REJECT_DEFAULT_TEXT_HANDLING', u'useCustomVectorizer': False, u'customHandlingCode': u'', u'hashSVDSVDLimit': 50000, u'customProcessorWantsMatrix': False, u'hashSVDSVDComponents': 100, u'sendToInput': u'main', u'maxWords': 0, u'state': {u'userModified': False, u'recordedMeaning': u'FreeText', u'autoModifiedByDSS': False}, u'ngramMaxSize': 1, u'text_handling': u'TOKENIZE_HASHING_SVD', u'ngramMinSize': 1, u'stopWordsMode': u'NONE', u'minRowsRatio': 0.001, u'role': u'REJECT', u'type': u'TEXT', u'maxRowsRatio': 0.8, u'name': u'Contractor'}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020-04-21 13:25:02,761] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] No feature selection to perform
+[2020-04-21 13:25:02,761] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing train set
+[2020-04-21 13:25:02,762] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 29419
+[2020-04-21 13:25:02,763] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RemapValueToOutput
+[2020-04-21 13:25:02,763] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-21 13:25:02,763] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Permit Issue Date': 3693374857.716068, u'Est Value': 147638.24154458003}
+[2020-04-21 13:25:02,766] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Permit Issue Date)
+[2020-04-21 13:25:02,768] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Permit Issue Date (avg=3693374857.72 std=36571154.2572 shift=3693374857.72 inv_scale=2.7343955101e-08)
+[2020-04-21 13:25:02,826] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Permit Issue Date (avg=1.23436693372e-15 std=1.0) nulls=0
+[2020-04-21 13:25:02,826] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Est Value)
+[2020-04-21 13:25:02,827] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Est Value (avg=147638.241545 std=1790600.9594 shift=147638.241545 inv_scale=5.58471721325e-07)
+[2020-04-21 13:25:02,830] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Est Value (avg=1.42693273795e-15 std=1.0) nulls=0
+[2020-04-21 13:25:02,830] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-21 13:25:02,830] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Permit SubType)
+[2020-04-21 13:25:02,929] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(29419, 9) nnz=29419
+[2020-04-21 13:25:02,929] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Corporation)
+[2020-04-21 13:25:02,953] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(29419, 4) nnz=29419
+[2020-04-21 13:25:02,953] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Work Desc)
+[2020-04-21 13:25:02,977] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(29419, 7) nnz=29419
+[2020-04-21 13:25:02,979] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Permit Number)
+[2020-04-21 13:25:03,011] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(29419, 103) nnz=29419
+[2020-04-21 13:25:03,012] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Permit Status)
+[2020-04-21 13:25:03,043] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(29419, 5) nnz=29419
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RealignTarget
+[2020-04-21 13:25:03,044] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (29419,)
+[2020-04-21 13:25:03,051] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (29419,)
+[2020-04-21 13:25:03,052] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-21 13:25:03,054] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-04-21 13:25:03,054] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (29419, 130) target before = (29419,)
+[2020-04-21 13:25:03,063] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-21 13:25:03,120] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(29419, 11)
+[2020-04-21 13:25:03,123] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (29419, 130) target after = (29419,)
+[2020-04-21 13:25:03,123] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-21 13:25:03,124] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-21 13:25:03,125] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (29419, 11) 
+[2020-04-21 13:25:03,125] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(29419, 130) 
+[2020-04-21 13:25:03,125] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-21 13:25:03,125] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((29419,))
+[2020-04-21 13:25:03,126] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-21 13:25:03,126] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 29419
+[2020-04-21 13:25:03,126] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-04-21 13:25:03,126] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-21 13:25:03,126] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (29419, 11) 
+[2020-04-21 13:25:03,126] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-21 13:25:03,126] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-21 13:25:03,127] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((29419, 11))
+[2020-04-21 13:25:03,127] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((29419, 130))
+[2020-04-21 13:25:03,127] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((29419,))
+[2020-04-21 13:25:03,139] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing train set
+[2020-04-21 13:25:03,139] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing test set
+[2020-04-21 13:25:03,140] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 7267
+[2020-04-21 13:25:03,140] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RemapValueToOutput
+[2020-04-21 13:25:03,140] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-21 13:25:03,140] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Permit Issue Date': 3693374857.716068, u'Est Value': 147638.24154458003}
+[2020-04-21 13:25:03,141] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Permit Issue Date)
+[2020-04-21 13:25:03,142] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Permit Issue Date (avg=3692891056.67 std=36515958.1119 shift=3693374857.72 inv_scale=2.7343955101e-08)
+[2020-04-21 13:25:03,143] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Permit Issue Date (avg=-0.0132290340736 std=0.998490719081) nulls=0
+[2020-04-21 13:25:03,144] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Est Value)
+[2020-04-21 13:25:03,144] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Est Value (avg=146804.888675 std=2077909.16897 shift=147638.241545 inv_scale=5.58471721325e-07)
+[2020-04-21 13:25:03,145] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Est Value (avg=-0.00046540401164 std=1.16045351035) nulls=0
+[2020-04-21 13:25:03,145] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-04-21 13:25:03,145] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Permit SubType)
+[2020-04-21 13:25:03,155] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(7267, 9) nnz=7267
+[2020-04-21 13:25:03,156] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Corporation)
+[2020-04-21 13:25:03,164] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(7267, 4) nnz=7267
+[2020-04-21 13:25:03,165] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Work Desc)
+[2020-04-21 13:25:03,176] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(7267, 7) nnz=7267
+[2020-04-21 13:25:03,176] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Permit Number)
+[2020-04-21 13:25:03,184] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(7267, 103) nnz=7267
+[2020-04-21 13:25:03,185] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (Permit Status)
+[2020-04-21 13:25:03,192] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(7267, 5) nnz=7267
+[2020-04-21 13:25:03,193] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-21 13:25:03,193] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-21 13:25:03,193] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-04-21 13:25:03,193] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-04-21 13:25:03,193] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-04-21 13:25:03,193] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-04-21 13:25:03,194] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RealignTarget
+[2020-04-21 13:25:03,194] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (7267,)
+[2020-04-21 13:25:03,195] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (7267,)
+[2020-04-21 13:25:03,195] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DropRowsWhereNoTarget
+[2020-04-21 13:25:03,196] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2020-04-21 13:25:03,196] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (7267, 130) target before = (7267,)
+[2020-04-21 13:25:03,198] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-21 13:25:03,219] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(7267, 11)
+[2020-04-21 13:25:03,219] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (7267, 130) target after = (7267,)
+[2020-04-21 13:25:03,220] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-21 13:25:03,220] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2020-04-21 13:25:03,220] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (7267, 11) 
+[2020-04-21 13:25:03,220] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(7267, 130) 
+[2020-04-21 13:25:03,220] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-21 13:25:03,220] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((7267,))
+[2020-04-21 13:25:03,220] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-04-21 13:25:03,220] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 7267
+[2020-04-21 13:25:03,221] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2020-04-21 13:25:03,221] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2020-04-21 13:25:03,221] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (7267, 11) 
+[2020-04-21 13:25:03,221] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-04-21 13:25:03,221] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-04-21 13:25:03,222] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((7267, 11))
+[2020-04-21 13:25:03,222] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((7267, 130))
+[2020-04-21 13:25:03,222] [4918/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((7267,))
+[2020-04-21 13:25:03,222] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing test set
+[2020-04-21 13:25:03,223] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Grid searching
+[2020-04-21 13:25:03,230] [4918/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows
+[2020-04-21 13:25:03,230] [4918/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2020-04-21 13:25:03,253] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(29419,130) tn=3824470 nnz=205933 fill_ratio=0.05
+[2020-04-21 13:25:03,253] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-21 13:25:03,542] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common] Create CLF from params: {u'computeLearningCurves': False, u'rf_regressor_grid': {u'n_jobs': 1, u'max_tree_depth': {u'gridMode': u'EXPLICIT', u'values': [6, 13], u'nValues': 0}, u'selection_mode': u'auto', u'enabled': True, u'min_samples_leaf': {u'gridMode': u'EXPLICIT', u'values': [10], u'nValues': 0}, u'n_estimators': {u'gridMode': u'EXPLICIT', u'values': [100], u'nValues': 0}, u'max_feature_prop': 0.3, u'max_features': {u'gridMode': u'EXPLICIT', u'values': [5], u'nValues': 0}}, u'algorithm': u'RANDOM_FOREST_REGRESSION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 2, u'metrics': {u'customEvaluationMetricNeedsProba': False, u'evaluationMetric': u'R2', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'customEvaluationMetricGIB': True}, u'forcedClassifierThreshold': 0.0, u'skipExpensiveReports': False, u'max_ensemble_nodes_serialized': 6000, u'pluginAlgoCustomGridSearch': False} for algorithm RANDOM_FOREST_REGRESSION
+[2020-04-21 13:25:03,542] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common] Using K-Fold CV with k=3
+[2020-04-21 13:25:03,543] [4918/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.TreesHyperparametersSpace object at 0x112487810>
+[2020-04-21 13:25:03,545] [4918/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fitting 3 folds for each of 2 candidates, totalling 6 fits
+[Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020-04-21 13:25:03,582] [4918/GS-123145362841600] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=13, min_samples_leaf=10 
+[2020-04-21 13:25:03,589] [4918/GS-123145367048192] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=13, min_samples_leaf=10 
+[2020-04-21 13:25:03,595] [4918/GS-123145371254784] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=13, min_samples_leaf=10 
+[2020-04-21 13:25:03,621] [4918/GS-123145375461376] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.8s remaining:    0.0s
+building tree 2 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.0s remaining:    0.0s
+building tree 2 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.1s remaining:    0.0s
+building tree 2 of 100
+building tree 3 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.4s remaining:    0.0s
+building tree 2 of 100
+building tree 3 of 100
+building tree 3 of 100
+building tree 4 of 100
+building tree 3 of 100
+building tree 4 of 100
+building tree 5 of 100
+building tree 4 of 100
+building tree 4 of 100
+building tree 6 of 100
+building tree 5 of 100
+building tree 5 of 100
+building tree 7 of 100
+building tree 5 of 100
+building tree 6 of 100
+building tree 8 of 100
+building tree 6 of 100
+building tree 6 of 100
+building tree 9 of 100
+building tree 7 of 100
+building tree 7 of 100
+building tree 10 of 100
+building tree 7 of 100
+building tree 8 of 100
+building tree 8 of 100
+building tree 11 of 100
+building tree 8 of 100
+building tree 12 of 100
+building tree 9 of 100
+building tree 9 of 100
+building tree 13 of 100
+building tree 9 of 100
+building tree 10 of 100
+building tree 10 of 100
+building tree 14 of 100
+building tree 10 of 100
+building tree 11 of 100
+building tree 15 of 100
+building tree 11 of 100
+building tree 16 of 100
+building tree 11 of 100
+building tree 12 of 100
+building tree 12 of 100
+building tree 17 of 100
+building tree 12 of 100
+building tree 13 of 100
+building tree 18 of 100
+building tree 13 of 100
+building tree 19 of 100
+building tree 13 of 100
+building tree 14 of 100
+building tree 14 of 100
+building tree 20 of 100
+building tree 14 of 100
+building tree 15 of 100
+building tree 21 of 100
+building tree 15 of 100
+building tree 22 of 100
+building tree 15 of 100
+building tree 16 of 100
+building tree 16 of 100
+building tree 23 of 100
+building tree 16 of 100
+building tree 17 of 100
+building tree 17 of 100
+building tree 24 of 100
+building tree 25 of 100
+building tree 17 of 100
+building tree 18 of 100
+building tree 18 of 100
+building tree 26 of 100
+building tree 18 of 100
+building tree 19 of 100
+building tree 19 of 100
+building tree 27 of 100
+building tree 19 of 100
+building tree 28 of 100
+building tree 20 of 100
+building tree 20 of 100
+building tree 29 of 100
+building tree 20 of 100
+building tree 21 of 100
+building tree 21 of 100
+building tree 30 of 100
+building tree 21 of 100
+building tree 22 of 100
+building tree 31 of 100
+building tree 22 of 100
+building tree 32 of 100
+building tree 22 of 100
+building tree 23 of 100
+building tree 23 of 100
+building tree 33 of 100
+building tree 23 of 100
+building tree 24 of 100
+building tree 34 of 100
+building tree 24 of 100
+building tree 35 of 100
+building tree 24 of 100
+building tree 25 of 100
+building tree 25 of 100
+building tree 36 of 100
+building tree 25 of 100
+building tree 26 of 100
+building tree 37 of 100
+building tree 26 of 100
+building tree 26 of 100
+building tree 38 of 100
+building tree 27 of 100
+building tree 27 of 100
+building tree 39 of 100
+building tree 27 of 100
+building tree 28 of 100
+building tree 28 of 100
+building tree 40 of 100
+building tree 28 of 100
+building tree 29 of 100
+building tree 41 of 100
+building tree 29 of 100
+building tree 42 of 100
+building tree 29 of 100
+building tree 30 of 100
+building tree 43 of 100
+building tree 30 of 100
+building tree 30 of 100
+building tree 31 of 100
+building tree 44 of 100
+building tree 31 of 100
+building tree 45 of 100
+building tree 31 of 100
+building tree 32 of 100
+building tree 32 of 100
+building tree 46 of 100
+building tree 32 of 100
+building tree 33 of 100
+building tree 47 of 100
+building tree 33 of 100
+building tree 48 of 100
+building tree 34 of 100building tree 33 of 100
+building tree 34 of 100
+building tree 49 of 100
+building tree 34 of 100
+building tree 35 of 100
+building tree 50 of 100
+building tree 35 of 100
+building tree 51 of 100
+building tree 35 of 100
+building tree 36 of 100
+building tree 36 of 100
+building tree 52 of 100
+building tree 36 of 100
+building tree 37 of 100
+building tree 53 of 100
+building tree 37 of 100
+building tree 37 of 100
+building tree 54 of 100
+building tree 38 of 100
+building tree 38 of 100
+building tree 55 of 100
+building tree 38 of 100
+building tree 39 of 100
+building tree 56 of 100
+building tree 39 of 100
+building tree 40 of 100
+building tree 39 of 100
+building tree 57 of 100
+building tree 40 of 100
+building tree 40 of 100
+building tree 58 of 100
+building tree 41 of 100
+building tree 41 of 100
+building tree 59 of 100
+building tree 42 of 100
+building tree 41 of 100
+building tree 60 of 100
+building tree 42 of 100
+building tree 43 of 100
+building tree 42 of 100
+building tree 61 of 100
+building tree 43 of 100
+building tree 62 of 100
+building tree 44 of 100
+building tree 43 of 100
+building tree 63 of 100
+building tree 44 of 100
+building tree 45 of 100
+building tree 44 of 100
+building tree 64 of 100
+building tree 45 of 100
+building tree 65 of 100
+building tree 45 of 100
+building tree 46 of 100
+building tree 66 of 100
+building tree 46 of 100
+building tree 46 of 100
+building tree 47 of 100
+building tree 67 of 100
+building tree 47 of 100
+building tree 48 of 100
+building tree 47 of 100
+building tree 68 of 100
+building tree 49 of 100
+ building tree 48 of 100
+building tree 69 of 100
+building tree 48 of 100
+building tree 70 of 100
+building tree 50 of 100
+building tree 49 of 100
+building tree 49 of 100
+building tree 71 of 100
+building tree 51 of 100
+building tree 50 of 100
+building tree 72 of 100
+building tree 50 of 100
+building tree 73 of 100
+building tree 52 of 100
+building tree 51 of 100
+building tree 51 of 100
+building tree 74 of 100
+building tree 53 of 100
+building tree 52 of 100
+building tree 52 of 100
+building tree 75 of 100
+building tree 54 of 100
+building tree 76 of 100
+building tree 53 of 100
+building tree 53 of 100
+building tree 77 of 100
+building tree 55 of 100
+building tree 54 of 100
+building tree 54 of 100
+building tree 78 of 100
+building tree 56 of 100
+building tree 79 of 100
+building tree 55 of 100
+building tree 55 of 100
+building tree 57 of 100
+building tree 80 of 100
+building tree 56 of 100
+building tree 56 of 100
+building tree 81 of 100
+building tree 58 of 100
+building tree 57 of 100
+building tree 82 of 100
+building tree 57 of 100
+building tree 59 of 100
+building tree 83 of 100
+building tree 58 of 100
+building tree 58 of 100
+building tree 84 of 100
+building tree 60 of 100
+building tree 59 of 100
+building tree 85 of 100
+building tree 59 of 100
+building tree 61 of 100
+building tree 86 of 100
+building tree 60 of 100
+building tree 87 of 100
+building tree 60 of 100
+building tree 62 of 100
+building tree 88 of 100
+building tree 61 of 100
+building tree 63 of 100
+building tree 61 of 100
+building tree 89 of 100
+building tree 62 of 100
+building tree 64 of 100
+building tree 62 of 100
+building tree 90 of 100
+building tree 63 of 100
+building tree 91 of 100
+building tree 65 of 100
+building tree 63 of 100
+building tree 92 of 100
+building tree 64 of 100
+building tree 66 of 100
+building tree 64 of 100
+building tree 93 of 100
+building tree 65 of 100
+building tree 94 of 100
+building tree 67 of 100
+building tree 65 of 100
+building tree 66 of 100
+building tree 95 of 100
+building tree 68 of 100
+building tree 66 of 100
+building tree 96 of 100
+building tree 67 of 100
+building tree 69 of 100
+building tree 97 of 100
+building tree 67 of 100
+building tree 68 of 100
+building tree 98 of 100
+building tree 70 of 100
+building tree 68 of 100
+building tree 99 of 100
+building tree 69 of 100
+building tree 71 of 100
+building tree 100 of 100
+building tree 69 of 100
+building tree 70 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   39.0s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 72 of 100
+building tree 70 of 100
+building tree 71 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.3s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 73 of 100
+building tree 71 of 100
+building tree 72 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.6s finished
+[2020-04-21 13:25:48,220] [4918/GS-123145375461376] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 (ft=43.6s st=1.0s sc=0.661184744542)
+[2020-04-21 13:25:48,317] [4918/GS-123145375461376] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 
+building tree 74 of 100
+building tree 72 of 100
+building tree 73 of 100
+building tree 75 of 100
+building tree 73 of 100
+building tree 74 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+building tree 76 of 100
+building tree 74 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s remaining:    0.0s
+building tree 2 of 100
+building tree 75 of 100
+building tree 77 of 100
+building tree 3 of 100
+building tree 75 of 100
+building tree 76 of 100
+building tree 4 of 100
+building tree 78 of 100
+building tree 76 of 100
+building tree 5 of 100
+building tree 77 of 100
+building tree 6 of 100
+building tree 79 of 100
+building tree 77 of 100
+building tree 78 of 100
+building tree 7 of 100
+building tree 80 of 100
+building tree 8 of 100
+building tree 78 of 100
+building tree 79 of 100
+building tree 81 of 100
+building tree 9 of 100
+building tree 79 of 100
+building tree 80 of 100
+building tree 10 of 100
+building tree 82 of 100
+building tree 11 of 100
+building tree 80 of 100
+building tree 81 of 100
+building tree 83 of 100
+building tree 12 of 100
+building tree 81 of 100
+building tree 82 of 100
+building tree 13 of 100
+building tree 84 of 100
+building tree 14 of 100
+building tree 82 of 100
+building tree 83 of 100
+building tree 85 of 100
+building tree 15 of 100
+building tree 83 of 100
+building tree 84 of 100
+building tree 16 of 100
+building tree 86 of 100
+building tree 17 of 100
+building tree 85 of 100
+building tree 84 of 100
+building tree 87 of 100
+building tree 18 of 100
+building tree 86 of 100
+building tree 85 of 100
+building tree 19 of 100
+building tree 88 of 100
+building tree 86 of 100
+building tree 87 of 100
+building tree 20 of 100
+building tree 89 of 100
+building tree 21 of 100
+building tree 87 of 100
+building tree 88 of 100
+building tree 22 of 100
+building tree 90 of 100
+building tree 88 of 100
+building tree 89 of 100
+building tree 23 of 100
+building tree 91 of 100
+building tree 24 of 100
+building tree 89 of 100
+building tree 90 of 100
+building tree 92 of 100
+building tree 25 of 100
+building tree 91 of 100
+building tree 90 of 100
+building tree 26 of 100
+building tree 93 of 100
+building tree 27 of 100
+building tree 92 of 100
+building tree 91 of 100
+building tree 94 of 100
+building tree 28 of 100
+building tree 93 of 100
+building tree 29 of 100
+building tree 92 of 100
+building tree 95 of 100
+building tree 30 of 100
+building tree 94 of 100
+building tree 93 of 100
+building tree 96 of 100
+building tree 31 of 100
+building tree 95 of 100
+building tree 94 of 100
+building tree 32 of 100
+building tree 97 of 100
+building tree 33 of 100
+building tree 96 of 100
+building tree 95 of 100
+building tree 98 of 100
+building tree 34 of 100
+building tree 97 of 100
+building tree 96 of 100
+building tree 35 of 100
+building tree 99 of 100
+building tree 98 of 100
+building tree 36 of 100
+building tree 97 of 100
+building tree 100 of 100
+building tree 37 of 100
+building tree 99 of 100
+building tree 98 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   55.1s finished
+building tree 38 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 100 of 100
+building tree 39 of 100
+building tree 99 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.5s finished
+building tree 40 of 100
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   55.8s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 100 of 100
+building tree 41 of 100
+building tree 42 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.4s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   56.9s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.8s finished
+[2020-04-21 13:26:04,878] [4918/GS-123145367048192] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=13, min_samples_leaf=10 (ft=59.8s st=1.5s sc=0.927257280549)
+[2020-04-21 13:26:04,897] [4918/GS-123145367048192] [INFO] [dataiku.doctor.crossval.grid_search_cv] Fit  p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 
+building tree 43 of 100
+building tree 44 of 100
+building tree 45 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.7s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 46 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.9s finished
+[2020-04-21 13:26:05,654] [4918/GS-123145371254784] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=13, min_samples_leaf=10 (ft=60.6s st=1.5s sc=0.909303940422)
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+building tree 47 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.2s remaining:    0.0s
+building tree 2 of 100
+building tree 48 of 100
+building tree 3 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.7s finished
+[2020-04-21 13:26:06,222] [4918/GS-123145362841600] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=13, min_samples_leaf=10 (ft=61.2s st=1.4s sc=0.661192383601)
+building tree 49 of 100
+building tree 4 of 100
+building tree 50 of 100
+building tree 5 of 100
+building tree 51 of 100
+building tree 6 of 100
+building tree 52 of 100
+building tree 7 of 100
+building tree 53 of 100
+building tree 8 of 100
+building tree 54 of 100
+building tree 9 of 100
+building tree 55 of 100
+building tree 10 of 100
+building tree 56 of 100
+building tree 11 of 100
+building tree 57 of 100
+building tree 12 of 100
+building tree 58 of 100
+building tree 13 of 100
+building tree 59 of 100
+building tree 14 of 100
+building tree 60 of 100
+building tree 15 of 100
+building tree 61 of 100
+building tree 16 of 100
+building tree 62 of 100
+building tree 17 of 100
+building tree 63 of 100
+building tree 18 of 100
+building tree 64 of 100
+building tree 19 of 100
+building tree 65 of 100
+building tree 20 of 100
+building tree 66 of 100
+building tree 21 of 100
+building tree 67 of 100
+building tree 22 of 100
+building tree 68 of 100
+building tree 23 of 100
+building tree 69 of 100
+building tree 24 of 100
+building tree 70 of 100
+building tree 25 of 100
+building tree 71 of 100
+building tree 26 of 100
+building tree 72 of 100
+building tree 27 of 100
+building tree 73 of 100
+building tree 28 of 100
+building tree 74 of 100
+building tree 29 of 100
+building tree 75 of 100
+building tree 30 of 100
+building tree 76 of 100
+building tree 31 of 100
+building tree 77 of 100
+building tree 32 of 100
+building tree 78 of 100
+building tree 33 of 100
+building tree 79 of 100
+building tree 34 of 100
+building tree 80 of 100
+building tree 35 of 100
+building tree 81 of 100
+building tree 36 of 100
+building tree 82 of 100
+building tree 37 of 100
+building tree 83 of 100
+building tree 38 of 100
+building tree 84 of 100
+building tree 39 of 100
+building tree 85 of 100
+building tree 40 of 100
+building tree 86 of 100
+building tree 41 of 100
+building tree 87 of 100
+building tree 42 of 100
+building tree 88 of 100
+building tree 43 of 100
+building tree 89 of 100
+building tree 44 of 100
+building tree 90 of 100
+building tree 45 of 100
+building tree 91 of 100
+building tree 46 of 100
+building tree 92 of 100
+building tree 47 of 100
+building tree 93 of 100
+building tree 48 of 100
+building tree 94 of 100
+building tree 49 of 100
+building tree 95 of 100
+building tree 50 of 100
+building tree 96 of 100
+building tree 51 of 100
+building tree 97 of 100
+building tree 52 of 100
+building tree 98 of 100
+building tree 53 of 100
+building tree 99 of 100
+building tree 54 of 100
+building tree 100 of 100
+building tree 55 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   27.3s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+building tree 56 of 100
+building tree 57 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.2s finished
+[2020-04-21 13:26:17,003] [4918/GS-123145375461376] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 (ft=28.3s st=0.4s sc=0.927242729238)
+building tree 58 of 100
+building tree 59 of 100
+building tree 60 of 100
+building tree 61 of 100
+building tree 62 of 100
+building tree 63 of 100
+building tree 64 of 100
+building tree 65 of 100
+building tree 66 of 100
+building tree 67 of 100
+building tree 68 of 100
+building tree 69 of 100
+building tree 70 of 100
+building tree 71 of 100
+building tree 72 of 100
+building tree 73 of 100
+building tree 74 of 100
+building tree 75 of 100
+building tree 76 of 100
+building tree 77 of 100
+building tree 78 of 100
+building tree 79 of 100
+building tree 80 of 100
+building tree 81 of 100
+building tree 82 of 100
+building tree 83 of 100
+building tree 84 of 100
+building tree 85 of 100
+building tree 86 of 100
+building tree 87 of 100
+building tree 88 of 100
+building tree 89 of 100
+building tree 90 of 100
+building tree 91 of 100
+building tree 92 of 100
+building tree 93 of 100
+building tree 94 of 100
+building tree 95 of 100
+building tree 96 of 100
+building tree 97 of 100
+building tree 98 of 100
+building tree 99 of 100
+building tree 100 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   17.4s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020-04-21 13:26:23,278] [4918/GS-123145367048192] [INFO] [dataiku.doctor.crossval.grid_search_cv] Done p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=30, max_depth=6, min_samples_leaf=10 (ft=18.2s st=0.2s sc=0.909288820414)
+[Parallel(n_jobs=4)]: Done   6 out of   6 | elapsed:  1.3min finished
+[2020-04-21 13:26:23,933] [4918/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search ended, got 6 scores out of 6
+[2020-04-21 13:26:23,933] [4918/MainThread] [INFO] [dataiku.doctor.crossval.grid_search_cv] Grid search done, best_parameters being : {'max_features': u'auto', 'n_estimators': 100, 'min_samples_split': 30, 'max_depth': 13, 'min_samples_leaf': 10}
+[2020-04-21 13:26:23,935] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Grid searching
+[2020-04-21 13:26:23,935] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2020-04-21 13:26:23,936] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common] Fitting model:
+[2020-04-21 13:26:23,937] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common]   Model is: RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=13,
+           max_features=u'auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=10, min_samples_split=30,
+           min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=1,
+           oob_score=False, random_state=1337, verbose=2, warm_start=False)
+[2020-04-21 13:26:23,937] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X class: <type 'numpy.ndarray'>
+[2020-04-21 13:26:23,937] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X shape: (29419, 130)
+[2020-04-21 13:26:23,937] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_y shape: (29419,)
+[2020-04-21 13:26:23,937] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common]   calibration enabled: a sub-sample of the train data has been saved for calibration
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+building tree 1 of 100
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.4s remaining:    0.0s
+building tree 2 of 100
+building tree 3 of 100
+building tree 4 of 100
+building tree 5 of 100
+building tree 6 of 100
+building tree 7 of 100
+building tree 8 of 100
+building tree 9 of 100
+building tree 10 of 100
+building tree 11 of 100
+building tree 12 of 100
+building tree 13 of 100
+building tree 14 of 100
+building tree 15 of 100
+building tree 16 of 100
+building tree 17 of 100
+building tree 18 of 100
+building tree 19 of 100
+building tree 20 of 100
+building tree 21 of 100
+building tree 22 of 100
+building tree 23 of 100
+building tree 24 of 100
+building tree 25 of 100
+building tree 26 of 100
+building tree 27 of 100
+building tree 28 of 100
+building tree 29 of 100
+building tree 30 of 100
+building tree 31 of 100
+building tree 32 of 100
+building tree 33 of 100
+building tree 34 of 100
+building tree 35 of 100
+building tree 36 of 100
+building tree 37 of 100
+building tree 38 of 100
+building tree 39 of 100
+building tree 40 of 100
+building tree 41 of 100
+building tree 42 of 100
+building tree 43 of 100
+building tree 44 of 100
+building tree 45 of 100
+building tree 46 of 100
+building tree 47 of 100
+building tree 48 of 100
+building tree 49 of 100
+building tree 50 of 100
+building tree 51 of 100
+building tree 52 of 100
+building tree 53 of 100
+building tree 54 of 100
+building tree 55 of 100
+building tree 56 of 100
+building tree 57 of 100
+building tree 58 of 100
+building tree 59 of 100
+building tree 60 of 100
+building tree 61 of 100
+building tree 62 of 100
+building tree 63 of 100
+building tree 64 of 100
+building tree 65 of 100
+building tree 66 of 100
+building tree 67 of 100
+building tree 68 of 100
+building tree 69 of 100
+building tree 70 of 100
+building tree 71 of 100
+building tree 72 of 100
+building tree 73 of 100
+building tree 74 of 100
+building tree 75 of 100
+building tree 76 of 100
+building tree 77 of 100
+building tree 78 of 100
+building tree 79 of 100
+building tree 80 of 100
+building tree 81 of 100
+building tree 82 of 100
+building tree 83 of 100
+building tree 84 of 100
+building tree 85 of 100
+building tree 86 of 100
+building tree 87 of 100
+building tree 88 of 100
+building tree 89 of 100
+building tree 90 of 100
+building tree 91 of 100
+building tree 92 of 100
+building tree 93 of 100
+building tree 94 of 100
+building tree 95 of 100
+building tree 96 of 100
+building tree 97 of 100
+building tree 98 of 100
+building tree 99 of 100
+building tree 100 of 100
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:   38.7s finished
+[2020-04-21 13:27:02,901] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_fit] RF Params are {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'min_impurity_decrease': 0.0, 'verbose': 2, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 10, 'n_estimators': 100, 'min_samples_split': 30, 'min_weight_fraction_leaf': 0.0, 'criterion': 'mse', 'random_state': 1337, 'min_impurity_split': None, 'max_features': u'auto', 'max_depth': 13} 
+[2020-04-21 13:27:02,902] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_fit] Output params are {'resolved': {'rf': {'max_tree_depth': 13, 'selection_mode': u'auto', 'njobs': 1, 'min_samples_leaf': 10, 'estimators': 100}, 'skipExpensiveReports': False, 'algorithm': u'RANDOM_FOREST_REGRESSION'}, 'other': {'rf_min_samples_split': 30}}
+[2020-04-21 13:27:02,902] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2020-04-21 13:27:02,902] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2020-04-21 13:27:03,004] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2020-04-21 13:27:03,004] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2020-04-21 13:27:03,005] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Intrinsic scoring
+[2020-04-21 13:27:03,005] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Extracting rescalers
+[2020-04-21 13:27:03,006] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Creating random forest trees summary
+[2020-04-21 13:27:03,126] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Computing RF PDP
+(100, 1)
+[2020-04-21 13:27:06,586] [4918/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Computing feature importance
+[2020-04-21 13:27:06,599] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(7267,130) tn=944710 nnz=50869 fill_ratio=0.05
+[2020-04-21 13:27:06,599] [4918/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2020-04-21 13:27:06,616] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Creating predictions on test set
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020-04-21 13:27:06,759] [4918/MainThread] [INFO] [dataiku.doctor.prediction.regression_scoring] Computing regression performance on [140274.12514629 484100.30692363 224186.14234187 ...    513.74218263
+   1226.57866779   6115.94851248]
+[2020-04-21 13:27:07,476] [4918/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2020/04/21-13:27:07.502] [MRT-364] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2020/04/21-13:27:07.503] [MRT-364] [INFO] [dku.analysis.prediction]  - Training returned ok
+[2020/04/21-13:27:07.508] [MRT-364] [INFO] [dku.ml.versioning]  - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/BUILDINGPERMIT/Q0xKhrMY/xdsAJChm/sessions/s1/pp1/m1
+[2020/04/21-13:27:07.523] [KNL-python-single-command-kernel-out-376] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/21-13:27:07.523] [KNL-python-single-command-kernel-err-377] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/04/21-13:27:07.553] [KNL-python-single-command-kernel-monitor-375] [INFO] [dku.kernels]  - Process done with code 143
+[2020/04/21-13:27:07.558] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.ml.python] T-xdsAJChm - Processing thread joined ...
+[2020/04/21-13:27:07.561] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.ml.python] T-xdsAJChm - Joining processing thread ...
+[2020/04/21-13:27:07.564] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.ml.python] T-xdsAJChm - Processing thread joined ...
+[2020/04/21-13:27:07.566] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.prediction] T-xdsAJChm - Train done
+[2020/04/21-13:27:07.568] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.prediction] T-xdsAJChm - Train done
+[2020/04/21-13:27:07.638] [FT-TrainWorkThread-xtTjhTLp-363] [INFO] [dku.analysis.prediction] T-xdsAJChm - Publishing mltask-train-done reflected event

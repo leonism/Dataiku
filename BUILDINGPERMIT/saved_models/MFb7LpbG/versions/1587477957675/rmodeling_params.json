@@ -1,0 +1,47 @@
+{
+  "algorithm": "RIDGE_REGRESSION",
+  "ridge_grid": {
+    "alphaMode": "MANUAL",
+    "alpha": {
+      "values": [
+        0.1,
+        1.0,
+        3.0
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "enabled": true
+  },
+  "max_ensemble_nodes_serialized": 0,
+  "metrics": {
+    "evaluationMetric": "R2",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 3,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "randomized": true,
+    "nIter": 0,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}

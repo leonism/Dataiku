@@ -1,0 +1,116 @@
+[
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 30, 
+            "max_depth": 6, 
+            "min_samples_leaf": 10
+        }, 
+        "score_time": 427, 
+        "test_score": 0.6328036017089081, 
+        "fit_time": 10545, 
+        "num_samples": 7337, 
+        "best_iteration": null, 
+        "train_score": 0.7540675377299872, 
+        "parameter_id": 0, 
+        "time": 10972, 
+        "done_at": 1587476482737, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 30, \"max_depth\": 6, \"min_samples_leaf\": 10}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 30, 
+            "max_depth": 13, 
+            "min_samples_leaf": 10
+        }, 
+        "score_time": 714, 
+        "test_score": 0.6328186867324904, 
+        "fit_time": 14083, 
+        "num_samples": 7337, 
+        "best_iteration": null, 
+        "train_score": 0.7540740760998459, 
+        "parameter_id": 1, 
+        "time": 14797, 
+        "done_at": 1587476486568, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 30, \"max_depth\": 13, \"min_samples_leaf\": 10}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 30, 
+            "max_depth": 6, 
+            "min_samples_leaf": 10
+        }, 
+        "score_time": 611, 
+        "test_score": 0.8971673520471231, 
+        "fit_time": 22669, 
+        "num_samples": 7337, 
+        "best_iteration": null, 
+        "train_score": 0.8401255199002117, 
+        "parameter_id": 0, 
+        "time": 23280, 
+        "done_at": 1587476495048, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 30, \"max_depth\": 6, \"min_samples_leaf\": 10}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 30, 
+            "max_depth": 6, 
+            "min_samples_leaf": 10
+        }, 
+        "score_time": 713, 
+        "test_score": 0.5844703843629935, 
+        "fit_time": 35799, 
+        "num_samples": 7337, 
+        "best_iteration": null, 
+        "train_score": 0.9013154664531323, 
+        "parameter_id": 0, 
+        "time": 36512, 
+        "done_at": 1587476508289, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 30, \"max_depth\": 6, \"min_samples_leaf\": 10}@2"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 30, 
+            "max_depth": 13, 
+            "min_samples_leaf": 10
+        }, 
+        "score_time": 862, 
+        "test_score": 0.8971915385082695, 
+        "fit_time": 24960, 
+        "num_samples": 7337, 
+        "best_iteration": null, 
+        "train_score": 0.8401409624858286, 
+        "parameter_id": 1, 
+        "time": 25822, 
+        "done_at": 1587476508569, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 30, \"max_depth\": 13, \"min_samples_leaf\": 10}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 30, 
+            "max_depth": 13, 
+            "min_samples_leaf": 10
+        }, 
+        "score_time": 406, 
+        "test_score": 0.584474417714954, 
+        "fit_time": 31961, 
+        "num_samples": 7337, 
+        "best_iteration": null, 
+        "train_score": 0.9013382846242579, 
+        "parameter_id": 1, 
+        "time": 32367, 
+        "done_at": 1587476518947, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 30, \"max_depth\": 13, \"min_samples_leaf\": 10}@2"
+    }
+]

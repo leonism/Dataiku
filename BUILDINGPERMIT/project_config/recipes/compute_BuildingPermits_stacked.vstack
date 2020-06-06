@@ -1,0 +1,115 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "PERMIT NUMBER",
+    "PERMIT TYPE",
+    "PERMIT STATUS",
+    "PERMIT SUB-TYPE",
+    "WORK DESCRIPTION",
+    "PERMIT ISSUE DATE",
+    "ESTIMATED VALUE OF WORK",
+    "STATE VALUATION",
+    "CONTRACTOR"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "02_01_BuildingPermits",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "02_02_BuildingPermits",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "PERMIT NUMBER",
+            "type": "string"
+          },
+          {
+            "name": "PERMIT TYPE",
+            "type": "string"
+          },
+          {
+            "name": "PERMIT STATUS",
+            "type": "string"
+          },
+          {
+            "name": "PERMIT SUB-TYPE",
+            "type": "string"
+          },
+          {
+            "name": "WORK DESCRIPTION",
+            "type": "string"
+          },
+          {
+            "name": "PERMIT ISSUE DATE",
+            "type": "string"
+          },
+          {
+            "name": "ESTIMATED VALUE OF WORK",
+            "type": "string"
+          },
+          {
+            "name": "STATE VALUATION",
+            "type": "string"
+          },
+          {
+            "name": "CONTRACTOR",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}

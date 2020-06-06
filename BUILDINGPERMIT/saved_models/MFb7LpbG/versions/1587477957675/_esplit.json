@@ -1,0 +1,55 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1587477957702,
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Permit Number","type":"string"},
+      {"name":"Permit Type","type":"string"},
+      {"name":"Permit SubType","type":"string"},
+      {"name":"Permit Status","type":"string"},
+      {"name":"Permit Issue Date","type":"date"},
+      {"name":"Est Value","type":"double"},
+      {"name":"State Valuation","type":"bigint"},
+      {"name":"Contractor","type":"string"},
+      {"name":"Corporation","type":"boolean"},
+      {"name":"Work Desc","type":"string"},
+      {"name":"Work Group","type":"string"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/saved_models/BUILDINGPERMIT/MFb7LpbG/versions/1587477957675/split/train.csv.gz",
+  "testPath": "/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/saved_models/BUILDINGPERMIT/MFb7LpbG/versions/1587477957675/split/test.csv.gz",
+  "trainRows": 29419,
+  "testRows": 7267,
+  "fullRows": 0
+}

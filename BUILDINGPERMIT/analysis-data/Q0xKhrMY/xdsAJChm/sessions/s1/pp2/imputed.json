@@ -1,0 +1,12 @@
+{
+    "num_values": [
+        3693374857.716068, 
+        147638.24154458003
+    ], 
+    "cat_values": [], 
+    "cat_columns": [], 
+    "num_columns": [
+        "Permit Issue Date", 
+        "Est Value"
+    ]
+}

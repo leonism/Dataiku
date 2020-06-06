@@ -1,0 +1,57 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1587450289577,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dpermits_cleaned,sel\u003d(method\u003dhead-s,records\u003d100000),r\u003d0.8,s\u003d1337",
+  "instanceId": "000dd3782aa86cd1ae3658ba81da8145-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Permit Number","type":"string"},
+      {"name":"Permit Type","type":"string"},
+      {"name":"Permit SubType","type":"string"},
+      {"name":"Permit Status","type":"string"},
+      {"name":"Permit Issue Date","type":"date"},
+      {"name":"Est Value","type":"double"},
+      {"name":"State Valuation","type":"bigint"},
+      {"name":"Contractor","type":"string"},
+      {"name":"Corporation","type":"boolean"},
+      {"name":"Work Desc","type":"string"},
+      {"name":"Work Group","type":"string"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train.csv.gz",
+  "testPath": "test.csv.gz",
+  "trainRows": 29419,
+  "testRows": 7267,
+  "fullRows": 0
+}

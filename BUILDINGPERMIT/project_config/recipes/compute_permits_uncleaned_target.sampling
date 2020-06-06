@@ -1,0 +1,27 @@
+{
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "conditions": [
+      {
+        "input": "Est Value",
+        "col": "Permit Type",
+        "num": 0,
+        "operator": "empty string"
+      },
+      {
+        "input": "State Valuation",
+        "col": "Permit Type",
+        "num": 0,
+        "operator": "empty string"
+      }
+    ]
+  },
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
+  "distinct": false,
+  "enabled": true
+}

@@ -1,0 +1,64 @@
+{
+  "schemaComputation": "ONLY_IF_NO_METADATA",
+  "identifierColumnsSelection": "EXPLICIT",
+  "modalitySlugification": "NONE",
+  "sortModalities": false,
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "explicitIdentifiers": [
+    "PermitNumber"
+  ],
+  "otherColumns": [],
+  "pivots": [
+    {
+      "valueLimit": "NO_LIMIT",
+      "minOccLimit": 0,
+      "topnLimit": 20,
+      "globalCount": true,
+      "explicitValues": [],
+      "keyColumns": [
+        "EstValue"
+      ],
+      "valueColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "customAggregates": [],
+  "enginesPreferences": {}
+}
