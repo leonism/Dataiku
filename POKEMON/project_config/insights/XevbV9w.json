@@ -1,0 +1,627 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "univariate_header",
+      "showHistogram": true,
+      "showQuantile": true,
+      "showFrequencyTable": false,
+      "showSummary": true,
+      "showBoxPlot": true,
+      "xColumns": [
+        {
+          "name": "HP",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Attack",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Defense",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Sp. Atk",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Sp. Def",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Speed",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Generation",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Total",
+          "type": "CONTINUOUS"
+        }
+      ],
+      "cards": [
+        {
+          "type": "column_card",
+          "column": {
+            "name": "HP",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "HP",
+                "type": "CONTINUOUS"
+              },
+              "id": "Lo3LW2o"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "HP",
+                "type": "CONTINUOUS"
+              },
+              "id": "PsISRpG"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "HP",
+                "type": "CONTINUOUS"
+              },
+              "id": "7EiQnrd"
+            }
+          ],
+          "id": "K0T4sjF"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Attack",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Attack",
+                "type": "CONTINUOUS"
+              },
+              "id": "OmS4BDK"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Attack",
+                "type": "CONTINUOUS"
+              },
+              "id": "t0Sw7hx"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Attack",
+                "type": "CONTINUOUS"
+              },
+              "id": "2c5vb9Z"
+            }
+          ],
+          "id": "eiEawml"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Defense",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Defense",
+                "type": "CONTINUOUS"
+              },
+              "id": "PaSWiMA"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Defense",
+                "type": "CONTINUOUS"
+              },
+              "id": "jEIll1S"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Defense",
+                "type": "CONTINUOUS"
+              },
+              "id": "3CdcbiF"
+            }
+          ],
+          "id": "FTuN88I"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Sp. Atk",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Sp. Atk",
+                "type": "CONTINUOUS"
+              },
+              "id": "4C3ONnE"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Sp. Atk",
+                "type": "CONTINUOUS"
+              },
+              "id": "d5LB9Hh"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Sp. Atk",
+                "type": "CONTINUOUS"
+              },
+              "id": "TtJPyA9"
+            }
+          ],
+          "id": "G0kWPDf"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Sp. Def",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Sp. Def",
+                "type": "CONTINUOUS"
+              },
+              "id": "g5X2wW6"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Sp. Def",
+                "type": "CONTINUOUS"
+              },
+              "id": "sbFgF8t"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Sp. Def",
+                "type": "CONTINUOUS"
+              },
+              "id": "AoF2u4X"
+            }
+          ],
+          "id": "YhLEdPr"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Speed",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Speed",
+                "type": "CONTINUOUS"
+              },
+              "id": "M8qbjQB"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Speed",
+                "type": "CONTINUOUS"
+              },
+              "id": "thQ9n1J"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Speed",
+                "type": "CONTINUOUS"
+              },
+              "id": "dA5QRWE"
+            }
+          ],
+          "id": "wBokRpQ"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Generation",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Generation",
+                "type": "CONTINUOUS"
+              },
+              "id": "x3pQzcx"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Generation",
+                "type": "CONTINUOUS"
+              },
+              "id": "02bHvYP"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Generation",
+                "type": "CONTINUOUS"
+              },
+              "id": "7N4hhMP"
+            }
+          ],
+          "id": "wJGzGdn"
+        },
+        {
+          "type": "column_card",
+          "column": {
+            "name": "Total",
+            "type": "CONTINUOUS"
+          },
+          "cards": [
+            {
+              "type": "numerical_histogram",
+              "showBoxPlot": true,
+              "showHistogram": true,
+              "binningMode": "AUTO",
+              "nbBins": 25,
+              "customBinningBoundaries": [],
+              "column": {
+                "name": "Total",
+                "type": "CONTINUOUS"
+              },
+              "id": "NK8JiGv"
+            },
+            {
+              "type": "univariate_summary",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "compute": {
+                "totalCount": true,
+                "mean": true,
+                "sum": false,
+                "median": true,
+                "std": true,
+                "variance": false,
+                "skewness": false,
+                "kurtosis": false,
+                "sem": false,
+                "completeCount": true,
+                "nbEmpty": true,
+                "zeroCount": false,
+                "zeroRatio": false,
+                "nonZeroRatio": false,
+                "iqr": false,
+                "distinctCount": true,
+                "nbNonEmpty": false,
+                "min": true,
+                "max": true,
+                "range": false,
+                "mode": true
+              },
+              "column": {
+                "name": "Total",
+                "type": "CONTINUOUS"
+              },
+              "id": "3HAUHAQ"
+            },
+            {
+              "type": "quantile_table",
+              "confidenceLevel": 0.95,
+              "showConfidenceInterval": false,
+              "column": {
+                "name": "Total",
+                "type": "CONTINUOUS"
+              },
+              "id": "duadntZ"
+            }
+          ],
+          "id": "obLWu2D"
+        }
+      ],
+      "id": "tEfXK1F"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "Pokemon_PgSQL_Train",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 0,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Univariate analysis on 8 variables ",
+  "dashboardCreationId": "TYxEtQ8",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589294508308
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589294508308
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

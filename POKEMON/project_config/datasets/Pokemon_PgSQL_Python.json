@@ -1,0 +1,1803 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589292135682
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589284049074
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "pgsql-localhost-dataiku",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_pokemon_pgsql_python",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Abomasnow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027AbomasnowMega Abomasnow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027AegislashBlade Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027AegislashShield Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Aerodactyl\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027AerodactylMega Aerodactyl\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Aggron\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Altaria\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027AltariaMega Altaria\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Amaura\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Amoonguss\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027AmpharosMega Ampharos\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Anorith\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Archen\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Archeops\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ariados\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Armaldo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Aron\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Articuno\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027AudinoMega Audino\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Aurorus\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Azumarill\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Azurill\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Baltoy\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Barbaracle\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Barboach\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Bastiodon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Beautifly\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Beedrill\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027BeedrillMega Beedrill\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Beldum\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Bellsprout\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Bibarel\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Binacle\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Bisharp\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Blaziken\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027BlazikenMega Blaziken\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Braviary\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Breloom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Bronzong\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Bronzor\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Budew\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Bulbasaur\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Butterfree\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Cacturne\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Camerupt\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027CameruptMega Camerupt\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Carbink\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Carracosta\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Carvanha\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Celebi\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Chandelure\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Charizard\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027CharizardMega Charizard X\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027CharizardMega Charizard Y\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Chatot\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Chesnaught\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Chinchou\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Claydol\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Cloyster\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Cobalion\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Combee\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Combusken\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Corsola\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Cottonee\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Cradily\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Crawdaunt\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Croagunk\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Crobat\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Crustle\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027DarmanitanZen Mode\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dedenne\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Deerling\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Deino\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Delibird\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Delphox\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dewgong\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dialga\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Diancie\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027DiancieMega Diancie\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Diggersby\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dodrio\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Doduo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Doublade\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dragalge\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dragonite\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Drapion\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Drifblim\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Drifloon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ducklett\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Durant\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dustox\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Dwebble\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Emboar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Emolga\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Empoleon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Escavalier\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Excadrill\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Exeggcute\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Exeggutor\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \"Farfetch\u0027d\")",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Fearow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ferroseed\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ferrothorn\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Fletchinder\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Fletchling\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Flygon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Foongus\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Forretress\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Frillish\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Froslass\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gabite\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gallade\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GalladeMega Gallade\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Galvantula\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Garchomp\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GarchompMega Garchomp\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gardevoir\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GardevoirMega Gardevoir\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gastly\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gastrodon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Genesect\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gengar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GengarMega Gengar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Geodude\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gible\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Girafarig\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GiratinaAltered Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GiratinaOrigin Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gligar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gliscor\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gloom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Golbat\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Golem\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Golett\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Golurk\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GourgeistAverage Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GourgeistLarge Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GourgeistSmall Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GourgeistSuper Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Graveler\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Greninja\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GroudonPrimal Groudon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Gyarados\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027GyaradosMega Gyarados\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Haunter\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Hawlucha\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Heatran\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Heliolisk\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Helioptile\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Heracross\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027HeracrossMega Heracross\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ho-oh\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Honchkrow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Honedge\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027HoopaHoopa Confined\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027HoopaHoopa Unbound\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Hoothoot\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Hoppip\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Houndoom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027HoundoomMega Houndoom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Houndour\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Hydreigon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Igglybuff\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Infernape\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Inkay\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ivysaur\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Jellicent\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Jigglypuff\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Jirachi\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Joltik\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Jumpluff\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Jynx\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Kabuto\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Kabutops\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Kakuna\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027KeldeoOrdinary Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027KeldeoResolute Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Kingdra\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Kirlia\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Klefki\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Krokorok\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Krookodile\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Kyurem\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027KyuremBlack Kyurem\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027KyuremWhite Kyurem\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lairon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lampent\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027LandorusIncarnate Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027LandorusTherian Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lanturn\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lapras\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Larvesta\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Larvitar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Latias\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027LatiasMega Latias\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Latios\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027LatiosMega Latios\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Leavanny\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ledian\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ledyba\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lileep\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Litleo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Litwick\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lombre\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027LopunnyMega Lopunny\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lotad\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lucario\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027LucarioMega Lucario\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ludicolo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lugia\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Lunatone\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Magcargo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Magnemite\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Magneton\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Magnezone\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Malamar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mamoswine\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mandibuzz\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mantine\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mantyke\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Marill\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Marshtomp\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Masquerain\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mawile\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027MawileMega Mawile\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Medicham\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027MedichamMega Medicham\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Meditite\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027MeloettaAria Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027MeloettaPirouette Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Metagross\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027MetagrossMega Metagross\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Metang\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027MewtwoMega Mewtwo X\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mime Jr.\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Moltres\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Monferno\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mothim\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Mr. Mime\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Murkrow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Natu\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Nidoking\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Nidoqueen\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Nincada\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ninjask\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Noctowl\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Noibat\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Noivern\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Numel\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Nuzleaf\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Oddish\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Omanyte\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Omastar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Onix\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Palkia\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Palpitoad\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pangoro\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Paras\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Parasect\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pawniard\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pelipper\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Phantump\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pidgeot\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027PidgeotMega Pidgeot\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pidgeotto\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pidgey\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pidove\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pignite\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Piloswine\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027PinsirMega Pinsir\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Poliwrath\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Probopass\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027PumpkabooAverage Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027PumpkabooLarge Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027PumpkabooSmall Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027PumpkabooSuper Size\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pupitar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Pyroar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Quagsire\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Qwilfish\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Ralts\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Rayquaza\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027RayquazaMega Rayquaza\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Relicanth\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Reshiram\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Rhydon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Rhyhorn\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Rhyperior\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Roselia\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Roserade\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Rotom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027RotomFan Rotom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027RotomFrost Rotom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027RotomHeat Rotom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027RotomMow Rotom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027RotomWash Rotom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Rufflet\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sableye\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027SableyeMega Sableye\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Salamence\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027SalamenceMega Salamence\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sandile\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sawsbuck\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027SceptileMega Sceptile\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Scizor\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027ScizorMega Scizor\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Scolipede\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Scrafty\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Scraggy\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Scyther\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sealeo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Seismitoad\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sewaddle\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sharpedo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027SharpedoMega Sharpedo\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027ShayminSky Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Shedinja\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Shieldon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Shiftry\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Shuckle\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sigilyph\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Skarmory\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Skiploom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Skorupi\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Skrelp\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Skuntank\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Slowbro\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027SlowbroMega Slowbro\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Slowking\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Slowpoke\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Smoochum\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Sneasel\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Snover\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Solrock\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Spearow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Spheal\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Spinarak\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Spiritomb\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Staraptor\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Staravia\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Starly\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Starmie\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Steelix\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027SteelixMega Steelix\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Stunfisk\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Stunky\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Surskit\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Swablu\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Swadloon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Swampert\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027SwampertMega Swampert\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Swanna\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Swellow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Swinub\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Swoobat\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Taillow\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Talonflame\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tentacool\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tentacruel\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Terrakion\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027ThundurusIncarnate Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027ThundurusTherian Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tirtouga\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Togekiss\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Togetic\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Torterra\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Toxicroak\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tranquill\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Trevenant\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tropius\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tyranitar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027TyranitarMega Tyranitar\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tyrantrum\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Tyrunt\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Unfezant\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Venipede\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Venomoth\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Venonat\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Venusaur\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027VenusaurMega Venusaur\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Vespiquen\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Vibrava\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Victini\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Victreebel\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Vileplume\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Virizion\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Vivillon\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Volcanion\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Volcarona\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Vullaby\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Walrein\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Weavile\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Weedle\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Weepinbell\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Whimsicott\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Whirlipede\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Whiscash\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Wigglytuff\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Wingull\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Woobat\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Wooper\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027WormadamPlant Cloak\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027WormadamSandy Cloak\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027WormadamTrash Cloak\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Xatu\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Yanma\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Yanmega\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Yveltal\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Zapdos\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Zekrom\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Zubat\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Zweilous\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027Zygarde50% Forme\u0027)",
+        "type": "double"
+      },
+      {
+        "name": "(u\u0027Speed\u0027, \u0027All\u0027)",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

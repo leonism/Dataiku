@@ -1,0 +1,34 @@
+{
+    "details": {
+        "Legendary": {
+            "levels": [
+                "false", 
+                "true"
+            ], 
+            "with_others": true
+        }, 
+        "Type 1": {
+            "levels": [
+                "Bug", 
+                "Water", 
+                "Grass", 
+                "Normal", 
+                "Rock", 
+                "Ghost", 
+                "Psychic", 
+                "Ground", 
+                "Dragon", 
+                "Steel", 
+                "Dark", 
+                "Fire", 
+                "Electric", 
+                "Poison", 
+                "Ice", 
+                "Fighting", 
+                "Flying", 
+                "Fairy"
+            ], 
+            "with_others": true
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "resolved": {
+        "rf": {
+            "max_tree_depth": 13, 
+            "selection_mode": "auto", 
+            "min_samples_leaf": 1, 
+            "estimators": 100
+        }, 
+        "skipExpensiveReports": false, 
+        "algorithm": "RANDOM_FOREST_CLASSIFICATION"
+    }, 
+    "other": {
+        "rf_min_samples_split": 3
+    }
+}

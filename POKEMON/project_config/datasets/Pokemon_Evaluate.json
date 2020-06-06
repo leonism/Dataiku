@@ -1,0 +1,271 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589296412128
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589296383127
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "pgsql-localhost-dataiku",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_pokemon_evaluate",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Name",
+        "type": "string"
+      },
+      {
+        "name": "Type 1",
+        "type": "string"
+      },
+      {
+        "name": "Type 2",
+        "type": "string"
+      },
+      {
+        "name": "Total",
+        "type": "bigint"
+      },
+      {
+        "name": "HP",
+        "type": "bigint"
+      },
+      {
+        "name": "Attack",
+        "type": "bigint"
+      },
+      {
+        "name": "Defense",
+        "type": "bigint"
+      },
+      {
+        "name": "Sp. Atk",
+        "type": "bigint"
+      },
+      {
+        "name": "Sp. Def",
+        "type": "bigint"
+      },
+      {
+        "name": "Speed",
+        "type": "bigint"
+      },
+      {
+        "name": "Generation",
+        "type": "bigint"
+      },
+      {
+        "name": "Legendary",
+        "type": "boolean"
+      },
+      {
+        "name": "proba_Flying",
+        "type": "double"
+      },
+      {
+        "name": "proba_Ground",
+        "type": "double"
+      },
+      {
+        "name": "proba_Poison",
+        "type": "double"
+      },
+      {
+        "name": "proba_Psychic",
+        "type": "double"
+      },
+      {
+        "name": "proba_Fighting",
+        "type": "double"
+      },
+      {
+        "name": "proba_Grass",
+        "type": "double"
+      },
+      {
+        "name": "proba_Fairy",
+        "type": "double"
+      },
+      {
+        "name": "proba_Steel",
+        "type": "double"
+      },
+      {
+        "name": "proba_Dark",
+        "type": "double"
+      },
+      {
+        "name": "proba_Dragon",
+        "type": "double"
+      },
+      {
+        "name": "proba_Water",
+        "type": "double"
+      },
+      {
+        "name": "proba_Rock",
+        "type": "double"
+      },
+      {
+        "name": "proba_Ice",
+        "type": "double"
+      },
+      {
+        "name": "proba_Ghost",
+        "type": "double"
+      },
+      {
+        "name": "proba_Fire",
+        "type": "double"
+      },
+      {
+        "name": "proba_Electric",
+        "type": "double"
+      },
+      {
+        "name": "proba_Normal",
+        "type": "double"
+      },
+      {
+        "name": "proba_Bug",
+        "type": "double"
+      },
+      {
+        "name": "prediction",
+        "type": "string"
+      },
+      {
+        "name": "prediction_correct",
+        "type": "boolean"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

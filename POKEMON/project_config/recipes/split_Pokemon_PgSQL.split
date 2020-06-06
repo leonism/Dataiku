@@ -1,0 +1,394 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": -1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "column": "Type 2",
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false,
+      "value": ""
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "col_0",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Name",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Type 1",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Type 2",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Total",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "HP",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Attack",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Defense",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Sp. Atk",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Sp. Def",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Speed",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Generation",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Legendary",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "col_0",
+                "type": "bigint"
+              },
+              {
+                "name": "Name",
+                "type": "string"
+              },
+              {
+                "name": "Type 1",
+                "type": "string"
+              },
+              {
+                "name": "Type 2",
+                "type": "string"
+              },
+              {
+                "name": "Total",
+                "type": "bigint"
+              },
+              {
+                "name": "HP",
+                "type": "bigint"
+              },
+              {
+                "name": "Attack",
+                "type": "bigint"
+              },
+              {
+                "name": "Defense",
+                "type": "bigint"
+              },
+              {
+                "name": "Sp. Atk",
+                "type": "bigint"
+              },
+              {
+                "name": "Sp. Def",
+                "type": "bigint"
+              },
+              {
+                "name": "Speed",
+                "type": "bigint"
+              },
+              {
+                "name": "Generation",
+                "type": "bigint"
+              },
+              {
+                "name": "Legendary",
+                "type": "boolean"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    },
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "col_0",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Name",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Type 1",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty"
+            },
+            {
+              "input": "Type 2",
+              "col": "Name",
+              "num": 0,
+              "operator": "is empty"
+            },
+            {
+              "input": "Total",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "HP",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Attack",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Defense",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Sp. Atk",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Sp. Def",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Speed",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Generation",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            },
+            {
+              "input": "Legendary",
+              "col": "Name",
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "col_0",
+                "type": "bigint"
+              },
+              {
+                "name": "Name",
+                "type": "string"
+              },
+              {
+                "name": "Type 1",
+                "type": "string"
+              },
+              {
+                "name": "Type 2",
+                "type": "string"
+              },
+              {
+                "name": "Total",
+                "type": "bigint"
+              },
+              {
+                "name": "HP",
+                "type": "bigint"
+              },
+              {
+                "name": "Attack",
+                "type": "bigint"
+              },
+              {
+                "name": "Defense",
+                "type": "bigint"
+              },
+              {
+                "name": "Sp. Atk",
+                "type": "bigint"
+              },
+              {
+                "name": "Sp. Def",
+                "type": "bigint"
+              },
+              {
+                "name": "Speed",
+                "type": "bigint"
+              },
+              {
+                "name": "Generation",
+                "type": "bigint"
+              },
+              {
+                "name": "Legendary",
+                "type": "boolean"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "Filter expression is invalid"
+        },
+        "enabled": true
+      },
+      "outputIndex": 1
+    }
+  ]
+}

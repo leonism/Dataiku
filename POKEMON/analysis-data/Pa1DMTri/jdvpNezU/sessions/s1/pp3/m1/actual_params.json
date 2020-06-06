@@ -1,0 +1,31 @@
+{
+    "resolved": {
+        "n_jobs": 2, 
+        "algorithm": "PY_ISOLATION_FOREST", 
+        "coef0": 0.0, 
+        "isolation_forest": {
+            "max_samples": 0.5, 
+            "k": 2, 
+            "bootstrap": true, 
+            "enabled": true, 
+            "max_anomalies": 100, 
+            "n_estimators": 100, 
+            "seed": 1337, 
+            "n_samples": 256, 
+            "max_features": 1.0, 
+            "max_depth": 15, 
+            "contamination": 0.05
+        }, 
+        "epsilon": 0.0, 
+        "k": 0, 
+        "custom_has_k": false, 
+        "metrics": {
+            "evaluationMetric": "SILHOUETTE", 
+            "customEvaluationMetricGIB": true
+        }, 
+        "min_sample_ratio": 0.0, 
+        "ts_kmeans_k": 0, 
+        "gamma": 0.0, 
+        "max_iterations": 0
+    }
+}

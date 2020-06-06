@@ -1,0 +1,57 @@
+{
+    "details": {
+        "Type 2": {
+            "levels": [
+                "Flying", 
+                "Ground", 
+                "Poison", 
+                "Psychic", 
+                "Fighting", 
+                "Grass", 
+                "Fairy", 
+                "Steel", 
+                "Dark", 
+                "Dragon", 
+                "Water", 
+                "Rock", 
+                "Ice", 
+                "Ghost", 
+                "Fire", 
+                "Electric", 
+                "Normal", 
+                "Bug"
+            ], 
+            "with_others": true
+        }, 
+        "Legendary": {
+            "levels": [
+                "false", 
+                "true"
+            ], 
+            "with_others": true
+        }, 
+        "Type 1": {
+            "levels": [
+                "Water", 
+                "Bug", 
+                "Grass", 
+                "Normal", 
+                "Rock", 
+                "Fire", 
+                "Ghost", 
+                "Steel", 
+                "Dragon", 
+                "Dark", 
+                "Psychic", 
+                "Ground", 
+                "Electric", 
+                "Poison", 
+                "Ice", 
+                "Fighting", 
+                "Fairy", 
+                "Flying"
+            ], 
+            "with_others": true
+        }
+    }
+}

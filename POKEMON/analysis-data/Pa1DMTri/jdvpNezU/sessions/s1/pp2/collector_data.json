@@ -1,0 +1,215 @@
+{
+    "per_feature": {
+        "Name": {
+            "stats": {}
+        }, 
+        "Generation": {
+            "stats": {
+                "std": 1.6630096384029864, 
+                "p99": 6.0, 
+                "min": 1.0, 
+                "max": 6.0, 
+                "average": 3.4106280193236715, 
+                "median": 3.0
+            }, 
+            "missing_impute_with_value": 3.4106280193236715
+        }, 
+        "Type 2": {
+            "stats": {
+                "mostFrequentValue": "Flying", 
+                "leastFrequentValue": "Bug"
+            }, 
+            "category_possible_counts": [
+                97, 
+                35, 
+                34, 
+                33, 
+                26, 
+                25, 
+                23, 
+                22, 
+                20, 
+                18, 
+                14, 
+                14, 
+                14, 
+                14, 
+                12, 
+                6, 
+                4, 
+                3
+            ], 
+            "category_possible_values": [
+                "Flying", 
+                "Ground", 
+                "Poison", 
+                "Psychic", 
+                "Fighting", 
+                "Grass", 
+                "Fairy", 
+                "Steel", 
+                "Dark", 
+                "Dragon", 
+                "Water", 
+                "Rock", 
+                "Ice", 
+                "Ghost", 
+                "Fire", 
+                "Electric", 
+                "Normal", 
+                "Bug"
+            ]
+        }, 
+        "HP": {
+            "stats": {
+                "std": 22.89655730679303, 
+                "p99": 129.48000000000002, 
+                "min": 1.0, 
+                "max": 150.0, 
+                "average": 70.64975845410628, 
+                "median": 70.0
+            }, 
+            "missing_impute_with_value": 70.64975845410628
+        }, 
+        "Sp. Def": {
+            "stats": {
+                "std": 27.94996130368638, 
+                "p99": 150.0, 
+                "min": 20.0, 
+                "max": 230.0, 
+                "average": 75.56521739130434, 
+                "median": 75.0
+            }, 
+            "missing_impute_with_value": 75.56521739130434
+        }, 
+        "Sp. Atk": {
+            "stats": {
+                "std": 33.80506122172271, 
+                "p99": 165.0, 
+                "min": 10.0, 
+                "max": 180.0, 
+                "average": 77.04830917874396, 
+                "median": 70.0
+            }, 
+            "missing_impute_with_value": 77.04830917874396
+        }, 
+        "Type 1": {
+            "stats": {
+                "mostFrequentValue": "Water", 
+                "leastFrequentValue": "Flying"
+            }, 
+            "category_possible_counts": [
+                53, 
+                52, 
+                37, 
+                37, 
+                35, 
+                24, 
+                22, 
+                22, 
+                21, 
+                21, 
+                19, 
+                19, 
+                17, 
+                13, 
+                11, 
+                7, 
+                2, 
+                2
+            ], 
+            "category_possible_values": [
+                "Water", 
+                "Bug", 
+                "Grass", 
+                "Normal", 
+                "Rock", 
+                "Fire", 
+                "Ghost", 
+                "Steel", 
+                "Dragon", 
+                "Dark", 
+                "Psychic", 
+                "Ground", 
+                "Electric", 
+                "Poison", 
+                "Ice", 
+                "Fighting", 
+                "Fairy", 
+                "Flying"
+            ]
+        }, 
+        "Attack": {
+            "stats": {
+                "std": 33.69847347333553, 
+                "p99": 170.0, 
+                "min": 10.0, 
+                "max": 190.0, 
+                "average": 83.17391304347827, 
+                "median": 80.0
+            }, 
+            "missing_impute_with_value": 83.17391304347827
+        }, 
+        "Defense": {
+            "stats": {
+                "std": 32.5937882352418, 
+                "p99": 180.0, 
+                "min": 15.0, 
+                "max": 230.0, 
+                "average": 79.67632850241546, 
+                "median": 75.5
+            }, 
+            "missing_impute_with_value": 79.67632850241546
+        }, 
+        "Legendary": {
+            "stats": {
+                "mostFrequentValue": "false", 
+                "leastFrequentValue": "true"
+            }, 
+            "category_possible_counts": [
+                374, 
+                40
+            ], 
+            "category_possible_values": [
+                "false", 
+                "true"
+            ]
+        }, 
+        "Total": {
+            "stats": {
+                "std": 120.84950233839565, 
+                "p99": 700.0, 
+                "min": 190.0, 
+                "max": 780.0, 
+                "average": 456.6280193236715, 
+                "median": 475.0
+            }, 
+            "missing_impute_with_value": 456.6280193236715
+        }, 
+        "Speed": {
+            "stats": {
+                "std": 28.52140834112944, 
+                "p99": 134.35000000000002, 
+                "min": 5.0, 
+                "max": 160.0, 
+                "average": 70.51449275362319, 
+                "median": 70.0
+            }, 
+            "missing_impute_with_value": 70.51449275362319
+        }
+    }, 
+    "feature_order": [
+        "Name", 
+        "Generation", 
+        "Type 2", 
+        "HP", 
+        "Sp. Def", 
+        "Sp. Atk", 
+        "Type 1", 
+        "Attack", 
+        "Defense", 
+        "Legendary", 
+        "Total", 
+        "Speed"
+    ]
+}

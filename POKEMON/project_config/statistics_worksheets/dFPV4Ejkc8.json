@@ -1,0 +1,1175 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "Pokemon_PgSQL_Train",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "highlightFilter": {
+      "type": "interval",
+      "column": "Defense",
+      "closed": "LEFT",
+      "left": 94.73684210526315,
+      "right": 106.84210526315789,
+      "name": "Defense: [94.736842105,106.84210526)"
+    },
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": false,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "xColumns": [
+          {
+            "name": "HP",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Attack",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Defense",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Sp. Atk",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Sp. Def",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Speed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Generation",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Total",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "HP",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "HP",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Lo3LW2o"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "HP",
+                  "type": "CONTINUOUS"
+                },
+                "id": "PsISRpG"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "HP",
+                  "type": "CONTINUOUS"
+                },
+                "id": "7EiQnrd"
+              }
+            ],
+            "id": "K0T4sjF"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Attack",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Attack",
+                  "type": "CONTINUOUS"
+                },
+                "id": "OmS4BDK"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Attack",
+                  "type": "CONTINUOUS"
+                },
+                "id": "t0Sw7hx"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Attack",
+                  "type": "CONTINUOUS"
+                },
+                "id": "2c5vb9Z"
+              }
+            ],
+            "id": "eiEawml"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Defense",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Defense",
+                  "type": "CONTINUOUS"
+                },
+                "id": "PaSWiMA"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Defense",
+                  "type": "CONTINUOUS"
+                },
+                "id": "jEIll1S"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Defense",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3CdcbiF"
+              }
+            ],
+            "id": "FTuN88I"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Sp. Atk",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Sp. Atk",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4C3ONnE"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Sp. Atk",
+                  "type": "CONTINUOUS"
+                },
+                "id": "d5LB9Hh"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Sp. Atk",
+                  "type": "CONTINUOUS"
+                },
+                "id": "TtJPyA9"
+              }
+            ],
+            "id": "G0kWPDf"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Sp. Def",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Sp. Def",
+                  "type": "CONTINUOUS"
+                },
+                "id": "g5X2wW6"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Sp. Def",
+                  "type": "CONTINUOUS"
+                },
+                "id": "sbFgF8t"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Sp. Def",
+                  "type": "CONTINUOUS"
+                },
+                "id": "AoF2u4X"
+              }
+            ],
+            "id": "YhLEdPr"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Speed",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Speed",
+                  "type": "CONTINUOUS"
+                },
+                "id": "M8qbjQB"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Speed",
+                  "type": "CONTINUOUS"
+                },
+                "id": "thQ9n1J"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Speed",
+                  "type": "CONTINUOUS"
+                },
+                "id": "dA5QRWE"
+              }
+            ],
+            "id": "wBokRpQ"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Generation",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Generation",
+                  "type": "CONTINUOUS"
+                },
+                "id": "x3pQzcx"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Generation",
+                  "type": "CONTINUOUS"
+                },
+                "id": "02bHvYP"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Generation",
+                  "type": "CONTINUOUS"
+                },
+                "id": "7N4hhMP"
+              }
+            ],
+            "id": "wJGzGdn"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Total",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "NK8JiGv"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3HAUHAQ"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "duadntZ"
+              }
+            ],
+            "id": "obLWu2D"
+          }
+        ],
+        "id": "tEfXK1F"
+      },
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "xColumns": [
+          {
+            "name": "Name",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Type 1",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Type 2",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Legendary",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Total",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Name",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "column": {
+                  "name": "Name",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Hdi7MHc"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Name",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WYrrxnE"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Name",
+                  "type": "CATEGORICAL"
+                },
+                "id": "cIwQy1V"
+              }
+            ],
+            "id": "Q1lfadc"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Type 1",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "column": {
+                  "name": "Type 1",
+                  "type": "CATEGORICAL"
+                },
+                "id": "sgap544"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Type 1",
+                  "type": "CATEGORICAL"
+                },
+                "id": "YyWx0MJ"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Type 1",
+                  "type": "CATEGORICAL"
+                },
+                "id": "SYyZ0mx"
+              }
+            ],
+            "id": "gmdPWjQ"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Type 2",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "column": {
+                  "name": "Type 2",
+                  "type": "CATEGORICAL"
+                },
+                "id": "mOzn3tX"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Type 2",
+                  "type": "CATEGORICAL"
+                },
+                "id": "nU9di33"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Type 2",
+                  "type": "CATEGORICAL"
+                },
+                "id": "g2O6FwL"
+              }
+            ],
+            "id": "KNk2jPJ"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Legendary",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "column": {
+                  "name": "Legendary",
+                  "type": "CATEGORICAL"
+                },
+                "id": "azQRZU2"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Legendary",
+                  "type": "CATEGORICAL"
+                },
+                "id": "5aRe2Oy"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Legendary",
+                  "type": "CATEGORICAL"
+                },
+                "id": "DOs4ybt"
+              }
+            ],
+            "id": "DObu3s6"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Total",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "highlightFilter": {
+                  "type": "interval",
+                  "column": "Defense",
+                  "closed": "LEFT",
+                  "left": 94.73684210526315,
+                  "right": 106.84210526315789,
+                  "name": "Defense: [94.736842105,106.84210526)"
+                },
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "mkqq95D"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tHhBcw9"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "gwdBS6i"
+              }
+            ],
+            "id": "cTHg7lc"
+          }
+        ],
+        "id": "2sMzZF2"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "metric": "PEARSON",
+        "columns": [
+          {
+            "name": "Total",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "HP",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "HiY35ZO"
+      },
+      {
+        "type": "fit_distribution",
+        "distributions": [
+          {
+            "distribution": {
+              "type": "exponential"
+            }
+          },
+          {
+            "distribution": {
+              "type": "beta"
+            }
+          }
+        ],
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "HP",
+          "type": "CONTINUOUS"
+        },
+        "id": "LMsHgMm"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "metric": "PEARSON",
+        "columns": [
+          {
+            "name": "Speed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Sp. Atk",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Sp. Def",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Attack",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Total",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "HP",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Defense",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Generation",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "xhbM3aZ"
+      }
+    ],
+    "id": "VMH6Dif"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 16,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589293123267
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1589292385742
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

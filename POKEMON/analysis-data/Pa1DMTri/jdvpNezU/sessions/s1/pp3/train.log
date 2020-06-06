@@ -1,0 +1,484 @@
+[2020/05/12-21:57:59.469] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/05/12-21:57:59.472] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.prediction]  - ** Start train session s1
+[2020/05/12-21:57:59.475] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.prediction]  - ******************************************
+[2020/05/12-21:57:59.482] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.data] T-jdvpNezU - [ct: 13] Need to compute sampleId before checking memory cache
+[2020/05/12-21:57:59.518] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dip.shaker.runner] T-jdvpNezU - [ct: 49] Script settings sampleMax=104857600 processedMax=-1
+[2020/05/12-21:57:59.523] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dip.shaker.runner] T-jdvpNezU - [ct: 54] Processing with sampleMax=104857600 processedMax=524288000
+[2020/05/12-21:57:59.525] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dip.shaker.runner] T-jdvpNezU - [ct: 56] Computed required sample id : f14b886a96b0fc0280ab3d0538e4d93c-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce
+[2020/05/12-21:57:59.532] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dku.shaker.cache] T-jdvpNezU - Shaker MemoryCache get on POKEMON.Pokemon_PgSQL_Train key=ds=2c2f38f80e1608cfd79645dfa9d48840--scr=6fc68b9b1eec2a3ae90ee9d91e3ecb62--samp=f14b886a96b0fc0280ab3d0538e4d93c-NA-31c57f559ab672625afa057353f0de860--d751713988987e9331980363e24189ce: hit
+[2020/05/12-21:57:59.536] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 67] Column Name meaning=Text fail=0
+[2020/05/12-21:57:59.541] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 72] Column Type 1 meaning=Text fail=0
+[2020/05/12-21:57:59.543] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 74] Column Type 2 meaning=Text fail=0
+[2020/05/12-21:57:59.545] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 75] Column Total meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.561] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 92] Column HP meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.564] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 95] Column Attack meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.568] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 99] Column Defense meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.575] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 106] Column Sp. Atk meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.578] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 109] Column Sp. Def meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.579] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 110] Column Speed meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.583] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 114] Column Generation meaning=LongMeaning fail=0
+[2020/05/12-21:57:59.587] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.shaker.schema] T-jdvpNezU - [ct: 118] Column Legendary meaning=Boolean fail=0
+[2020/05/12-21:57:59.595] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.input.push] T-jdvpNezU - Using ordering from dataset: {"enabled":false,"rules":[]}
+[2020/05/12-21:57:59.602] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.input.push] T-jdvpNezU - USTP: push selection.method=FULL records=100000 ratio=0.02 col=null
+[2020/05/12-21:57:59.607] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.datasets.push] T-jdvpNezU - [ct: 138] Push row splits limit= {"maxBytes":-1,"maxRecords":-1,"ordering":{"enabled":false,"rules":[]}}
+[2020/05/12-21:57:59.611] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.input.rows] T-jdvpNezU - [ct: 142] Starting to push split com.dataiku.dip.datasets.sql.AbstractSQLTableDatasetHandler$TableClauseSplit@789bff7a with limit= -1
+[2020/05/12-21:57:59.616] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.connections.sql.provider] T-jdvpNezU - [ct: 147] Connecting to jdbc:postgresql://localhost:5432/dataiku with props: {"user":"postgres"} conn=pgsql-localhost-dataiku-wRZSJmJ
+[2020/05/12-21:57:59.627] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dku.connections.sql.driver] T-jdvpNezU - Driver version 9.0
+[2020/05/12-21:57:59.659] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.connections.sql.provider] T-jdvpNezU - [ct: 190] Driver: PostgreSQL Native Driver (JDBC 4.0) PostgreSQL 9.0 JDBC4 (build 801) (9.0)
+[2020/05/12-21:57:59.660] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.connections.sql.provider] T-jdvpNezU - [ct: 191] Database: PostgreSQL 12.1 (12.1) rowSize=8192 stmts=0
+[2020/05/12-21:57:59.664] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.datasets.sql] T-jdvpNezU - [ct: 195] Executing query SELECT * FROM "POKEMON_pokemon_pgsql_train" (st=org.postgresql.jdbc4.Jdbc4Statement@47ab8a41)
+[2020/05/12-21:57:59.671] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.datasets.sql] T-jdvpNezU - [ct: 202] Done executing query (st=org.postgresql.jdbc4.Jdbc4Statement@47ab8a41)
+[2020/05/12-21:57:59.762] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.datasets.sql] T-jdvpNezU - [ct: 293] Done iterating result set, returned 414 rows
+[2020/05/12-21:57:59.763] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.datasets.sql] T-jdvpNezU - [ct: 294] Exited push
+[2020/05/12-21:57:59.809] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dku.connections.sql.provider] T-jdvpNezU - [ct: 340] Rollback and close conn=pgsql-localhost-dataiku-wRZSJmJ
+[2020/05/12-21:57:59.811] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dku.connections.sql.provider] T-jdvpNezU - [ct: 342] Rollback conn=pgsql-localhost-dataiku-wRZSJmJ
+[2020/05/12-21:57:59.816] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dku.connections.sql.provider] T-jdvpNezU - [ct: 347] Close conn=pgsql-localhost-dataiku-wRZSJmJ
+[2020/05/12-21:57:59.822] [FT-TrainWorkThread-Wm8CwGL0-395] [DEBUG] [dku.connections.sql.provider] T-jdvpNezU - [ct: 353] Close conn=pgsql-localhost-dataiku-wRZSJmJ
+[2020/05/12-21:57:59.839] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.splits] T-jdvpNezU - [ct: 370] Search for split: p=extractBeforePrepare=true,,ds=Pokemon_PgSQL_Train,sel=(method=full) i=5c5bd55f305c488b3e0eeacf9a2b04f9-0
+[2020/05/12-21:57:59.844] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.splits] T-jdvpNezU - [ct: 375] Search for split: p=extractBeforePrepare=true,,ds=Pokemon_PgSQL_Train,sel=(method=full) i=5c5bd55f305c488b3e0eeacf9a2b04f9-0
+[2020/05/12-21:57:59.871] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.ml.python] T-jdvpNezU - Joining processing thread ...
+[2020/05/12-21:58:13.219] [MRT-396] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp3 in /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/POKEMON/Pa1DMTri/jdvpNezU/sessions/s1/pp3
+[2020/05/12-21:58:13.223] [MRT-396] [INFO] [dku.block.link]  - Started a socket on port 61952
+[2020/05/12-21:58:13.227] [MRT-396] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/POKEMON/Pa1DMTri/jdvpNezU/sessions/s1/pp3/train.log
+[2020/05/12-21:58:13.228] [MRT-396] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2020/05/12-21:58:13.231] [MRT-396] [WARN] [dku.code.projectLibs]  - External libraries file not found: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/POKEMON/lib/external-libraries.json
+[2020/05/12-21:58:13.232] [MRT-396] [INFO] [dku.code.projectLibs]  - EXTERNAL LIBS FROM POKEMON is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/05/12-21:58:13.234] [MRT-396] [INFO] [dku.code.projectLibs]  - chunkFolder is /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/config/projects/POKEMON/lib/R
+[2020/05/12-21:58:13.235] [MRT-396] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2020/05/12-21:58:13.239] [MRT-396] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-POKEMON-w7FDLos on behalf of admin id=analysis-ml-POKEMON-w7FDLos_OHsevCJVrQ2R
+[2020/05/12-21:58:13.242] [MRT-396] [INFO] [dku.security.process]  - Starting process (regular)
+[2020/05/12-21:58:13.250] [MRT-396] [INFO] [dku.security.process]  - Process started with pid=7505
+[2020/05/12-21:58:13.251] [MRT-396] [INFO] [dku.processes.cgroups]  - Will use cgroups []
+[2020/05/12-21:58:13.252] [MRT-396] [INFO] [dku.processes.cgroups]  - Applying rules to used cgroups: []
+Installing debugging signal handler
+[2020-05-12 21:58:15,379] [7505/MainThread] [INFO] [root] Connecting to parent at port 61952
+[2020-05-12 21:58:15,380] [7505/MainThread] [INFO] [root] Connected to parent at port 61952
+[2020/05/12-21:58:15.380] [MRT-396] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2020/05/12-21:58:15.381] [MRT-396] [INFO] [dku.analysis.train]  - SUBMITTING pp3 in: /Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/POKEMON/Pa1DMTri/jdvpNezU/sessions/s1/pp3 ; modeling set: [{"modelId":"m1","fullId":{"type":"ANALYSIS","taskLoc":{"analysisProjectKey":"POKEMON","analysisId":"Pa1DMTri","mlTaskId":"jdvpNezU"},"sessionId":"s1","preprocessingId":"pp3","modelId":"m1"},"modelingParams":{"algorithm":"PY_ISOLATION_FOREST","k":0,"n_jobs":2,"max_iterations":0,"epsilon":0.0,"min_sample_ratio":0.0,"gamma":0.0,"coef0":0.0,"custom_has_k":false,"isolation_forest":{"k":2,"enabled":true,"n_estimators":100,"max_samples":0.5,"max_features":1.0,"contamination":0.05,"bootstrap":true,"max_anomalies":100,"n_samples":256,"max_depth":15,"seed":1337},"ts_kmeans_k":0,"metrics":{"evaluationMetric":"SILHOUETTE","customEvaluationMetricGIB":true}},"userMeta":{"description":"Isolation Forest (Anomaly Detection)\nCluster outliers\n","name":"Isolation Forest (Anomaly Detection)","starred":false,"clusterMetas":{},"customMeta":{"kv":{}},"tags":[],"activeClassifierThreshold":0.0},"run_folder":"/Users/gerryleonugroho/Library/DataScienceStudio/dss_home/analysis-data/POKEMON/Pa1DMTri/jdvpNezU/sessions/s1/pp3/m1","estimatedTrains":1,"pluginAlgoCustomGridSearch":false}]
+[2020/05/12-21:58:15.384] [MRT-396] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+[2020-05-12 21:58:16,063] [7505/MainThread] [INFO] [root] Running analysis command: train_clustering_models_nosave
+[2020-05-12 21:58:16,065] [7505/MainThread] [INFO] [dataiku.doctor.commands] START TRAIN :
+[2020-05-12 21:58:16,065] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading source dataset
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [root] Reading with dtypes: None
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Name: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Type 1: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Type 2: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Total: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for HP: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Attack: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Defense: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Sp. Atk: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Sp. Def: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,066] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Speed: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,067] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Generation: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020-05-12 21:58:16,067] [7505/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Legendary: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020-05-12 21:58:16,067] [7505/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'Generation': <type 'numpy.float64'>, u'Sp. Atk': <type 'numpy.float64'>, u'HP': <type 'numpy.float64'>, u'Sp. Def': <type 'numpy.float64'>, u'Type 2': 'str', u'Type 1': 'str', u'Attack': <type 'numpy.float64'>, u'Defense': <type 'numpy.float64'>, u'Legendary': 'str', u'Total': <type 'numpy.float64'>, u'Speed': <type 'numpy.float64'>}
+[2020-05-12 21:58:16,076] [7505/MainThread] [INFO] [root] Loaded table
+[2020-05-12 21:58:16,077] [7505/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2020-05-12 21:58:16,077] [7505/MainThread] [INFO] [dataiku.doctor.commands] Loaded source df: shape=(414,12)
+[2020-05-12 21:58:16,077] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading source dataset
+[2020-05-12 21:58:16,077] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2020-05-12 21:58:16,078] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Name... (type=CATEGORY)
+[2020-05-12 21:58:16,078] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Generation... (type=NUMERIC)
+[2020-05-12 21:58:16,079] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,081] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Type 2... (type=CATEGORY)
+[2020-05-12 21:58:16,083] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at HP... (type=NUMERIC)
+[2020-05-12 21:58:16,083] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,085] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Sp. Def... (type=NUMERIC)
+[2020-05-12 21:58:16,085] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,086] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Sp. Atk... (type=NUMERIC)
+[2020-05-12 21:58:16,086] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,088] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Type 1... (type=CATEGORY)
+[2020-05-12 21:58:16,092] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Attack... (type=NUMERIC)
+[2020-05-12 21:58:16,092] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,093] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Defense... (type=NUMERIC)
+[2020-05-12 21:58:16,093] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,094] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Legendary... (type=CATEGORY)
+[2020-05-12 21:58:16,096] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Total... (type=NUMERIC)
+[2020-05-12 21:58:16,096] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,097] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Speed... (type=NUMERIC)
+[2020-05-12 21:58:16,097] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2020-05-12 21:58:16,098] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2020-05-12 21:58:16,099] [7505/MainThread] [INFO] [dataiku.doctor.multiframe] generating interactions
+[2020-05-12 21:58:16,099] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing data
+[2020-05-12 21:58:16,099] [7505/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 414
+[2020-05-12 21:58:16,100] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Type 2)
+[2020-05-12 21:58:16,103] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(414, 20) nnz=414
+[2020-05-12 21:58:16,103] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Type 1)
+[2020-05-12 21:58:16,108] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(414, 20) nnz=414
+[2020-05-12 21:58:16,108] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Legendary)
+[2020-05-12 21:58:16,111] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(414, 4) nnz=414
+[2020-05-12 21:58:16,111] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:CopyMultipleColumnsFromInput
+[2020-05-12 21:58:16,113] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:CopyMultipleColumnsFromInput
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-05-12 21:58:16,114] [7505/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 414
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (After create profiling)
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (414, 12) 
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((414, 12))
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       PROFILING = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 55))
+[2020-05-12 21:58:16,114] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-05-12 21:58:16,115] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'Generation': 3.4106280193236715, u'HP': 70.64975845410628, u'Sp. Def': 75.56521739130434, u'Sp. Atk': 77.04830917874396, u'Attack': 83.17391304347827, u'Defense': 79.67632850241546, u'Total': 456.6280193236715, u'Speed': 70.51449275362319}
+[2020-05-12 21:58:16,117] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Generation)
+[2020-05-12 21:58:16,117] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Generation (avg=3.41062801932 std=1.6630096384 shift=3.41062801932 inv_scale=0.60131942528)
+[2020-05-12 21:58:16,126] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Generation (avg=4.89678078011e-15 std=1.0) nulls=0
+[2020-05-12 21:58:16,126] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (HP)
+[2020-05-12 21:58:16,127] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale HP (avg=70.6497584541 std=22.8965573068 shift=70.6497584541 inv_scale=0.0436746881464)
+[2020-05-12 21:58:16,128] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled HP (avg=1.98177491594e-16 std=1.0) nulls=0
+[2020-05-12 21:58:16,128] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Sp. Def)
+[2020-05-12 21:58:16,128] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Sp. Def (avg=75.5652173913 std=27.9499613037 shift=75.5652173913 inv_scale=0.0357782248474)
+[2020-05-12 21:58:16,130] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Sp. Def (avg=9.25185853854e-17 std=1.0) nulls=0
+[2020-05-12 21:58:16,131] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Sp. Atk)
+[2020-05-12 21:58:16,131] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Sp. Atk (avg=77.0483091787 std=33.8050612217 shift=77.0483091787 inv_scale=0.0295813692938)
+[2020-05-12 21:58:16,132] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Sp. Atk (avg=1.60901887627e-18 std=1.0) nulls=0
+[2020-05-12 21:58:16,132] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Attack)
+[2020-05-12 21:58:16,133] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Attack (avg=83.1739130435 std=33.6984734733 shift=83.1739130435 inv_scale=0.0296749347056)
+[2020-05-12 21:58:16,134] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Attack (avg=-7.45512079338e-17 std=1.0) nulls=0
+[2020-05-12 21:58:16,134] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Defense)
+[2020-05-12 21:58:16,134] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Defense (avg=79.6763285024 std=32.5937882352 shift=79.6763285024 inv_scale=0.0306806926762)
+[2020-05-12 21:58:16,135] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Defense (avg=1.60901887627e-17 std=1.0) nulls=0
+[2020-05-12 21:58:16,136] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Total)
+[2020-05-12 21:58:16,136] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Total (avg=456.628019324 std=120.849502338 shift=456.628019324 inv_scale=0.00827475480371)
+[2020-05-12 21:58:16,138] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Total (avg=6.38244154253e-17 std=1.0) nulls=0
+[2020-05-12 21:58:16,138] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Speed)
+[2020-05-12 21:58:16,138] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Speed (avg=70.5144927536 std=28.5214083411 shift=70.5144927536 inv_scale=0.0350613822445)
+[2020-05-12 21:58:16,141] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Speed (avg=-2.15792896166e-17 std=1.0) nulls=0
+[2020-05-12 21:58:16,141] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020-05-12 21:58:16,141] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Type 2)
+[2020-05-12 21:58:16,144] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(414, 20) nnz=414
+[2020-05-12 21:58:16,144] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Type 1)
+[2020-05-12 21:58:16,146] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(414, 20) nnz=414
+[2020-05-12 21:58:16,146] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Legendary)
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(414, 4) nnz=414
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (After std handling)
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (414, 12) 
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(414, 52) 
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((414, 12))
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       PROFILING = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 55))
+[2020-05-12 21:58:16,149] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:OutlierDetection
+[2020-05-12 21:58:16,150] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Outliers detection: fitting PCA
+[2020-05-12 21:58:16,151] [7505/MainThread] [INFO] [dataiku.doctor.preprocessing.pca] Fitting on [[-1.01410864 -0.94117101 -1.44955746 ...  0.          0.
+   0.        ]
+ [-0.62833449 -0.51164131 -1.44955746 ...  0.          0.
+   0.        ]
+ [-0.03483579  0.10197254 -1.44955746 ...  0.          0.
+   0.        ]
+ ...
+ [ 0.79606238 -0.60368339  1.55703967 ...  1.          0.
+   0.        ]
+ [ 2.27980911 -0.60368339  1.55703967 ...  1.          0.
+   0.        ]
+ [ 0.79606238  1.23715817  1.55703967 ...  1.          0.
+   0.        ]] (cols [u'Attack', u'Defense', u'Generation', u'HP', u'Sp. Atk', u'Sp. Def', u'Speed', u'Total', u'dummy:Type 2:Flying', u'dummy:Type 2:Ground', u'dummy:Type 2:Poison', u'dummy:Type 2:Psychic', u'dummy:Type 2:Fighting', u'dummy:Type 2:Grass', u'dummy:Type 2:Fairy', u'dummy:Type 2:Steel', u'dummy:Type 2:Dark', u'dummy:Type 2:Dragon', u'dummy:Type 2:Water', u'dummy:Type 2:Rock', u'dummy:Type 2:Ice', u'dummy:Type 2:Ghost', u'dummy:Type 2:Fire', u'dummy:Type 2:Electric', u'dummy:Type 2:Normal', u'dummy:Type 2:Bug', u'dummy:Type 2:N/A', u'dummy:Type 2:__Others__', u'dummy:Type 1:Water', u'dummy:Type 1:Bug', u'dummy:Type 1:Grass', u'dummy:Type 1:Normal', u'dummy:Type 1:Rock', u'dummy:Type 1:Fire', u'dummy:Type 1:Ghost', u'dummy:Type 1:Steel', u'dummy:Type 1:Dragon', u'dummy:Type 1:Dark', u'dummy:Type 1:Psychic', u'dummy:Type 1:Ground', u'dummy:Type 1:Electric', u'dummy:Type 1:Poison', u'dummy:Type 1:Ice', u'dummy:Type 1:Fighting', u'dummy:Type 1:Fairy', u'dummy:Type 1:Flying', u'dummy:Type 1:N/A', u'dummy:Type 1:__Others__', u'dummy:Legendary:false', u'dummy:Legendary:true', u'dummy:Legendary:N/A', u'dummy:Legendary:__Others__'])
+[2020-05-12 21:58:16,153] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Outliers detection: done fitting PCA
+[2020-05-12 21:58:16,156] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Outliers detection: performing cubic-root kmeans on df (414, 14)
+[2020-05-12 21:58:16,235] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Outliers detection: done kmeans
+[2020-05-12 21:58:16,235] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Outliers detection: selecting mini-clusters
+[2020-05-12 21:58:16,245] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Outliers detection: done (0 mini-clusters are outliers)
+[2020-05-12 21:58:16,246] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] Detected 0 outliers
+[2020-05-12 21:58:16,247] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-05-12 21:58:16,247] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (After outliers)
+[2020-05-12 21:58:16,247] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (414, 12) 
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(414, 52) 
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((414, 12))
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       PROFILING = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 55))
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       OUTLIERS = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 1))
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020-05-12 21:58:16,248] [7505/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 414
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:AddReferenceInOutput
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (After PCA)
+[2020-05-12 21:58:16,248] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (414, 12) 
+[2020-05-12 21:58:16,249] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2020-05-12 21:58:16,249] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2020-05-12 21:58:16,249] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((414, 12))
+[2020-05-12 21:58:16,249] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 52))
+[2020-05-12 21:58:16,249] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       PROFILING = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 55))
+[2020-05-12 21:58:16,249] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN_PREPCA = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 52))
+[2020-05-12 21:58:16,249] [7505/MainThread] [DEBUG] [dku.ml.preprocessing]       OUTLIERS = <class 'dataiku.doctor.multiframe.MultiFrame'> ((414, 1))
+[2020-05-12 21:58:16,258] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing data
+[2020-05-12 21:58:16,259] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2020-05-12 21:58:16,266] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP Attack=-1.0141086382004494
+[2020-05-12 21:58:16,266] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP Defense=-0.9411710072180838
+[2020-05-12 21:58:16,267] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP Generation=-1.4495574551441772
+[2020-05-12 21:58:16,267] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP HP=-1.1202452015131732
+[2020-05-12 21:58:16,267] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP Sp. Atk=-0.3564054831825558
+[2020-05-12 21:58:16,267] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP Sp. Def=-0.37800472338796676
+[2020-05-12 21:58:16,268] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP Speed=-0.8945733832094779
+[2020-05-12 21:58:16,268] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP Total=-1.1471128688266623
+[2020-05-12 21:58:16,268] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Flying=0.0
+[2020-05-12 21:58:16,268] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Ground=0.0
+[2020-05-12 21:58:16,269] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Poison=1.0
+[2020-05-12 21:58:16,269] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Psychic=0.0
+[2020-05-12 21:58:16,269] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Fighting=0.0
+[2020-05-12 21:58:16,269] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Grass=0.0
+[2020-05-12 21:58:16,269] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Fairy=0.0
+[2020-05-12 21:58:16,270] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Steel=0.0
+[2020-05-12 21:58:16,270] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Dark=0.0
+[2020-05-12 21:58:16,270] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Dragon=0.0
+[2020-05-12 21:58:16,271] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Water=0.0
+[2020-05-12 21:58:16,271] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Rock=0.0
+[2020-05-12 21:58:16,271] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Ice=0.0
+[2020-05-12 21:58:16,274] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Ghost=0.0
+[2020-05-12 21:58:16,274] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Fire=0.0
+[2020-05-12 21:58:16,274] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Electric=0.0
+[2020-05-12 21:58:16,275] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Normal=0.0
+[2020-05-12 21:58:16,275] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:Bug=0.0
+[2020-05-12 21:58:16,275] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:N/A=0.0
+[2020-05-12 21:58:16,275] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 2:__Others__=0.0
+[2020-05-12 21:58:16,275] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Water=0.0
+[2020-05-12 21:58:16,276] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Bug=0.0
+[2020-05-12 21:58:16,276] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Grass=1.0
+[2020-05-12 21:58:16,276] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Normal=0.0
+[2020-05-12 21:58:16,277] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Rock=0.0
+[2020-05-12 21:58:16,277] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Fire=0.0
+[2020-05-12 21:58:16,277] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Ghost=0.0
+[2020-05-12 21:58:16,278] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Steel=0.0
+[2020-05-12 21:58:16,278] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Dragon=0.0
+[2020-05-12 21:58:16,278] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Dark=0.0
+[2020-05-12 21:58:16,278] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Psychic=0.0
+[2020-05-12 21:58:16,278] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Ground=0.0
+[2020-05-12 21:58:16,279] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Electric=0.0
+[2020-05-12 21:58:16,279] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Poison=0.0
+[2020-05-12 21:58:16,279] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Ice=0.0
+[2020-05-12 21:58:16,280] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Fighting=0.0
+[2020-05-12 21:58:16,280] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Fairy=0.0
+[2020-05-12 21:58:16,280] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:Flying=0.0
+[2020-05-12 21:58:16,280] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:N/A=0.0
+[2020-05-12 21:58:16,281] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Type 1:__Others__=0.0
+[2020-05-12 21:58:16,281] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Legendary:false=1.0
+[2020-05-12 21:58:16,281] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Legendary:true=0.0
+[2020-05-12 21:58:16,281] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Legendary:N/A=0.0
+[2020-05-12 21:58:16,281] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] FP dummy:Legendary:__Others__=0.0
+[2020-05-12 21:58:16,660] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] Clustering model inspector algo=PY_ISOLATION_FOREST
+[2020-05-12 21:58:16,660] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_fit] End of get_actu_params: now {u'n_jobs': 2, u'algorithm': u'PY_ISOLATION_FOREST', u'coef0': 0.0, u'isolation_forest': {u'max_samples': 0.5, u'k': 2, u'bootstrap': True, u'enabled': True, u'max_anomalies': 100, u'n_estimators': 100, u'seed': 1337, u'n_samples': 256, u'max_features': 1.0, u'max_depth': 15, u'contamination': 0.05}, u'epsilon': 0.0, u'k': 0, u'custom_has_k': False, u'metrics': {u'evaluationMetric': u'SILHOUETTE', u'customEvaluationMetricGIB': True}, u'min_sample_ratio': 0.0, u'ts_kmeans_k': 0, u'gamma': 0.0, u'max_iterations': 0}
+[2020-05-12 21:58:16,724] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2020-05-12 21:58:16,724] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2020-05-12 21:58:16,740] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2020-05-12 21:58:16,740] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2020-05-12 21:58:16,741] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Clustering scoring: transform to dataframes
+[2020-05-12 21:58:16,750] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Clustering scoring: Dumping shapes
+[2020-05-12 21:58:16,751] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   Train df = (414, 52)
+[2020-05-12 21:58:16,751] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   Profiling df = (414, 55)
+[2020-05-12 21:58:16,751] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   Prepca df = (414, 52)
+[2020-05-12 21:58:16,751] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Clustering scoring: Starting work
+[2020-05-12 21:58:17,368] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Clustering scoring: building final profiling_df
+[2020-05-12 21:58:17,375] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] shape ofw train : 414,52
+[2020-05-12 21:58:17,375] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] shape of global dataframe : 414,56
+[2020-05-12 21:58:17,376] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Clustering scorer: final profiling_df (414, 56)
+[2020-05-12 21:58:17,531] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] clusters list : ['anomalies' 'regular']
+[2020-05-12 21:58:17,532] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] cluster in dataframe : ['anomalies' 'regular']
+[2020-05-12 21:58:17,787] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Labels:     cluster_labels
+0          regular
+1          regular
+2          regular
+3          regular
+4          regular
+5          regular
+6          regular
+7          regular
+8          regular
+9          regular
+10         regular
+11         regular
+12         regular
+13         regular
+14         regular
+15         regular
+16         regular
+17         regular
+18         regular
+19         regular
+20         regular
+21         regular
+22         regular
+23         regular
+24         regular
+25         regular
+26         regular
+27         regular
+28         regular
+29         regular
+..             ...
+384        regular
+385        regular
+386        regular
+387        regular
+388        regular
+389        regular
+390        regular
+391        regular
+392        regular
+393        regular
+394        regular
+395        regular
+396        regular
+397        regular
+398        regular
+399        regular
+400        regular
+401        regular
+402        regular
+403        regular
+404        regular
+405        regular
+406        regular
+407        regular
+408      anomalies
+409      anomalies
+410      anomalies
+411      anomalies
+412      anomalies
+413        regular
+[414 rows x 1 columns]
+[2020-05-12 21:58:17,795] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Grouped: Empty DataFrame
+Columns: []
+Index: [anomalies, regular]
+[2020-05-12 21:58:17,797] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Grouped2: <pandas.core.groupby.groupby.DataFrameGroupBy object at 0x108e18090>
+[2020-05-12 21:58:17,803] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Flying dtype=float64
+[2020-05-12 21:58:17,804] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Ground dtype=float64
+[2020-05-12 21:58:17,804] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Poison dtype=float64
+[2020-05-12 21:58:17,804] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Psychic dtype=float64
+[2020-05-12 21:58:17,804] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Fighting dtype=float64
+[2020-05-12 21:58:17,804] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Grass dtype=float64
+[2020-05-12 21:58:17,805] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Fairy dtype=float64
+[2020-05-12 21:58:17,808] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Steel dtype=float64
+[2020-05-12 21:58:17,808] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Dark dtype=float64
+[2020-05-12 21:58:17,808] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Dragon dtype=float64
+[2020-05-12 21:58:17,808] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Water dtype=float64
+[2020-05-12 21:58:17,809] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Rock dtype=float64
+[2020-05-12 21:58:17,809] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Ice dtype=float64
+[2020-05-12 21:58:17,809] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Ghost dtype=float64
+[2020-05-12 21:58:17,809] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Fire dtype=float64
+[2020-05-12 21:58:17,809] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Electric dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Normal dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:Bug dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:N/A dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 2:__Others__ dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Water dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Bug dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Grass dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Normal dtype=float64
+[2020-05-12 21:58:17,810] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Rock dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Fire dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Ghost dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Steel dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Dragon dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Dark dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Psychic dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Ground dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Electric dtype=float64
+[2020-05-12 21:58:17,811] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Poison dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Ice dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Fighting dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Fairy dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:Flying dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:N/A dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Type 1:__Others__ dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Legendary:false dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Legendary:true dtype=float64
+[2020-05-12 21:58:17,812] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Legendary:N/A dtype=float64
+[2020-05-12 21:58:17,813] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: dummy:Legendary:__Others__ dtype=float64
+[2020-05-12 21:58:17,813] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Generation dtype=float64
+[2020-05-12 21:58:17,813] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,820] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: HP dtype=float64
+[2020-05-12 21:58:17,820] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,833] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Sp. Def dtype=float64
+[2020-05-12 21:58:17,833] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,852] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Sp. Atk dtype=float64
+[2020-05-12 21:58:17,852] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,861] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Attack dtype=float64
+[2020-05-12 21:58:17,862] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,877] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Defense dtype=float64
+[2020-05-12 21:58:17,877] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,887] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Total dtype=float64
+[2020-05-12 21:58:17,887] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,901] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Speed dtype=float64
+[2020-05-12 21:58:17,901] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a float
+[2020-05-12 21:58:17,911] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Type 2 dtype=object
+[2020-05-12 21:58:17,911] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a cat
+[2020-05-12 21:58:17,927] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Type 1 dtype=object
+[2020-05-12 21:58:17,927] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a cat
+[2020-05-12 21:58:17,967] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: Legendary dtype=object
+[2020-05-12 21:58:17,967] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer]   It's a cat
+[2020-05-12 21:58:17,984] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Study profiling column: cluster_labels dtype=object
+[2020-05-12 21:58:17,993] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] DONE cluster profiling
+[2020-05-12 21:58:17,994] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Done cluster desc/profiling/summary
+[2020-05-12 21:58:18,205] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Flying (float64)
+[2020-05-12 21:58:18,206] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Ground (float64)
+[2020-05-12 21:58:18,207] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Poison (float64)
+[2020-05-12 21:58:18,207] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Psychic (float64)
+[2020-05-12 21:58:18,207] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Fighting (float64)
+[2020-05-12 21:58:18,208] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Grass (float64)
+[2020-05-12 21:58:18,208] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Fairy (float64)
+[2020-05-12 21:58:18,208] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Steel (float64)
+[2020-05-12 21:58:18,209] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Dark (float64)
+[2020-05-12 21:58:18,209] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Dragon (float64)
+[2020-05-12 21:58:18,209] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Water (float64)
+[2020-05-12 21:58:18,210] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Rock (float64)
+[2020-05-12 21:58:18,210] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Ice (float64)
+[2020-05-12 21:58:18,210] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Ghost (float64)
+[2020-05-12 21:58:18,210] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Fire (float64)
+[2020-05-12 21:58:18,211] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Electric (float64)
+[2020-05-12 21:58:18,211] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Normal (float64)
+[2020-05-12 21:58:18,211] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:Bug (float64)
+[2020-05-12 21:58:18,211] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:N/A (float64)
+[2020-05-12 21:58:18,211] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 2:__Others__ (float64)
+[2020-05-12 21:58:18,211] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Water (float64)
+[2020-05-12 21:58:18,212] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Bug (float64)
+[2020-05-12 21:58:18,212] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Grass (float64)
+[2020-05-12 21:58:18,212] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Normal (float64)
+[2020-05-12 21:58:18,212] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Rock (float64)
+[2020-05-12 21:58:18,212] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Fire (float64)
+[2020-05-12 21:58:18,212] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Ghost (float64)
+[2020-05-12 21:58:18,213] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Steel (float64)
+[2020-05-12 21:58:18,213] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Dragon (float64)
+[2020-05-12 21:58:18,213] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Dark (float64)
+[2020-05-12 21:58:18,213] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Psychic (float64)
+[2020-05-12 21:58:18,213] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Ground (float64)
+[2020-05-12 21:58:18,213] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Electric (float64)
+[2020-05-12 21:58:18,214] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Poison (float64)
+[2020-05-12 21:58:18,214] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Ice (float64)
+[2020-05-12 21:58:18,214] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Fighting (float64)
+[2020-05-12 21:58:18,214] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Fairy (float64)
+[2020-05-12 21:58:18,214] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:Flying (float64)
+[2020-05-12 21:58:18,215] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:N/A (float64)
+[2020-05-12 21:58:18,215] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Type 1:__Others__ (float64)
+[2020-05-12 21:58:18,215] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Legendary:false (float64)
+[2020-05-12 21:58:18,215] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Legendary:true (float64)
+[2020-05-12 21:58:18,216] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Legendary:N/A (float64)
+[2020-05-12 21:58:18,216] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : dummy:Legendary:__Others__ (float64)
+[2020-05-12 21:58:18,216] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Generation (float64)
+[2020-05-12 21:58:18,217] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : HP (float64)
+[2020-05-12 21:58:18,217] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Sp. Def (float64)
+[2020-05-12 21:58:18,217] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Sp. Atk (float64)
+[2020-05-12 21:58:18,217] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Attack (float64)
+[2020-05-12 21:58:18,218] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Defense (float64)
+[2020-05-12 21:58:18,218] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Total (float64)
+[2020-05-12 21:58:18,218] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Speed (float64)
+[2020-05-12 21:58:18,218] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Type 2 (object)
+[2020-05-12 21:58:18,218] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Type 1 (object)
+[2020-05-12 21:58:18,219] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : Legendary (object)
+[2020-05-12 21:58:18,219] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Summarizing numerical column : cluster_labels (object)
+[2020-05-12 21:58:18,310] [7505/MainThread] [INFO] [dataiku.doctor.clustering.clustering_scorer] Intrinsic scoring of clustering model
+[2020-05-12 21:58:18,458] [7505/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2020/05/12-21:58:18.460] [MRT-396] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2020/05/12-21:58:18.464] [KNL-python-single-command-kernel-out-414] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/05/12-21:58:18.464] [KNL-python-single-command-kernel-err-415] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2020/05/12-21:58:18.480] [KNL-python-single-command-kernel-monitor-413] [INFO] [dku.kernels]  - Process done with code 143
+[2020/05/12-21:58:18.483] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.ml.python] T-jdvpNezU - Processing thread joined ...
+[2020/05/12-21:58:18.485] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.ml.python] T-jdvpNezU - Joining processing thread ...
+[2020/05/12-21:58:18.488] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.ml.python] T-jdvpNezU - Processing thread joined ...
+[2020/05/12-21:58:18.491] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.clustering] T-jdvpNezU - Train done
+[2020/05/12-21:58:18.492] [FT-TrainWorkThread-Wm8CwGL0-395] [INFO] [dku.analysis.prediction] T-jdvpNezU - Train done

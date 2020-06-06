@@ -1,0 +1,20 @@
+{
+  "description": "Isolation Forest (Anomaly Detection)\nCluster outliers\n\nTrained in 2 seconds on 414 records\n",
+  "name": "Isolation Forest (Anomaly Detection)",
+  "starred": false,
+  "clusterMetas": {
+    "regular": {
+      "name": "regular",
+      "color": "green"
+    },
+    "anomalies": {
+      "name": "anomalies",
+      "color": "orange"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.0
+}

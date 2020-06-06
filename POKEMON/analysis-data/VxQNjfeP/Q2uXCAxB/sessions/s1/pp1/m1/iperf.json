@@ -1,0 +1,98 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 2, 
+    "rawImportance": {
+        "variables": [
+            "Generation", 
+            "Attack", 
+            "Defense", 
+            "Speed", 
+            "pw_linear:Generation+Attack", 
+            "pw_linear:Generation+Total", 
+            "pw_linear:Total-Speed", 
+            "pw_linear:Sp. Atk+Speed", 
+            "pw_linear:Attack+Defense", 
+            "pw_linear:HP-Defense", 
+            "pw_linear:Attack+Speed", 
+            "pw_linear:Generation+Sp. Atk", 
+            "pw_linear:Generation+Speed", 
+            "pw_linear:Defense-Total", 
+            "pw_linear:Sp. Def-Speed", 
+            "pw_linear:Generation-Speed", 
+            "pw_linear:Generation+Defense", 
+            "pw_linear:Defense-Speed", 
+            "pw_linear:Sp. Def-Defense", 
+            "pw_linear:HP-Speed", 
+            "pw_linear:Sp. Atk-Attack", 
+            "pw_linear:HP+Speed", 
+            "pw_linear:Sp. Atk-Defense", 
+            "pw_linear:Attack-Defense", 
+            "pw_linear:Attack-Speed"
+        ], 
+        "importances": [
+            0.026404803575605956, 
+            0.02826262279456142, 
+            0.0330939415766287, 
+            0.026865899436176063, 
+            0.03509861717992464, 
+            0.03866889649328925, 
+            0.04794555129087496, 
+            0.03933140360793783, 
+            0.042872551790255974, 
+            0.058251777394525785, 
+            0.025571052452862196, 
+            0.045911953451947624, 
+            0.03533581609006501, 
+            0.0417461234218488, 
+            0.03979222890077741, 
+            0.0366071746616543, 
+            0.03494798863359194, 
+            0.03902896397576516, 
+            0.05122516052641786, 
+            0.06526788615783402, 
+            0.046488430206249085, 
+            0.035277696811511286, 
+            0.04453037947779038, 
+            0.042630507164303354, 
+            0.03884257292760098
+        ]
+    }, 
+    "modelInputNRows": 328, 
+    "modelInputNCols": 25, 
+    "modelInputMemory": 65600, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.8132269056050719, 
+            "scoreTime": 10.549999999999999, 
+            "fitTime": 2.3383333333333334, 
+            "score": 0.7119149244575823, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 6, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.40002111055404177, 
+            "scoreStd": 0.027423363223508076
+        }, 
+        {
+            "scoreTimeStd": 2.1989907280891887, 
+            "scoreTime": 6.669333333333333, 
+            "fitTime": 2.0976666666666666, 
+            "score": 0.7232019845265396, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 13, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.43391038501310636, 
+            "scoreStd": 0.05266713161120367
+        }
+    ], 
+    "gridBestScore": 0.7232019845265396, 
+    "modelInputIsSparse": false
+}

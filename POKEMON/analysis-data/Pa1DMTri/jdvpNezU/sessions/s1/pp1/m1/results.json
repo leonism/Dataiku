@@ -1,0 +1,1546 @@
+{
+    "metrics": {
+        "nbClusters": 5, 
+        "silhouette": 0.1385740385559785, 
+        "inertia": 2386.9324499884533
+    }, 
+    "reduce_vars": [], 
+    "train_nb_features": 52, 
+    "train_nb_records": 414, 
+    "summary": {
+        "clusters": []
+    }, 
+    "variables_importance": {
+        "variables": [
+            "Attack", 
+            "Defense", 
+            "Generation", 
+            "HP", 
+            "Sp. Atk", 
+            "Sp. Def", 
+            "Speed", 
+            "Total", 
+            "dummy:Type 2:Flying", 
+            "dummy:Type 2:Ground", 
+            "dummy:Type 2:Poison", 
+            "dummy:Type 2:Psychic", 
+            "dummy:Type 2:Fighting", 
+            "dummy:Type 2:Grass", 
+            "dummy:Type 2:Fairy", 
+            "dummy:Type 2:Steel", 
+            "dummy:Type 2:Dark", 
+            "dummy:Type 2:Dragon", 
+            "dummy:Type 2:Water", 
+            "dummy:Type 2:Rock", 
+            "dummy:Type 2:Ice", 
+            "dummy:Type 2:Ghost", 
+            "dummy:Type 2:Fire", 
+            "dummy:Type 2:Electric", 
+            "dummy:Type 2:Normal", 
+            "dummy:Type 2:Bug", 
+            "dummy:Type 1:Water", 
+            "dummy:Type 1:Bug", 
+            "dummy:Type 1:Grass", 
+            "dummy:Type 1:Normal", 
+            "dummy:Type 1:Rock", 
+            "dummy:Type 1:Fire", 
+            "dummy:Type 1:Ghost", 
+            "dummy:Type 1:Steel", 
+            "dummy:Type 1:Dragon", 
+            "dummy:Type 1:Dark", 
+            "dummy:Type 1:Psychic", 
+            "dummy:Type 1:Ground", 
+            "dummy:Type 1:Electric", 
+            "dummy:Type 1:Poison", 
+            "dummy:Type 1:Ice", 
+            "dummy:Type 1:Fighting", 
+            "dummy:Type 1:Fairy", 
+            "dummy:Type 1:Flying", 
+            "dummy:Legendary:false", 
+            "dummy:Legendary:true"
+        ], 
+        "importances": [
+            0.07687110226433462, 
+            0.09968085469860359, 
+            0.11192131479697913, 
+            0.0820410219187038, 
+            0.07328690084398558, 
+            0.08428681110778447, 
+            0.08895859693495783, 
+            0.2166853019941049, 
+            0.005527316868426383, 
+            0.0036731652480865673, 
+            0.005935580050144064, 
+            0.003132071498032787, 
+            0.0034657536272939054, 
+            0.002433895654593477, 
+            0.0021832268640798076, 
+            0.004748932320198335, 
+            0.0031661065289228254, 
+            0.003122909692824254, 
+            0.0014211462094383509, 
+            0.00377198715627696, 
+            0.0020608191547546784, 
+            0.0024587380367236318, 
+            0.0013324577617039842, 
+            0.0007354355401931937, 
+            0.0003304258465603673, 
+            0.0008151228796765245, 
+            0.005792855254910243, 
+            0.005047968447459713, 
+            0.0031643785632869833, 
+            0.0027882172487493717, 
+            0.004065719197947118, 
+            0.0028547659048300837, 
+            0.001983317696544084, 
+            0.0070347993061513, 
+            0.006912743170685117, 
+            0.002350012486847951, 
+            0.0022597951254719776, 
+            0.004007365827942432, 
+            0.0038958428804481216, 
+            0.0016759257179632691, 
+            0.0007031485723403251, 
+            0.001553636384591588, 
+            0.0004778841351386442, 
+            0.00020657287456736528, 
+            0.028498065365340688, 
+            0.030679990341399517
+        ]
+    }, 
+    "processed_feature_names": [
+        "Attack", 
+        "Defense", 
+        "Generation", 
+        "HP", 
+        "Sp. Atk", 
+        "Sp. Def", 
+        "Speed", 
+        "Total", 
+        "dummy:Type 2:Flying", 
+        "dummy:Type 2:Ground", 
+        "dummy:Type 2:Poison", 
+        "dummy:Type 2:Psychic", 
+        "dummy:Type 2:Fighting", 
+        "dummy:Type 2:Grass", 
+        "dummy:Type 2:Fairy", 
+        "dummy:Type 2:Steel", 
+        "dummy:Type 2:Dark", 
+        "dummy:Type 2:Dragon", 
+        "dummy:Type 2:Water", 
+        "dummy:Type 2:Rock", 
+        "dummy:Type 2:Ice", 
+        "dummy:Type 2:Ghost", 
+        "dummy:Type 2:Fire", 
+        "dummy:Type 2:Electric", 
+        "dummy:Type 2:Normal", 
+        "dummy:Type 2:Bug", 
+        "dummy:Type 2:N/A", 
+        "dummy:Type 2:__Others__", 
+        "dummy:Type 1:Water", 
+        "dummy:Type 1:Bug", 
+        "dummy:Type 1:Grass", 
+        "dummy:Type 1:Normal", 
+        "dummy:Type 1:Rock", 
+        "dummy:Type 1:Fire", 
+        "dummy:Type 1:Ghost", 
+        "dummy:Type 1:Steel", 
+        "dummy:Type 1:Dragon", 
+        "dummy:Type 1:Dark", 
+        "dummy:Type 1:Psychic", 
+        "dummy:Type 1:Ground", 
+        "dummy:Type 1:Electric", 
+        "dummy:Type 1:Poison", 
+        "dummy:Type 1:Ice", 
+        "dummy:Type 1:Fighting", 
+        "dummy:Type 1:Fairy", 
+        "dummy:Type 1:Flying", 
+        "dummy:Type 1:N/A", 
+        "dummy:Type 1:__Others__", 
+        "dummy:Legendary:false", 
+        "dummy:Legendary:true", 
+        "dummy:Legendary:N/A", 
+        "dummy:Legendary:__Others__"
+    ], 
+    "train_nb_outliers": 0, 
+    "cluster_description": [
+        {
+            "variable": "dummy:Type 2:Flying", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.27058823529411763
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.27906976744186046
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.05555555555555555
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.28169014084507044
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.2288135593220339
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Ground", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.058823529411764705
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.12790697674418605
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.12962962962962962
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.056338028169014086
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.06779661016949153
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Poison", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.03529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.18604651162790697
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.028169014084507043
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.11016949152542373
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Psychic", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.03529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.10465116279069768
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.09259259259259259
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.11267605633802817
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.06779661016949153
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Fighting", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.1411764705882353
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.046511627906976744
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.09859154929577464
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.01694915254237288
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Grass", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.058823529411764705
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.023255813953488372
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.09259259259259259
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.014084507042253521
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.1016949152542373
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Fairy", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.03529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.046511627906976744
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.07407407407407407
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.04225352112676056
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.07627118644067797
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Steel", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.058823529411764705
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.023255813953488372
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.16666666666666666
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.04225352112676056
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.025423728813559324
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Dark", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.09411764705882353
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.023255813953488372
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.056338028169014086
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0423728813559322
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Dragon", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.047058823529411764
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.011627906976744186
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.11267605633802817
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.03389830508474576
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Water", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.011764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.046511627906976744
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.037037037037037035
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.014084507042253521
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.05084745762711865
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Rock", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.023255813953488372
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.14814814814814814
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.03389830508474576
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Ice", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.03529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.03488372093023256
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.037037037037037035
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.056338028169014086
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.01694915254237288
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Ghost", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.058823529411764705
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.05555555555555555
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.014084507042253521
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0423728813559322
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Fire", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.023529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.011627906976744186
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.056338028169014086
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.03389830508474576
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Electric", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.011764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.011627906976744186
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.014084507042253521
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.01694915254237288
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Normal", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.023529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.01694915254237288
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Bug", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.01694915254237288
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:N/A", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:__Others__", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Water", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.11764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.2558139534883721
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.07407407407407407
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.04225352112676056
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.11864406779661017
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Bug", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.10588235294117647
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.16279069767441862
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.16666666666666666
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.04225352112676056
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.1440677966101695
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Grass", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.07058823529411765
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.13953488372093023
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.037037037037037035
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.07042253521126761
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.1016949152542373
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Normal", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.11764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.06976744186046512
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.028169014084507043
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.15254237288135594
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Rock", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.047058823529411764
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.08139534883720931
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.18518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.07042253521126761
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.07627118644067797
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Fire", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.10588235294117647
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.03488372093023256
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.05555555555555555
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.09859154929577464
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.01694915254237288
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Ghost", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.058823529411764705
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.023255813953488372
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.05555555555555555
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.04225352112676056
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.07627118644067797
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Steel", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.023529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.18518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.07042253521126761
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0423728813559322
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Dragon", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.011764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.011627906976744186
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.2535211267605634
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.00847457627118644
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Dark", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.07058823529411765
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.03488372093023256
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.037037037037037035
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.04225352112676056
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.059322033898305086
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Psychic", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.03529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.03488372093023256
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.11267605633802817
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0423728813559322
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Ground", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.058823529411764705
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.023255813953488372
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.05555555555555555
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.04225352112676056
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.05084745762711865
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Electric", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.047058823529411764
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.011627906976744186
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.1111111111111111
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.056338028169014086
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.01694915254237288
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Poison", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.03529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.046511627906976744
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0423728813559322
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Ice", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.023529411764705882
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.046511627906976744
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.014084507042253521
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.03389830508474576
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Fighting", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.047058823529411764
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.011627906976744186
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.014084507042253521
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.00847457627118644
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Fairy", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.011764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.011627906976744186
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Flying", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.011764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.00847457627118644
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:N/A", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:__Others__", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:false", 
+            "var": 0.06, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 1.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 1.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.9814814814814815
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.4507042253521127
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 1.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:true", 
+            "var": 0.06, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.018518518518518517
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.5492957746478874
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:N/A", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:__Others__", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "Generation", 
+            "var": 1.11, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 4.764705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 1.8372093023255813
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 3.7777777777777777
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 3.380281690140845
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 3.4322033898305087
+                }
+            ]
+        }, 
+        {
+            "variable": "HP", 
+            "var": 239.8, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 79.38823529411765
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 75.26744186046511
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 66.74074074074075
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 91.71830985915493
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 50.101694915254235
+                }
+            ]
+        }, 
+        {
+            "variable": "Sp. Def", 
+            "var": 434.51, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 71.45882352941176
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 78.27906976744185
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 96.81481481481481
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 102.61971830985915
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 50.54237288135593
+                }
+            ]
+        }, 
+        {
+            "variable": "Sp. Atk", 
+            "var": 694.52, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 82.25882352941177
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 78.86046511627907
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 72.37037037037037
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 120.90140845070422
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 47.728813559322035
+                }
+            ]
+        }, 
+        {
+            "variable": "Attack", 
+            "var": 627.19, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 92.84705882352941
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 80.79069767441861
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 83.33333333333333
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 123.28169014084507
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 53.73728813559322
+                }
+            ]
+        }, 
+        {
+            "variable": "Defense", 
+            "var": 838.06, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 74.27058823529411
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 73.34883720930233
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 128.74074074074073
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 99.63380281690141
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 53.720338983050844
+                }
+            ]
+        }, 
+        {
+            "variable": "Total", 
+            "var": 13785.56, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 489.9294117647059
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 458.72093023255815
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 495.9074074074074
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 635.0281690140845
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 305.79661016949154
+                }
+            ]
+        }, 
+        {
+            "variable": "Speed", 
+            "var": 498.97, 
+            "values": [
+                {
+                    "cluster": "cluster_0", 
+                    "value": 89.70588235294117
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 72.17441860465117
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 47.907407407407405
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 96.87323943661971
+                }, 
+                {
+                    "cluster": "cluster_4", 
+                    "value": 49.96610169491525
+                }
+            ]
+        }, 
+        {
+            "variable": "cluster_size", 
+            "var": 555.7, 
+            "values": [
+                {
+                    "cluster": "cluster_4", 
+                    "value": 118
+                }, 
+                {
+                    "cluster": "cluster_1", 
+                    "value": 86
+                }, 
+                {
+                    "cluster": "cluster_0", 
+                    "value": 85
+                }, 
+                {
+                    "cluster": "cluster_3", 
+                    "value": 71
+                }, 
+                {
+                    "cluster": "cluster_2", 
+                    "value": 54
+                }
+            ]
+        }
+    ]
+}

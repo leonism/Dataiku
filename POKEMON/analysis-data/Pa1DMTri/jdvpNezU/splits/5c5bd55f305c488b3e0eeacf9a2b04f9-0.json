@@ -1,0 +1,49 @@
+{
+  "cparams": {
+    "extractBeforePrepare": true,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "instanceIdRefresher": 0
+  },
+  "generationDate": 1589295479480,
+  "policyId": "extractBeforePrepare\u003dtrue,,ds\u003dPokemon_PgSQL_Train,sel\u003d(method\u003dfull)",
+  "instanceId": "5c5bd55f305c488b3e0eeacf9a2b04f9-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Name","type":"string"},
+      {"name":"Type 1","type":"string"},
+      {"name":"Type 2","type":"string"},
+      {"name":"Total","type":"bigint"},
+      {"name":"HP","type":"bigint"},
+      {"name":"Attack","type":"bigint"},
+      {"name":"Defense","type":"bigint"},
+      {"name":"Sp. Atk","type":"bigint"},
+      {"name":"Sp. Def","type":"bigint"},
+      {"name":"Speed","type":"bigint"},
+      {"name":"Generation","type":"bigint"},
+      {"name":"Legendary","type":"boolean"}
+    ],
+    "userModified": false
+  },
+  "fullPath": "full-5c5bd55f305c488b3e0eeacf9a2b04f9-0.csv.gz",
+  "trainRows": 0,
+  "testRows": 0,
+  "fullRows": 414
+}

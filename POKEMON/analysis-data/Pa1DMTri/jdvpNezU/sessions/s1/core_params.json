@@ -1,0 +1,25 @@
+{
+  "backendType": "PY_MEMORY",
+  "taskType": "CLUSTERING",
+  "executionParams": {
+    "envSelection": {
+      "envMode": "USE_BUILTIN_MODE"
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "sparkParams": {
+      "sparkConf": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "sparkUseGlobalMetastore": false,
+      "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+      "sparkRepartitionNonHDFS": 1,
+      "pipelineAllowStart": true,
+      "pipelineAllowMerge": true,
+      "sparkExecutionEngine": "SPARK_SUBMIT"
+    },
+    "sparkCheckpoint": "NONE"
+  }
+}

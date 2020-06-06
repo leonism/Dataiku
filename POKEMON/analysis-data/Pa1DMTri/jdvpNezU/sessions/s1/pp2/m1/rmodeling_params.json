@@ -1,0 +1,30 @@
+{
+  "algorithm": "PY_TWO_STEP",
+  "k": 5,
+  "n_jobs": 2,
+  "max_iterations": 30,
+  "epsilon": 0.0,
+  "min_sample_ratio": 0.0,
+  "gamma": 0.0,
+  "coef0": 0.0,
+  "seed": 1337,
+  "custom_has_k": false,
+  "isolation_forest": {
+    "k": 2,
+    "enabled": false,
+    "n_estimators": 100,
+    "max_samples": 0.5,
+    "max_features": 1.0,
+    "contamination": 0.05,
+    "bootstrap": true,
+    "max_anomalies": 100,
+    "n_samples": 256,
+    "max_depth": 15,
+    "seed": 1337
+  },
+  "ts_kmeans_k": 50,
+  "metrics": {
+    "evaluationMetric": "SILHOUETTE",
+    "customEvaluationMetricGIB": true
+  }
+}

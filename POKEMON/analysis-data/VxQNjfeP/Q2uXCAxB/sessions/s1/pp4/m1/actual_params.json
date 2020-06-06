@@ -1,0 +1,7 @@
+{
+    "resolved": {
+        "skipExpensiveReports": false, 
+        "algorithm": "NEURAL_NETWORK"
+    }, 
+    "other": {}
+}

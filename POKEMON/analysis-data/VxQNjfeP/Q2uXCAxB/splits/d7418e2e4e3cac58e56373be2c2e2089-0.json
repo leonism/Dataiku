@@ -1,0 +1,58 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "FULL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1589296025128,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dPokemon_PgSQL_Train,sel\u003d(method\u003dfull),r\u003d0.8,s\u003d1337",
+  "instanceId": "d7418e2e4e3cac58e56373be2c2e2089-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Name","type":"string"},
+      {"name":"Type 1","type":"string"},
+      {"name":"Type 2","type":"string"},
+      {"name":"Total","type":"bigint"},
+      {"name":"HP","type":"bigint"},
+      {"name":"Attack","type":"bigint"},
+      {"name":"Defense","type":"bigint"},
+      {"name":"Sp. Atk","type":"bigint"},
+      {"name":"Sp. Def","type":"bigint"},
+      {"name":"Speed","type":"bigint"},
+      {"name":"Generation","type":"bigint"},
+      {"name":"Legendary","type":"boolean"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train-d7418e2e4e3cac58e56373be2c2e2089-0.csv.gz",
+  "testPath": "test-d7418e2e4e3cac58e56373be2c2e2089-0.csv.gz",
+  "trainRows": 328,
+  "testRows": 86,
+  "fullRows": 0
+}

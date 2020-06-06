@@ -1,0 +1,899 @@
+{
+    "metrics": {
+        "nbClusters": 2, 
+        "silhouette": 0.255647256713572
+    }, 
+    "reduce_vars": [], 
+    "train_nb_features": 52, 
+    "train_nb_records": 414, 
+    "summary": {
+        "clusters": []
+    }, 
+    "variables_importance": {
+        "variables": [
+            "Attack", 
+            "Defense", 
+            "Generation", 
+            "HP", 
+            "Sp. Atk", 
+            "Sp. Def", 
+            "Speed", 
+            "Total", 
+            "dummy:Type 2:Flying", 
+            "dummy:Type 2:Ground", 
+            "dummy:Type 2:Poison", 
+            "dummy:Type 2:Psychic", 
+            "dummy:Type 2:Fighting", 
+            "dummy:Type 2:Grass", 
+            "dummy:Type 2:Fairy", 
+            "dummy:Type 2:Steel", 
+            "dummy:Type 2:Dark", 
+            "dummy:Type 2:Dragon", 
+            "dummy:Type 2:Water", 
+            "dummy:Type 2:Rock", 
+            "dummy:Type 2:Ice", 
+            "dummy:Type 2:Ghost", 
+            "dummy:Type 2:Fire", 
+            "dummy:Type 2:Electric", 
+            "dummy:Type 1:Water", 
+            "dummy:Type 1:Bug", 
+            "dummy:Type 1:Grass", 
+            "dummy:Type 1:Normal", 
+            "dummy:Type 1:Rock", 
+            "dummy:Type 1:Fire", 
+            "dummy:Type 1:Ghost", 
+            "dummy:Type 1:Steel", 
+            "dummy:Type 1:Dragon", 
+            "dummy:Type 1:Dark", 
+            "dummy:Type 1:Psychic", 
+            "dummy:Type 1:Ground", 
+            "dummy:Type 1:Electric", 
+            "dummy:Type 1:Poison", 
+            "dummy:Type 1:Ice", 
+            "dummy:Legendary:false", 
+            "dummy:Legendary:true"
+        ], 
+        "importances": [
+            0.0671428405172058, 
+            0.045852455003805526, 
+            0.0375592641646159, 
+            0.06348975341154102, 
+            0.09724970564391659, 
+            0.07214748947321345, 
+            0.060107918540172695, 
+            0.15190933023729433, 
+            0.024374524920151682, 
+            0.0036243589081808645, 
+            0.0002772958953004746, 
+            0.003636780903456245, 
+            0.0026719721307528455, 
+            0.00042757129212940987, 
+            0.005046014736842114, 
+            0.0009313619073055343, 
+            0.0011012249083316066, 
+            0.009314644777857276, 
+            0.0005995651102407471, 
+            0.00047160524497247844, 
+            0.005970247499196867, 
+            0.004186957274636058, 
+            0.009332832871809539, 
+            0.002056877109792883, 
+            0.0057116477165866045, 
+            0.003329143154482773, 
+            0.0014974235488316218, 
+            7.761547063965915e-07, 
+            0.0030603822141950596, 
+            0.0064992029519896286, 
+            0.004824044631141358, 
+            0.005803107998350548, 
+            0.03039258696702698, 
+            0.0027979951079883203, 
+            0.0133471476568352, 
+            0.0011388324971731815, 
+            8.765552368821317e-05, 
+            5.7190399167638104e-05, 
+            0.0006460390880367933, 
+            0.12236765524013835, 
+            0.12895657666693944
+        ]
+    }, 
+    "processed_feature_names": [
+        "Attack", 
+        "Defense", 
+        "Generation", 
+        "HP", 
+        "Sp. Atk", 
+        "Sp. Def", 
+        "Speed", 
+        "Total", 
+        "dummy:Type 2:Flying", 
+        "dummy:Type 2:Ground", 
+        "dummy:Type 2:Poison", 
+        "dummy:Type 2:Psychic", 
+        "dummy:Type 2:Fighting", 
+        "dummy:Type 2:Grass", 
+        "dummy:Type 2:Fairy", 
+        "dummy:Type 2:Steel", 
+        "dummy:Type 2:Dark", 
+        "dummy:Type 2:Dragon", 
+        "dummy:Type 2:Water", 
+        "dummy:Type 2:Rock", 
+        "dummy:Type 2:Ice", 
+        "dummy:Type 2:Ghost", 
+        "dummy:Type 2:Fire", 
+        "dummy:Type 2:Electric", 
+        "dummy:Type 2:Normal", 
+        "dummy:Type 2:Bug", 
+        "dummy:Type 2:N/A", 
+        "dummy:Type 2:__Others__", 
+        "dummy:Type 1:Water", 
+        "dummy:Type 1:Bug", 
+        "dummy:Type 1:Grass", 
+        "dummy:Type 1:Normal", 
+        "dummy:Type 1:Rock", 
+        "dummy:Type 1:Fire", 
+        "dummy:Type 1:Ghost", 
+        "dummy:Type 1:Steel", 
+        "dummy:Type 1:Dragon", 
+        "dummy:Type 1:Dark", 
+        "dummy:Type 1:Psychic", 
+        "dummy:Type 1:Ground", 
+        "dummy:Type 1:Electric", 
+        "dummy:Type 1:Poison", 
+        "dummy:Type 1:Ice", 
+        "dummy:Type 1:Fighting", 
+        "dummy:Type 1:Fairy", 
+        "dummy:Type 1:Flying", 
+        "dummy:Type 1:N/A", 
+        "dummy:Type 1:__Others__", 
+        "dummy:Legendary:false", 
+        "dummy:Legendary:true", 
+        "dummy:Legendary:N/A", 
+        "dummy:Legendary:__Others__"
+    ], 
+    "train_nb_outliers": 0, 
+    "cluster_description": [
+        {
+            "variable": "dummy:Type 2:Flying", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.09523809523809523
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.24173027989821882
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Ground", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.08651399491094147
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Poison", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.08651399491094147
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Psychic", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.09523809523809523
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.07888040712468193
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Fighting", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.06361323155216285
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Grass", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.06361323155216285
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Fairy", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.09523809523809523
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.05343511450381679
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Steel", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.05597964376590331
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Dark", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.04834605597964377
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Dragon", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.14285714285714285
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.03816793893129771
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Water", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.035623409669211195
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Rock", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.03307888040712468
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Ice", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.14285714285714285
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.027989821882951654
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Ghost", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.03307888040712468
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Fire", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.14285714285714285
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.022900763358778626
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Electric", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.01272264631043257
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Normal", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.010178117048346057
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:Bug", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.007633587786259542
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:N/A", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 2:__Others__", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Water", 
+            "var": 0.01, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.13486005089058525
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Bug", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.1297709923664122
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Grass", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.09414758269720101
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Normal", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.09414758269720101
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Rock", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.09523809523809523
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.08396946564885496
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Fire", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.061068702290076333
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Ghost", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.09523809523809523
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.05089058524173028
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Steel", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.05343511450381679
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Dragon", 
+            "var": 0.08, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.42857142857142855
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.030534351145038167
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Dark", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.05343511450381679
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Psychic", 
+            "var": 0.02, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.23809523809523808
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.035623409669211195
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Ground", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.04580152671755725
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Electric", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.043256997455470736
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Poison", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.03307888040712468
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Ice", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.027989821882951654
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Fighting", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.017811704834605598
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Fairy", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.005089058524173028
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:Flying", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.005089058524173028
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:N/A", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Type 1:__Others__", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:false", 
+            "var": 0.41, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.047619047619047616
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.9491094147582697
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:true", 
+            "var": 0.41, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.9523809523809523
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.05089058524173028
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:N/A", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "dummy:Legendary:__Others__", 
+            "var": 0.0, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 0.0
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 0.0
+                }
+            ]
+        }, 
+        {
+            "variable": "Generation", 
+            "var": 0.38, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 4.238095238095238
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 3.366412213740458
+                }
+            ]
+        }, 
+        {
+            "variable": "HP", 
+            "var": 389.45, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 97.14285714285714
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 69.23409669211196
+                }
+            ]
+        }, 
+        {
+            "variable": "Sp. Def", 
+            "var": 1001.39, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 118.04761904761905
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 73.29516539440203
+                }
+            ]
+        }, 
+        {
+            "variable": "Sp. Atk", 
+            "var": 1486.6, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 128.8095238095238
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 74.2824427480916
+                }
+            ]
+        }, 
+        {
+            "variable": "Attack", 
+            "var": 1004.13, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 125.71428571428571
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 80.90076335877863
+                }
+            ]
+        }, 
+        {
+            "variable": "Defense", 
+            "var": 630.33, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 113.38095238095238
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 77.87531806615776
+                }
+            ]
+        }, 
+        {
+            "variable": "Total", 
+            "var": 26229.07, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 674.047619047619
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 445.0101781170483
+                }
+            ]
+        }, 
+        {
+            "variable": "Speed", 
+            "var": 231.77, 
+            "values": [
+                {
+                    "cluster": "anomalies", 
+                    "value": 90.95238095238095
+                }, 
+                {
+                    "cluster": "regular", 
+                    "value": 69.42239185750635
+                }
+            ]
+        }, 
+        {
+            "variable": "cluster_size", 
+            "var": 69192.0, 
+            "values": [
+                {
+                    "cluster": "regular", 
+                    "value": 393
+                }, 
+                {
+                    "cluster": "anomalies", 
+                    "value": 21
+                }
+            ]
+        }
+    ]
+}

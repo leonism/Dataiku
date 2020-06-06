@@ -1,0 +1,10 @@
+{
+    "pairwise_linear": {
+        "built_features": 28, 
+        "input_features": 8
+    }, 
+    "polynomial_interactions": {
+        "built_features": 37, 
+        "input_features": 8
+    }
+}

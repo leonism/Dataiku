@@ -1,0 +1,76 @@
+{
+  "steps": [
+    {
+      "type": "ColumnsSelector",
+      "params": {
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN",
+        "columns": [
+          "col_0"
+        ]
+      },
+      "metaType": "PROCESSOR",
+      "preview": false,
+      "disabled": false,
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "columnWidthsByName": {
+    "col_0": 100,
+    "Name": 134,
+    "Type 1": 100,
+    "Type 2": 100,
+    "Total": 100,
+    "HP": 100,
+    "Attack": 100,
+    "Defense": 100,
+    "Sp. Atk": 100,
+    "Sp. Def": 100,
+    "Speed": 100,
+    "Generation": 100,
+    "Legendary": 100
+  },
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  },
+  "sorting": [],
+  "analysisColumnData": {},
+  "explorationSampling": {
+    "selection": {
+      "maxStoredBytes": 104857600,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 10000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": false,
+    "_refreshTrigger": 0
+  },
+  "vizSampling": {
+    "autoRefreshSample": false,
+    "_refreshTrigger": 0
+  },
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "globalSearchQuery": "",
+  "explorationFilters": [],
+  "previewMode": "ALL_ROWS"
+}

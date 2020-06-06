@@ -1,0 +1,408 @@
+{
+  "description": "Interactive Clustering\nCluster outliers\n\nTrained in 3 seconds on 414 records\n",
+  "name": "Interactive Clustering",
+  "starred": false,
+  "clusterMetas": {
+    "node_90": {
+      "name": "node_90",
+      "color": "#f06548"
+    },
+    "node_91": {
+      "name": "node_91",
+      "color": "#fdc766"
+    },
+    "node_93": {
+      "name": "node_93",
+      "color": "#7bc9a6"
+    },
+    "node_94": {
+      "name": "node_94",
+      "color": "#4ec5da"
+    },
+    "node_41": {
+      "name": "node_41",
+      "color": "#548ecb"
+    },
+    "node_98": {
+      "name": "root",
+      "color": "#97668f"
+    },
+    "node_44": {
+      "name": "node_44",
+      "color": "#5e2974"
+    },
+    "node_88": {
+      "name": "node_88",
+      "color": "#f06548"
+    },
+    "node_79": {
+      "name": "node_79",
+      "color": "#fdc766"
+    },
+    "node_58": {
+      "name": "node_58",
+      "color": "#7bc9a6"
+    },
+    "node_1": {
+      "name": "node_1",
+      "color": "#4ec5da"
+    },
+    "node_54": {
+      "name": "node_54",
+      "color": "#548ecb"
+    },
+    "node_10": {
+      "name": "node_10",
+      "color": "#97668f"
+    },
+    "node_40": {
+      "name": "node_40",
+      "color": "#5e2974"
+    },
+    "node_62": {
+      "name": "node_62",
+      "color": "#f06548"
+    },
+    "node_19": {
+      "name": "node_19",
+      "color": "#fdc766"
+    },
+    "node_50": {
+      "name": "node_50",
+      "color": "#7bc9a6"
+    },
+    "node_9": {
+      "name": "node_9",
+      "color": "#4ec5da"
+    },
+    "node_31": {
+      "name": "node_31",
+      "color": "#548ecb"
+    },
+    "node_80": {
+      "name": "node_80",
+      "color": "#97668f"
+    },
+    "node_52": {
+      "name": "node_52",
+      "color": "#5e2974"
+    },
+    "node_7": {
+      "name": "node_7",
+      "color": "#f06548"
+    },
+    "node_47": {
+      "name": "node_47",
+      "color": "#fdc766"
+    },
+    "node_64": {
+      "name": "node_64",
+      "color": "#7bc9a6"
+    },
+    "node_4": {
+      "name": "node_4",
+      "color": "#4ec5da"
+    },
+    "node_63": {
+      "name": "node_63",
+      "color": "#548ecb"
+    },
+    "node_30": {
+      "name": "node_30",
+      "color": "#97668f"
+    },
+    "node_55": {
+      "name": "node_55",
+      "color": "#5e2974"
+    },
+    "node_28": {
+      "name": "node_28",
+      "color": "#f06548"
+    },
+    "node_35": {
+      "name": "node_35",
+      "color": "#fdc766"
+    },
+    "node_97": {
+      "name": "node_97",
+      "color": "#7bc9a6"
+    },
+    "node_96": {
+      "name": "node_96",
+      "color": "#4ec5da"
+    },
+    "node_76": {
+      "name": "node_76",
+      "color": "#548ecb"
+    },
+    "node_25": {
+      "name": "node_25",
+      "color": "#97668f"
+    },
+    "node_72": {
+      "name": "node_72",
+      "color": "#5e2974"
+    },
+    "node_5": {
+      "name": "node_5",
+      "color": "#f06548"
+    },
+    "node_17": {
+      "name": "node_17",
+      "color": "#fdc766"
+    },
+    "node_84": {
+      "name": "node_84",
+      "color": "#7bc9a6"
+    },
+    "node_67": {
+      "name": "node_67",
+      "color": "#4ec5da"
+    },
+    "node_33": {
+      "name": "node_33",
+      "color": "#548ecb"
+    },
+    "node_61": {
+      "name": "node_61",
+      "color": "#97668f"
+    },
+    "node_6": {
+      "name": "node_6",
+      "color": "#5e2974"
+    },
+    "node_23": {
+      "name": "node_23",
+      "color": "#f06548"
+    },
+    "node_83": {
+      "name": "node_83",
+      "color": "#fdc766"
+    },
+    "node_59": {
+      "name": "node_59",
+      "color": "#7bc9a6"
+    },
+    "node_16": {
+      "name": "node_16",
+      "color": "#4ec5da"
+    },
+    "node_39": {
+      "name": "node_39",
+      "color": "#548ecb"
+    },
+    "node_66": {
+      "name": "node_66",
+      "color": "#97668f"
+    },
+    "node_3": {
+      "name": "node_3",
+      "color": "#5e2974"
+    },
+    "node_34": {
+      "name": "node_34",
+      "color": "#f06548"
+    },
+    "node_95": {
+      "name": "node_95",
+      "color": "#fdc766"
+    },
+    "node_82": {
+      "name": "node_82",
+      "color": "#7bc9a6"
+    },
+    "node_48": {
+      "name": "node_48",
+      "color": "#4ec5da"
+    },
+    "node_53": {
+      "name": "node_53",
+      "color": "#548ecb"
+    },
+    "node_0": {
+      "name": "node_0",
+      "color": "#97668f"
+    },
+    "node_11": {
+      "name": "node_11",
+      "color": "#5e2974"
+    },
+    "node_89": {
+      "name": "node_89",
+      "color": "#f06548"
+    },
+    "node_46": {
+      "name": "node_46",
+      "color": "#fdc766"
+    },
+    "node_87": {
+      "name": "node_87",
+      "color": "#7bc9a6"
+    },
+    "node_74": {
+      "name": "node_74",
+      "color": "#4ec5da"
+    },
+    "node_26": {
+      "name": "node_26",
+      "color": "#548ecb"
+    },
+    "node_27": {
+      "name": "node_27",
+      "color": "#97668f"
+    },
+    "node_86": {
+      "name": "node_86",
+      "color": "#5e2974"
+    },
+    "node_37": {
+      "name": "node_37",
+      "color": "#f06548"
+    },
+    "node_70": {
+      "name": "node_70",
+      "color": "#fdc766"
+    },
+    "node_21": {
+      "name": "node_21",
+      "color": "#7bc9a6"
+    },
+    "node_42": {
+      "name": "node_42",
+      "color": "#4ec5da"
+    },
+    "node_81": {
+      "name": "node_81",
+      "color": "#548ecb"
+    },
+    "node_68": {
+      "name": "node_68",
+      "color": "#97668f"
+    },
+    "node_15": {
+      "name": "node_15",
+      "color": "#5e2974"
+    },
+    "node_32": {
+      "name": "node_32",
+      "color": "#f06548"
+    },
+    "node_75": {
+      "name": "node_75",
+      "color": "#fdc766"
+    },
+    "node_13": {
+      "name": "node_13",
+      "color": "#7bc9a6"
+    },
+    "node_65": {
+      "name": "node_65",
+      "color": "#4ec5da"
+    },
+    "node_8": {
+      "name": "node_8",
+      "color": "#548ecb"
+    },
+    "node_51": {
+      "name": "node_51",
+      "color": "#97668f"
+    },
+    "node_14": {
+      "name": "node_14",
+      "color": "#5e2974"
+    },
+    "node_29": {
+      "name": "node_29",
+      "color": "#f06548"
+    },
+    "node_92": {
+      "name": "node_92",
+      "color": "#fdc766"
+    },
+    "node_77": {
+      "name": "node_77",
+      "color": "#7bc9a6"
+    },
+    "node_69": {
+      "name": "node_69",
+      "color": "#4ec5da"
+    },
+    "node_20": {
+      "name": "node_20",
+      "color": "#548ecb"
+    },
+    "node_45": {
+      "name": "node_45",
+      "color": "#97668f"
+    },
+    "node_73": {
+      "name": "node_73",
+      "color": "#5e2974"
+    },
+    "node_38": {
+      "name": "node_38",
+      "color": "#f06548"
+    },
+    "node_60": {
+      "name": "node_60",
+      "color": "#fdc766"
+    },
+    "node_18": {
+      "name": "node_18",
+      "color": "#7bc9a6"
+    },
+    "node_22": {
+      "name": "node_22",
+      "color": "#4ec5da"
+    },
+    "node_85": {
+      "name": "node_85",
+      "color": "#548ecb"
+    },
+    "node_43": {
+      "name": "node_43",
+      "color": "#97668f"
+    },
+    "node_78": {
+      "name": "node_78",
+      "color": "#5e2974"
+    },
+    "node_24": {
+      "name": "node_24",
+      "color": "#f06548"
+    },
+    "node_71": {
+      "name": "node_71",
+      "color": "#fdc766"
+    },
+    "node_56": {
+      "name": "node_56",
+      "color": "#7bc9a6"
+    },
+    "node_2": {
+      "name": "node_2",
+      "color": "#4ec5da"
+    },
+    "node_49": {
+      "name": "node_49",
+      "color": "#548ecb"
+    },
+    "node_57": {
+      "name": "node_57",
+      "color": "#97668f"
+    },
+    "node_12": {
+      "name": "node_12",
+      "color": "#5e2974"
+    },
+    "node_36": {
+      "name": "node_36",
+      "color": "#f06548"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.0
+}
