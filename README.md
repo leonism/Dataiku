@@ -14,5 +14,6 @@ You'll be needing one proper installation of Dataiku version 7, PgSQL (due some 
 
 The software Dataiku Data Science Studio (DSS) was announced in 2014, supporting predictive modelling to build business applications.Later versions of DSS added other features.Dataiku offers a free edition and enterprise versions with additional features, such as multi-user collaboration or real-time scoring.
 
-`***Disclaimer***`: And please remember, as this is only a weekend pet project, I'm doing them for my personal interest only.
+# Disclaimer
+And please remember, as this is only a weekend pet project, I'm doing them for my personal interest only.
 
